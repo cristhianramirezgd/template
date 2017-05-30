@@ -21,5 +21,5 @@ install Vtex-speed on speed directory
 * in root run `$ gulp` and start your server
 
 
-## Happy Styling Dude!
+## Happy Project Dude!
 
