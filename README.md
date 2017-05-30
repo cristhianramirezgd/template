@@ -1,12 +1,12 @@
 # Template speed + gulp sass compile
 Version 1.0.0
 
-file for spped work on vtex front-end
+Files for speed work on vtex front-end
 
 ### Dependence
 
-* npm
-* gulp(for root compile)
+* Npm
+* Gulp(for root compile)
 * Grunt(for vtex-speed)
 * bulma (Flexbox framework)
 
@@ -21,5 +21,5 @@ install Vtex-speed on speed directory
 * in root run `$ gulp` and start your server
 
 
-## Happy Styling dude!
+## Happy Styling Dude!
 
