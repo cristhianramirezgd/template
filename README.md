@@ -20,6 +20,7 @@ install Vtex-speed on speed directory
 
 * in root run `$ gulp` and start your server
 
+* Make your html on root directory and then upload on vtex-admin
 
 ## Happy Project Dude!
 
