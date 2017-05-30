@@ -16,7 +16,7 @@ gulp.task('compile-sass', function () {
     .pipe(minifyCSS())
     .pipe(gp_concat('app.min.css'))
     .pipe(gp_sourcemaps.write('./'))
-    .pipe(gulp.dest('arquivos/'));
+    .pipe(gulp.dest('speed/src/arquivos/'));
 });
 //Gulp Watch
 gulp.task('default', ['compile-sass'], function() {
