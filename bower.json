@@ -1,0 +1,18 @@
+{
+  "name": "Vtex Marcado xHtml, Css",
+  "authors": [
+    "Crishtian Ramírez <cristhianramirezgd@gmail.com>"
+  ],
+  "description": "scaffolding para iniciar marcado de html en vtex cloud",
+  "main": "",
+  "license": "MIT",
+  "homepage": "index.php",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
