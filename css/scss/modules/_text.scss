@@ -2,7 +2,7 @@ body{
 @include family-header;
 	a{
 		color:$grey-dark;
-		transition: none 86ms ease-out;
+		transition:$transition-hover-link;
 		&:hover{
 			color:$grey-darker;
 		}
