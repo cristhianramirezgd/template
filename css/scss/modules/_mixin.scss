@@ -11,3 +11,11 @@
 		}
 	}
 }
+@mixin hover-translate {
+		-webkit-box-shadow: $shadow-transition;
+		box-shadow: $shadow-transition;
+		-webkit-transform:$translate-animation-y;
+		-ms-transform:$translate-animation-y;
+		-o-transform:$translate-animation-y;
+		transform:$translate-animation-y;
+}
