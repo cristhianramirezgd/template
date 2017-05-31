@@ -4,3 +4,26 @@ $bg-global-body:$bg;
 $shadow: lighten($black, 56.7%);
 $shadow--ligth: rgba($black, $alpha);
 $shadow-global:.12vw .12vw .21vw $shadow--ligth;
+$shadow-transition:		1vw 1vw 1vw $shadow;
+//chart color for function on _containers.scss for footer buttons
+$chartColors: $brown,$brown, $yellow, $yellow,$blue, $blue, $red, $red;
+//transitons custom
+$fast-time-ease-out:		all 100ms ease-out;
+$short-time-ease-out:		all 600ms ease-out;
+$medium-time-ease-out:		all 900ms ease-out;
+$long-time-ease-out:		all 1s ease-out;
+$fast-time-ease-in:			all 100ms ease-in;
+$short-time-ease-in:		all 600ms ease-in;
+$medium-time-ease-in:		all 900ms ease-in;
+$long-time-ease-in:			all 1s ease-in;
+$fast-time-linear:			all 100ms ease-linear;
+$short-time-linear:			all 600ms ease-linear;
+$medium-time-linear:		all 900ms ease-linear;
+$long-time-linear:			all 1s ease-linear;
+$fast-time-ease:			all 100ms ease;
+$short-time-ease:			all 600ms ease;
+$medium-time-ease:			all 900ms ease;
+$long-time-ease:			all 1.5s ease;
+$transition-hover-link:		none 86ms ease-out;
+//translate
+$translate-animation-y:		translatey(-.5vw);
