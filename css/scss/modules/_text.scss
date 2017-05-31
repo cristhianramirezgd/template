@@ -1,0 +1,10 @@
+body{
+@include family-header;
+	a{
+		color:$grey-dark;
+		transition: none 86ms ease-out;
+		&:hover{
+			color:$grey-darker;
+		}
+	}	
+}

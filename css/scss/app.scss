@@ -2,14 +2,14 @@
 @import '../normalize';
 @import '_settings';
 //Modulos
-@import "modules/fixes";
-@import "modules/_mixin";
 @import "modules/_variables";
+@import "modules/_mixin";
 @import "modules/_utilities";
-@import "modules/_flexbox";
 @import "modules/_text";
 @import "modules/_nav";
 @import "modules/_forms";
 @import "modules/_containers";
+@import "modules/_flexbox";
+@import "modules/fixes";
 @import '../framework/bulma';
 //fixes

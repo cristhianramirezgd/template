@@ -27,11 +27,13 @@ $purple:       hsl(271, 100%, 71%) !default
 $red:          hsl(346, 100%, 41%) !default
 $brown:		   hsl(24,  61%,  19%) !default
 
+
 // Typography
 
 $family-sans-serif: 'Roboto', sans-serif !default
 $family-monospace: monospace !default
 $render-mode: optimizeLegibility !default
+$family-headers: 'Bowlby One SC', cursive;
 
 $size-1: 3rem !default
 $size-2: 2.5rem !default
@@ -49,7 +51,7 @@ $weight-bold: 700 !default
 // Body
 
 $body-background: #fff !default
-$body-size: 16px !default
+$body-size: 14px !default
 
 // Responsiveness
 

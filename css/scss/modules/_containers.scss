@@ -1,0 +1,15 @@
+.bg{
+	&-black{
+		@include family-header;
+		@include link-color;
+		color:$white;
+		background:$black;
+	}
+	&-red{
+		@include family-header;
+		@include link-color;
+		color:$white;
+		background:$red;
+	}
+
+}
