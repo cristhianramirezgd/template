@@ -1,4 +1,4 @@
 node_modules/
 *.map
 template.php
-
+bower_components/
