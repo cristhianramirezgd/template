@@ -1,1 +1,6 @@
-$position: relative;
+$brown:		   hsl(24,  61%,  19%) !default
+$bg:		   hsl(220, 14%, 96%) !default
+$bg-global-body:$bg;
+$shadow: lighten($black, 56.7%);
+$shadow--ligth: rgba($black, $alpha);
+$shadow-global:.12vw .12vw .21vw $shadow--ligth;

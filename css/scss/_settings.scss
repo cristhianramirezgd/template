@@ -1,6 +1,6 @@
 // vtex settings template
 // alpha chanel
-$alpha:			.7;
+$alpha:			.2;
 
 // Colors
 
@@ -25,7 +25,6 @@ $turquoise:    hsl(171, 100%, 41%) !default
 $blue:         hsl(188, 95%,  53%) !default
 $purple:       hsl(271, 100%, 71%) !default
 $red:          hsl(346, 100%, 41%) !default
-$brown:		   hsl(24,  61%,  19%) !default
 
 
 // Typography
@@ -71,3 +70,18 @@ $radius-small: 2px !default
 $radius: 3px !default
 $radius-large: 5px !default
 $speed: 86ms !default
+
+// custom
+// 2. Set your own initial variables
+$blue-invert: #fff;
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $blue;
+$primary-invert: $blue-invert;
+// Use the existing orange as the danger color
+$danger: $orange;
+// Use the new serif family
+$family-primary: $family-sans-serif;

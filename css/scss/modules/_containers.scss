@@ -1,3 +1,6 @@
+body{
+	background:$bg-global-body;
+}
 .bg{
 	&-black{
 		@include family-header;
