@@ -11,5 +11,21 @@
 		color:$white;
 		background:$red;
 	}
+	&-blue{
+		@include family-header;
+		@include link-color;
+		color:$white;
+		background:$blue;
+	}
+	&-yellow{
+		@include family-header;
+		color:$grey-darker;
+		background:$yellow;
+	}
+	&-white{
+		@include family-header;
+		color:$grey-darker;
+		background:$white;
+	}
 
 }
