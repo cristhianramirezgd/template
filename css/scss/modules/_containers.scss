@@ -17,6 +17,11 @@ body{
 		@include color-header;
 		color:$white;
 		background:$red;
+		&-alpha{
+			background:rgba($red,.98);
+			@include link-color;
+			@include color-header;
+		}
 	}
 	&-blue{
 		@include family-header;
@@ -24,16 +29,27 @@ body{
 		@include color-header;
 		color:$white;
 		background:$blue;
+		&-alpha{
+			background:rgba($blue,.98);
+			@include link-color;
+			@include color-header;
+		}
 	}
 	&-yellow{
 		@include family-header;
 		color:$grey-darker;
 		background:$yellow;
+		&-alpha{
+			background:rgba($yellow,.98);
+		}
 	}
 	&-white{
 		@include family-header;
 		color:$grey-darker;
 		background:$white;
+		&-alpha{
+			background:rgba($white,.98);
+		}
 	}
 
 }

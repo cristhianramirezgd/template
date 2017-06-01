@@ -54,3 +54,44 @@ ul.list-inline{
 		display:inline-block;
 	}
 }
+.vertical{
+	position:relative;
+	padding-left: 12px;
+	border-left: 1px solid $white;
+	transition:$fast-time-ease-out;
+	
+	&:hover{
+		border-left: 1px solid $black!important;
+		.vertical-item{
+			a{
+				color:$black;
+				width:auto!important;
+				}
+			}	
+		}
+
+	&-item{
+		transition:$short-time-ease-out;
+		a{
+			@include vertical-lr;
+			position: absolute;
+			left: -11px;
+			bottom: 0;
+			background:$blue;
+			padding-bottom:5px;
+			width:auto!important;
+		}
+	}
+	li{
+		transition:$fast-time-ease-out;
+
+		&:hover{
+			box-shadow:$shadow-global;
+			}
+		a{
+			width:100%;
+			display: inline-block;
+
+			}
+		}
+}
