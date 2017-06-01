@@ -53,3 +53,11 @@ body{
 	}
 
 }
+.border{
+	border:1px solid $black;
+	&-red{border:$size-7 solid $red;}
+	&-blue{border:$size-7 solid $blue;}
+	&-yellow{border:$size-7 solid $yellow;}
+	&-brown{border:$size-7 solid $brown;}
+	&-white{border:$size-7 solid $white;}
+}
