@@ -1,7 +1,7 @@
 @mixin family-header {
   	.h1,.h2,.h3,.h4,.h5,.h6,{
 		font-family:$family-headers;
-		margin-bottom: 0!important;
+		margin:15px 0!important;
 	}
 }
 @mixin color-header {
