@@ -114,3 +114,33 @@ ul.list-inline{
 		}
 	}
 }
+.small{
+	&-padding{
+		&-top{padding-top:$size-7;}
+		&-bottom{padding-bottom:$size-7;}
+	}
+	&-margin{
+			&-top{margin-top:$size-7;}
+			&-bottom{margin-bottom:$size-7;}
+		}
+}
+.medium{
+	&-padding{
+		&-top{padding-top:$size-5;}
+		&-bottom{padding-bottom:$size-5;}
+	}
+	&-margin{
+			&-top{margin-top:$size-5;}
+			&-bottom{margin-bottom:$size-5;}
+		}
+}
+.large{
+	&-padding{
+		&-top{padding-top:$size-4;}
+		&-bottom{padding-bottom:$size-4;}
+	}
+	&-margin{
+			&-top{margin-top:$size-4;}
+			&-bottom{margin-bottom:$size-4;}
+		}
+}

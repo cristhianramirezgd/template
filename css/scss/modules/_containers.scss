@@ -61,3 +61,38 @@ body{
 	&-brown{border:$size-7 solid $brown;}
 	&-white{border:$size-7 solid $white;}
 }
+.inset{
+	&-height{
+		position:relative;
+	}
+	&-content{
+
+	}
+}
+.outset{
+	&-height{
+		position:relative;
+		}
+	&-content{
+		transform: translatey(-7.5%);
+		position: absolute;
+		width: 100%;
+		height: 77vh;
+	}
+	&-border{
+		&-red{outline:$size-7 solid $red;
+			@include outline-size;}
+		&-blue{outline:$size-7 solid $blue;
+			@include outline-size;}
+		&-yellow{outline:$size-7 solid $yellow;
+			@include outline-size;}
+		&-brown{outline:$size-7 solid $brown;
+			@include outline-size;}
+		&-white{outline:$size-7 solid $white;
+			@include outline-size;}
+	}
+}
+figure.banner-section {
+    position: relative;
+    left: -14vw;
+}
