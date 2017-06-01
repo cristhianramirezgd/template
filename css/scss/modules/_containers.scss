@@ -4,10 +4,12 @@ body{
 .bg{
 	&-black{
 		@include family-header;
-		@include link-color;
 		@include color-header;
 		color:$white;
 		background:$black;
+		a{
+			color:$white;
+		}
 	}
 	&-red{
 		@include family-header;

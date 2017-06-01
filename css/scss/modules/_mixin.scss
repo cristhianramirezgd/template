@@ -1,6 +1,7 @@
 @mixin family-header {
   	.h1,.h2,.h3,.h4,.h5,.h6,{
 		font-family:$family-headers;
+		margin-bottom: 0!important;
 	}
 }
 @mixin color-header {
@@ -12,7 +13,7 @@
   	a{
 		color:$white;
 		&:hover{
-			color:$grey-lighter;
+			color:$black;
 		}
 	}
 }
