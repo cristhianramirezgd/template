@@ -1,0 +1,13 @@
+.box{
+	padding:.5rem!important;
+}
+.box:not(:last-child), .content:not(:last-child) {
+    margin-bottom: .5rem!important;
+}
+.button{
+	border-radius: 290486px!important;
+
+}
+.width-auto{
+	width:auto;
+}

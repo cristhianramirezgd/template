@@ -54,3 +54,6 @@
 @mixin outline-size{
 	outline-offset: $size-7;
 }
+@mixin inner-size{
+	outline-offset: -$size-7;
+}
