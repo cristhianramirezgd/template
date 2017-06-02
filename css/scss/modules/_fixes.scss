@@ -33,41 +33,41 @@
     overflow: auto;
 }
 
-.classybox-loader {
-    position: absolute;
-    height: 45px;
-    width: 45px;
-    background: url(/arquivos/load.gif) center no-repeat rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    -o-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    z-index: 2450;
+.classybox{
+	&-loader {
+	    position: absolute;
+	    height: 45px;
+	    width: 45px;
+	    background: url(/arquivos/load.gif) center no-repeat rgba(0, 0, 0, 0.8);
+	    border-radius: 8px;
+	    -o-border-radius: 8px;
+	    -ms-border-radius: 8px;
+	    -moz-border-radius: 8px;
+	    -webkit-border-radius: 8px;
+	    z-index: 2450;
+	}
+	&-wrap {
+	    position: absolute;  
+	    background-color: $yellow;
+	    background-clip: border-box;
+	    -moz-background-clip: padding;
+	    -webkit-background-clip: padding;
+	    background-clip: padding-box;
+	    overflow: visible; 
+	    z-index: 2200;
+	    margin: 0 auto;
+	    top: 0; 
+	    left: 0;  
+	}
+	&-wrap .content {
+	    position: relative;
+	    overflow: visible;
+	}
 }
 
-.classybox-wrap {
-    position: absolute; 
-    // height: 20px;
-    // width: 20px;
-    // padding: 5px; 
-    background-color: $yellow;
-    // border: solid 4px rgba(0, 0, 0, 0.5);
-    background-clip: border-box;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding;
-    background-clip: padding-box;
-    overflow: visible; 
-    z-index: 2200;
-    margin: 0 auto;
-    top: 0; 
-    left: 0;  
-}
 
-.classybox-wrap .content {
-    position: relative;
-    overflow: visible;
-}
+
+
 
 .classybox-wrap .content .image,
 .classybox-wrap .content .object,
@@ -174,7 +174,7 @@
     letter-spacing: 1.3px; 
     font-size: 0.9em;
     color: $grey;
-    border-bottom: solid 1px #7e7e7e;
+    border-bottom: solid 1px $grey;
 }
 
 .classybox-wrap h2.hide {
