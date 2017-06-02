@@ -1,10 +1,11 @@
 @mixin family-header {
   	.h1,.h2,.h3,.h4,.h5,.h6,{
 		font-family:$family-headers;
+		margin:15px 0!important;
 	}
 }
 @mixin color-header {
-  	.h1,.h2,.h3,.h4,.h5,.h6,.title{
+  	.h1,.h2,.h3,.h4,.h5,.h6,.title,.subtitle{
 		color:$white;
 	}
 }
@@ -12,7 +13,7 @@
   	a{
 		color:$white;
 		&:hover{
-			color:$grey-lighter;
+			color:$black;
 		}
 	}
 }
@@ -23,4 +24,33 @@
 		-ms-transform:$translate-animation-y;
 		-o-transform:$translate-animation-y;
 		transform:$translate-animation-y;
+}
+	// direccion de texto
+@mixin vertical-lr{
+		-webkit-writing-mode: vertical-lr;
+		-moz-writing-mode: vertical-lr;
+		-ms-writing-mode: vertical-lr;
+		-o-writing-mode: vertical-lr;
+		writing-mode: vertical-lr;
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+}
+
+@mixin vertical-rl{
+		-webkit-writing-mode: vertical-rl;
+		-moz-writing-mode: vertical-rl;
+		-ms-writing-mode: vertical-rl;
+		-o-writing-mode: vertical-rl;
+		writing-mode: vertical-rl;
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+}
+@mixin outline-size{
+	outline-offset: $size-7;
 }
