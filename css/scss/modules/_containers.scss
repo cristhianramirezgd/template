@@ -143,3 +143,37 @@ figure.banner-contenido{
     top: 6vw;
     z-index: -1;
 }
+.move{
+	&-down{
+		-webkit-box-shadow: $shadow-transition;
+		box-shadow: $shadow-transition;
+		-webkit-transform:$translate-animation-down;
+		-ms-transform:$translate-animation-down;
+		-o-transform:$translate-animation-down;
+		transform:$translate-animation-down;
+	}
+	&-left{
+		-webkit-box-shadow: $shadow-transition;
+		box-shadow: $shadow-transition;
+		-webkit-transform:$translate-animation-y;
+		-ms-transform:$translate-animation-y;
+		-o-transform:$translate-animation-y;
+		transform:$translate-animation-y;
+	}
+	&-up{
+		-webkit-box-shadow: $shadow-transition;
+		box-shadow: $shadow-transition;
+		-webkit-transform:$translate-animation-y;
+		-ms-transform:$translate-animation-y;
+		-o-transform:$translate-animation-y;
+		transform:$translate-animation-y;
+	}
+	&-right{
+		-webkit-box-shadow: $shadow-transition;
+		box-shadow: $shadow-transition;
+		-webkit-transform:$translate-animation-y;
+		-ms-transform:$translate-animation-y;
+		-o-transform:$translate-animation-y;
+		transform:$translate-animation-y;
+	}
+}
