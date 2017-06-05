@@ -3,6 +3,7 @@
 <script src="speed/build/arquivos/jwplayer.js"></script>
 <script src="speed/build/arquivos/jwplayer.html5.js"></script>
 <script src="speed/build/arquivos/jquery.classybox.js"></script>
+<script src="speed/build/arquivos/logoScroll.js"></script>
 <script>
     $(document).ready(function() {
         $(".gallery a").ClassyBox();

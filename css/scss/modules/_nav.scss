@@ -7,3 +7,30 @@
 		}
 	}
 }
+
+	.logo{
+			padding:0;
+			margin:0;
+		img{
+			top: 30px;
+	    	position: absolute;
+	    	max-width: 104px;
+	    	@media (max-width: 880px) {
+	    		display:none!important;
+	    	}
+		}
+	}
+
+
+.logo-scroll{
+		padding:0;
+		margin:0;
+		img{
+			top: 39px;
+	    	position:absolute;
+	    	max-width: 200px;
+	    	@media (max-width: 880px) {
+	    		display:none!important;
+	    	}
+		}
+}
