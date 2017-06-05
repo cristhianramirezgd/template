@@ -4,12 +4,13 @@
     top: 0;
     bottom: 0;
     margin: 0 auto;
+    z-index: 9;
+    height: 1px;
 }
 //megamenu
 .mega{
 	padding:1%;
 	position: relative;
-	top: 40px;
 	z-index: 99;
 	&-menu{
 		&-banner{

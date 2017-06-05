@@ -37,13 +37,13 @@
 
 <script>
 //script para toggle de hamburguer
-$( ".nav-toggle" ).click(function() {
+$( ".navigation" ).click(function() {
   $( ".mega" ).slideToggle( "slow" );
 });
-</script>
-	
-<script>
-	$( ".vertical" ).click(function() {
+$( ".vertical" ).click(function() {
 	  $(this).children("li:not(.vertical-item)").slideToggle( "fast" );
 	});	
+$( ".settings-nav" ).click(function() {
+  $( ".setting-toggle" ).slideToggle( "slow" );
+});
 </script>
