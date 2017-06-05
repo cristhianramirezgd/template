@@ -1,8 +1,11 @@
 @media screen and (max-width: $tablet) {
 	.mega{
+		display:none;
 		padding: 15px 0;
 		top: 15vw;
-		z-index: 99;
+		position:fixed!important;
+		width:100%;
+		height:1;
 		&-menu{
 			display: inline-block;
 			.column{
@@ -59,7 +62,9 @@
 		li{
 			border-bottom: 1px solid $white;
 			transition:$fast-time-ease-out;
-
+			&:not(.vertical-item){
+				display:none;
+				}
 			&:hover{
 				box-shadow:$shadow-global;
 				}

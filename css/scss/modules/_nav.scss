@@ -8,6 +8,9 @@
 //megamenu
 .mega{
 	padding:1%;
+	position: relative;
+	top: 40px;
+	z-index: 99;
 	&-menu{
 		&-banner{
 			float: right;

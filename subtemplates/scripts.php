@@ -34,3 +34,16 @@
         });
     });
 </script>
+
+<script>
+//script para toggle de hamburguer
+$( ".nav-toggle" ).click(function() {
+  $( ".mega" ).slideToggle( "slow" );
+});
+</script>
+	
+<script>
+	$( ".vertical" ).click(function() {
+	  $(this).children("li:not(.vertical-item)").slideToggle( "fast" );
+	});	
+</script>
