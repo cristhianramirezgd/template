@@ -1,0 +1,74 @@
+@media screen and (max-width: $tablet) {
+	.mega{
+		padding: 15px 0;
+		top: 15vw;
+		z-index: 99;
+		&-menu{
+			display: inline-block;
+			.column{
+				padding:0!important;
+				width:100vw;
+			}
+		}
+	}
+	.vertical{
+		position:initial;
+		padding-left: 15px;
+		padding-right: 15px;
+		border-left: 0px;
+		transition:$fast-time-ease-out;
+		
+		&:hover{
+			border-left: 0px!important;
+			.vertical-item{
+
+				a{
+					color:$black;
+					width:auto;
+					}
+				}	
+			}
+
+		&-item{
+			transition:$short-time-ease-out;
+			a{
+				@include horzontal-text;
+				padding-bottom:0px;
+				width:auto;
+				position:relative;
+				left:0;
+			}
+			&::after{
+				content: '+';
+				font-size: 1.5rem;
+				line-height: 0;
+				color: $white;
+				position: absolute;
+				right: 30px;
+				padding: 15px;
+				border: 1px solid $white;
+				margin: 5px 0 5px 5px;
+				border-radius:5px;
+				}
+			&:hover{
+				&::after{
+					background: rgba($white,$alpha)
+					}
+				}
+		}
+		li{
+			border-bottom: 1px solid $white;
+			transition:$fast-time-ease-out;
+
+			&:hover{
+				box-shadow:$shadow-global;
+				}
+			a{
+				color:$white!important;
+				width:100%;
+				display: inline-block;
+				padding:10px 0;
+				}
+			}
+	}
+}

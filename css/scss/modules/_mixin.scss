@@ -51,6 +51,18 @@
 		-o-transform: rotate(180deg);
 		transform: rotate(180deg);
 }
+@mixin horzontal-text{
+		-webkit-writing-mode: initial!important;
+		-moz-writing-mode: initial!important;
+		-ms-writing-mode: initial!important;
+		-o-writing-mode: initial!important;
+		writing-mode: initial!important;
+		-webkit-transform: rotate(0deg)!important;
+		-moz-transform: rotate(0deg)!important;
+		-ms-transform: rotate(0deg)!important;
+		-o-transform: rotate(0deg)!important;
+		transform: rotate(0deg)!important;
+}
 @mixin outline-size{
 	outline-offset: $size-7;
 }
