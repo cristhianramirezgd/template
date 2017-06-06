@@ -3,50 +3,7 @@
 }
 //funcion para colores variados en botones
 .color-lenght {
-	@for $c from 1 through length($chartColors) {
-	  $chartColors: 
-	  		append($chartColors, darken(nth($chartColors, $c), 25));
-	}
-	$chartColorsLength: length($chartColors);
-	@for $c from 1 through $chartColorsLength {
-		.color-full:nth-of-type(#{$chartColorsLength}n+#{$c}) {
-				padding: 1vw;
-			.round-button {
-				width:100%;
-				&-circle {
-					width: 100%;
-					height:0;
-					padding-bottom: 89%;
-					border-radius: 50%;
-					border:5px solid nth($chartColors, $c);
-					overflow:hidden;
-					background:$white;
-					position: relative;
-					transition:$short-time-ease-out;
-					&:hover{
-						background: nth($chartColors, $c);
-						border-color: $white;
-						@include hover-translate;
-						a{
-							color:$white;
-						}
-					}
-				}
-				a {
-					display: inline-block;
-					width: 100%;
-					padding-top: $middle-padding-radio;
-					padding-bottom: $middle-padding-radio;
-					text-align: center;
-					margin-top: -.5rem;
-					position: absolute;
-					left: 0;
-					font-weight: $weight-bold;
-					line-height: 1;
-				}
-			}
-		}//.round-button-circle
-	}
+@include circle-color;
 }
 
 ul.list-inline{
@@ -155,4 +112,9 @@ ul.list-inline{
 	&-red{background:$red;}
 	&-yellow{background:$yellow;}
 	&-brown{background:$brown;}
+}
+//clase para  toggle-age
+.is-desktop-true{
+		display:block!important;
+		overflow: initial!important;
 }
