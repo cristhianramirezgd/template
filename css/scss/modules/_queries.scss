@@ -74,4 +74,11 @@
 				}
 			}
 	}
+	footer{
+		.icon-brand{
+			&::before, &::after{
+				display:none;
+			}
+		}
+	}
 }
