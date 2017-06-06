@@ -196,3 +196,26 @@ ul.list-inline{
 			padding:0 10px;
 		}
 }
+.social{
+	&-circle{
+		ul{
+			li{
+				border-radius: 50%;
+				width:30px;
+				height:30px;
+				background:$grey-darker;
+				transition:$fast-time-ease-out;
+				a{
+					color:$white;
+					width: 100%!important;
+					display: inline-block;
+					text-align: center;
+					padding-top: 3px;
+				}
+				&:hover{
+					@include hover-translate-short;
+				}
+			}
+		}
+	}
+}

@@ -25,6 +25,14 @@
 		-o-transform:$translate-animation-y;
 		transform:$translate-animation-y;
 }
+@mixin hover-translate-short {
+		-webkit-box-shadow: $shadow-global;
+		box-shadow: $shadow-global;
+		-webkit-transform:$translate-animation-y-short;
+		-ms-transform:$translate-animation-y-short;
+		-o-transform:$translate-animation-y-short;
+		transform:$translate-animation-y-short;
+}
 	// direccion de texto
 @mixin vertical-lr{
 		-webkit-writing-mode: vertical-lr;
