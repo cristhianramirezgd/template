@@ -210,12 +210,17 @@ ul.list-inline{
 					width: 100%!important;
 					display: inline-block;
 					text-align: center;
-					padding-top: 3px;
+					// padding-top: 3px;
 				}
 				&:hover{
 					@include hover-translate-short;
 				}
 			}
 		}
+	}
+}
+.img-middle{
+	img{
+		vertical-align: middle!important;
 	}
 }
