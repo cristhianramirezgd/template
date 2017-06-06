@@ -181,13 +181,13 @@ figure.banner-contenido{
 footer{
 	.icon-brand{
 		&::before{
-			content: url('http://monkeymarket.vteximg.com.br/arquivos/monkey-market-tienda-juguetes-icon-nino.png');
+			content: url('/arquivos/monkey-market-tienda-juguetes-icon-nino.png');
 			position:absolute;
 			left:2.65%;
 			top:-25px;
 		}
 		&::after{
-			content: url('http://monkeymarket.vteximg.com.br/arquivos/monkey-market-tienda-juguetes-icon-nina.png');
+			content: url('/arquivos/monkey-market-tienda-juguetes-icon-nina.png');
 			position:absolute;
 			right:2.65%;
 			top:-25px;
@@ -199,7 +199,7 @@ footer{
 	&-footer{
 		position:relative;
 		&::before{
-			content:url('http://monkeymarket.vteximg.com.br/arquivos/monkey-market-jugueteria-icon-newsletter.png');
+			content:url('/arquivos/monkey-market-jugueteria-icon-newsletter.png');
 			position:absolute;
 			left:3%;
 			top:-63px;

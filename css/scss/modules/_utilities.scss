@@ -93,12 +93,12 @@ ul.list-inline{
 }
 .large{
 	&-padding{
-		&-top{padding-top:$size-4;}
-		&-bottom{padding-bottom:$size-4;}
+		&-top{padding-top:$size-2;}
+		&-bottom{padding-bottom:$size-2;}
 	}
 	&-margin{
-			&-top{margin-top:$size-4;}
-			&-bottom{margin-bottom:$size-4;}
+			&-top{margin-top:$size-2;}
+			&-bottom{margin-bottom:$size-2;}
 		}
 }
 .margin{
@@ -112,9 +112,38 @@ ul.list-inline{
 	&-red{background:$red;}
 	&-yellow{background:$yellow;}
 	&-brown{background:$brown;}
+	&-grey{background:$grey-dark;}
 }
 //clase para  toggle-age
 .is-desktop-true{
 		display:block!important;
 		overflow: initial!important;
+}
+.icon-logo-footer{
+	position:relative;
+	 &::after{
+		content:url('/arquivos/monkey-market-juguetes-logo-footer.png');
+		position:absolute;
+		display: block;
+		left:0;
+		right:0;
+		margin: 0 auto;
+		bottom: -49px;
+		z-index:1;
+	 }
+}
+.right-line{
+	background:$bg-global-body;
+	padding-right:5px;
+	color:$brown;
+	font-weight:$weight-bold!important;
+	&::after {
+	    content: '';
+	    width: 30vw;
+	    border-bottom: 2px solid $brown;
+	    padding-right: 2px;
+	    position: absolute;
+	    margin-top: -8px;
+	    z-index: -1;
+	}
 }
