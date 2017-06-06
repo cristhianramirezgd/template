@@ -177,3 +177,19 @@ figure.banner-contenido{
 		transform:$translate-animation-y;
 	}
 }
+footer{
+	.icon-brand{
+		&::before{
+			content: url('http://monkeymarket.vteximg.com.br/arquivos/monkey-market-tienda-juguetes-icon-nino.png');
+			position:absolute;
+			left:2.65%;
+			top:-25px;
+		}
+		&::after{
+			content: url('http://monkeymarket.vteximg.com.br/arquivos/monkey-market-tienda-juguetes-icon-nina.png');
+			position:absolute;
+			right:2.65%;
+			top:-25px;
+		}
+	}
+}

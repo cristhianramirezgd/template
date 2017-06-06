@@ -144,4 +144,15 @@ ul.list-inline{
 			&-bottom{margin-bottom:$size-4;}
 		}
 }
+.margin{
+	&-null{
+		margin:0 auto;
+	}
+}
 .relative{position:relative;}
+.hr{
+	&-blue{background:$blue;}
+	&-red{background:$red;}
+	&-yellow{background:$yellow;}
+	&-brown{background:$brown;}
+}
