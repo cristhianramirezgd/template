@@ -8,6 +8,15 @@
 			color:$white;
 		}
 	}
+	&-grey{
+		@include family-header;
+		@include color-header;
+		color:$white;
+		background:$grey-darker;
+		a{
+			color:$white;
+		}
+	}
 	&-red{
 		@include family-header;
 		@include link-color;
