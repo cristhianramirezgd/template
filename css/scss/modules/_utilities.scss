@@ -73,32 +73,32 @@ ul.list-inline{
 }
 .small{
 	&-padding{
-		&-top{padding-top:$size-7;}
-		&-bottom{padding-bottom:$size-7;}
+		&-top{padding-top:$size-7!important;}
+		&-bottom{padding-bottom:$size-7!important;}
 	}
 	&-margin{
-			&-top{margin-top:$size-7;}
-			&-bottom{margin-bottom:$size-7;}
+			&-top{margin-top:$size-7!important;}
+			&-bottom{margin-bottom:$size-7!important;}
 		}
 }
 .medium{
 	&-padding{
-		&-top{padding-top:$size-5;}
-		&-bottom{padding-bottom:$size-5;}
+		&-top{padding-top:$size-5!important;}
+		&-bottom{padding-bottom:$size-5!important;}
 	}
 	&-margin{
-			&-top{margin-top:$size-5;}
-			&-bottom{margin-bottom:$size-5;}
+			&-top{margin-top:$size-5!important;}
+			&-bottom{margin-bottom:$size-5!important;}
 		}
 }
 .large{
 	&-padding{
-		&-top{padding-top:$size-2;}
-		&-bottom{padding-bottom:$size-2;}
+		&-top{padding-top:$size-2!important;}
+		&-bottom{padding-bottom:$size-2!important;}
 	}
 	&-margin{
-			&-top{margin-top:$size-2;}
-			&-bottom{margin-bottom:$size-2;}
+			&-top{margin-top:$size-2!important;}
+			&-bottom{margin-bottom:$size-2!important;}
 		}
 }
 .margin{
