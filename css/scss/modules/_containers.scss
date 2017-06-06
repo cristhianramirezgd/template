@@ -177,6 +177,7 @@ figure.banner-contenido{
 		transform:$translate-animation-y;
 	}
 }
+// ////////// Footer ////////// 
 footer{
 	.icon-brand{
 		&::before{
@@ -193,3 +194,45 @@ footer{
 		}
 	}
 }
+// newsletter-footer
+.newsletter{
+	&-footer{
+		position:relative;
+		&::before{
+			content:url('http://monkeymarket.vteximg.com.br/arquivos/monkey-market-jugueteria-icon-newsletter.png');
+			position:absolute;
+			left:3%;
+			top:-63px;
+		}
+	}
+}
+.white{
+	&-cloud{
+		background:$white;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		-ms-border-radius: 30px;
+		-o-border-radius: 30px;
+		border-radius: 30px;
+		-webkit-box-shadow: $shadow-global;
+		box-shadow: $shadow-global;
+		-webkit-transform: translate(30%,-15px);
+		-ms-transform: translate(30%,-15px);
+		-o-transform: translate(30%,-15px);
+		transform: translate(30%,-15px);
+		&::before{
+			content: '';
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-right: 18px solid #fff;
+			position: absolute;
+			z-index: -1;
+			left: -11px;
+			bottom: 10px;
+			-webkit-transform: rotate(-30deg);
+			-ms-transform: rotate(-30deg);
+			-o-transform: rotate(-30deg);
+			transform: rotate(-30deg);
+		}
+	}
+}	

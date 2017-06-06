@@ -124,4 +124,32 @@
 			display:none;
 			padding: 15px;
 		}
+		// newsletter-footer
+		.newsletter{
+			&-footer{
+				position:relative;
+				&::before{
+					content:url('/arquivos/monkey-market-jugueteria-icon-newsletter.png');
+					position:absolute;
+					left:3%;
+					top:-63px;
+					max-width:5%;
+				}
+			}
+		}
+		// newsletter cloud
+		.white{
+			&-cloud{
+				max-width: 70%;
+				margin-left: 30%;
+				font-size: 80%!important;
+				-webkit-transform: translate(0,0)!important;
+				-ms-transform: translate(0,0)!important;
+				-o-transform: translate(0,0)!important;
+				transform: translate(0,0)!important;
+				.title{
+					font-size: 1.2rem;
+				}
+			}
+		}
 }
