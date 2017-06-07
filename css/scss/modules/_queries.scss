@@ -152,4 +152,14 @@
 				}
 			}
 		}
+		.social{
+			&-circle{
+				text-align:center;
+			}
+		}
+		ul.inline-block{
+			width: 100%;
+			text-align: center;
+			padding: 15px;
+		}
 }
