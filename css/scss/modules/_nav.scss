@@ -17,6 +17,15 @@
 			float: right;
 		}
 	}
+	&-footer{
+		padding:1%;
+		position: relative;
+		&-menu{
+			&-banner{
+				float: right;
+			}
+		}
+	}
 }
 
 	.logo{
