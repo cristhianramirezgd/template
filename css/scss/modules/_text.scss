@@ -11,3 +11,8 @@ body{
 .text-brown{
 	@include text-brown;
 }
+.social{
+	&-icon{
+		@include color-social;
+	}
+}

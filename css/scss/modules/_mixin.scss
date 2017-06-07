@@ -98,10 +98,6 @@
 	outline-offset: -$size-7;
 }
 @mixin circle-color{
-	@for $c from 1 through length($chartColors) {
-	  $chartColors: 
-	  		append($chartColors, darken(nth($chartColors, $c), 25));
-	}
 	$chartColorsLength: length($chartColors);
 	@for $c from 1 through $chartColorsLength {
 		.color-full:nth-of-type(#{$chartColorsLength}n+#{$c}) {
@@ -141,5 +137,26 @@
 				}
 			}
 		}//.round-button-circle
+	}
+}
+@mixin color-social{
+	$chartColors-socialLength: length($chartColors-social);
+	@for $s from 1 through $chartColors-socialLength {
+		a:nth-of-type(#{$chartColors-socialLength}n+#{$s}) {
+					background: nth($chartColors-social, $s);
+					color:$white!important;
+		}
+		a{
+			border-radius: 50%;
+			padding: 0!important;
+			height: 22px;
+			margin: 3px;
+			transition:$transition-hover-link;
+			&:hover{
+				-webkit-filter: drop-shadow($alpha-image-shadow);
+				-o-filter: drop-shadow($alpha-image-shadow);
+				filter: drop-shadow($alpha-image-shadow);
+			}
+		}
 	}
 }
