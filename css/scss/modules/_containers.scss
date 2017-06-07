@@ -194,12 +194,14 @@ footer{
 			position:absolute;
 			left:2.65%;
 			top:-25px;
+			@include shadow-alpha-image;
 		}
 		&::after{
 			content: url('/arquivos/monkey-market-tienda-juguetes-icon-nina.png');
 			position:absolute;
 			right:2.65%;
 			top:-25px;
+			@include shadow-alpha-image;
 		}
 	}
 }
@@ -223,12 +225,11 @@ footer{
 		-ms-border-radius: 30px;
 		-o-border-radius: 30px;
 		border-radius: 30px;
-		-webkit-box-shadow: $shadow-global;
-		box-shadow: $shadow-global;
 		-webkit-transform: translate(30%,-15px);
 		-ms-transform: translate(30%,-15px);
 		-o-transform: translate(30%,-15px);
 		transform: translate(30%,-15px);
+		@include shadow-alpha-image;
 		&::before{
 			content: '';
 			border-top: 10px solid transparent;

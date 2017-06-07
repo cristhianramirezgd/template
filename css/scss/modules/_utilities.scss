@@ -224,3 +224,6 @@ ul.list-inline{
 		vertical-align: middle!important;
 	}
 }
+img.shadow-alpha-image{
+	@include shadow-alpha-image;
+}

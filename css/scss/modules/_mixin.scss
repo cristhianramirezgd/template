@@ -33,7 +33,14 @@
 		-o-transform:$translate-animation-y-short;
 		transform:$translate-animation-y-short;
 }
+// imagenes con sombra(png)
+@mixin shadow-alpha-image{
+	-webkit-filter: drop-shadow($alpha-image-shadow);
+	-o-filter: drop-shadow($alpha-image-shadow);
+	filter: drop-shadow($alpha-image-shadow);
+}
 	// direccion de texto
+
 @mixin vertical-lr{
 		-webkit-writing-mode: vertical-lr;
 		-moz-writing-mode: vertical-lr;
