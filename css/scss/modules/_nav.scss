@@ -7,6 +7,32 @@
     z-index: 9;
     height: 1px;
 }
+// top bar
+.top-nav{
+	height: auto!important;
+	i{
+		padding:0 5px;
+	}
+	.nav{
+		&-menu{
+
+		}
+		&-item{
+			line-height:1;
+			font-size:.9rem;
+		}
+	}
+	.setting-toggle{
+			max-height: 30px;
+			min-height: 30px!important;
+			-webkit-box-align: stretch;
+			-ms-flex-align: stretch;
+			align-items: stretch;
+			display: flex;
+			width: 100%;
+			border-bottom:1px solid $yellow;
+	}
+}
 //megamenu
 .mega{
 	padding:1%;
