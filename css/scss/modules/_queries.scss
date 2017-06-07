@@ -162,4 +162,19 @@
 			text-align: center;
 			padding: 15px;
 		}
+		.vtex-seal{
+			display: inline-block;
+			width: 100%;
+			float: none;
+			text-align: center;
+			a{
+				width: 100%;
+				text-align: center;
+				display: inline-block;
+				img{
+					margin:0 auto;
+					float:none;
+				}
+			}
+		}
 }
