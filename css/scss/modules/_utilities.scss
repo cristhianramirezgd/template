@@ -164,6 +164,11 @@ ul.list-inline{
 		i,a,p{
 			display:inline-block;
 		}
+		i{
+			font-size: $size-6!important;
+			padding:0 5px;
+			vertical-align: middle;
+		}
 }
 //clase para  toggle-age
 .is-desktop-true{
@@ -205,6 +210,8 @@ ul.list-inline{
 				height:30px;
 				background:$grey-darker;
 				transition:$fast-time-ease-out;
+				padding:4px;
+				margin:0 2px;
 				a{
 					color:$white;
 					width: 100%!important;
@@ -214,6 +221,11 @@ ul.list-inline{
 				}
 				&:hover{
 					@include hover-translate-short;
+				}
+				i,a,p{
+					display:inline-block;
+					font-size: $size-6!important;
+					vertical-align: middle;
 				}
 			}
 		}
