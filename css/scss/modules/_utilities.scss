@@ -204,6 +204,7 @@ ul.list-inline{
 .social{
 	&-circle{
 		ul{
+			padding: 10px 5px;
 			li{
 				border-radius: 50%;
 				width:30px;
@@ -238,4 +239,71 @@ ul.list-inline{
 }
 .shadow-alpha-image{
 	@include shadow-alpha-image;
+}
+// Vtex class for tags
+.newsletter {
+		transition:$long-time-ease-out;
+	.newsletter-title,h3 {
+	    display: none;
+	}
+	fieldset,{
+		border:0;
+		 > p {
+			    display: none;
+			}
+		label{
+			color: $black;
+			text-align: center;
+			display: inherit;
+		}
+		input{
+			&:focus {
+				outline: 0;
+				outline-offset:0!important;
+				border:1px solid $black;
+			}
+		}
+	}
+	fieldset.success,
+	fieldset.error{
+		padding: 10px 0;
+		input{
+			&:focus {
+				outline: 0;
+				outline-offset:0!important;
+				border:1px solid $black;
+			}
+		}
+		label{
+			width: 100%;
+		}
+	}
+	.newsletter-client-name,
+	.newsletter-client-email{
+		border-top: 0;
+		border-bottom: 1px solid $black;
+		border-left: 0;
+		border-right: 0;
+		background: none;
+		width: 20vw;
+		margin:15px 1vw;
+		padding: 10px;
+	}
+	.newsletter-button-ok,.bt-voltar {
+    background: $yellow;
+    border: 0;
+    width: 17vw;
+    margin:15px 1vw;
+    padding: 10px;
+    border-radius: 290486px;
+    transition:$long-time-ease-out;
+    &:hover{
+    	@include shadow-alpha-image;
+    	}
+	}
+	.bt-voltar{
+		margin: 15px auto;
+		width: 30vw;
+		display: inherit;
+	}
 }

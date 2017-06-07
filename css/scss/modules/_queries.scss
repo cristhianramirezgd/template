@@ -177,4 +177,32 @@
 				}
 			}
 		}
+		// Vtex class for tags
+		.newsletter {
+
+			.newsletter-title,h3 {
+			    display: none;
+			}
+			.newsletter-client-name,
+			.newsletter-client-email{
+				border-top: 0;
+				border-bottom:0;
+				border-left: 0;
+				border-right: 0;
+				background: none;
+				width: 96vw;
+				margin:2px 2vw;
+				padding: 10px;
+				background:$white
+				;
+			}
+			.newsletter-button-ok {
+		    background: $yellow;
+		    border: 0;
+		    width: 96vw;
+		    margin:2px 2vw;
+		    padding: 10px;
+		    border-radius: 290486px;
+			}
+		}
 }
