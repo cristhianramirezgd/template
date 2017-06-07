@@ -5,7 +5,9 @@
 .color-lenght {
 @include circle-color;
 }
-
+i.fa{
+	vertical-align: middle;
+}
 ul.list-inline{
 	li{
 		display:inline-block;

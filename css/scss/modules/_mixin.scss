@@ -17,6 +17,19 @@
 		}
 	}
 }
+@mixin text-brown {
+	transition:	$transition-hover-link;
+	color:$brown;
+  	.h1,.h2,.h3,.h4,.h5,.h6,.title,.subtitle,.nav-item{
+		color:$brown;
+	}
+  	a{
+		color:$brown;
+		&:hover{
+			color:$black;
+		}
+	}
+}
 @mixin hover-translate {
 		-webkit-box-shadow: $shadow-transition;
 		box-shadow: $shadow-transition;
