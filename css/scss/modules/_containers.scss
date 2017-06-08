@@ -21,14 +21,21 @@
 		@include family-header;
 		@include link-color;
 		@include color-header;
-		color:$white;
-		background:$red;
+		color:$white!important;
+		background:$red!important;
 		&-alpha{
 			background:rgba($red,.98);
 			@include link-color;
 			@include color-header;
 		}
-	}
+		.nav-menu{
+			.nav-item {
+				 &:hover{
+				 	background:$blue;
+					}
+				}
+			} 
+		}
 	&-blue{
 		@include family-header;
 		@include link-color;
