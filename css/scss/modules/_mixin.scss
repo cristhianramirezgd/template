@@ -157,6 +157,9 @@
 				-o-filter: drop-shadow($alpha-image-shadow);
 				filter: drop-shadow($alpha-image-shadow);
 			}
+			i{
+				font-size:$body-size!important;
+			}
 		}
 	}
 }
