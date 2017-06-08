@@ -142,11 +142,11 @@
 @mixin color-social{
 	$chartColors-socialLength: length($chartColors-social);
 	@for $s from 1 through $chartColors-socialLength {
-		a:nth-of-type(#{$chartColors-socialLength}n+#{$s}) {
+		a.icon:nth-of-type(#{$chartColors-socialLength}n+#{$s}) {
 					background: nth($chartColors-social, $s);
 					color:$white!important;
 		}
-		a{
+		a.icon{
 			border-radius: 50%;
 			padding: 0!important;
 			height: 22px;
