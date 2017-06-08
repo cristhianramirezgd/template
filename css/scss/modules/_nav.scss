@@ -124,3 +124,11 @@
 .active-nav{
 	display:block!important;
 }
+.max-height{
+	max-height: 30px;
+	.container {
+	    max-height: 30px!important;
+	    min-height: 30px!important;
+	    height: 30px;
+	}
+}

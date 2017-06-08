@@ -28,12 +28,6 @@
 			@include link-color;
 			@include color-header;
 		}
-		max-height: 30px;
-		.container {
-		    max-height: 30px!important;
-		    min-height: 30px!important;
-		    height: 30px;
-		}
 		.nav-menu{
 			.nav-item {
 				 &:hover{
