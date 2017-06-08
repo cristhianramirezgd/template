@@ -312,6 +312,10 @@ ul.bxslider {
   height: 32px;
   text-indent: -9999px;
   z-index:1;
+  transition:$transition-hover-link;
+  &:hover{
+    @include shadow-alpha-image;
+  }
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
