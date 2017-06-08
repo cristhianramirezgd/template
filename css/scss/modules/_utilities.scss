@@ -19,7 +19,7 @@ ul.list-inline{
 	padding-left: 12px;
 	border-left: 1px solid $white;
 	transition:$fast-time-ease-out;
-	
+	margin-top: 11%;
 	&:hover{
 		border-left: 1px solid $black!important;
 		.vertical-item{
