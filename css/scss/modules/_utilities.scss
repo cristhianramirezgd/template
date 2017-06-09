@@ -426,23 +426,9 @@ fieldset.busca {
     position: absolute;
     right: 5vw;
     z-index: 2;
+    top: 8px;
+    @include shadow-alpha-image;
 }
-// carrito de compras Vtex
-// .carrito{
-// 	width:30px;
-// 	height:30px;
-// 	a{
-// 		span{
-// 			background:url('/arquivos/monkey-market-tienda-icono-01.png');
-// 			background-position: center center;
-// 			background-size: cover;
-// 			color: rgba(255,255,255,0);
-// 			width: 30px;
-// 			height: 30px;
-// 			display: inline-block;
-// 		}
-// 	}
-// }
 .portal-totalizers-ref{
 	background:url('/arquivos/monkey-market-tienda-icono-01.png');
 	background-position: center center;
@@ -453,15 +439,14 @@ fieldset.busca {
 	display: inline-block;
 }
 .amount-items-in-cart{
-	ul.cart-info li {
-	    display: inline-block;
-	}
-	span.title{
+	span.title,.amount-items,.amount-kits,.total-cart{
 		display:none;
 	}
 	.amount-products{
 		position:relative;
-
+		strong{
+			display:none;
+		}
 	    .amount-products-em{
 	    	color: $white;
 	    	background: $red;
@@ -474,4 +459,17 @@ fieldset.busca {
 			top: -2px;
 	    }
 	}
+}
+.v2-vtexsc-cart.vtexsc-cart.mouseActivated.preLoaded {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    left: -250px;
+    width: 300px;
+    background: white;
+    padding: 15px;
+    box-shadow:$shadow-global;
+}
+.carrito:hover .v2-vtexsc-cart{
+    display:block!important;
 }
