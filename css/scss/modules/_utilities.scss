@@ -151,6 +151,7 @@ ul.list-inline{
 	}
 }
 .z-index{
+	&-initial{z-index: initial!important;}
 	&-null{z-index:0!important;}
 	&-1{z-index:1!important;}
 	&-2{z-index:2!important;}
@@ -160,7 +161,7 @@ ul.list-inline{
 	&-6{z-index:6!important;}
 	&-7{z-index:7!important;}
 	&-8{z-index:8!important;}
-	&-9{z-index:8!important;}
+	&-9{z-index:9!important;}
 }
 .relative{position:relative;}
 .hr{
