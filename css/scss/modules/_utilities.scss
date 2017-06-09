@@ -309,6 +309,14 @@ ul.list-inline{
 		display: inherit;
 	}
 }
+//Preload Vtex
+.load , .loading{
+	display:none;
+	p{
+		display: none;
+	}
+}
+
 // Buscador Vtex
 fieldset.busca {
 	border: 0;
@@ -321,6 +329,7 @@ fieldset.busca {
 	-ms-border-radius: 290486px;
 	-o-border-radius: 290486px;
 	border-radius: 290486px;
+	position: relative;
 	input{
 		&:focus {
 			outline: 0;
@@ -354,11 +363,15 @@ fieldset.busca {
 	}
 }
 .ui-autocomplete, .ui-menu, .ui-widget{
-	background:$white;
 	max-width:30vw;
+	position: fixed!important;
+    top: 72px!important;
+	border: 1px solid $blue;
+	background:rgba($white,.72);
 	box-shadow:$shadow-global;
 }
 .ui-menu-item{
+	background:$white;
 	transition:$short-time-ease-out;
 	padding:10px;
 	border:1px solid $white;
@@ -372,8 +385,8 @@ fieldset.busca {
 .ui-corner-all {
 	display:inline-block;
 	width:100%;
+	padding:5px;
 	img {
 	    vertical-align: middle;
-	    border-radius:50%;
 	}
 }
