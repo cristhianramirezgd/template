@@ -1,6 +1,9 @@
 .shadow{
 	box-shadow: $shadow-global;
 }
+.background-none{
+	background:0;
+}
 //funcion para colores variados en botones
 .color-lenght {
 @include circle-color;
@@ -149,6 +152,18 @@ ul.list-inline{
 	&-null{
 		margin:0 auto;
 	}
+}
+.z-index{
+	&-null{z-index:1;}
+	&-1{z-index:1;}
+	&-2{z-index:2;}
+	&-3{z-index:3;}
+	&-4{z-index:4;}
+	&-5{z-index:5;}
+	&-6{z-index:6;}
+	&-7{z-index:7;}
+	&-8{z-index:8;}
+	&-9{z-index:9;}
 }
 .relative{position:relative;}
 .hr{
