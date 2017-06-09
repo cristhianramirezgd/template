@@ -313,7 +313,9 @@ ul.list-inline{
 fieldset.busca {
 	border: 0;
 	height: 30px;
+	margin-top: 9px;
 	background:$yellow;
+	z-index: 999999;
 	-webkit-border-radius: 290486px;
 	-moz-border-radius: 290486px;
 	-ms-border-radius: 290486px;
@@ -331,6 +333,7 @@ fieldset.busca {
 	}
 	.fulltext-search-box {
 	    border: 2px solid #15dbf9;
+		width: 30vw;
 	    height: 30px;
 	    border-right: 0;
 	    border-top-left-radius: 290486px;
@@ -348,5 +351,29 @@ fieldset.busca {
 	    margin-bottom: 1px;
 	    margin-left: 5px;
 	    cursor: pointer;
+	}
+}
+.ui-autocomplete, .ui-menu, .ui-widget{
+	background:$white;
+	max-width:30vw;
+	box-shadow:$shadow-global;
+}
+.ui-menu-item{
+	transition:$short-time-ease-out;
+	padding:10px;
+	border:1px solid $white;
+	&:hover{
+		background:$blue;
+		color:$white;
+		box-shadow:$shadow-global;
+		transform:$translate-animation-x;
+	}
+}
+.ui-corner-all {
+	display:inline-block;
+	width:100%;
+	img {
+	    vertical-align: middle;
+	    border-radius:50%;
 	}
 }
