@@ -193,6 +193,16 @@ figure.banner-contenido{
 		transform:$translate-animation-y;
 	}
 }
+.category-banenr-bg{
+    height: 6vw;
+    background: $blue;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    z-index: -9;
+}
+
 // ////////// Footer ////////// 
 footer{
 	.icon-brand{

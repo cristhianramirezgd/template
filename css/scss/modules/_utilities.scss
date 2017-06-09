@@ -1,6 +1,9 @@
 .shadow{
 	box-shadow: $shadow-global;
 }
+.font-monkey{
+	font-family:$family-headers;
+}
 //funcion para colores variados en botones
 .color-lenght {
 @include circle-color;
