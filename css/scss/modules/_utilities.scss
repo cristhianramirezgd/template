@@ -417,3 +417,60 @@ fieldset.busca {
 	    vertical-align: middle;
 	}
 }
+.searchbox {
+    position: absolute;
+    right: 10vw;
+}
+.carrito {
+    position: absolute;
+    right: 5vw;
+    z-index: 2;
+}
+// carrito de compras Vtex
+// .carrito{
+// 	width:30px;
+// 	height:30px;
+// 	a{
+// 		span{
+// 			background:url('/arquivos/monkey-market-tienda-icono-01.png');
+// 			background-position: center center;
+// 			background-size: cover;
+// 			color: rgba(255,255,255,0);
+// 			width: 30px;
+// 			height: 30px;
+// 			display: inline-block;
+// 		}
+// 	}
+// }
+.portal-totalizers-ref{
+	background:url('/arquivos/monkey-market-tienda-icono-01.png');
+	background-position: center center;
+	background-size: cover;
+	color: rgba(255,255,255,0);
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+.amount-items-in-cart{
+	ul.cart-info li {
+	    display: inline-block;
+	}
+	span.title{
+		display:none;
+	}
+	.amount-products{
+		position:relative;
+
+	    .amount-products-em{
+	    	color: $white;
+	    	background: $red;
+	    	width: 20px;
+	    	height: 20px;
+	    	border-radius: 50%;
+	    	display: inline-block;
+			position: absolute;
+			right: -14px;
+			top: -2px;
+	    }
+	}
+}
