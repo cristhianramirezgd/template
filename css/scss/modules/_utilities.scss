@@ -359,6 +359,20 @@ fieldset.busca {
 	    border-right: 0;
 	    border-top-left-radius: 290486px;
 	    border-bottom-left-radius: 290486px;
+	    transition:$short-time-ease-out;
+	    &:focus{
+	    	width:35vw!important;
+	    	box-shadow:$shadow-global;
+	    	border-radius: 290486px!important;
+	    	& + .btn-buscar{
+	    		position: absolute;
+	    		right: 0;
+	    		top: -2px;
+	    		box-shadow:$shadow-global;
+	    		transform:scale(1.1,1.1);
+	    		margin-left: -14px!important;
+	    	}
+	    }
 	}
 	.btn-buscar {
 	    width: 30px;
@@ -372,6 +386,7 @@ fieldset.busca {
 	    margin-bottom: 1px;
 	    margin-left: 5px;
 	    cursor: pointer;
+	    transition:$medium-time-ease-out;
 	}
 }
 .ui-autocomplete, .ui-menu, .ui-widget{
