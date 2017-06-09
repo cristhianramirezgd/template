@@ -6,7 +6,9 @@
 }
 .button{
 	border-radius: 290486px!important;
-
+}
+.background-none{
+  background:0!important;
 }
 .width-auto{
 	width:auto;
@@ -64,11 +66,6 @@
 	    overflow: visible;
 	}
 }
-
-
-
-
-
 .classybox-wrap .content .image,
 .classybox-wrap .content .object,
 .classybox-wrap .content iframe,
