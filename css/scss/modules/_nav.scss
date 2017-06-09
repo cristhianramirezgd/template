@@ -4,7 +4,7 @@
     top: 0;
     bottom: 0;
     margin: 0 auto;
-    z-index: 9;
+	z-index: 999999;
 }
 // top bar
 .top-nav{
@@ -37,11 +37,17 @@
 //megamenu
 .mega{
 	position: absolute!important;
+	top: 30px;
 	left: 0;
 	right: 0;
 	padding:1%;
-	z-index:-1;
 	max-width: 1080px!important;
+	height:initial!important;
+	max-height:initial!important;
+	z-index:-1;
+	width:100%;
+	margin:0 auto;
+	display:none;
 	&-menu{
 		&-banner{
 			float: right;
@@ -57,7 +63,36 @@
 		}
 	}
 }
-
+.nav-item:nth-of-type(1):hover ~ .mega:nth-of-type(1){
+    display:block!important;
+}
+.nav-item:nth-of-type(2):hover ~ .mega:nth-of-type(2){
+    display:block!important;
+}
+.nav-item:nth-of-type(3):hover ~ .mega:nth-of-type(3){
+    display:block!important;
+}
+.nav-item:nth-of-type(4):hover ~ .mega:nth-of-type(4){
+    display:block!important;
+}
+.nav-item:nth-of-type(5):hover ~ .mega:nth-of-type(5){
+    display:block!important;
+}
+.nav-item:nth-of-type(6):hover ~ .mega:nth-of-type(6){
+    display:block!important;
+}
+.nav-item:nth-of-type(7):hover ~ .mega:nth-of-type(7){
+    display:block!important;
+}
+.nav-item:nth-of-type(8):hover ~ .mega:nth-of-type(8){
+    display:block!important;
+}
+.nav-item:nth-of-type(9):hover ~ .mega:nth-of-type(9){
+    display:block!important;
+}
+.nav-item:nth-of-type(10):hover ~ .mega:nth-of-type(10){
+    display:block!important;
+}
 	.logo{
 			padding:0;
 			margin:0;
