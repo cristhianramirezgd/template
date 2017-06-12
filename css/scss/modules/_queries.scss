@@ -222,4 +222,29 @@
 			box-shadow: $shadow-global;
 
 		}
-}
+		.catagory-shelf {
+			ul {
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				li {
+				   width: 49%;
+				   .product-image{
+				   	    display: block;
+		    			width: 100%;
+				   }
+				   .product-name{
+				   		a{
+
+				   		}
+				    }
+				    &:hover{
+
+				    }
+				}
+			}
+			ul:last-child{
+				li{
+				}
+			}
+		}
+}//.mediaquery

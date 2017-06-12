@@ -493,9 +493,10 @@ fieldset.busca {
 		align-items: center;
 		justify-content: space-between;
 		-webkit-box-pack: justify;
+		box-pack: justify;
 		li {
 		   width: 19%;
-		   argin:15px 0;
+		   margin:10px 0;
 		   background: rgba($white,.7);
 		   border: 2px solid $white;
 		   display: block;
@@ -521,6 +522,13 @@ fieldset.busca {
 		    	border-color:$yellow;
 		    	box-shadow:$shadow-global;
 		    }
+		}
+	}
+	ul:last-child{
+		align-items: left;
+		justify-content: initial;
+		li{
+			margin:0 3%;
 		}
 	}
 }
