@@ -473,9 +473,6 @@ fieldset.busca {
     padding: 15px;
     box-shadow:$shadow-global;
 }
-.carrito:hover .v2-vtexsc-cart{
-    display:block!important;
-}
 // vtex breadcumbr
 .bread-crumb li {
     display: inline-block;
@@ -496,11 +493,12 @@ fieldset.busca {
 		box-pack: justify;
 		li {
 		   width: 19%;
-		   margin:10px 0;
+		  margin: 20px 0;
 		   background: rgba($white,.7);
 		   border: 2px solid $white;
 		   display: block;
-		   transition:$fast-time-ease-out;
+		   transition:$medium-time-ease-out;
+		   position: relative;
 		   .product-image{
 		   	    display: block;
     			width: 100%;
@@ -521,14 +519,89 @@ fieldset.busca {
 		    	background:$yellow;
 		    	border-color:$yellow;
 		    	box-shadow:$shadow-global;
+		    	span.buy-async {
+		    		border:1px solid $yellow;
+		    		a{
+		    			color:$black;
+		    		}
+		    	}
+		    	.add-to-cart-async{
+		    		transition:$medium-time-ease-out;
+		    		.wrapper-buy-button-asynchronous{
+		    			a{
+		    		 		&::after{
+		    		 		z-index: 10;
+		    		 		top: -21px;
+		    		 		background: url(/arquivos/monkey-market-tienda-icono-01.png) center center;
+		    		 		background-size: cover;
+		    		 		content: '';
+		    		 		height: 30px;
+		    		 		width: 30px;
+		    		 		left: 0;
+		    		 		right: 0;
+		    		 		margin: 0 auto;
+		    		 		position: absolute;
+		    		 	}
+		    		  }		    		
+		    		}
+
+		    	}
 		    }
+
 		}
+
 	}
 	ul:last-child{
 		align-items: left;
 		justify-content: initial;
 		li{
 			margin:0 3%;
+		}
+	}
+	span.sku-id {
+	    width: 100%;
+	    display: inline-block;
+	    text-align: center;
+	}
+	.price{
+		display:inline-block;
+		width:100%;
+		a{
+			text-align:center;
+		}
+	}
+	span.buy-async {
+	    position: absolute;
+	    text-align: center;
+	    width: 70%;
+	    left: 0;
+	    right: 0;
+	    bottom: -24px;
+	    margin: 0 auto;
+	    background: rgba($white,.7);
+	    border-radius: 0px 0px 290486px 290486px;
+	    a{
+	    	color:$blue;
+
+	    }
+	}
+	.add-to-cart-async{
+		.wrapper-buy-button-asynchronous{
+			    position: absolute;
+			    width: 80%;
+			    left: 0;
+			    right: 0;
+			    margin: 0 auto;
+			    top: 63%;
+			a{
+				color: $white;
+				text-align: center;
+				width: 100%;
+				display: inline-block;
+				background: $blue;
+				border-radius: 290486px;
+				padding: 7px;
+			}
 		}
 	}
 }
