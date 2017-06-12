@@ -480,6 +480,7 @@ fieldset.busca {
 .bread-crumb li {
     display: inline-block;
     font-size: .8rem;
+    // &.last{display:none;}
     &::before {
         content: '/';
         padding: 0 3px;
