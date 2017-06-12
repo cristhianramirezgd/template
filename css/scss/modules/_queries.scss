@@ -213,4 +213,13 @@
 		    border-radius: 290486px;
 			}
 		}
+		// title category & department
+		.titulo-sessao{
+			background:$blue;
+			padding: 20px;
+			text-align: center;
+			-webkit-box-shadow: $shadow-global;
+			box-shadow: $shadow-global;
+
+		}
 }

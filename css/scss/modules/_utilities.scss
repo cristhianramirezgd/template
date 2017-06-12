@@ -476,3 +476,12 @@ fieldset.busca {
 .carrito:hover .v2-vtexsc-cart{
     display:block!important;
 }
+// vtex breadcumbr
+.bread-crumb li {
+    display: inline-block;
+    font-size: .8rem;
+    &::before {
+        content: '/';
+        padding: 0 3px;
+    }
+}
