@@ -486,3 +486,41 @@ fieldset.busca {
         padding: 0 3px;
     }
 }
+// Prateliras ó vitrinas
+.catagory-shelf {
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		-webkit-box-pack: justify;
+		li {
+		   width: 19%;
+		   argin:15px 0;
+		   background: rgba($white,.7);
+		   border: 2px solid $white;
+		   display: block;
+		   transition:$fast-time-ease-out;
+		   .product-image{
+		   	    display: block;
+    			width: 100%;
+		   }
+		   .product-name{
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			padding: 0 10px;
+			line-height: 1.2;
+		   	a{
+		   		color:$red;
+		   		text-align:center;
+		   		width:100%;
+		   		}
+		    }
+		    &:hover{
+		    	background:$yellow;
+		    	border-color:$yellow;
+		    	box-shadow:$shadow-global;
+		    }
+		}
+	}
+}

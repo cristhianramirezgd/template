@@ -62,6 +62,13 @@
 			}
 		}
 	}
+.vertical {
+	li {
+		a {
+		    text-align: left;
+			}
+		}
+	}
 }
 .nav-item:nth-of-type(1):hover ~ .mega:nth-of-type(1){
     display:block!important;
@@ -103,7 +110,7 @@
 			z-index: 999999;
 			top: -70px;
 		img{
-			top: 30px;
+			top: 22px;
 	    	position: absolute;
 	    	max-width: 104px;
 	    	@media (max-width: 880px) {
