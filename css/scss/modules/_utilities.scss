@@ -765,6 +765,11 @@ fieldset.busca {
 			background:$white;
 			border-radius: 290486px 0px 0px 290486px;
 			box-shadow:$shadow-vertical;
+			&::before{
+				    content: '—';
+				    padding-bottom:5px;
+				    
+			 }
 		}
 	}
 	.add-to-cart-async{
