@@ -575,11 +575,26 @@ fieldset.busca {
 	    display: inline-block;
 	    text-align: center;
 	}
+	span.old-price {
+	    text-decoration: line-through;
+	    font-size: .8rem;
+	    padding: 0 5px;
+		}
+	span.best-price {
+	    font-size: 1rem;
+	    font-weight: 600;
+	    color: $brown;
+	    &::before {
+	        content: 'Ahora:';
+	    }
+	}
 	.price{
 		display:inline-block;
 		width:100%;
 		a{
 			text-align:center;
+			width: 100%;
+			display: block;
 		}
 	}
 	span.buy-async {
@@ -605,6 +620,114 @@ fieldset.busca {
 			    right: 0;
 			    margin: 0 auto;
 			    top: 63%;
+			a{
+				color: $white;
+				text-align: center;
+				width: 100%;
+				display: inline-block;
+				background: $blue;
+				border-radius: 290486px;
+				padding: 7px;
+			}
+		}
+	}
+}
+.department-shelf{
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		-webkit-box-pack: justify;
+		box-pack: justify;
+		li {
+		  width: 24%;
+		  margin: 20px 0;
+		   background: rgba($white,.7);
+		   border: 1px solid $white;
+		   display: block;
+		   transition:$fast-time-ease-out;
+		   position: relative;
+		   box-shadow:$shadow-global;
+		   .product-image{
+		   	  display: block;
+    			width: 100%;
+		  		overflow: hidden;
+    			img{
+    			transition:$fast-time-ease-out;
+	    			 &:hover {
+	    			    transform: $scale-1-1 ;  
+	    				}
+    			}
+		   }
+		   .product-name{
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			padding: 0 10px;
+			line-height: 1.2;
+			text-overflow: ellipsis;
+			height: 4vw;
+			text-align: center;
+		   	a{
+		   		color:$red;
+		   		text-align:center;
+		   		width:100%;
+		   		font-size: 1.2rem;
+		   		}
+		    }
+		    &:hover{
+		    	border:1px solid $blue;
+		    	box-shadow:$shadow-global;
+		    	.add-to-cart-async{
+		    		transition:$fast-time-ease-out;
+		    	}
+		    	.fast-view{
+		    		a{
+		    			border-left:1px solid $blue;
+		    			border-top:1px solid $blue;
+		    			border-bottom:1px solid $blue;
+		    			box-shadow:$shadow-global;
+		    		}
+		    	}
+		    }
+
+		}
+
+	}
+	span.sku-id {
+	    width: 100%;
+	    display: inline-block;
+	    text-align: center;
+	    font-weight: 800;
+	}
+	.price{
+		display:inline-block;
+		width:100%;
+		a{
+			text-align:center;
+		}
+	}
+	.fast-view{
+		a{
+			@include vertical-lr;
+			padding: 40px 0px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			color:$grey-light;
+			background:$white;
+			border-radius: 290486px 0px 0px 290486px;
+			box-shadow:$shadow-vertical;
+		}
+	}
+	.add-to-cart-async{
+		.wrapper-buy-button-asynchronous{
+			    position: absolute;
+			    width: 60%;
+			    left: 0;
+			    right: 0;
+			    margin: 0 auto;
+			    top: 65%;
 			a{
 				color: $white;
 				text-align: center;
