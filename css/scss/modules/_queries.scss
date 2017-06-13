@@ -229,18 +229,60 @@
 				flex-wrap: wrap;
 				li {
 				   width: 49%;
+				   width: 49%;
+				   border-radius: 0px 0px 30px 30px;
 				   .product-image{
 				   	    display: block;
 		    			width: 100%;
 				   }
-				   .product-name{
-				   		a{
 
-				   		}
-				    }
-				    &:hover{
+					span.fast-view,.sku-id,.buy-async {
+					    display: none;
+					}
+					.add-to-cart-async {
+						.wrapper-buy-button-asynchronous {
+							a{
+								background: url(/arquivos/monkey-market-tienda-icono-01.png) no-repeat center center;
+								background-size: cover;
+								height: 40px;
+								width: 40px;
+								left: 0;
+								right: 0;
+								margin: 0 auto;
+								border-radius: 0;
+								color:rgba($white,0);
+								position: absolute;
+							}
+						}
+					}
+					&:hover{
+						background:$yellow;
+						border-color:$yellow;
+						box-shadow:$shadow-global;
+						span.buy-async {
+							border:1px solid $yellow;
+							a{
+								color:$black;
+							}
+						}
+						.add-to-cart-async{
+							transition:$medium-time-ease-out;
+							.wrapper-buy-button-asynchronous{
+								a{
+							 		&::after{
+							 		display:none;
+							 	}
+							  }		    		
+							}
 
-				    }
+						}
+					}
+					.product-name {
+								 height: 10vw;
+								 text-align: center;
+								 white-space: normal!important;
+								 overflow: inherit!important;
+					}
 				}
 			}
 			ul:last-child{
