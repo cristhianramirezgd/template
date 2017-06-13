@@ -231,8 +231,9 @@
 				   width: 49%;
 				   width: 49%;
 				   border-radius: 0px 0px 30px 30px;
+				   margin: 10px 0;
 				   .product-image{
-				   	    display: block;
+				   	  display: block;
 		    			width: 100%;
 				   }
 
@@ -288,6 +289,10 @@
 								 white-space: normal!important;
 								 overflow: inherit!important;
 								 padding: 0;
+					}
+						.best-price {
+						    font-size: .9rem!important;
+						    font-weight: 400!important;
 					}
 				}
 			}
