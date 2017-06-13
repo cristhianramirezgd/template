@@ -483,6 +483,20 @@ fieldset.busca {
         padding: 0 3px;
     }
 }
+// filtros
+.resultado-busca-filtro {
+	.orderBy select {
+	    border: 1px solid red;
+	    background: white;
+	    text-align: center;
+	    option {
+	        background: white;
+	   }
+	}	
+}
+.searchResultsTime,.pager.top,.resultado-busca-filtro .compare {
+    display: none;
+}
 // Prateliras ó vitrinas
 .catagory-shelf {
 	ul {
@@ -659,11 +673,16 @@ fieldset.busca {
 	    				}
     			}
 		   }
+		   .product-name,
+		   .sku-id,
+		   .price,
+		   .filterBy {
+		       padding: 0 25px;
+		   }
 		   .product-name{
 			display: inline-block;
 			width: 100%;
 			text-align: center;
-			padding: 0 10px;
 			line-height: 1.2;
 			text-overflow: ellipsis;
 			height: 4vw;
