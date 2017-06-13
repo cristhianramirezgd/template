@@ -498,6 +498,17 @@ fieldset.busca {
     display: none;
 }
 // Prateliras ó vitrinas
+// global destáque o flag de coleçoes
+.flag-destaque .coleccion-flag {
+    background: url(/arquivos/monkey-market-tienda-icono-07.png) no-repeat center center;
+    background-size: cover;
+    width: 25%;
+    position: absolute;
+    top: -7px;
+    right: -6px;
+    color:rgba($white,0);
+    @include shadow-alpha-image;
+}
 .catagory-shelf {
 	ul {
 		display: flex;
