@@ -309,3 +309,9 @@
 					 }
 					}
 }//.mediaquery
+@media screen and (min-width: 1384px){
+	.container {
+	    max-width: 1200px!important;
+	    width: 1200px!important;
+	}
+}
