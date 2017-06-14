@@ -529,6 +529,10 @@ fieldset.busca {
 			}
 		}
 	}
+	.prateleira.horizontal-lista {
+	    position: absolute;
+	    top: -10px;
+	}
 }
 // global destáque o flag de coleçoes
 .flag-destaque .coleccion-flag {
@@ -847,7 +851,6 @@ fieldset.busca {
 			   .box-item{
 			   	span.image-shelf {
 			   	    float:left;
-			   	    width:30%;
 									.product-image{
 									width: 100%;
 									overflow: hidden;
@@ -856,7 +859,7 @@ fieldset.busca {
 										transition:$short-time-ease-out;
 										width:100%;
 										vertical-align: middle;
-										max-width: 120px;
+										max-width:107px;
 											&:hover {
 											transform: $scale-1-1 ;  
 											}
