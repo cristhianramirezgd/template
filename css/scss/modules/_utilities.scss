@@ -822,6 +822,7 @@ fieldset.busca {
 										transition:$short-time-ease-out;
 										width:100%;
 										vertical-align: middle;
+										max-width: 120px;
 											&:hover {
 											transform: $scale-1-1 ;  
 											}
