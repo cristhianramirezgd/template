@@ -695,6 +695,11 @@ fieldset.busca {
 	}
 }
 // vitrina de departamento
+.lo-mas-vendido{
+	 .bx-viewport {
+	    height: auto!important;
+	}
+}
 .department-shelf{
 	ul {
 		li {
@@ -703,7 +708,7 @@ fieldset.busca {
 		   background: rgba($white,.7);
 		   border: 1px solid $white;
 		   display: block;
-		   transition:$fast-time-ease-out;
+		   transition:$short-time-ease-out;
 		   position: relative;
 		   box-shadow:$shadow-global;
 		   .product-image{
