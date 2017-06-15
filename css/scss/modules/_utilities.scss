@@ -951,6 +951,13 @@ fieldset.busca {
 			}
 		}
 }
+.data-sheet {
+    background: rgba(255,255,255,.7);
+    border: 1px solid white;
+    &-content{
+			padding:0 10px 10px 10px;
+    }
+}
 .name-product {
 	.productName {
 	    font-family:$family-headers;
@@ -958,7 +965,30 @@ fieldset.busca {
 	    font-size:$size-3;
 	}
 }
+.add-button{
+	background:$white;
+	box-shadow:$shadow-global;
+	a {
+	    text-align: center;
+	    background: $blue;
+	    color: $white;
+	    padding: 5px;
+	    border-radius: 290486px;
+	    width: 60%;
+	    margin: 0 auto;
+	    border:1px solid $white;
+	    font-size: $size-3;
+	    font-weight: $weight-semibold;
+	    box-shadow:$shadow-global;
+	}
+}
+.avaliacoes{
+	strong{
+		float:right;
+	}
+}
 .cod{
+	text-align:right;
 	.skuReference{
 		display:inline-block;
 	}
@@ -969,7 +999,8 @@ fieldset.busca {
 .rating-demonstrativo.a0:before,
 .rating-wrapper .rating.avaliacao0:before,
 .rating-wrapper .rating.a0:before {
-    background-position: 0 -4px;
+    background-position: 0 -3px;
+   	margin-left: 5px;
 }
 .rating-produto:before,
 .rating-demonstrativo:before,
