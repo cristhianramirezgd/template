@@ -951,3 +951,124 @@ fieldset.busca {
 			}
 		}
 }
+.apresentacao {
+	position: relative;
+	// imagen
+	#include {
+    width: 100%;
+    display: inline-block;
+    box-shadow:$shadow-global;
+    background:$white;
+	}
+	// thumbnails
+	.thumbs {
+	    display: inline-block;
+	    li{
+	    	display:inline-block;
+	    }
+	}
+}
+// Zoom
+.zoomPad {
+    position:relative;
+    float:left;
+    z-index:99;
+    cursor:crosshair
+}
+.zoomPreload {
+    -moz-opacity:0;
+    opacity:0;
+    filter:alpha(opacity=0);
+    color:#333;
+    font-size:12px;
+    font-family:Tahoma;
+    text-decoration:none;
+    border:1px solid #CCC;
+    background-color:#fff;
+    padding:8px;
+    text-align:center;
+    background-image:url(/arquivos/ajax-loader.gif);
+    background-repeat:no-repeat;
+    background-position:center center;
+    z-index:110;
+    width:100%;
+    height:100%;
+
+}
+.zoomPup {
+    overflow:hidden;
+    background-color:#FFF;
+    -moz-opacity:.6;
+    opacity:.6;
+    filter:alpha(opacity=60);
+    border:1px solid #CCC;
+    z-index:101;
+    cursor:crosshair
+}
+.zoomOverlay {
+    position:absolute;
+    left:0;
+    top:0;
+    background:#FFF;
+    z-index:5000;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index:101
+}
+.zoomWindow {
+    background: none repeat scroll 0 0 rgb(255,255,255);
+    height: 100%;
+    left: 0 !important;
+    overflow: hidden;
+    top: 0 !important;
+    width: 100%;
+}
+.zoomWrapper {
+    height:1000px !important;
+    position:relative;
+    width:1000px !important;
+    z-index:110;
+}
+.zoomWrapperTitle {
+    display:block;
+    background:#999;
+    color:#FFF;
+    height:18px;
+    line-height:18px;
+    width:100%;
+    overflow:hidden;
+    text-align:center;
+    font-size:10px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:120;
+    -moz-opacity:.6;
+    opacity:.6;
+    filter:alpha(opacity=60)
+}
+.zoomWrapperImage {
+    display:block;
+    position:relative;
+    overflow:hidden;
+    z-index:110;
+    height: 100% !important;
+}
+.zoomWrapperImage img {
+    z-index:101;
+    height: 118%;
+    min-width: 118%;
+    width: 100%;
+}
+.zoomIframe {
+    z-index:-1;
+    filter:alpha(opacity=0);
+    -moz-opacity:.8;
+    opacity:.8;
+    position:absolute;
+    display: block
+}
+.zoomPad img#image-main {
+  width: 100%;
+}
