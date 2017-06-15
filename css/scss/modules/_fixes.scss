@@ -382,3 +382,23 @@ ul.bxslider {
 		}
 	}
 }
+.home{
+  .bx-wrapper{
+    transition:$fast-time-ease-out;
+    
+    a.bx-prev {
+        left: -3%!important;
+        opacity:0;
+    }
+
+    a.bx-next {
+        right: -3%!important;
+        opacity:0;
+    }
+    &:hover{
+       a.bx-next, a.bx-prev{
+        opacity:1;
+       }
+    }
+  }
+}
