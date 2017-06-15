@@ -951,6 +951,13 @@ fieldset.busca {
 			}
 		}
 }
+.name-product {
+	.productName {
+	    font-family:$family-headers;
+	    line-height: 1.2;
+	    font-size:$size-3;
+	}
+}
 .apresentacao {
 	position: relative;
 	// imagen
@@ -965,6 +972,14 @@ fieldset.busca {
 	    display: inline-block;
 	    li{
 	    	display:inline-block;
+	    	&:hover{
+					a{
+	    			transition:$short-time-ease-out;
+						img{
+							box-shadow:$shadow-global;
+						}
+					}
+	    	}
 	    }
 	}
 }
