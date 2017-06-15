@@ -963,6 +963,26 @@ fieldset.busca {
 		display:inline-block;
 	}
 }
+.rating-produto.avaliacao0:before,
+.rating-produto.a0:before,
+.rating-demonstrativo.avaliacao0:before,
+.rating-demonstrativo.a0:before,
+.rating-wrapper .rating.avaliacao0:before,
+.rating-wrapper .rating.a0:before {
+    background-position: 0 -4px;
+}
+.rating-produto:before,
+.rating-demonstrativo:before,
+.rating-wrapper .rating:before {
+    width: 88px;
+    height: 13px;
+    background-image: url(monkey-market-tienda-sprite-stars.png);
+    content: '';
+    display: inline-block;
+}
+span#spnRatingProdutoTop {
+    color: rgba(255,255,255,0);
+}
 .apresentacao {
 	position: relative;
 	// imagen
