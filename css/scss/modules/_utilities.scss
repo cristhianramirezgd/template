@@ -1001,18 +1001,37 @@ fieldset.busca {
 .rating-wrapper .rating.a0:before {
     background-position: 0 -3px;
    	margin-left: 5px;
+   	vertical-align: middle;
 }
 .rating-produto:before,
 .rating-demonstrativo:before,
 .rating-wrapper .rating:before {
     width: 88px;
-    height: 13px;
+    height: 16px;
     background-image: url(monkey-market-tienda-sprite-stars.png);
     content: '';
     display: inline-block;
 }
 span#spnRatingProdutoTop {
     color: rgba(255,255,255,0);
+}
+.rating-produto.avaliacao50:before, .rating-produto.a50:before, .rating-demonstrativo.avaliacao50:before, .rating-demonstrativo.a50:before, .rating-wrapper .rating.avaliacao50:before, .rating-wrapper .rating.a50:before {
+        background-position: 0 135px;
+}
+.rating-demonstrativo.a40:before, .rating-demonstrativo.avaliacao40:before, .rating-produto.a40:before, .rating-produto.avaliacao40:before, .rating-wrapper .rating.a40:before, .rating-wrapper .rating.avaliacao40:before {
+    background-position: 0 35px;
+}
+.rating-produto.avaliacao30:before, .rating-produto.a30:before, .rating-demonstrativo.avaliacao30:before, .rating-demonstrativo.a30:before, .rating-wrapper .rating.avaliacao30:before, .rating-wrapper .rating.a30:before {
+    background-position: 0 -52px;
+}
+.rating-demonstrativo.a30:before, .rating-demonstrativo.avaliacao30:before, .rating-produto.a30:before, .rating-produto.avaliacao30:before, .rating-wrapper .rating.a30:before, .rating-wrapper .rating.avaliacao30:before {
+    background-position: 0 -62px;
+}
+.rating-produto.avaliacao20:before, .rating-produto.a20:before, .rating-demonstrativo.avaliacao20:before, .rating-demonstrativo.a20:before, .rating-wrapper .rating.avaliacao20:before, .rating-wrapper .rating.a20:before {
+    background-position: 0 -42px;
+}
+.rating-produto.avaliacao10:before, .rating-produto.a10:before, .rating-demonstrativo.avaliacao10:before, .rating-demonstrativo.a10:before, .rating-wrapper .rating.avaliacao10:before, .rating-wrapper .rating.a10:before {
+    background-position: 0 213px;
 }
 .apresentacao {
 	position: relative;
