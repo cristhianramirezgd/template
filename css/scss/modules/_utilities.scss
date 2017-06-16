@@ -956,6 +956,7 @@ fieldset.busca {
 .data-sheet {
     background: rgba(255,255,255,.7);
     border: 1px solid white;
+    position: relative;
     &-content{
 			padding:0 10px 10px 10px;
     }
@@ -983,6 +984,16 @@ fieldset.busca {
 	    font-weight: $weight-semibold;
 	    box-shadow:$shadow-global;
 	}
+}
+.product-social-icon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: $white;
+    box-shadow:$shadow-global;
+    display: block;
+    padding: 10px 2px;
+    border-radius: 0 26px 26px 0;
 }
 .avaliacoes{
 	strong{
