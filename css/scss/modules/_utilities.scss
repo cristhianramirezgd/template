@@ -535,7 +535,7 @@ fieldset.busca {
 	}
 }
 // global destáque o flag de coleçoes
-.flag-destaque {
+
 	.flag{
     background: url(/arquivos/monkey-market-tienda-icono-07.png) no-repeat center center;
     background-size: cover;
@@ -546,7 +546,15 @@ fieldset.busca {
     color:rgba($white,0);
     @include shadow-alpha-image;
 	}
-}
+	.image-zoom-product {
+		.flag{
+						    z-index: 100000;
+						    width: 12%;
+						    right: 8px;
+						    top: 4px;
+		}
+	}
+
 //vitrina de categoria
 .catagory-shelf {
 	ul {
