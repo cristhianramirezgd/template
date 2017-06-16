@@ -267,3 +267,19 @@ footer{
 		}
 	}
 }	
+span.medium-line {
+    height: 4vw;
+    top: 27%;
+    background: white;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: -9;
+    left: 0;
+    box-shadow:$shadow-global;
+}
