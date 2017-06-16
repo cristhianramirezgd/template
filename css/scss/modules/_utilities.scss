@@ -535,7 +535,8 @@ fieldset.busca {
 	}
 }
 // global destáque o flag de coleçoes
-.flag-destaque .coleccion-flag {
+.flag-destaque {
+	.flag{
     background: url(/arquivos/monkey-market-tienda-icono-07.png) no-repeat center center;
     background-size: cover;
     width: 25%;
@@ -544,6 +545,7 @@ fieldset.busca {
     right: -6px;
     color:rgba($white,0);
     @include shadow-alpha-image;
+	}
 }
 //vitrina de categoria
 .catagory-shelf {
@@ -1032,6 +1034,36 @@ span#spnRatingProdutoTop {
 }
 .rating-produto.avaliacao10:before, .rating-produto.a10:before, .rating-demonstrativo.avaliacao10:before, .rating-demonstrativo.a10:before, .rating-wrapper .rating.avaliacao10:before, .rating-wrapper .rating.a10:before {
     background-position: 0 213px;
+}
+li.publique {
+	a {
+	    padding: 10px;
+	    border-radius: 290486px;;
+	    background: $blue;
+	    color: $white;
+	    font-weight: 500;
+	    font-size: 1.2rem;
+	    display:inline-block;
+	}
+}
+    .avaliacao{
+    	.media{
+
+    	}
+	    .rating{
+	    	display:inline-block;
+	    }
+    }
+.avalie-produto {
+    display: inline-block;
+    
+}
+.produto{
+	.department-shelf ul li {
+	    width: 49%;
+	    margin: 20px .5%;
+	    display: inline-block;
+	  }
 }
 .apresentacao {
 	position: relative;
