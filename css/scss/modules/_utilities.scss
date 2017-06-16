@@ -1031,8 +1031,15 @@ fieldset.busca {
 		    	-ms-transform: rotate(180deg);
 		    	-o-transform: rotate(180deg);
 		    	transform: rotate(180deg);
+		    	&:hover{
+		    		@include shadow-alpha-image;
+		    	}
 		    }
 		}
+}
+.description-product {
+    background:$white;
+    box-shadow:$shadow-global;
 }
 .avaliacoes{
 	strong{
