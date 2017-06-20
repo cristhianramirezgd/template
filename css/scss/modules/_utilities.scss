@@ -1029,9 +1029,16 @@ fieldset.busca {
 	    text-align: center;
 	    margin-bottom: .9rem;
 	}
-.specification-section .department-shelf h2{
-					@include prateleira-title;
-				}
+
+.specification-section,.prateleiras-product {
+	.department-shelf,.catagory-shelf {
+
+		h2{
+								@include prateleira-title;
+								text-align:center;
+							}
+	}
+}
 // gift list
 .gift-list-btn{
 	 a {
