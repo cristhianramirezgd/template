@@ -1018,11 +1018,12 @@ fieldset.busca {
 //description
 .description-product{
 	  max-width: 84%;
-	  bottom: 30px;
 	  right: 0;
 	  left: 0;
-	  margin: 0 auto;
+	  margin: 0 auto!important;
 	  position: absolute;
+	  background:$white;
+	  box-shadow:$shadow-global;
 }
 // gift list
 .gift-list-btn{
@@ -1053,10 +1054,6 @@ fieldset.busca {
 		    	}
 		    }
 		}
-}
-.description-product {
-    background:$white;
-    box-shadow:$shadow-global;
 }
 .avaliacoes{
 	strong{
