@@ -561,7 +561,6 @@ fieldset.busca {
 			top: -11px;
 		}
 	}
-
 //vitrina de categoria
 .catagory-shelf {
 	ul {
@@ -1034,16 +1033,59 @@ fieldset.busca {
 	    text-align: center;
 	    margin-bottom: .9rem;
 	}
+//caracteristicas de producto
+	.specification-section{
+			.specification-product{
+					h4 {
+				    text-align: center;
+				    font-weight: bold;
+				    padding: 10px;
+				    border:1px solid $grey-dark;
+				    &:hover{
+				    	background:$white;
+				    	border:1px solid $white;
+				    	box-shadow:$shadow-global;
+				    	}
+				   	&::before {
+				        content: '-';
+				        padding-right: 5px;
+				    	}
+						}
+						table{
+							font-size: .9rem;
+							.name-field{
+								font-weight:initial;
+								width:50%;
+							}
+							.value-field{
+								width:50%;
+							}
+							tr{
+								&:first-child{
+									.name-field,.value-field{
+											width:50%;
+											padding-top:10px;
+										}
+								}
+								&:last-child{
+									.name-field,.value-field{
+											width:50%;
+											padding-bottom:10px;
+										}
+								}
+							}
+						}
+					}
+				}
 
 .specification-section,.prateleiras-product {
 	.department-shelf,.catagory-shelf {
-
 		h2{
-								@include prateleira-title;
-								text-align:center;
-							}
-	}
-}
+				@include prateleira-title;
+				text-align:center;
+				}
+			}
+		}
 // gift list
 .gift-list-btn{
 	 a {
