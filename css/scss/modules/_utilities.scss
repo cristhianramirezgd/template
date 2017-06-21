@@ -987,6 +987,12 @@ fieldset.busca {
 	    font-size:$size-3;
 	}
 }
+.price-product{
+	.valor-por.price-best-price {
+	    font-size: $size-4;
+	    font-style: initial;
+	}
+}
 .add-button{
 	background:$white;
 	box-shadow:$shadow-global;
