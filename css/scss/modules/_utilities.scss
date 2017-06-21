@@ -547,7 +547,7 @@ fieldset.busca {
 	}
 	.image-zoom-product {
 		.flag{
-						    z-index: 100000;
+						    z-index: 99;
 						    width: 12%;
 						    right: 8px;
 						    top: 4px;
@@ -1448,6 +1448,68 @@ fieldset.busca {
 .zoomPad img#image-main {
   width: 100%;
 }
+// popup rating
 #callmeback{
 	display:none!important;
+}
+div#TB_overlay {
+    background: rgba($black,.7);
+        z-index: 1000000!important;
+}
+div#TB_window {
+    z-index: 1000000!important;
+}
+div#TB_ajaxContent {
+    background: $white;
+    box-shadow:$shadow-global;
+}
+div#TB_ajaxWindowTitle {
+    color: $yellow;
+    font-size: 1.2rem;
+    background: $black;
+    padding: 10px!important;
+
+}
+div#TB_closeAjaxWindow a {
+    color: $white;
+}
+div#TB_closeAjaxWindow a {
+    color: white;
+}
+ul.paginacao {
+    margin: 0 auto;
+    float: none;
+    li {display: inline-block;
+    	text-align: center;
+    	align-items: center;
+    	justify-content: center;
+    	justify-items: center;
+  }
+}
+.resenha{
+	 .quem {
+	    text-align: center;
+	    font-size: .75rem;
+	}
+}
+fieldset.detalhes-ordenacao {
+    border: 0;
+    text-align: right;
+   select{
+   			background:$white;
+   	    border-radius: 0!important;
+   	    border: 2px solid gray;
+   	    option{
+   	    	background:$white;
+   	    	color:$black-ter;
+   	    }
+   }
+}
+.formUserComments{
+	h2{
+		font-weight:bold;
+		text-align:center;
+		margin:15px auto;
+		font-size:$size-5;
+	}
 }
