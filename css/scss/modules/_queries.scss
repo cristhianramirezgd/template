@@ -431,6 +431,10 @@
 					}
 			}
 			.specification-section{
+				display:inline-block;
+				padding:15px 0;
+				background:$white;
+				margin-bottom:15px;
 				.column{
 					padding:0;
 				}
