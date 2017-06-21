@@ -1275,8 +1275,18 @@ fieldset.busca {
     content: '';
     display: inline-block;
 }
-span#spnRatingProdutoTop {
-    color: rgba(255,255,255,0);
+.link-ancora{
+	strong{
+		display:none;
+	}
+	span#spnRatingProdutoTop {
+	  color: rgba(255,255,255,0);
+	  &::after{
+	  			content: '— Describe tu opinión';
+	  	    display: inline-block;
+	  	    color: $black-ter;
+	  }
+	}
 }
 .rating-produto.avaliacao50:before, .rating-produto.a50:before, .rating-demonstrativo.avaliacao50:before, .rating-demonstrativo.a50:before, .rating-wrapper .rating.avaliacao50:before, .rating-wrapper .rating.a50:before {
         background-position: 0 135px;
