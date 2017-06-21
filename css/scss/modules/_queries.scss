@@ -1,4 +1,7 @@
 @media screen and (max-width: $tablet) {
+	.title{
+		font-size: $size-5!important;
+	}
 	.nav-logo{
 		display:none;
 	}
