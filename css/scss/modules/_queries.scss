@@ -472,6 +472,17 @@
 				    display: none;
 				}
 			}
+			.rates-vtex {
+				.rating {
+					.avaliacao{
+						border-radius:0;
+						.rating{
+							display:inline-block;
+							text-align:initial;
+						}
+					}
+				}
+			}
 }//.mediaquery
 @media screen and (min-width: 1384px){
 	.container {

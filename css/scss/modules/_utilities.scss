@@ -973,7 +973,7 @@ fieldset.busca {
 		}
 }
 .data-sheet {
-    background: rgba(255,255,255,.7);
+    background: rgba($white,.7);
     border: 1px solid white;
     position: relative;
     &-content{
@@ -1035,6 +1035,12 @@ fieldset.busca {
 	}
 //caracteristicas de producto
 	.specification-section{
+		display: flex;
+		margin-top: 30px;
+			.columns{
+				    -webkit-box-align: center;
+				    align-items: center;
+			}
 			.specification-product{
 					h4 {
 				    text-align: center;
@@ -1078,8 +1084,10 @@ fieldset.busca {
 					}
 				}
 
-.specification-section,.prateleiras-product {
-	.department-shelf,.catagory-shelf {
+.specification-section,
+.prateleiras-product{
+	.department-shelf,
+	.catagory-shelf{
 		h2{
 				@include prateleira-title;
 				text-align:center;
@@ -1127,6 +1135,127 @@ fieldset.busca {
 		display:inline-block;
 	}
 }
+// rates vtex
+.rates-vtex{
+	h2{
+			@include prateleira-title;
+			text-align:center;
+			}
+		.rating{
+			width:80%;
+			margin:0 auto;
+			.avaliacao{
+				padding: 15px;
+				background:rgba($white,.7);
+				box-shadow:$shadow-global;
+				border-radius: 200px;
+				.media{
+					width:100%;
+					display:inline-block;
+					text-align: center;
+					margin-bottom: 2rem;
+				}
+				.rating{
+					display:flex;
+					text-align: center;
+					+ p {
+					    display: none;
+					}
+					li{
+
+					}
+					span.voteRatingBar{
+						display: none;
+								+ span{
+											display: inline-block;
+									    vertical-align: middle;
+									    background: $grey-lighter;
+									    height: 15px;
+									    border-radius: 3px;
+									    box-shadow: 0 0 5px rgba($black,$alpha) inset;
+									    font-size: 11px;
+									    line-height: 15px;
+									    text-align: right;
+									    box-sizing: border-box;
+									    padding: 0 10px;
+								}
+					}
+				}
+				.avalie-produto{
+					    text-align: center;
+					    margin-top: 15px;
+					    padding: 15px;
+					    border-top: 1px solid $grey-light;
+					.rating-avalie-wrapper{
+						display:inline-block;
+						width: 100%;
+						p{
+							a{
+								span{
+									color: rgba($white,0);
+									margin-right: -7px;
+								}
+							}
+						}
+					}
+					#opcoes-avalie{
+						padding:10px;
+						border: 1px solid $grey-light;
+						display:none;
+						> p{
+
+						}
+						input{
+							+ label{
+								margin-left:5px;
+							}
+						}
+					}
+				}
+				.opt{
+					text-align: center;
+					margin:15px auto;
+					.publique {
+						a {
+						    padding:6px 30px;
+						    border-radius: 290486px;;
+						    background: $blue;
+						    color: $white;
+						    font-weight: 500;
+						    font-size: 1.2rem;
+						    display:inline-block;
+						    transition:$transition-hover-link;
+						    &:hover{
+						    	box-shadow:$shadow-global;
+						    }
+						}
+					}
+				}
+
+			}
+			.user-review{
+				> h4{
+					display:none;
+				}
+			}
+			.links-resenha-usuario{
+				text-align:center;
+				font-size:$size-7;
+			}
+		}
+}
+.rating-avalie .ratingStar.emptyRatingStar:before, .rating-avalie .ratingStar.filledRatingStar:before {
+    content: '';
+    width: 15px;
+    height: 23px;
+    background: url(/arquivos/monkey-market-tienda-sprite-stars.png) top;
+    display: inline-block;
+    vertical-align: middle;
+}
+.rating-avalie .ratingStar.filledRatingStar:before{
+      background-position: bottom;
+       height: 14px;
+    }
 .rating-produto.avaliacao0:before,
 .rating-produto.a0:before,
 .rating-demonstrativo.avaliacao0:before,
@@ -1166,29 +1295,6 @@ span#spnRatingProdutoTop {
 }
 .rating-produto.avaliacao10:before, .rating-produto.a10:before, .rating-demonstrativo.avaliacao10:before, .rating-demonstrativo.a10:before, .rating-wrapper .rating.avaliacao10:before, .rating-wrapper .rating.a10:before {
     background-position: 0 213px;
-}
-li.publique {
-	a {
-	    padding: 10px;
-	    border-radius: 290486px;;
-	    background: $blue;
-	    color: $white;
-	    font-weight: 500;
-	    font-size: 1.2rem;
-	    display:inline-block;
-	}
-}
-    .avaliacao{
-    	.media{
-
-    	}
-	    .rating{
-	    	display:inline-block;
-	    }
-    }
-.avalie-produto {
-    display: inline-block;
-    
 }
 .produto{
 	.department-shelf ul li {
