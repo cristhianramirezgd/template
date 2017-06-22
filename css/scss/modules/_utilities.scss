@@ -987,11 +987,30 @@ fieldset.busca {
 	    font-size:$size-3;
 	}
 }
+//precio de producto
 .price-product{
 	.valor-por.price-best-price {
 	    font-size: $size-4;
 	    font-style: initial;
 	}
+	.descricao-preco {
+	    display: inline-block;
+	    width: 100%;
+	    .valor-de{
+	    	text-decoration: line-through;
+	    	color:$grey-light;
+	    	strong{
+	    		color:$grey-light;	    		
+	    	}
+	    } 
+	    .valor-de ,.price-best-price {
+	        display: inline-block!important;
+	        margin:15px 10px;
+	    	}
+		}
+	    .economia-de{
+	    	display:none;
+	    }
 }
 .add-button{
 	background:$white;
@@ -1511,5 +1530,66 @@ fieldset.detalhes-ordenacao {
 		text-align:center;
 		margin:15px auto;
 		font-size:$size-5;
+	}
+}
+.menu-navegue {
+    display: none;
+}
+.btn-refinar {
+    background: $blue;
+    text-align: center;
+    max-width: 200px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.search-multiple-navigator{
+	display:block!important;
+	width:100%;
+	background:$white;
+	padding: 15px;
+	float: left;
+	.bt-refinar{
+		width:100%;
+		display:inline-block;
+	}
+	h3,h4{
+		display:none;
+	}
+	.refino{
+		float:left;
+		width: 17%;
+		margin:7px;
+		border: 1px solid $grey-light;
+		> div{
+			display:none;
+			padding:15px;
+			background:$white;
+		}
+		h5{
+			text-align:center;
+			font-size:$size-5;
+			cursor:pointer;
+		}
+		label{
+			font-size: 0.9rem;
+			width:100%;
+			float:left;
+			input{
+				margin:0 5px 0 0;
+			}
+		}
+	}
+}
+.search-single-navigator{
+	h4{
+		display:inline-block;
+		margin: 15px 10px;
+	}
+	h5.Hide.Filtros,ul.Filtros,h3 {
+	    display:none;
+	}
+	ul{
+		display:none;
 	}
 }
