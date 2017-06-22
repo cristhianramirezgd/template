@@ -1539,8 +1539,8 @@ fieldset.detalhes-ordenacao {
     background: $blue;
     text-align: center;
     max-width: 200px;
-    margin: 15px 0;
     padding: 10px 15px;
+    margin:15px 0;
     font-weight: bold;
     cursor:pointer;
 }
@@ -1551,8 +1551,16 @@ fieldset.detalhes-ordenacao {
 	padding: 15px;
 	float: left;
 	.bt-refinar{
-		width:100%;
-		display:inline-block;
+		width: auto;
+		display: inline-block;
+		background: $blue;
+		cursor: pointer;
+		padding: 4px 10px;
+		border-radius: 290486px;
+		font-weight:bold;
+			&:hover{
+				box-shadow:$shadow-global;
+			}
 	}
 	h3,h4{
 		display:none;
