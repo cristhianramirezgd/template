@@ -346,6 +346,9 @@
 						.avaliacoes{
 							width:50%;
 							display:inline-block;
+							float: right;
+							text-align:right;
+							padding-right: 0;
 							a{
 								strong{
 									display:none;
@@ -355,6 +358,8 @@
 						.cod{
 							width:50%;
 							display:inline-block;
+							float: left;
+							text-align: left;
 						}
 						.short-description{
 							display:none;
@@ -489,6 +494,37 @@
 						}
 					}
 				}
+			}
+			//precio de producto
+			.price-product{
+				.valor-por.price-best-price {
+				    font-size: $size-5;
+				    font-style: initial;
+				}
+				.descricao-preco {
+				    display: inline-block;
+				    width: 100%;
+				    .valor-de{
+				    	text-decoration: line-through;
+				    	color:$grey-light;
+				    	font-size:$size-7;
+				    	strong{
+				    		color:$grey-light;	    		
+				    	}
+				    } 
+				    .valor-de ,.price-best-price {
+				        display: inline-block!important;
+				        margin:15px 10px;
+				    	}
+					}
+				    .economia-de{
+				    	display:none;
+				    }
+			}
+			.link-ancora span#spnRatingProdutoTop::after {
+			    content: '— Describe tu opinión';
+			    display: none;
+			    color: #242424;
 			}
 }//.mediaquery
 @media screen and (min-width: 1384px){
