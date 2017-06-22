@@ -484,18 +484,14 @@ fieldset.busca {
     }
 }
 // filtros
-.resultado-busca-filtro {
-	.orderBy select {
-	    border: 1px solid red;
-	    background: white;
-	    text-align: center;
-	    option {
-	        background: white;
-	   }
-	}	
-}
+
 .searchResultsTime,.pager.top,.resultado-busca-filtro .compare {
     display: none;
+}
+.resultado-busca-filtro{
+	.filterBy{
+		display:none;
+	}
 }
 // Prateliras ó vitrinas
 //horizontal lista
@@ -1536,32 +1532,53 @@ fieldset.detalhes-ordenacao {
     display: none;
 }
 .btn-refinar {
-    background: $blue;
-    text-align: center;
-    max-width: 200px;
-    padding: 10px 15px;
+    display:inline-block;
     margin:15px 0;
     font-weight: bold;
     cursor:pointer;
+}
+.category-filter {
+    background: $white;
+    .orderBy:nth-of-type(2){
+    	display:none;
+    }
+    .orderBy:nth-of-type(1){
+			border: 0;
+    	display:inline-block;
+    	float: right;
+    	margin: 15px 0;
+    	label{
+    	}
+    	select{
+    		-webkit-appearance:none;
+    		border:1px solid $grey-light;
+    		color:$grey-dark;
+    		background: $white;
+				border-radius: 0;
+				font-size: $size-5;
+				cursor: pointer;
+				text-align-last: center;
+				line-height: 26px;
+    	}
+    }
+}
+.bt-refinar{
+	width: auto;
+	display: inline-block;
+	background: $blue;
+	cursor: pointer;
+	padding: 4px 10px;
+	border-radius: 290486px;
+	font-weight:bold;
+		&:hover{
+			box-shadow:$shadow-global;
+		}
 }
 .search-multiple-navigator{
 	display:block!important;
 	width:100%;
 	background:$white;
-	padding: 15px;
 	float: left;
-	.bt-refinar{
-		width: auto;
-		display: inline-block;
-		background: $blue;
-		cursor: pointer;
-		padding: 4px 10px;
-		border-radius: 290486px;
-		font-weight:bold;
-			&:hover{
-				box-shadow:$shadow-global;
-			}
-	}
 	h3,h4{
 		display:none;
 	}
