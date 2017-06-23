@@ -571,6 +571,28 @@
 			    width: 100%;
 			    font-size: $size-7;
 			}
+			//propuesta de valor
+			.seal-home {
+				display:inline-block!important;
+				width:100%;
+				margin:10px 0!important;
+				padding:0!important;
+				>.column {
+				    padding: 0;
+				    margin:0!important;
+				    width:100%!important;
+				}
+				.level{
+					.level-item{
+								display: inline-block;
+								width: 20%;
+								margin: 0 6%;	
+					}
+				}
+			}
+			.large-margin-top {
+			    margin-top: 1rem!important;
+			}
 }//.mediaquery
 @media screen and (min-width: 1384px){
 	.container {
