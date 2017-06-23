@@ -526,6 +526,50 @@
 			    display: none;
 			    color: #242424;
 			}
+			.search-multiple-navigator{
+				.refino{
+					width:43%;
+					margin:5px 10px;
+				}
+			}
+			.bt-refinar{
+				width: 90%;
+				margin: 0 5%;
+			}
+			.search-single-navigator{
+				h4{
+					width: 90%;
+					display: block;
+					margin: 5px auto;
+				}
+			}
+			.search-single-navigator {
+			    padding-bottom: 10px;
+			}
+			.category-filter {
+				box-shadow:$shadow-global;
+				.orderBy:nth-of-type(1) {
+							    float: none;
+							    width: 90%;
+							    margin: 5px 5%;
+							    label{
+							    	font-size:$size-7;
+							    }
+							    select{
+							    	width: 100%;
+							    }
+							}
+			}
+			fieldset.refino.Filtros.Skus.shadow {
+					width: 100%;
+					display: inline-block;
+					margin: 10px 0;
+			}
+			.btn-refinar {
+			    margin: 0 10px;
+			    width: 100%;
+			    font-size: $size-7;
+			}
 }//.mediaquery
 @media screen and (min-width: 1384px){
 	.container {
