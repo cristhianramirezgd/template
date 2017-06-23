@@ -238,9 +238,10 @@
 			ul {
 				-webkit-flex-wrap: wrap;
 				flex-wrap: wrap;
+				max-width: 100%!important;
 				li {
-				   width: 49%;
-				   width: 49%;
+				   width: 47%;
+				   min-width:47%;
 				   border-radius: 0px 0px 30px 30px;
 				   margin: 10px 0;
 				   .product-image{
