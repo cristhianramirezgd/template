@@ -1533,7 +1533,7 @@ fieldset.detalhes-ordenacao {
 }
 .btn-refinar {
     display:inline-block;
-    margin:15px;
+    margin:15px 0 0 15px;
     cursor:pointer;
     font-size:$size-5;
 }
@@ -1546,13 +1546,13 @@ fieldset.detalhes-ordenacao {
 			border: 0;
     	display:inline-block;
     	float: right;
-    	margin: 15px;
+    	margin: 15px 15px 0 0;
     	label{
     		font-size:$size-5;
     	}
     	select{
     		-webkit-appearance:none;
-    		border:1px solid $grey-light;
+    		border:1px solid $grey-lighter;
     		color:$grey-dark;
     		background: $white;
 				border-radius: 0;
@@ -1584,10 +1584,9 @@ fieldset.detalhes-ordenacao {
 	display:inline-block!important;
 }
 .search-multiple-navigator{
-	display:block!important;
+	display:inline-block!important;
 	width:100%;
 	background:$white;
-	float: left;
 	h3,h4{
 		display:none;
 	}
@@ -1595,7 +1594,7 @@ fieldset.detalhes-ordenacao {
 		float:left;
 		width: 17%;
 		margin:7px;
-		border: 1px solid $grey-light;
+		border: 1px solid $grey-lighter;
 		&:hover{
 			box-shadow:$shadow-global;
 		}
@@ -1638,4 +1637,7 @@ fieldset.detalhes-ordenacao {
 	ul{
 		display:none;
 	}
+}
+.categoria .search-single-navigator h4 {
+    visibility: hidden;
 }
