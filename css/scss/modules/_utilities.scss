@@ -1533,9 +1533,9 @@ fieldset.detalhes-ordenacao {
 }
 .btn-refinar {
     display:inline-block;
-    margin:15px 0;
-    font-weight: bold;
+    margin:15px;
     cursor:pointer;
+    font-size:$size-5;
 }
 .category-filter {
     background: $white;
@@ -1546,8 +1546,9 @@ fieldset.detalhes-ordenacao {
 			border: 0;
     	display:inline-block;
     	float: right;
-    	margin: 15px 0;
+    	margin: 15px;
     	label{
+    		font-size:$size-5;
     	}
     	select{
     		-webkit-appearance:none;
@@ -1563,16 +1564,24 @@ fieldset.detalhes-ordenacao {
     }
 }
 .bt-refinar{
-	width: auto;
-	display: inline-block;
+	width: 20%;
+	text-align:center;
 	background: $blue;
 	cursor: pointer;
 	padding: 4px 10px;
+	margin: 15px 40%;
 	border-radius: 290486px;
 	font-weight:bold;
+	transition:$fast-time-ease-out;
 		&:hover{
 			box-shadow:$shadow-global;
 		}
+}
+.search-filter-button{
+	display:none;
+}
+.btn--block{
+	display:inline-block!important;
 }
 .search-multiple-navigator{
 	display:block!important;
@@ -1587,6 +1596,9 @@ fieldset.detalhes-ordenacao {
 		width: 17%;
 		margin:7px;
 		border: 1px solid $grey-light;
+		&:hover{
+			box-shadow:$shadow-global;
+		}
 		> div{
 			display:none;
 			padding:15px;
@@ -1608,9 +1620,17 @@ fieldset.detalhes-ordenacao {
 	}
 }
 .search-single-navigator{
+	text-align:center;
 	h4{
 		display:inline-block;
-		margin: 15px 10px;
+		margin: 10px 15px;
+		padding: 2px 15px;
+		border: 1px solid $grey-lighter;
+		transition:$fast-time-ease-out;
+		border-radius:290486px;
+		&:hover{
+			box-shadow:$shadow-global;
+		}
 	}
 	h5.Hide.Filtros,ul.Filtros,h3 {
 	    display:none;
