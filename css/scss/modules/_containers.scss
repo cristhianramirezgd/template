@@ -629,6 +629,50 @@ span.medium-line {
 		    		    	    			}
 
 		    		    }
+		    	.address-display-block h4 {
+		    	    text-align: center;
+		    	    font-weight:bold;
+		    	    margin-bottom:15px;
+		    	}
+		    	p.new.new-address-link {
+		    		text-align:center;
+		    		a {
+		    				    	    background: $blue;
+		    				    	    border-radius: 290486px;
+		    				    	    padding: 5px 10px;
+		    				    	    transition:$transition-hover-link;
+		    				    	    &:hover{
+		    				    	    	box-shadow:$shadow-global;
+		    				    	    }
+		    				    	}
+		    	}
+		    	p.edit.edit-address-link {
+		    	    position: relative;
+		    	    margin: 15px 0;
+		    	    a.delete{
+		    	    	color:rgba($white,0);
+		    	    }
+		    	}
+		    	p.address-display-unit-info {
+		    	    padding: 15px;
+		    	    border: 1px solid $grey-lighter;
+		    	    background:$bg-global-body
+		    	}
+		    	.address-display-unit-info{
+		    		span.number {
+		    		    font-size: inherit;
+		    		    margin: 0;
+		    		    padding: 0;
+		    		    display: inline;
+		    		}
+		    	}
+		    	.address-display-unit h5 {
+		    	    font-weight: bold;
+		    	    text-align: center;
+		    	    padding-top: 15px;
+		    	    margin-top: 15px;
+		    	    border-top: 1px solid $grey-lighter;
+		    	}
 
 		// column 2
 		.address-display-block{
