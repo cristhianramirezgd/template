@@ -1641,3 +1641,12 @@ fieldset.detalhes-ordenacao {
 .categoria .search-single-navigator h4 {
     visibility: hidden;
 }
+p.welcome {
+	em {
+		a {
+			    display: inline-block;
+			    width: 100%;
+			    text-align: center;
+			}
+	}
+}
