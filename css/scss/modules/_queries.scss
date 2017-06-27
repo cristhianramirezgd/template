@@ -593,6 +593,10 @@
 			.large-margin-top {
 			    margin-top: 1rem!important;
 			}
+			// modal edit profile
+			    #editar-perfil-conteudo,#form-address,#exclude{
+			    	width:100%!important;
+			    	}
 }//.mediaquery
 @media screen and (min-width: 1384px){
 	.container {

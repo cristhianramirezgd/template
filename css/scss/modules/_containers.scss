@@ -291,3 +291,350 @@ span.medium-line {
 		}
 	}
 } 
+.active{
+	display:block!important;
+}
+//Account
+.account {
+	.page{
+		.container{
+			.columns{
+				.column{
+
+				}
+			}
+		}
+		.profile-detail-display {
+			padding: 10px;
+			background: white;
+			box-shadow:$shadow-global;
+			h5 {
+					  font-size: $size-5;
+					  font-weight: bold;
+					  text-align: center;
+					}
+				.profile-detail-display-email{
+					font-style:italic;
+					text-align: center;
+					margin-top: 15px;
+				}
+				.edit-profile-link{
+					margin:15px 0;
+					text-align: center;
+					a{
+						background:$blue;
+						border-radius:290486px;
+						padding: 5px 10px;
+						transition:$fast-time-ease-out;
+						&:hover{
+							box-shadow:$shadow-global;
+						}
+					}
+				}
+				.profile-detail-display-info{
+					padding:15px;
+					border:1px solid $grey-lighter;
+					background:$bg-global-body;
+					> span{
+						width:100%;
+						display: inline-block;
+					}
+					span.title {
+					    font-size: inherit!important;
+					}
+					span.data {
+					   text-align:right;
+					   float: right;
+					}
+				}
+		}
+		// modal edit profile
+		#editar-perfil,#address-edit,#address-remove {
+		    background:rgba($black,.7);
+		    position: fixed;
+		    z-index: 999999;
+		    left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		    div#response-message {
+		    		background:$green;
+		    		width:60%;
+		    		padding:40px 20px;
+		    		border:1px solid $white;
+		    		border-radius::290486px;
+		        position: absolute;
+		        left: 0;
+		        right: 0;
+		        margin: 0 auto;
+		        text-align: center;
+		        top: 15vw;
+		        box-shadow:$shadow-global;
+		        h4{
+		        	font-size:$size-3;
+		        	color: $white;
+		        	font-weight:bold;
+		        }
+		    }
+		    #editar-perfil-conteudo{
+		    	background:$white;
+		    	width:60%;
+		    	padding:10px;
+		    	border:1px solid $grey-lighter;
+		    	position: relative;
+		    	left: 0;
+		    	right: 0;
+		    	top: 10vw;
+		    	width: 60%;
+		    	margin: 0 auto;
+		    	box-shadow:$shadow-global;
+		    	form{
+		    		.control-group {
+		    		    width: 50%;
+		    		    display: inline-block;
+		    		}
+		    		#error{
+		    			position: absolute;
+		    			color:$red;
+		    			text-align: right;
+		    			width: 40%;
+		    		}
+		    		.close{
+		    			position: absolute;
+		    			right: -15px;
+		    			top: -15px;
+		    			background: $red;
+		    			color: $white;
+		    			font-size: $size-5;
+		    			font-weight: bold;
+		    			padding: 5px 10px;
+		    			border: 0;
+		    			border-radius: 50%;
+		    			&:hover{
+		    			box-shadow:$shadow-global;
+		    			border:1px solid $white;	
+		    			}
+		    			&:focus{
+								outline:0;
+		    			}
+		    		}
+		    		h3{
+		    			font-size: $size-5;
+		    			text-align: center;
+		    			font-weight: bold;
+		    			margin: 15px 0 20px 0;
+		    			}
+		    		.form-business-data-name{
+		    			display: inline-block;
+		    			text-align: center;
+			    		margin:15px auto;
+			    		width:100%;
+			    			a{
+			    				background:$blue;
+			    				border-radius:290486px;
+			    				padding: 5px 10px;
+			    				margin:0 auto;
+			    				transition:$fast-time-ease-out;
+			    				&:hover{
+			    					box-shadow:$shadow-global;
+			    				}
+			    			}
+		    		}
+		    		.profile-detail-form-personal-data,.profile-detail-form-contact-data,.profile-detail-form-business-data{
+		    			padding:10px;
+		    			border:1px solid $grey-lighter;
+		    				label{
+		    					margin: 10px;
+		    					display: inline-block;
+		    					font-size:$size-7;
+		    					font-weight: bold;
+		    				}
+		    				input{
+		    					&[type=text]{
+		    						width:96%;
+		    						padding: 5px 10px;
+		    						background:$bg-global-body;
+		    						padding: 5px 10px;
+		    						-webkit-appearance: none;
+		    						border: 0;
+		    						border-radius:290486px;
+		    						transition:$fast-time-ease-out;
+		    						&:focus{
+		    							-webkit-apparence:none;
+		    							outline:0;
+		    							box-shadow:$shadow-global;
+		    							width:100%;
+		    						}
+		    					}
+		    					&[type=radio]{
+		    						border-radius:50%;
+		    						width:24px;
+		    						height:24px;
+		    						border:1px solid $red;
+		    						display: inline-block;
+		    						vertical-align: middle;
+		    						-webkit-apparence:none!important;
+		    						&:checked + label{
+		    							border:1px solid $red!important;
+		    						}
+		    					}
+		    				}
+		    				#birthDate{
+		    					width:auto;
+		    				}
+		    			}
+		    			.save-cancel-buttons{
+		    				input,button{
+		    					background: $blue;
+		    					border-radius: 290486px;
+		    					padding: 5px 10px;
+		    					margin: 10px 15px;
+		    					transition:$fast-time-ease-out;
+		    					border:0;
+		    					cursor: pointer;
+		    					&:focus{
+										outline:0;
+										border:1px solid $white;
+		    					}
+		    					&:hover{
+		    						box-shadow:$shadow-global;
+		    					}
+		    				}
+		    			}
+		    		}
+		    	}
+		    }
+		    #form-address,#exclude{
+		    		    	background:$white;
+		    		    	width:60%;
+		    		    	padding:10px;
+		    		    	border:1px solid $grey-lighter;
+		    		    	position: relative;
+		    		    	left: 0;
+		    		    	right: 0;
+		    		    	top: 10vw;
+		    		    	width: 60%;
+		    		    	margin: 0 auto;
+		    		    	box-shadow:$shadow-global;
+		    		    	    		.control-group {
+		    		    	    		    width: 50%;
+		    		    	    		    display: inline-block;
+		    		    	    		}
+		    		    	    		#error{
+		    		    	    			position: absolute;
+		    		    	    			color:$red;
+		    		    	    			text-align: right;
+		    		    	    			width: 40%;
+		    		    	    		}
+		    		    	    		.close{
+		    		    	    			position: absolute;
+		    		    	    			right: -15px;
+		    		    	    			top: -15px;
+		    		    	    			background: $red;
+		    		    	    			color: $white;
+		    		    	    			font-size: $size-5;
+		    		    	    			font-weight: bold;
+		    		    	    			padding: 5px 10px;
+		    		    	    			border: 0;
+		    		    	    			border-radius: 50%;
+		    		    	    			&:hover{
+		    		    	    			box-shadow:$shadow-global;
+		    		    	    			border:1px solid $white;	
+		    		    	    			}
+		    		    	    			&:focus{
+		    		    							outline:0;
+		    		    	    			}
+		    		    	    		}
+		    		    	    		h3{
+		    		    	    			font-size: $size-5;
+		    		    	    			text-align: center;
+		    		    	    			font-weight: bold;
+		    		    	    			margin: 15px 0 20px 0;
+		    		    	    			}
+		    		    	    		.form-business-data-name{
+		    		    	    			display: inline-block;
+		    		    	    			text-align: center;
+		    		    		    		margin:15px auto;
+		    		    		    		width:100%;
+		    		    		    			a{
+		    		    		    				background:$blue;
+		    		    		    				border-radius:290486px;
+		    		    		    				padding: 5px 10px;
+		    		    		    				margin:0 auto;
+		    		    		    				transition:$fast-time-ease-out;
+		    		    		    				&:hover{
+		    		    		    					box-shadow:$shadow-global;
+		    		    		    				}
+		    		    		    			}
+		    		    	    		}
+		    		    	    		.address-form{
+		    		    	    			padding:10px;
+		    		    	    			border:1px solid $grey-lighter;
+		    		    	    				label{
+		    		    	    					margin: 10px;
+		    		    	    					display: inline-block;
+		    		    	    					font-size:$size-7;
+		    		    	    					font-weight: bold;
+		    		    	    				}
+		    		    	    				input{
+		    		    	    					&[type=text]{
+		    		    	    						width:96%;
+		    		    	    						padding: 5px 10px;
+		    		    	    						background:$bg-global-body;
+		    		    	    						padding: 5px 10px;
+		    		    	    						-webkit-appearance: none;
+		    		    	    						border: 0;
+		    		    	    						border-radius:290486px;
+		    		    	    						transition:$fast-time-ease-out;
+		    		    	    						&:focus{
+		    		    	    							-webkit-apparence:none;
+		    		    	    							outline:0;
+		    		    	    							box-shadow:$shadow-global;
+		    		    	    							width:100%;
+		    		    	    						}
+		    		    	    					}
+		    		    	    					&[type=radio]{
+		    		    	    						border-radius:50%;
+		    		    	    						width:24px;
+		    		    	    						height:24px;
+		    		    	    						border:1px solid $red;
+		    		    	    						display: inline-block;
+		    		    	    						vertical-align: middle;
+		    		    	    						-webkit-apparence:none!important;
+		    		    	    						&:checked + label{
+		    		    	    							border:1px solid $red!important;
+		    		    	    						}
+		    		    	    					}
+		    		    	    				}
+		    		    	    				#birthDate{
+		    		    	    					width:auto;
+		    		    	    				}
+		    		    	    			}
+		    		    	    			.save-cancel-buttons{
+		    		    	    				input,button{
+		    		    	    					background: $blue;
+		    		    	    					border-radius: 290486px;
+		    		    	    					padding: 5px 10px;
+		    		    	    					margin: 10px 15px;
+		    		    	    					transition:$fast-time-ease-out;
+		    		    	    					border:0;
+		    		    	    					cursor: pointer;
+		    		    	    					&:focus{
+		    		    									outline:0;
+		    		    									border:1px solid $white;
+		    		    	    					}
+		    		    	    					&:hover{
+		    		    	    						box-shadow:$shadow-global;
+		    		    	    					}
+		    		    	    				}
+		    		    	    			}
+
+		    		    }
+
+		// column 2
+		.address-display-block{
+			background:$white;
+			box-shadow: $shadow-global;
+			padding:10px;
+		}
+	}
+}
