@@ -364,6 +364,7 @@ fieldset.busca {
 	    border-top-left-radius: 290486px;
 	    border-bottom-left-radius: 290486px;
 	    transition:$short-time-ease-out;
+	    color:$grey-light;
 	    &:focus{
 	    	width:35vw!important;
 	    	box-shadow:$shadow-global;
@@ -465,13 +466,101 @@ fieldset.busca {
 }
 .v2-vtexsc-cart.vtexsc-cart.mouseActivated.preLoaded {
     position: absolute;
+    z-index:999999;
     top: 35px;
     right: 0;
-    left: -250px;
-    width: 300px;
-    background: white;
+    left: -500px;
+    width: 500px;
+    background: rgba($white,.9);
     padding: 15px;
+    border:1px solid $white;
+    border-radius:5px;
     box-shadow:$shadow-global;
+    .vtexsc-center{
+    	table{
+    		thead{
+					tr{
+						border:1px solid $grey-lighter;
+						background:$white;
+						th{
+							vertical-align:middle;
+							padding: 5px;
+						}
+					}
+    		}
+    		tbody{
+						border:1px solid $grey-lighter;
+					tr{
+						border-bottom:1px solid $grey-lighter;
+						transition:$fast-time-ease-out;
+						&:hover{
+							box-shadow:$shadow-global;
+							background:$blue;
+							td{
+								img{
+									transform:scale(1.1);
+								}
+							}
+						}
+						td{
+							vertical-align: middle;
+							padding: 5px;
+							font-size:$size-7;
+							.cartSkuRemove{
+								a{
+									display:block!important;
+								}
+							}
+						}
+						.cartSkuImage{
+							text-align: center;
+							a{
+								img{
+									border-radius: 50%;
+								}
+							}
+						}
+						.cartSkuQuantity{
+							text-align:center;
+						}
+						.cartSkuName {
+						    width: 30%;
+						    padding: 0 5px;
+						    font-size: 0.9rem;
+						}
+					}
+    		}
+    	}
+    	.cartFooter{
+    		padding:15px 0;
+    		background:$white;
+    		float: left;
+    		width: 100%;
+    		margin-top: 15px;
+    		border-radius:290486px;
+    		&:hover{
+    			box-shadow:$shadow-global;
+    		}
+    		> a {
+    			float:right;
+    			margin:0 15px;
+    		    &::after{
+    		    	content:'Comprar';
+							background: $blue;
+							padding:10px 15px;
+							border-radius:290486px;
+    		    }
+    		}
+    		.cartTotal{
+    			display: inline-block;
+    			float:left;
+    			margin:0 15px;
+    			.vtexsc-totalCart{
+    				padding:0 15px;
+    			}
+    		}
+    	}
+    }
 }
 // vtex breadcumbr
 .bread-crumb li {
