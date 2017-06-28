@@ -798,6 +798,29 @@ fieldset.busca {
 		}
 	}
 }
+.pager {
+    display: inline-block;
+    width: 100%;
+    ul.pages {
+        display: inline-block;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 15px 5px;
+            background:white;
+            border-radius:29px;
+            font-weight:bold;
+            &:hover{
+            	box-shadow:$shadow-global;
+            }
+        }
+    }
+}
+
 // vitrina de departamento
 .lo-mas-vendido{
 	 .bx-viewport {
