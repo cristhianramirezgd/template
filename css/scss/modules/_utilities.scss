@@ -608,6 +608,10 @@ fieldset.busca {
         padding: 0 3px;
     }
 }
+//busqueda-vazia
+.resultado-busca .category-filter {
+    display: none!important;
+
 // filtros
 
 .searchResultsTime,.pager.top,.resultado-busca-filtro .compare {
