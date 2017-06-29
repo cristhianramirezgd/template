@@ -2,6 +2,7 @@ node_modules/
 *.map
 template.php
 bower_components/
+#chekout-custom.php
 *.jpg
 *.png
 *.gif
