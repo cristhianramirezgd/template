@@ -469,8 +469,8 @@ fieldset.busca {
     z-index:999999;
     top: 35px;
     right: 0;
-    left: -400px;
-    width: 500px;
+    left: -380px;
+    width: 400px;
     background: rgba($white,.9);
     padding: 15px;
     border:3px solid $white;
@@ -485,6 +485,37 @@ fieldset.busca {
 						th{
 							vertical-align:middle;
 							padding: 5px;
+							font-size:0;
+						}
+						th.cartSkuName{
+							color:rgba($white,0);
+							&::before{
+								content:'Producto';
+								color:$grey-darker;
+								font-size:$size-7;
+								display: block;
+							}
+						}
+						th.cartSkuPrice{
+							color:rgba($white,0);
+							&::before{
+								content:'Precio';
+								color:$grey-darker;
+								font-size:$size-7;
+								display: block;
+							}
+						}
+						th.cartSkuQuantity{
+							color:rgba($white,0);
+							&::before{
+								content:'Cantidad';
+								color:$grey-darker;
+								font-size:$size-7;
+								display: block;
+							}
+						}
+						th.cartSkuActions{
+							display:none;
 						}
 					}
     		}
@@ -496,7 +527,8 @@ fieldset.busca {
 						&:hover{
 							box-shadow:$shadow-global;
 							background:$blue;
-							td{
+							td.cartSkuImage{
+								background:$yellow;
 								img{
 									transform:scale(1.1);
 								}
@@ -528,6 +560,9 @@ fieldset.busca {
 						    padding: 0 5px;
 						    font-size: 0.9rem;
 						}
+						td.cartSkuActions{
+							display:none;
+						}
 					}
     		}
     	}
@@ -549,6 +584,7 @@ fieldset.busca {
 							background: $blue;
 							padding:10px 15px;
 							border-radius:290486px;
+							font-weight: bold;
     		    }
     		}
     		.cartTotal{
