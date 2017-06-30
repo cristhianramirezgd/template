@@ -1201,6 +1201,10 @@ fieldset.busca {
 	  background:$white;
 	  box-shadow:$shadow-global;
 }
+// oculta cuotas de prateleira y de vitrina
+em.valor-dividido.price-installments,.preco-a-vista,.installment{
+    display: none!important;
+}
 // producto prateleira
 .title-description {
 	    text-align: center;
