@@ -283,6 +283,21 @@ span.medium-line {
     z-index: -9;
     left: 0;
     box-shadow:$shadow-global;
+    &-faq{
+    			background:$white;
+    			height: 4vw;
+    	    top: 50px;
+    	    max-height: 48px;
+    	    width: 100%;
+    	    display: flex;
+    	    position: absolute;
+    	    -webkit-box-align: center;
+    	    -ms-flex-align: center;
+    	    align-items: center;
+    	    z-index: -9;
+    	    left: 0;
+    	    box-shadow: 0.12vw 0.12vw 0.21vw rgba(10,10,10,.2);
+    }
 }
 .vtex-seal{
 	figure {
@@ -709,6 +724,12 @@ span.medium-line {
 		    padding:15px;
 		    box-shadow:$shadow-global;
 		    color:$grey-light!important;
+	}
+}
+.content{
+	&-list{
+	text-align:left;
+	padding:15px;
 	}
 }
 .service{
