@@ -188,6 +188,41 @@ ul.list-inline{
 			vertical-align: middle;
 		}
 }
+//clase para toogle searchbox
+.social-icon {
+	.searchbox {
+	    position: initial!important;
+	    fieldset.busca {
+	        margin: 0!important;
+	        background: $white;
+	        height: auto;
+	        padding-top: 2px;
+	        .btn-buscar{
+	        	width:24px;
+	        	height:24px;
+	        	margin-left: -23px;
+    				margin-top: -2px;
+	        }
+	        .fulltext-search-box{
+	        	height:25px;
+	        	border: 1px solid $blue;
+	        	border-radius:290486px;
+	        	&:focus{
+	        		box-shadow:none;
+	        		& +.btn-buscar{
+	        		position: relative;
+	        		transform: none;
+	        		margin-left: -24px!important;
+	        		bottom: -1px;
+	        		box-shadow:none;
+	        	}
+	        	}
+	        }
+	    }
+	}
+}
+
+
 //clase para  toggle-age
 .is-desktop-true{
 		display:block!important;
