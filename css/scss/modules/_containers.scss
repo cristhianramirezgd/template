@@ -704,8 +704,19 @@ span.medium-line {
 	}
 }
 .item{
-	.card{
+	&-card{
 		    margin: 15px;
+		    padding:15px;
 		    box-shadow:$shadow-global;
+		    color:$grey-light!important;
+	}
+}
+.service{
+	&-icon{
+		padding:15px;
+		li{
+			text-align:left;
+			margin:15px auto;
+		}
 	}
 }
