@@ -120,6 +120,7 @@ ul.list-inline{
 }
 .small{
 	&-padding{
+		padding:10px;
 		&-top{padding-top:$size-7!important;}
 		&-bottom{padding-bottom:$size-7!important;}
 	}

@@ -682,3 +682,30 @@ span.medium-line {
 		}
 	}
 }
+//paginas de texto
+.top{
+	&--20{
+		margin-top:-20px;
+	}
+}
+.text-normal{
+	font-style: initial;
+}
+.contact-links {
+	padding:15px 0;
+	p {
+	    margin: 15px auto;
+	}
+}
+.text-body-faq {
+	p {
+	    color: $grey-dark!important;
+	    font-weight: 300;
+	}
+}
+.item{
+	.card{
+		    margin: 15px;
+		    box-shadow:$shadow-global;
+	}
+}
