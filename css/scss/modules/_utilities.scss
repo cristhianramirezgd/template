@@ -401,6 +401,7 @@ fieldset.busca {
 	    border-bottom-left-radius: 290486px;
 	    transition:$short-time-ease-out;
 	    color:$grey-light;
+	    padding-left: 10px;
 	    &:focus{
 	    	width:35vw!important;
 	    	box-shadow:$shadow-global;
