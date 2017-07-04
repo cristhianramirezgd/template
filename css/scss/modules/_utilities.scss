@@ -680,19 +680,36 @@ fieldset.busca {
 			font-family:$family-headers;
 			font-size:2.5rem;
 			text-align:center;
+			margin: 60px auto 0 auto;
 		}
 		ul{
 			width:19%;
 			display: inline-block;
+			margin-bottom:30px;
 			li{
 				width:100%;
 				margin:0;
 			}
 		}
+		.bx-viewport {
+		    height: auto!important;
+		}
 	}
 	.prateleira.horizontal-lista {
 	    position: absolute;
 	    top: -10px;
+	}
+	.lo-mas-vendido{
+		.department-shelf{
+			h2{
+				margin:30px auto 0 auto;
+			}
+			ul{
+				li{
+					margin:0;
+				}
+			}
+		}
 	}
 }
 // global destáque o flag de coleçoes
@@ -1300,7 +1317,6 @@ em.valor-dividido.price-installments,.preco-a-vista,.installment{
 						}
 					}
 				}
-
 .specification-section,
 .prateleiras-product{
 	.department-shelf,
