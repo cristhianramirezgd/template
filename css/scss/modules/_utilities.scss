@@ -107,7 +107,6 @@ ul.list-inline{
 	&-embed {
 		position: relative;
 		padding-bottom: 56.25%; /* 16:9 */
-		padding-top: 25px;
 		height: 0;
 		iframe {
 			position: absolute;
@@ -374,7 +373,6 @@ fieldset.busca {
 	border: 0;
 	height: 30px;
 	margin-top: 9px;
-	background:$yellow;
 	z-index: 999999;
 	-webkit-border-radius: 290486px;
 	-moz-border-radius: 290486px;
@@ -1107,7 +1105,7 @@ span.line-red {
 									overflow: hidden;
 									display:block;
 										img{
-										transition:$short-time-ease-out;
+										transition:$fast-time-ease-out;
 										width:100%;
 										vertical-align: middle;
 										max-width:107px;
@@ -1797,6 +1795,13 @@ fieldset.detalhes-ordenacao {
 				cursor: pointer;
 				text-align-last: center;
 				line-height: 26px;
+				border-radius: 290486px;
+				background: $yellow;
+				&::before{
+					content:'▼';
+					width:5px;
+					height:5px;
+				}
     	}
     }
 }

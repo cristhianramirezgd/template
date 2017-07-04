@@ -697,6 +697,10 @@ span.medium-line {
 		}
 	}
 }
+.card ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
 //paginas de texto
 .top{
 	&--20{
