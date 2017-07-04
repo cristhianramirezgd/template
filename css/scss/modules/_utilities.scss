@@ -752,15 +752,18 @@ fieldset.busca {
     			}
 		   }
 		   .product-name{
-			display: inline-block;
+			display: flex;
 			width: 100%;
 			text-align: center;
+			align-items: center;
 			padding: 0 10px;
 			line-height: 1.2;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-			overflow: hidden;
+			margin-top:1.3rem;
+			// text-overflow: ellipsis;
+			// white-space: nowrap;
+			// overflow: hidden;
 			color: $red;
+			height:52px;
 		   	a{
 		   		color:$red;
 		   		text-align:center;
@@ -859,7 +862,7 @@ fieldset.busca {
 			    left: 0;
 			    right: 0;
 			    margin: 0 auto;
-			    top: 63%;
+			    top: 58%;
 			a{
 				color: $white;
 				text-align: center;
