@@ -701,12 +701,27 @@ fieldset.busca {
 	}
 	.lo-mas-vendido{
 		.department-shelf{
+
 			h2{
 				margin:30px auto 0 auto;
 			}
 			ul{
 				li{
 					margin:0;
+					.product-name{
+						display: flex;
+						align-items: center;
+						align-content: center;
+						margin-bottom: 10px;
+						a{
+							line-height: .9;
+						}
+					}
+				}
+			}
+			.add-to-cart-async {
+				.wrapper-buy-button-asynchronous{
+					top: 61%;
 				}
 			}
 		}
