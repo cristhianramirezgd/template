@@ -1610,8 +1610,16 @@ em.valor-dividido.price-installments,.preco-a-vista,.installment{
 	// thumbnails
 	.thumbs {
 	    display: inline-block;
+	    width: 100%;
 	    li{
 	    	display:inline-block;
+	    	text-align:center;
+	    	a{
+	    		img{
+	    			width: 67.5px;
+	    			margin: 0 5px;
+	    		}
+	    	}
 	    	&:hover{
 					a{
 	    			transition:$short-time-ease-out;
