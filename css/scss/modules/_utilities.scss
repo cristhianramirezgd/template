@@ -663,6 +663,16 @@ fieldset.busca {
     	}
     }
 }
+// seal home
+.seal-home{
+	background:$white;
+	a{
+		img{
+			@include shadow-alpha-image;
+			width: 100px;
+		}
+	}
+}
 // vtex breadcumbr
 .bread-crumb li {
     display: inline-block;
