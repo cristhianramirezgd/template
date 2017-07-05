@@ -70,57 +70,37 @@
    		      <span></span>
    		    </span>
    		    <div class="nav-menu nav-right center-nav" id="mm-megamenu">
-   		      <ul class="nav-item item-menu-dropdpwn">
-                  <li>
-                  <a href="#" class="nav-item">Text</a>
-                     <ul>
-                        <li class="item-dropdown">
-                           <!-- megamenu -->
-                                       <div class=" mega bg-blue-alpha shadow">
-                                          <div class="columns mega-menu">
-                                            <div class="column">
-                                                <ul class="vertical">
-                                                   <li class="vertical-item"><a href="#">Bebé</a></li>
-                                                   <li><a href="#">Teteros y Alimentación</a></li>
-                                                   <li><a href="#">Sonajeros</a></li>
-                                                   <li><a href="#">Musicales y Sonidos</a></li>
-                                                   <li><a href="#">Didáctico y aprendizaje</a></li>
-                                                   <li><a href="#">Móviles</a></li>
-                                                   <li><a href="#">Gimnasios y Tapetes</a></li>
-                                                   <li><a href="#">Coches y Otros</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="column">
-                                                <ul class="vertical">
-                                                   <li class="vertical-item"><a href="#">Categoría</a></li>
-                                                   <li><a href="#">items 2</a></li>
-                                                   <li><a href="#">items 3</a></li>
-                                                   <li><a href="#">items 4</a></li>
-                                                   <li><a href="#">items 5</a></li>
-                                                   <li><a href="#">items 6</a></li>
-                                                   <li><a href="#">items 7</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="column">
-                                                <ul class="vertical">
-                                                   <li class="vertical-item"><a href="#">Categoría</a></li>
-                                                   <li><a href="#">items 2</a></li>
-                                                   <li><a href="#">items 3</a></li>
-                                                   <li><a href="#">items 4</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="column is-one-third is-hidden-mobile">
-                                             <figure>
-                                                <img src="//monkeymarket.vteximg.com.br/arquivos/monkey-market-shop-banner-megamenu.png" alt="sale monkey market" />
-                                             </figure>
-                                             </div>
-                                          </div>
-                                       </div> 
-                                       <!-- .megamenu -->
-                        </li>
-                     </ul>
-                  </li>
-                </ul>
+   		      <a href="/bebe" class="nav-item">Bebé</a>
+   		         		      <!-- categoria -->
+   		      <!-- megamenu -->
+   				      <div class=" mega bg-blue-alpha shadow">
+   				      	<div class="columns mega-menu">
+   				      	  <div class="column">
+   				      	      <ul class="vertical">
+   				      	      	<li class="vertical-item"><a href="/bebe">Bebé</a></li>
+   				      	      	<!-- <li><a href="/bebe/teteros-y-alimentacion">Teteros y Alimentación</a></li> -->
+   				      	      	<li><a href="/bebe/sonajeros">Sonajeros</a></li>
+   				      	      	<li><a href="/bebe/musicales-y-sonidos">Musicales y Sonidos</a></li>
+                                 <li><a href="/bebe/didactico-y-aprendizaje">Didáctico y aprendizaje</a></li>
+                                 <li><a href="/bebe/moviles">Móviles</a></li>
+                                 <li><a href="/bebe/gimnasios-y-tapetes">Gimnasios y Tapetes</a></li>
+                                 <!-- <li><a href="/bebe/coches-y-otros">Coches y Otros</a></li> -->
+   				      	      </ul>
+   				      	  </div>
+   				      	  <div class="column">
+   				      	    
+   				      	  </div>
+   				      	  <div class="column">
+   				      	      
+   				      	  </div>
+   				      	  <div class="column is-one-third is-hidden-mobile">
+   				      		<figure>
+   				      			<img src="/arquivos/monkey-market-shop-banner-megamenu.png" alt="sale monkey market" />
+   				      		</figure>
+   				      		</div>
+   				      	</div>
+   				      </div> 
+   		        	<!-- .megamenu -->
    		      <a href="/preschool" class="nav-item">Preschool</a>
    		         		      <!-- categoria -->
    		      <!-- megamenu -->

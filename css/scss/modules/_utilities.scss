@@ -92,8 +92,13 @@ ul.nav-item.item-menu-dropdpwn {
 			}
 	}
 }
+li.sub-category{
+	transition:$fast-time-ease-out;
+		ul{
+				padding-left:15px;
+			}
 
-
+}
 .vertical-footer{
 	position:relative;
 	padding-left: 18px;
