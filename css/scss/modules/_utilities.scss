@@ -441,18 +441,19 @@ fieldset.busca {
 	    }
 	}
 	.btn-buscar {
-	    width: 30px;
-	    height: 30px;
+	    width: 27px;
+	    height: 27px;
 	    border-radius: 50%;
 	    color: rgba(255,255,255,0);
 	    background-image: url(/arquivos/monkey-market-tienda-icono-35.png);
 	    background-position: center center;
 	    background-size: cover;
 	    border: 0;
-	    margin-bottom: 1px;
+	    margin-bottom: -1px!important;
 	    margin-left:-29px;
 	    cursor: pointer;
 	    transition:$medium-time-ease-out;
+	    padding: 0!important;
 	}
 }
 .ui-autocomplete, .ui-menu, .ui-widget{
