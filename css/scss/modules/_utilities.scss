@@ -1246,6 +1246,9 @@ span.line-red {
 }
 //precio de producto
 .price-product{
+	.column {
+	    padding: 0;
+	}
 	.valor-por.price-best-price {
 	    font-size: $size-4;
 	    font-style: initial;

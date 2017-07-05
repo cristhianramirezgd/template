@@ -268,9 +268,9 @@ footer{
 	}
 }	
 span.medium-line {
-    height: 4vw;
-    top: 27%;
-    max-height: 48px;
+    height: 6vw;
+    max-height: 57px;
+    top: 21%;
     background: white;
     width: 100%;
     display: -webkit-box;
@@ -282,7 +282,6 @@ span.medium-line {
     align-items: center;
     z-index: -9;
     left: 0;
-    box-shadow:$shadow-global;
     &-faq{
     			background:$white;
     			height: 4vw;
