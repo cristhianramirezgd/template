@@ -420,11 +420,9 @@ fieldset.busca {
 	}
 	.fulltext-search-box {
 	    border: 2px solid #15dbf9;
-		width: 30vw;
+			width: 30vw;
 	    height: 30px;
-	    border-right: 0;
-	    border-top-left-radius: 290486px;
-	    border-bottom-left-radius: 290486px;
+	  	border-radius:$btn-radus;
 	    transition:$short-time-ease-out;
 	    color:$grey-light;
 	    padding-left: 10px;
@@ -452,7 +450,7 @@ fieldset.busca {
 	    background-size: cover;
 	    border: 0;
 	    margin-bottom: 1px;
-	    margin-left: 5px;
+	    margin-left:-29px;
 	    cursor: pointer;
 	    transition:$medium-time-ease-out;
 	}
