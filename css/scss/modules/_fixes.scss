@@ -1,3 +1,23 @@
+.item-menu-dropdpwn{
+  &:hover{
+    .item-dropdown{
+      display:block!important;
+    }
+    .mega{
+      display:block!important;
+    }
+  }
+}
+#mm-megamenu{
+  overflow: hidden;
+}
+.mega{
+  img,figure {
+      width: 100%;
+      height: auto!important;
+      max-height: initial!important;
+  }
+}
 .nav{
   z-index: 0;
   // background:0!important;
