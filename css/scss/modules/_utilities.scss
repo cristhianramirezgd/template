@@ -448,9 +448,9 @@ fieldset.busca {
 	    background-image: url(/arquivos/monkey-market-tienda-icono-35.png);
 	    background-position: center center;
 	    background-size: cover;
-	    border: 0;
+	    border: 2px solid $blue;
 	    margin-bottom: -1px!important;
-	    margin-left:-29px;
+	    margin-left:-27px;
 	    cursor: pointer;
 	    transition:$medium-time-ease-out;
 	    padding: 0!important;
