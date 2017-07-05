@@ -1289,7 +1289,7 @@ span.line-red {
 .product-social-icon {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 5vw;
     background: $white;
     box-shadow:$shadow-global;
     display: block;
@@ -1384,7 +1384,7 @@ em.valor-dividido.price-installments,.preco-a-vista,.installment{
 	 a {
 		    position: absolute;
 		    right: 0;
-		    bottom:0;
+		    bottom: 5vw;
 		    background: $white;
 		    box-shadow: $shadow-global;
 		    display: block;
