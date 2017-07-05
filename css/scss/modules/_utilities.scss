@@ -456,35 +456,35 @@ fieldset.busca {
 	    padding: 0!important;
 	}
 }
-// .ui-autocomplete, .ui-menu, .ui-widget{
-// 	max-width:30vw;
-// 	position: fixed!important;
-//     top: 72px!important;
-// 	border: 1px solid $blue;
-// 	background:rgba($white,.72);
-// 	box-shadow:$shadow-global;
-// }
+.ui-autocomplete, .ui-menu, .ui-widget{
+	max-width:30vw;
+	position: fixed!important;
+    top: 72px!important;
+	border: 1px solid $blue;
+	background:rgba($white,.72);
+	box-shadow:$shadow-global;
+}
 
-// .ui-menu-item{
-// 	background:$white;
-// 	transition:$short-time-ease-out;
-// 	padding:10px;
-// 	border:1px solid $white;
-// 	&:hover{
-// 		background:$blue;
-// 		color:$white;
-// 		box-shadow:$shadow-global;
-// 		transform:$translate-animation-x;
-// 	}
-// }
-// .ui-corner-all {
-// 	display:inline-block;
-// 	width:100%;
-// 	padding:5px;
-// 	img {
-// 	    vertical-align: middle;
-// 	}
-// }
+.ui-menu-item{
+	background:$white;
+	transition:$short-time-ease-out;
+	padding:10px;
+	border:1px solid $white;
+	&:hover{
+		background:$blue;
+		color:$white;
+		box-shadow:$shadow-global;
+		transform:$translate-animation-x;
+	}
+}
+.ui-corner-all {
+	display:inline-block;
+	width:100%;
+	padding:5px;
+	img {
+	    vertical-align: middle;
+	}
+}
 .ui-state-focus {
     display: block!important;
 }
