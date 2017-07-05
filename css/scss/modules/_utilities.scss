@@ -64,6 +64,24 @@ ul.list-inline{
 			}
 		}
 }
+.medios-de-pago{
+	 ul {
+	 	li {
+	 		img {
+	 			 		    max-height: 35px;
+	 			 		    vertical-align:middle;
+	 			 		}
+	 	}
+	 	li:first-child {
+	 		img {
+	 			 	    max-height: inherit;
+	 			 	    vertical-align:middle;
+	 			 	}
+	 	}
+	 }
+}
+
+
 .vertical-footer{
 	position:relative;
 	padding-left: 18px;
