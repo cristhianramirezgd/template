@@ -7,6 +7,9 @@
 .center-nav{
 	justify-content: center!important;
 }
+.final-item {
+    margin-right: 3%;
+}
 //funcion para colores variados en botones
 .color-lenght {
 @include circle-color;
