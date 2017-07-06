@@ -124,6 +124,10 @@ div#mm-megamenu {
 	>ul{
 		width: 9.2%;
 		padding: 5px!important;
+		&:first-child{
+			 margin-left: 81px;
+		}
+
 		>li{
 			>a{
 				font-size: 1.2rem;
@@ -136,7 +140,7 @@ div#mm-megamenu {
 	ul{
 		font-weight:bold;	
 		&:first-child{
-			    margin-left: 81px;
+			   
 			.mega{
 				left: -335px;
 				width: 600px!important;
