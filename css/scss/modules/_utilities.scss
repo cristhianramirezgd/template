@@ -100,7 +100,11 @@ li.sub-category{
 		ul{
 				padding-left:15px;
 			}
-
+			&:hover{
+				>a {
+							    color: black!important;
+							}
+			}
 }
 div#mm-megamenu {
 	>ul{
@@ -145,7 +149,7 @@ div#mm-megamenu {
 					>a{
 						color:$blue!important;
 						&:hover{
-							color:$white!important;
+							color:$black!important;
 						}
 					}
 				}
@@ -154,6 +158,9 @@ div#mm-megamenu {
 				>li{
 					>a{
 						color:$yellow!important;
+						&:hover{
+							color:$black!important;
+						}
 					}
 				}
 			}
