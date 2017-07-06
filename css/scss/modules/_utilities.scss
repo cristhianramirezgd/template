@@ -92,6 +92,9 @@ ul.nav-item.item-menu-dropdpwn {
 			}
 	}
 }
+.is-desktop-true-nav{
+	 display: inherit;
+}
 li.sub-category{
 	transition:$fast-time-ease-out;
 		ul{
@@ -272,17 +275,7 @@ div#mm-megamenu {
 	        .fulltext-search-box{
 	        	height:25px;
 	        	border: 1px solid $blue;
-	        	border-radius:290486px;
-	        	&:focus{
-	        		box-shadow:none;
-	        		& +.btn-buscar{
-	        		position: relative;
-	        		transform: none;
-	        		margin-left: -24px!important;
-	        		bottom: -1px;
-	        		box-shadow:none;
-	        	}
-	        	}
+	        	border-radius:$btn-radus;
 	        }
 	    }
 	}
@@ -414,7 +407,7 @@ div#mm-megamenu {
     width: 17vw;
     margin:15px 1vw;
     padding: 10px;
-    border-radius: 290486px;
+    border-radius: $btn-radus;
     transition:$long-time-ease-out;
     &:hover{
     	@include shadow-alpha-image;
@@ -437,14 +430,7 @@ div#mm-megamenu {
 // Buscador Vtex
 fieldset.busca {
 	border: 0;
-	height: 30px;
-	margin-top: 9px;
-	z-index: 999999;
-	-webkit-border-radius: 290486px;
-	-moz-border-radius: 290486px;
-	-ms-border-radius: 290486px;
-	-o-border-radius: 290486px;
-	border-radius: 290486px;
+	border-radius: $btn-radus;
 	position: relative;
 	input{
 		&:focus {
@@ -457,26 +443,13 @@ fieldset.busca {
 	    display: none;
 	}
 	.fulltext-search-box {
-	    border: 2px solid #15dbf9;
-			width: 30vw;
+	    border: 2px solid $blue;
+			width: 25vw;
 	    height: 30px;
 	  	border-radius:$btn-radus;
 	    transition:$short-time-ease-out;
 	    color:$grey-light;
 	    padding-left: 10px;
-	    &:focus{
-	    	width:35vw!important;
-	    	box-shadow:$shadow-global;
-	    	border-radius: 290486px!important;
-	    	& + .btn-buscar{
-	    		position: absolute;
-	    		right: 0;
-	    		top: -2px;
-	    		box-shadow:$shadow-global;
-	    		transform:scale(1.1,1.1);
-	    		margin-left: -14px!important;
-	    	}
-	    }
 	}
 	.btn-buscar {
 	    width: 27px;
@@ -497,10 +470,10 @@ fieldset.busca {
 .ui-autocomplete, .ui-menu, .ui-widget{
 	max-width:30vw;
 	position: fixed!important;
-    top: 72px!important;
 	border: 1px solid $blue;
 	background:rgba($white,.72);
 	box-shadow:$shadow-global;
+	z-index: 999999!important;
 }
 
 .ui-menu-item{
@@ -527,26 +500,49 @@ fieldset.busca {
     display: block!important;
 }
 .searchbox {
-    position: absolute;
-    right: 10vw;
+    // position: absolute;
+    // right: 10vw;
 }
 .carrito {
-    position: absolute;
-    right: 5vw;
-    z-index: 2;
-    top: 8px;
+    position: relative;
+    margin-bottom: -10px;
+    margin-top: 5px;
     @include shadow-alpha-image;
 }
+.navigator-container,.navigator-container-nav{
+	>div {
+	    display: inline-block;
+	    margin-left: 10px;
+	}
+}
+.support-info{
+	>a {
+		display:inline-block;
+		margin-top: 12px;
+	}
+i {
+	    font-size: 1rem;
+	    margin: 0 5px;
+	}
+}
+.navigator-container {
+    margin: 0 auto;
+    position:relative;
+    justify-content: flex-end;
+}
+.account-item .dropdown {
+    margin-top: 5px;
+}
 .portal-totalizers-ref{
+	    position: relative;
 	border:1px solid $yellow;
 	border-radius:50%;
 	background:url('/arquivos/monkey-market-tienda-icono-01.png');
 	background-position: center center;
 	background-size: cover;
 	color: rgba(255,255,255,0);
-	width: 32px;
-	height: 32px;
-	display: inline-block;
+	width: 35px;
+	height: 35px;
 }
 .amount-items-in-cart{
 	span.title,.amount-items,.amount-kits,.total-cart{
@@ -576,7 +572,7 @@ fieldset.busca {
     z-index:999999;
     top: 35px;
     right: 0;
-    left: -380px;
+    left: -270px;
     width: 400px;
     background: rgba($white,.9);
     padding: 15px;
@@ -679,7 +675,7 @@ fieldset.busca {
     		float: left;
     		width: 100%;
     		margin-top: 15px;
-    		border-radius:290486px;
+    		border-radius:$btn-radus;
     		&:hover{
     			box-shadow:$shadow-global;
     		}
@@ -690,7 +686,7 @@ fieldset.busca {
     		    	content:'Comprar';
 							background: $blue;
 							padding:10px 15px;
-							border-radius:290486px;
+							border-radius:$btn-radus;
 							font-weight: bold;
     		    }
     		}
@@ -971,7 +967,7 @@ span.line-red {
 	    bottom: -24px;
 	    margin: 0 auto;
 	    background: rgba($white,.7);
-	    border-radius: 0px 0px 290486px 290486px;
+	    border-radius: 0px 0px $btn-radus $btn-radus;
 	    a{
 	    	color:$blue;
 
@@ -991,7 +987,7 @@ span.line-red {
 				width: 100%;
 				display: inline-block;
 				background: $blue;
-				border-radius: 290486px;
+				border-radius: $btn-radus;
 				padding: 7px;
 				font-weight: bold;
 				font-size: 1.2rem;
@@ -1130,7 +1126,7 @@ span.line-red {
 			bottom: 0;
 			color:$grey-light;
 			background:$white;
-			border-radius: 290486px 0px 0px 290486px;
+			border-radius: $btn-radus 0px 0px $btn-radus;
 			box-shadow:$shadow-vertical;
 			&::before{
 				    content: '—';
@@ -1153,7 +1149,7 @@ span.line-red {
 				width: 100%;
 				display: inline-block;
 				background: $blue;
-				border-radius: 290486px;
+				border-radius: $btn-radus;
 				padding: 7px;
 				font-weight:bold;
 				font-size: 1.2rem;
@@ -1228,11 +1224,11 @@ span.line-red {
 			   					  	    	border:1px solid $white;
 			   					  	    	box-shadow:$shadow-global;
 			   					  	    	transition:$fast-time-ease-out;
-			   					  	    	-webkit-border-radius:290486px;
-			   					  	    	-moz-border-radius:290486px;
-			   					  	    	-ms-border-radius:290486px;
-			   					  	    	-o-border-radius:290486px;
-			   					  	    	border-radius:290486px;
+			   					  	    	-webkit-border-radius:$btn-radus;
+			   					  	    	-moz-border-radius:$btn-radus;
+			   					  	    	-ms-border-radius:$btn-radus;
+			   					  	    	-o-border-radius:$btn-radus;
+			   					  	    	border-radius:$btn-radus;
 				   					  	    &:hover{
 				   					  	    		color:$black;
 				   					  	    }
@@ -1338,7 +1334,7 @@ span.line-red {
 	    background: $blue;
 	    color: $white;
 	    padding: 5px;
-	    border-radius: 290486px;
+	    border-radius: $btn-radus;
 	    width: 60%;
 	    margin: 0 auto;
 	    border:1px solid $white;
@@ -1564,7 +1560,7 @@ em.valor-dividido.price-installments,.preco-a-vista,.installment{
 					.publique {
 						a {
 						    padding:6px 30px;
-						    border-radius: 290486px;;
+						    border-radius: $btn-radus;;
 						    background: $blue;
 						    color: $white;
 						    font-weight: 500;
@@ -1894,7 +1890,7 @@ fieldset.detalhes-ordenacao {
 				cursor: pointer;
 				text-align-last: center;
 				line-height: 26px;
-				border-radius: 290486px;
+				border-radius: $btn-radus;
 				background: $yellow;
 				&::before{
 					content:'▼';
@@ -1911,7 +1907,7 @@ fieldset.detalhes-ordenacao {
 	cursor: pointer;
 	padding: 4px 10px;
 	margin: 15px 40%;
-	border-radius: 290486px;
+	border-radius: $btn-radus;
 	font-weight:bold;
 	transition:$fast-time-ease-out;
 		&:hover{
@@ -1967,7 +1963,7 @@ fieldset.detalhes-ordenacao {
 		padding: 2px 15px;
 		border: 1px solid $grey-lighter;
 		transition:$fast-time-ease-out;
-		border-radius:290486px;
+		border-radius:$btn-radus;
 		&:hover{
 			box-shadow:$shadow-global;
 		}
