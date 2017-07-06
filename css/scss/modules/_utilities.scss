@@ -94,6 +94,13 @@ ul.nav-item.item-menu-dropdpwn {
 }
 .is-desktop-true-nav{
 	 display: inherit;
+	  vertical-align: middle;
+	 i{
+	 	font-size: 1rem;
+	 	vertical-align: middle;
+	 	margin: 3px 5px;
+	 	padding: 0!important;
+	 }
 }
 li.sub-category{
 	transition:$fast-time-ease-out;
@@ -107,10 +114,22 @@ li.sub-category{
 			}
 }
 div#mm-megamenu {
+	display: flex;
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    box-pack: justify;
 	>ul{
+		width: 8%;
+		padding: 5px!important;
 		>li{
 			>a{
 				font-size: 1.2rem;
+				font-size: 1.2rem;
+				padding-left: 0!important;
+				padding-right: 0!important;
 			}
 		}
 	}
@@ -558,6 +577,9 @@ fieldset.busca {
 	>a {
 		display:inline-block;
 		margin-top: 12px;
+		small {
+		    font-size: .9rem;
+		}
 	}
 i {
 	    font-size: 1rem;
