@@ -103,13 +103,13 @@ div#mm-megamenu {
 	ul{
 		&:first-child{
 			.mega{
-				left: -300px;
+				left: -335px;
 				width: 600px!important;
 			}
 		}
 		&:nth-of-type(2){
 			.mega{
-				left: -197px;
+				left:-229px;
 			}
 		}
 		&:nth-of-type(2),&:nth-of-type(6), &:nth-of-type(7) {
@@ -117,7 +117,7 @@ div#mm-megamenu {
 					    width: 600px!important;
 					}
 			}
-			 &:nth-of-type(5){
+			 &:nth-of-type(5), &:nth-of-type(3){
 			 	.mega{
 			 		 width: 800px!important;
 			 	}
