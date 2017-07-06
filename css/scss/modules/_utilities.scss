@@ -828,12 +828,13 @@ i {
 	    /* display: inline-block; */
 	    margin: 2px auto;
 	    padding: 2px 15px;
+	    background: white;
 	    border: 1px solid $grey-lighter;
 	    transition:$fast-time-ease-out;
 	    border-radius:$btn-radus;
 	    display:block;
 	    width:100%;
-	        font-size: .8rem;
+	    font-size: .8rem;
 	    &:hover{
 	    	box-shadow:$shadow-global;
 	    	color:$blue;
