@@ -593,6 +593,13 @@ i {
 }
 .account-item .dropdown {
     margin-top: 5px;
+    background: $blue;
+    color: $white;
+    border-radius:$btn-radus;
+    margin-left: 15px;
+    &:hover{
+    	box-shadow:$shadow-global;
+    }
 }
 .portal-totalizers-ref{
 	    position: relative;
