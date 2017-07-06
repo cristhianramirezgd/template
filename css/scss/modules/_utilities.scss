@@ -103,7 +103,15 @@ li.sub-category{
 
 }
 div#mm-megamenu {
+	>ul{
+		>li{
+			>a{
+				font-size: 1.2rem;
+			}
+		}
+	}
 	ul{
+		font-weight:bold;	
 		&:first-child{
 			.mega{
 				left: -335px;
@@ -124,7 +132,31 @@ div#mm-megamenu {
 			 	.mega{
 			 		 width: 800px!important;
 			 	}
-			 }
+			}
+			&:nth-of-type(6),&:nth-of-type(7),&:nth-of-type(9),&:nth-of-type(10){
+				>li{
+					>a{
+						font-size:.9rem;
+					}
+				}
+			}
+			&:nth-of-type(8){
+				>li{
+					>a{
+						color:$blue!important;
+						&:hover{
+							color:$white!important;
+						}
+					}
+				}
+			}
+			&:nth-of-type(9){
+				>li{
+					>a{
+						color:$yellow!important;
+					}
+				}
+			}
 	}
 }
 .vertical-footer{

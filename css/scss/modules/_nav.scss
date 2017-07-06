@@ -110,7 +110,7 @@
 			z-index: 999999;
 			top: -70px;
 		img{
-			top: 22px;
+			top: 32px;
 	    	position: absolute;
 	    	max-width: 104px;
 	    	@media (max-width: 880px) {
@@ -170,10 +170,7 @@
 	display:block!important;
 }
 .max-height{
-	max-height: 30px;
 	.container {
-	    max-height: 30px!important;
-	    min-height: 30px!important;
-	    height: 30px;
+	    max-height: auto!important;
 	}
 }
