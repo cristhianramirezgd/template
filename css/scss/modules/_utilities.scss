@@ -862,6 +862,7 @@ i {
 	}
 	.level-item{
 		padding:0 15px;
+		width: 33.3%;
 		&:hover{
 			.card-info-seal{
 				display:block;
@@ -1062,7 +1063,7 @@ span.line-red {
 
 	.flag{
     background: url(/arquivos/monkey-market-tienda-icono-07.png) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     width: 25%;
     position: absolute;
     top: -7px;
