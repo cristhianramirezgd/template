@@ -1837,6 +1837,10 @@ em.valor-dividido.price-installments,.preco-a-vista,.installment{
 			}
 		}
 }
+.productDescription {
+    max-height: 160px;
+    overflow: scroll;
+}
 .rating-avalie .ratingStar.emptyRatingStar:before, .rating-avalie .ratingStar.filledRatingStar:before {
     content: '';
     width: 15px;
@@ -2114,7 +2118,7 @@ fieldset.detalhes-ordenacao {
 }
 .btn-refinar {
     display:inline-block;
-    margin:15px 0 0 15px;
+    margin:15px 0 15px 15px;
     cursor:pointer;
     font-size:$size-5;
 }
