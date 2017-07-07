@@ -698,7 +698,8 @@ span.medium-line {
 }
 .card ul {
     list-style-type: circle;
-    list-style-position: inside;
+    list-style-position: outside;
+    margin-left: 18px;
 }
 //paginas de texto
 .top{

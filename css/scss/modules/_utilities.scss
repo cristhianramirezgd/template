@@ -10,6 +10,12 @@
 .final-item {
     margin-right: 3%;
 }
+// banner contenido
+.banner-contenido-home {
+	img{
+	    transform: translate(23px);
+	}
+}
 //funcion para colores variados en botones
 .color-lenght {
 @include circle-color;
@@ -1163,6 +1169,7 @@ span.line-red {
 		}
 
 	}
+
 	// ul:last-child{
 	// 	align-items: left;
 	// 	justify-content: initial;
