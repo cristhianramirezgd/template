@@ -430,6 +430,12 @@ div#mm-megamenu {
 // Vtex class for tags
 .newsletter {
 	&-section{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7cd7f7+0,7cd7f7+50,efc638+53,efc638+53 */
+		background: #7cd7f7; /* Old browsers */
+		background: -moz-linear-gradient(left, #7cd7f7 0%, #7cd7f7 50%, #efc638 53%, #efc638 53%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #7cd7f7 0%,#7cd7f7 50%,#efc638 53%,#efc638 53%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #7cd7f7 0%,#7cd7f7 50%,#efc638 53%,#efc638 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7cd7f7', endColorstr='#efc638',GradientType=1 ); /* IE6-9 */
 		>.container{
 			background:url('/arquivos/monkey-market-tienda-bg-newsletter.png') no-repeat;
 			background-size:cover;
