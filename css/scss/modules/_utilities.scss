@@ -645,6 +645,21 @@ i {
     	box-shadow:$shadow-global;
     }
 }
+// .marca
+	.brand {
+	.btn-refinar {
+	    opacity: 0;
+	    margin-bottom: 20px;
+	}
+	.category-filter {
+		.orderBy{
+			&:nth-of-type(1){
+			float:left;
+			margin-left: 15px;				
+			}
+		}
+	}
+}
 .portal-totalizers-ref{
 	    position: relative;
 	border:1px solid $yellow;
