@@ -433,7 +433,11 @@ div#mm-megamenu {
 		>.container{
 			background:url('/arquivos/monkey-market-tienda-bg-newsletter.png') no-repeat;
 			background-size:cover;
-			background-position: center;
+			p,h2{
+				color:$brown;
+				padding:0 30px;
+			}
+
 		}
 	}
 		transition:$long-time-ease-out;
@@ -442,6 +446,8 @@ div#mm-megamenu {
 	}
 	fieldset,{
 		border:0;
+		text-align: center;
+		padding: 0 30px;
 		 > p {
 			    display: none;
 			}
@@ -454,7 +460,9 @@ div#mm-megamenu {
 			&:focus {
 				outline: 0;
 				outline-offset:0!important;
-				border:1px solid $black;
+				border-color:$blue;
+				color:$blue;
+				font-style:normal;
 			}
 		}
 	}
@@ -474,23 +482,24 @@ div#mm-megamenu {
 	}
 	.newsletter-client-name,
 	.newsletter-client-email{
-		border-top: 0;
-		border-bottom: 1px solid $black;
-		border-left: 0;
-		border-right: 0;
-		background: none;
+		border:3px solid $yellow;
+		border-radius:$btn-radus;
+		background: $white;
 		width: 20vw;
 		margin:15px 1vw;
 		padding: 10px;
+		color:$grey-light;
+		font-style:italic;
 	}
 	.newsletter-button-ok,.bt-voltar {
     background: $yellow;
     border: 0;
     width: 17vw;
-    margin:15px 1vw;
+    margin:15px auto;
     padding: 10px;
     border-radius: $btn-radus;
     transition:$long-time-ease-out;
+    display: block;
     &:hover{
     	@include shadow-alpha-image;
     	}
