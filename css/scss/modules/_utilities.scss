@@ -730,7 +730,9 @@ i {
 							}
 						}
 						th.cartSkuActions{
-							display:none;
+							// display:none;
+							display:block;
+							font-size:$size-7 ;
 						}
 					}
     		}
@@ -776,7 +778,21 @@ i {
 						    font-size: 0.9rem;
 						}
 						td.cartSkuActions{
-							display:none;
+							font-size:0;
+							a{
+								&:before{
+									content: 'x';
+									background: $red;
+									width: 15px;
+									height: 15px;
+									display: block;
+									text-align: center;
+									border-radius: 50%;
+									color: $white;
+									font-weight:bold;
+									font-size:$size-7;
+								}
+							}
 						}
 					}
     		}
