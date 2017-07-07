@@ -1364,13 +1364,16 @@ span.line-red {
 			position: absolute;
 			left: 0;
 			bottom: 0;
+			font-size:0;
 			color:$grey-light;
 			background:$white;
 			border-radius: $btn-radus 0px 0px $btn-radus;
 			box-shadow:$shadow-vertical;
 			&::before{
-				    content: '—';
-				    padding-bottom:5px;
+					    content: '— Vista Rápida';
+					    padding-bottom: 5px;
+					    font-size: .9rem;
+					    
 				    
 			 }
 		}
