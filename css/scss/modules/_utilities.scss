@@ -1028,15 +1028,26 @@ span.line-red {
 						align-content: center;
 						margin-bottom: 10px;
 						a{
-							line-height: .9;
+							line-height: 1;
 						}
 					}
 				}
 			}
 			.add-to-cart-async {
 				.wrapper-buy-button-asynchronous{
-					top: 61%;
+					op: 69%;
 				}
+			}
+		}
+	}
+}
+.add-to-cart-async {
+	.wrapper-buy-button-asynchronous{
+		a{
+			font-size:0!important;
+			&:before{
+				content: 'Añadir al Carrito';
+			 font-size: 1.2rem;
 			}
 		}
 	}
@@ -1208,7 +1219,7 @@ span.line-red {
 			    left: 0;
 			    right: 0;
 			    margin: 0 auto;
-			    top: 58%;
+			    top: 65%;
 			a{
 				color: $white;
 				text-align: center;
