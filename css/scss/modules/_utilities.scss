@@ -429,6 +429,13 @@ div#mm-megamenu {
 }
 // Vtex class for tags
 .newsletter {
+	&-section{
+		>.container{
+			background:url('/arquivos/monkey-market-tienda-bg-newsletter.png') no-repeat;
+			background-size:cover;
+			background-position: center;
+		}
+	}
 		transition:$long-time-ease-out;
 	.newsletter-title,h3 {
 	    display: none;
@@ -828,7 +835,7 @@ i {
 	    /* display: inline-block; */
 	    margin: 2px auto;
 	    padding: 2px 15px;
-	    background: white;
+	     background: white;
 	    border: 1px solid $grey-lighter;
 	    transition:$fast-time-ease-out;
 	    border-radius:$btn-radus;
