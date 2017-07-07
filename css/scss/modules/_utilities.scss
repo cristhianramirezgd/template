@@ -928,6 +928,10 @@ span.line-red {
 		}
 		.bx-viewport {
 		    height: auto!important;
+		    padding-top: 5px;
+		}
+		.flag{
+			background-size: contain!important;
 		}
 	}
 	.prateleira.horizontal-lista {
@@ -970,7 +974,7 @@ span.line-red {
     width: 25%;
     position: absolute;
     top: -7px;
-    right: -6px;
+    right: 0;
     color:rgba($white,0);
     @include shadow-alpha-image;
 	}
@@ -1172,6 +1176,7 @@ span.line-red {
 .lo-mas-vendido{
 	 .bx-viewport {
 	    height: auto!important;
+	    padding-top: 7px;
 	}
 }
 .department-shelf{
