@@ -605,6 +605,8 @@ fieldset.busca {
 	border: 0;
 	border-radius: $btn-radus;
 	position: relative;
+	top: 9px;
+	font-size: .85rem;
 	input{
 		&:focus {
 			outline: 0;
