@@ -220,6 +220,24 @@
 	    outline-offset:0;
 	}
 	footer{
+	>div{
+		>h2{
+			&::after {
+				    content: '▼';
+				    font-size: 1rem;
+				    transform: rotate(45deg);
+				    font-family:sans-serif;
+				    margin-left:10px;
+				}
+		}
+	}
+	.help-phone-footer {
+		.icon-callout {
+			i {
+						    font-size: 0;
+						}
+		}
+	}
 		.icon-brand{
 			max-width:90%;
 			box-shadow:$shadow-global;
@@ -278,6 +296,7 @@
 				a{
 					img{
 						text-align: center;
+						width: 80%;
     				margin: 0 10%!important;
 					}
 				}
@@ -301,20 +320,37 @@
 			.lo-mas-vendido {
 				.department-shelf{
 					h2{
+						margin:0 auto!important;
 						&::after,&::before{
 						opacity:0;
 						}
 					}
 				}
 			}
-		 .catagory-shelf {
+		 .catagory-shelf,.section-content-home  {
 		 	h2{
+		 		margin:0 auto!important;
 						&::after,&::before{
 						opacity:0;
 						}
 					}
 		 }
+	.bx-wrapper:hover 
+		{
+			a.bx-next,
+			a.bx-prev {
+			    opacity: 0;
+			}
 		}
+.bx-viewport {
+		     padding: 5px;
+		 }
+		}
+		.banner-contenido-home{
+			img{
+				transform:none;
+			}
+		} 
 		// newsletter-footer
 		.newsletter{
 			&-footer{
@@ -327,6 +363,14 @@
 					max-width:5%;
 				}
 			}
+			fieldset {
+			    padding: 0;
+			}
+		}
+		.newsletter-section{
+			>.container{
+						background:$yellow;
+					}
 		}
 		// newsletter cloud
 		.white{
@@ -388,12 +432,8 @@
 				;
 			}
 			.newsletter-button-ok {
-		    background: $yellow;
-		    border: 0;
 		    width: 96vw;
 		    margin:2px 2vw;
-		    padding: 10px;
-		    border-radius: 290486px;
 			}
 		}
 		// title category & department
@@ -782,9 +822,9 @@
 					}
 				}
 			}
-			.large-margin-top {
-			    margin-top: 1rem!important;
-			}
+		.large-margin-top, .large-margin-bottom {
+    		margin-top: .5rem!important;
+			}	
 			// modal edit profile
 			    #editar-perfil-conteudo,#form-address,#exclude{
 			    	width:100%!important;
