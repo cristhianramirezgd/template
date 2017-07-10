@@ -5,6 +5,21 @@
 	.title{
 		font-size: $size-5!important;
 	}
+	.top-bar-mobile-fixed {
+	    position: absolute!important;
+	    top: 40px!important;
+	    background: $white!important;
+	    height: auto!important;
+	}
+
+	.navigator-container{
+		box-shadow:$shadow-global;
+		padding: 20px;
+		>div {
+	    display: block!important;
+	    margin: 12px!important;	    
+	}
+	}
 	.mega{
 		padding: 15px 0;
 		position: initial!important;
@@ -17,6 +32,10 @@
 				width:100vw;
 			}
 		}
+	}
+	ul.toogle-dropdown {
+	    position: initial;
+	    margin: 0;
 	}
 	.nav>.container{
 		display:block!important;
@@ -214,6 +233,8 @@
 	    position: absolute!important;
 	    right: 0;
 	    top: 0;
+	    color: $grey;
+			padding: 11px 0px 11px 11px;
 	}
 	.outset-border-red {
 	    outline:0;
@@ -351,6 +372,7 @@
 				transform:none;
 			}
 		} 
+
 		// newsletter-footer
 		.newsletter{
 			&-footer{
