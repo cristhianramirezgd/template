@@ -207,6 +207,8 @@
 	}
 	.carrito {
 	    margin-top: 8px!important;
+	    float: right;
+    margin-right: 58px;
 	}
 	.settings-nav {
 	    position: absolute!important;
@@ -267,6 +269,51 @@
 		.toggle-age{
 			display:none;
 			padding: 15px;
+		}
+		.seal-home {
+			.level-item {
+				width: 33.3%!important;
+				margin: 5px 0!important;
+				padding:0;
+				a{
+					img{
+						text-align: center;
+    				margin: 0 10%!important;
+					}
+				}
+				p {
+					padding: 3px;
+					text-align: center;
+					margin-top:5px;
+					b {
+						font-size: .8rem!important;
+					}
+				}
+				p,a{
+					display:block;
+				}
+			}
+		}
+		figure.banner-section{
+			margin:15px 0!important;
+		}
+		.home {
+			.lo-mas-vendido {
+				.department-shelf{
+					h2{
+						&::after,&::before{
+						opacity:0;
+						}
+					}
+				}
+			}
+		 .catagory-shelf {
+		 	h2{
+						&::after,&::before{
+						opacity:0;
+						}
+					}
+		 }
 		}
 		// newsletter-footer
 		.newsletter{
