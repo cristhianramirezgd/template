@@ -287,6 +287,33 @@ div#mm-megamenu {
 			}
 		}
 }
+.help-phone-footer {
+	>div {
+     max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+	    >div{
+	    	display:inline-block;
+	    }
+	}
+	.icon-callout{
+		 i {
+			    font-size: 9rem;
+			    vertical-align: middle;
+			    float: left;
+			    margin-right: 10px;
+			    line-height: .9;
+			}
+		}
+		.callout-text{
+		    max-width: 315px;
+		}
+	h3 {
+		span {
+			    display: block;
+			}
+	}
+}
 .video{
 	&-section{
 		padding: 15px 0;
