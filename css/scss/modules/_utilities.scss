@@ -513,7 +513,6 @@ div#mm-megamenu {
 			background-position-x: -2px;
 			p,h2{
 				color:$brown;
-				padding:0 30px;
 			}
 
 		}
@@ -565,7 +564,7 @@ div#mm-megamenu {
 		background: $white;
 		width: 20vw;
 		max-width: 300px;
-		margin:15px 1vw;
+		margin:0 1vw;
 		padding: 10px;
 		color:$grey-light;
 		font-style:italic;
@@ -1120,7 +1119,7 @@ span.line-red {
 			display: inline-block;
 			margin-bottom:30px;
 			li{
-				max-width: 227px;
+				max-width: 226px;
 				width:100%;
 				margin:0;
 			}
@@ -2278,6 +2277,15 @@ fieldset.detalhes-ordenacao {
     	display:inline-block;
     	float: right;
     	margin: 15px 15px 0 0;
+    	&::before{
+    		content: '▼';
+				width: 5px;
+				height: 5px;
+				right: 40px;
+				position: absolute;
+				margin-top: 8px;
+				font-size: .8rem;
+    	}
     	label{
     		font-size:$size-5;
     	}
@@ -2293,11 +2301,6 @@ fieldset.detalhes-ordenacao {
 				line-height: 26px;
 				border-radius: $btn-radus;
 				background: $yellow;
-				&::before{
-					content:'▼';
-					width:5px;
-					height:5px;
-				}
     	}
     }
 }

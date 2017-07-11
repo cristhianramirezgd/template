@@ -874,6 +874,15 @@ fieldset.busca {
 							    float: none;
 							    width: 90%;
 							    margin: 5px 5%;
+							        	&::before{
+							        		content: '▼';
+							    				width: 5px;
+							    				height: 5px;
+							    				right: 40px;
+							    				position: absolute;
+							    				margin-top: 29px;
+							    				font-size: .8rem;
+							        	}
 							    label{
 							    	font-size:$size-7;
 							    }
