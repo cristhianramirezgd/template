@@ -600,28 +600,6 @@ fieldset.busca {
 							}
 						}
 					}
-					&:hover{
-						background:$yellow;
-						border-color:$yellow;
-						box-shadow:$shadow-global;
-						span.buy-async {
-							border:1px solid $yellow;
-							a{
-								color:$black;
-							}
-						}
-						.add-to-cart-async{
-							transition:$medium-time-ease-out;
-							.wrapper-buy-button-asynchronous{
-								a{
-							 		&::after{
-							 		display:none;
-							 	}
-							  }		    		
-							}
-
-						}
-					}
 					.product-name {
 								 height: 10vw;
 								 text-align: center;
