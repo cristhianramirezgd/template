@@ -7,13 +7,15 @@
 	}
 	.top-bar-mobile-fixed {
 	    position: absolute!important;
-	    top: 40px!important;
-	    background: $white!important;
-	    height: auto!important;
+	    top: 46px!important;
+	    background: rgba($black,.7)!important;
+	    height: 100vh!important;
+	    box-shadow:$shadow-transition;
 	}
 
 	.navigator-container{
 		box-shadow:$shadow-global;
+		background:$white;
 		padding: 20px;
 		>div {
 	    display: block!important;
@@ -84,6 +86,7 @@
 	.navbar.bg-red {
 	    background: $bg-global-body!important;
 	    .navigation{
+	    	transform: scale(.9);
 	    	border: 12px solid $white;
    		 	background: $blue;
     		outline: 1px solid $blue;
@@ -96,6 +99,7 @@
 	}
 	div#mm-megamenu{
 		   width: 100%;
+		   margin-top: 41px;
 		   display: none;
 		   	li.item-dropdown {
 		       display: none;
