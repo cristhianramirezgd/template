@@ -564,6 +564,8 @@ fieldset.busca {
 				-webkit-flex-wrap: wrap;
 				flex-wrap: wrap;
 				max-width: 100%!important;
+				float: left;
+				display: -webkit-inline-box;
 				li {
 				   width: 47%;
 				   min-width: 48%;
@@ -657,6 +659,9 @@ fieldset.busca {
 		            font-weight:bold;
 		        }
 		    }
+		}
+		.catagory-shelf .price{
+			margin: 5px auto;
 		}
 					//producto
 			.produto {

@@ -1227,12 +1227,12 @@ span.line-red {
 	ul {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: flex-start;
 		-webkit-box-pack: justify;
 		box-pack: justify;
 		li {
 		   width: 19%;
-		  margin: 20px 0;
+			 margin: 20px .5%;
 		   background: rgba($white,.5);
 		   border: 2px solid $white;
 		   display: block;
@@ -2258,7 +2258,6 @@ fieldset.detalhes-ordenacao {
     font-size:$size-5;
 }
 .category-filter {
-    background: $white;
     .orderBy:nth-of-type(2){
     	display:none;
     }
