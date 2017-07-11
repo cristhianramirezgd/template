@@ -402,6 +402,15 @@ ul.bxslider {
 		}
 	}
 }
+.brand{
+   h2.titulo-sessao{
+    font-size: 0;
+    &::after {
+      content: 'resultado de busqueda';
+      font-size: 2rem;
+      }
+   }
+}
 .home{
   .bx-wrapper{
     transition:$fast-time-ease-out;
