@@ -920,6 +920,11 @@ fieldset.busca {
 					}
 				}
 			}
+			.productDescription {
+			    max-height: 100%;
+			    overflow: auto;
+			    position: relative;
+			}
 		.large-margin-top, .large-margin-bottom {
     		margin-top: .5rem!important;
 			}	

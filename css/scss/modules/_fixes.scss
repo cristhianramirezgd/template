@@ -402,6 +402,15 @@ ul.bxslider {
 		}
 	}
 }
+// textos de producto desbordado
+.popup-text {
+    .productDescription {
+          font-size: .9rem;
+          &:hover {
+            max-height: 100%;
+        }
+      }
+  }
 // sustitucion titulo y filtros en colecciones
 .brand,.que-regalar,.monkey-sale,.lo-ultimo{
    h2.titulo-sessao{
