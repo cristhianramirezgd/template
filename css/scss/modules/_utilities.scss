@@ -4,6 +4,9 @@
 .font-monkey{
 	font-family:$family-headers;
 }
+.container{
+	max-width:1200px;
+}
 .center-nav{
 	justify-content: center!important;
 }
@@ -2299,6 +2302,7 @@ fieldset.detalhes-ordenacao {
 				line-height: 26px;
 				border-radius: $btn-radus;
 				background: $white;
+				min-width: 210px;
     	}
     }
 }

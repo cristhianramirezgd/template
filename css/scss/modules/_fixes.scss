@@ -402,6 +402,7 @@ ul.bxslider {
 		}
 	}
 }
+// sustitucion titulo y filtros en colecciones
 .brand,.que-regalar,.monkey-sale,.lo-ultimo{
    h2.titulo-sessao{
     font-size: 0;
@@ -410,7 +411,28 @@ ul.bxslider {
       font-size: 2rem;
       }
    }
+   .search-single-navigator h3{
+    display: inline-block;
+        margin: 10px 15px;
+        padding: 2px 15px;
+        border: 1px solid #dbdbdb;
+        transition: $fast-time-ease-out;
+        border-radius: 290486px;
+        background: $white;
+   }
 }
+.edad{
+   .search-single-navigator h3{
+    display: inline-block;
+        margin: 10px 15px;
+        padding: 2px 15px;
+        border: 1px solid #dbdbdb;
+        transition: $fast-time-ease-out;
+        border-radius: 290486px;
+        background: $white;
+   }
+}
+
 .home{
   .bx-wrapper{
     transition:$fast-time-ease-out;
