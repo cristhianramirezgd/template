@@ -1759,6 +1759,7 @@ span.line-red {
 	  position: absolute;
 	  background:$white;
 	  box-shadow:$shadow-global;
+	  transition: $short-time-ease-out;
 }
 // oculta cuotas de prateleira y de vitrina
 em.valor-dividido.price-installments,.preco-a-vista,.installment{
@@ -1983,6 +1984,7 @@ em.valor-dividido.price-installments,.preco-a-vista,.installment{
    	max-height: 146px;
     overflow: hidden;
     position: relative;
+    transition:$short-time-ease-out;
 }
 .rating-avalie .ratingStar.emptyRatingStar:before, .rating-avalie .ratingStar.filledRatingStar:before {
     content: '';
