@@ -412,7 +412,7 @@ ul.bxslider {
       }
   }
 // sustitucion titulo y filtros en colecciones
-.brand,.que-regalar,.monkey-sale,.lo-ultimo{
+.brand,.que-regalar,.monkey-sale,.lo-ultimo,.terminos-y-condiciones{
    h2.titulo-sessao{
     font-size: 0;
     &::after {
@@ -420,7 +420,17 @@ ul.bxslider {
       font-size: 2rem;
       }
    }
-   .search-single-navigator h3{
+   .box-mm {
+    ul {
+              list-style-type: circle;
+              list-style-position: outside;
+              margin-left: 30px;
+              margin-top:15px;
+              margin-bottom:15px;
+          }
+   }
+
+.search-single-navigator h3{
     display: inline-block;
         margin: 10px 15px;
         padding: 2px 15px;
