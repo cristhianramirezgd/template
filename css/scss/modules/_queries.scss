@@ -936,6 +936,25 @@ fieldset.busca {
 			    #editar-perfil-conteudo,#form-address,#exclude{
 			    	width:100%!important;
 			    	}
+	//sistema paginas informativas
+			.terminos-y-condiciones,.preguntas-frecuentes,.politicas-de-privacidad,.institucional{
+			   .seal-home {
+			      max-width: 868px;
+			      margin: 0px auto 15px;
+			      .level-item{
+			      	    max-width: 32.3%!important;
+			      }
+			  }
+			}
+			.box-mm {
+				ul {
+							    list-style-type: circle;
+							    list-style-position: outside;
+							    margin-left: 30px;
+							    margin-top:15px;
+							    margin-bottom:15px;
+							}
+			}
 }//.mediaquery
 @media screen and (min-width: 1384px){
 	.container {

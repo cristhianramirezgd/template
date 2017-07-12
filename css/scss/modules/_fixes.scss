@@ -430,6 +430,13 @@ ul.bxslider {
         background: $white;
    }
 }
+//sistema paginas informativas
+.terminos-y-condiciones,.preguntas-frecuentes,.politicas-de-privacidad,.institucional{
+   .seal-home {
+      max-width: 868px;
+      margin: 0px auto 15px;
+  }
+}
 .edad{
    .search-single-navigator h3{
     display: inline-block;
