@@ -47,6 +47,14 @@
 .width-auto{
 	width:auto;
 } 
+boton categoria
+li.first.pgEmpty{
+  font-size: 0;
+  ::after {
+      content: 'primero';
+      font-size: 1rem;
+  }
+}
 #classybox {
     position: fixed;
     height: 100%;
