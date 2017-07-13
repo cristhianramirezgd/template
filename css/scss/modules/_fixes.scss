@@ -19,6 +19,9 @@
       margin-top:15px;
   }
 }
+.mega-menu>div:last-child {
+        min-width: 359px;
+}
 .nav{
   z-index: 0;
   // background:0!important;
