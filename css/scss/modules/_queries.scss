@@ -425,6 +425,13 @@ fieldset.busca {
 			margin:15px 0!important;
 		}
 		.home {
+			.catagory-shelf,.department-shelf {
+				ul{
+					li{
+						min-width:auto!important;
+					}
+				}
+			}
 			.lo-mas-vendido {
 				.department-shelf{
 					h2{
@@ -564,16 +571,17 @@ fieldset.busca {
 				    line-height: 1.2;
 				  }
 			ul {
-				-webkit-flex-wrap: wrap;
-				flex-wrap: wrap;
-				max-width: 100%!important;
-				float: left;
-				display: -webkit-inline-box;
+				// -webkit-flex-wrap: wrap;
+				// flex-wrap: wrap;
+				// max-width: 100%!important;
+				// float: left;
+				// display: -webkit-inline-box;
 				li {
-				   width: 47%;
-				   min-width: 48%;
-						border-radius: 0 0 30px 30px;
-						margin: 10px 1%!important;
+					min-width: 50%;
+				  //  width: 47%;
+				  //  min-width: 48%;
+						// border-radius: 0 0 30px 30px;
+						// margin: 10px 1%!important;
 				   .product-image{
 				   	  display: block;
 		    			width: 100%;
