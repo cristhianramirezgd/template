@@ -357,8 +357,16 @@ fieldset.busca {
 			}
 		}
 	}
+	.color-lenght {
+	    margin: 0!important;
+	    max-width: 90vw!important;
+
+	}
 		.color-full{
 				padding:0;
+				&:last-child {
+				    font-size: inherit!important;
+				}
 			.round-button {
 				width:100%;
 				&-circle {
