@@ -491,3 +491,52 @@ ul.bxslider {
     }
   }
 }
+// global destáque o flag de coleçoes
+
+  .flag{
+    background-size: contain;
+    width: 25%;
+    position: absolute;
+    top: -7px;
+    right: 0;
+    color:rgba($white,0);
+    @include shadow-alpha-image;
+  }
+  .image-zoom-product {
+    .flag{
+                z-index: 99;
+                width: 12%;
+                right: 8px;
+                top: 4px;
+    }
+  }
+  .horizontal-lista {
+    .flag{
+      z-index: 100000;
+      width: 12%;
+      left: -22px;
+      top: -11px;
+    }
+  }
+  .flag.descuento{
+    &-05   {background: url(/arquivos/tienda-monkey-market-flag-descuento-05.png) no-repeat center center;}
+    &-10   {background: url(/arquivos/tienda-monkey-market-flag-descuento-10.png) no-repeat center center;}
+    &-15   {background: url(/arquivos/tienda-monkey-market-flag-descuento-15.png) no-repeat center center;}
+    &-20   {background: url(/arquivos/tienda-monkey-market-flag-descuento-20.png) no-repeat center center;}
+    &-25   {background: url(/arquivos/tienda-monkey-market-flag-descuento-25.png) no-repeat center center;}
+    &-30   {background: url(/arquivos/tienda-monkey-market-flag-descuento-30.png) no-repeat center center;}
+    &-35   {background: url(/arquivos/tienda-monkey-market-flag-descuento-35.png) no-repeat center center;}
+    &-40   {background: url(/arquivos/tienda-monkey-market-flag-descuento-40.png) no-repeat center center;}
+    &-45   {background: url(/arquivos/tienda-monkey-market-flag-descuento-45.png) no-repeat center center;}
+    &-50   {background: url(/arquivos/tienda-monkey-market-flag-descuento-50.png) no-repeat center center;}
+    &-55   {background: url(/arquivos/tienda-monkey-market-flag-descuento-55.png) no-repeat center center;}
+    &-60   {background: url(/arquivos/tienda-monkey-market-flag-descuento-60.png) no-repeat center center;}
+    &-65   {background: url(/arquivos/tienda-monkey-market-flag-descuento-65.png) no-repeat center center;}
+    &-70   {background: url(/arquivos/tienda-monkey-market-flag-descuento-70.png) no-repeat center center;}
+    &-75   {background: url(/arquivos/tienda-monkey-market-flag-descuento-75.png) no-repeat center center;}
+    &-80   {background: url(/arquivos/tienda-monkey-market-flag-descuento-80.png) no-repeat center center;}
+    &-85   {background: url(/arquivos/tienda-monkey-market-flag-descuento-85.png) no-repeat center center;}
+    &-90   {background: url(/arquivos/tienda-monkey-market-flag-descuento-90.png) no-repeat center center;}
+    &-95   {background: url(/arquivos/tienda-monkey-market-flag-descuento-95.png) no-repeat center center;}
+    &-sale {background: url(/arquivos/tienda-monkey-market-flag-descuento-sale.png) no-repeat center center;}
+  }
