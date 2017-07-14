@@ -494,7 +494,7 @@ ul.bxslider {
 // global destáque o flag de coleçoes
 
   .flag{
-    background-size: contain;
+    background-size: contain!important;
     width: 25%;
     position: absolute;
     top: -7px;
