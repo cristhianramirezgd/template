@@ -1060,6 +1060,8 @@ i {
 span.line-red {
     position: absolute;
     width: 100%;
+    max-width: 1200px;
+    max-height: 160px;
     height: 14vw;
     background: $tomato;
     top: 23%;
