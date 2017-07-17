@@ -1024,6 +1024,16 @@ fieldset.busca {
       margin: 0 auto!important;
       display: block;
   }
+  .catagory-shelf .add-to-cart-async .wrapper-buy-button-asynchronous a{
+  	font-size: .7rem;
+  	padding:0 7px;
+  	&::before{
+  		font-size:.9rem;
+  	}
+  }
+  .catagory-shelf .add-to-cart-async .wrapper-buy-button-asynchronous{
+  	top:57%;
+  }
 }//.mediaquery min tablet 679
 
 //mediaquery desktop 1000	
@@ -1077,6 +1087,16 @@ fieldset.busca {
 		.level-item a>img {
 		      margin: 0 auto!important;
 		      display: inline-block;
+		  }
+		  .catagory-shelf .add-to-cart-async .wrapper-buy-button-asynchronous a{
+		  	font-size: 1rem;
+		  	padding:7px;
+		  	&::before{
+		  		font-size:1.2rem;
+		  	}
+		  }
+		  .catagory-shelf .add-to-cart-async .wrapper-buy-button-asynchronous{
+		  	top:65%;
 		  }
 }//.mediaquery desktop 1192px
 
