@@ -605,6 +605,7 @@ fieldset.busca {
 							position: initial!important;
 							display: inline-block;
 							width: 100%;
+
 							a{
 								background: url(/arquivos/monkey-market-tienda-icono-01.png) no-repeat center center;
 								background-size: cover;
@@ -617,6 +618,9 @@ fieldset.busca {
 								border-radius: 0;
 								color:rgba($white,0);
 								position: absolute;
+								&:after{
+									display:none;
+								}
 							}
 						}
 					}
