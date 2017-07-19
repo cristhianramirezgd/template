@@ -1785,6 +1785,9 @@ em.valor-dividido.price-installments,.preco-a-vista,.installment{
 				    font-weight: bold;
 				    padding: 10px;
 				    border:1px solid $grey-dark;
+				    &.video{
+				    				display:none;
+				    		}
 				    &:hover{
 				    	background:$white;
 				    	border:1px solid $white;
@@ -1800,6 +1803,9 @@ em.valor-dividido.price-installments,.preco-a-vista,.installment{
 							.name-field{
 								font-weight:initial;
 								width:50%;
+							}
+							.video{
+								font-size:0;
 							}
 							.value-field{
 								width:50%;
