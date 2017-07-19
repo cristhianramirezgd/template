@@ -2358,6 +2358,9 @@ fieldset.detalhes-ordenacao {
 		border: 1px solid $blue;
 		border-radius:$btn-radus;
 		background:$bg;
+		&:last-child{
+			width: 92%;
+		}
 		&:hover{
 			box-shadow:$shadow-global;
 		}
