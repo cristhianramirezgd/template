@@ -877,6 +877,9 @@ fieldset.busca {
 				.refino{
 					width:43%;
 					margin:5px 10px;
+					&:last-child{
+						width: 92%;
+					}
 				}
 			}
 			.bt-refinar{
