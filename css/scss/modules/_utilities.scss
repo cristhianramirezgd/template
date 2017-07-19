@@ -2270,7 +2270,9 @@ fieldset.detalhes-ordenacao {
     color:$blue;
 }
 .category-filter {
-	background:$white;
+	.title-category-filter{
+		background:$white;
+	}
     .orderBy:nth-of-type(2){
     	display:none;
     }
@@ -2335,6 +2337,8 @@ fieldset.detalhes-ordenacao {
 .search-multiple-navigator{
 	display:inline-block!important;
 	width:100%;
+	padding-top:15px;
+	background:$white;
 	h3,h4{
 		display:none;
 	}
