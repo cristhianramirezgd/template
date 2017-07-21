@@ -542,6 +542,15 @@ ul.bxslider {
     &-sale {background: url(/arquivos/tienda-monkey-market-flag-descuento-sale.png) no-repeat center center;}
   }
 
+
+  li.first.pgEmpty {
+      font-size: 0;
+       &::before {
+        content: 'primero';
+        font-size: 1rem;
+      }
+  }
+
   // ADD THIS
   .addthis_inline_share_toolbox{
     a {

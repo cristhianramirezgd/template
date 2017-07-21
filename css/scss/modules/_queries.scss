@@ -370,6 +370,7 @@ fieldset.busca {
 				}
 			.round-button {
 				width:100%;
+				max-width: 100%;
 				&-circle {
 					width: 100%;
 					height:initial!important;
@@ -586,7 +587,7 @@ fieldset.busca {
 				// float: left;
 				// display: -webkit-inline-box;
 				li {
-					min-width: 50%;
+					min-width: 48%;
 				  //  width: 47%;
 				  //  min-width: 48%;
 						// border-radius: 0 0 30px 30px;
@@ -990,7 +991,17 @@ fieldset.busca {
            }
      }
   } 
-}//.mediaquery tablet 679
+  .catagory-shelf{
+  	ul {
+  	     display: initial!important;
+  	      li:nth-child(odd) {
+  	         display: initial!important;
+  	         float: left;
+  	     }
+  	 }
+  }
+
+}//.mediaquery max tablet 679
 
 //mediaquery min tablet 679
 @media screen and (min-width: $tablet) {
