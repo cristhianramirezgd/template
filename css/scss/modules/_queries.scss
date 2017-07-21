@@ -1000,6 +1000,33 @@ fieldset.busca {
   	     }
   	 }
   }
+  //categoria vertical
+  .category-vertical-finter {
+  	 .catagory-shelf {
+  	 	ul {
+  	 		li{
+  	 			&:nth-child(odd) {
+  	 			 max-width: 48%;
+				}
+  	 		}
+  	 	}
+  	 }
+  }
+ 
+  	.vertical-filter{
+  		.orderBy{
+  			width: 95%;
+    		margin: 7px 2.5%!important;
+  		}
+  		.search-multiple-navigator {
+  			.refino{
+  				&:last-child{
+  			width: 95%!important;
+    		margin: 7px 2.5%!important;
+  				}
+  			}
+  		}
+  	}
 
 }//.mediaquery max tablet 679
 
