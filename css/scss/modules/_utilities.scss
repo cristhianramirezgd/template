@@ -1131,10 +1131,10 @@ span.line-red {
 			}
 		}
 		ul{
-			width:19%;
-			display: inline-block;
-			margin-bottom:30px;
-			float: left;
+			width: initial;
+			    display: initial;
+			    margin-bottom: initial;
+			    float: left;
 			li{
 				max-width: 226px;
 				width:100%;
