@@ -599,13 +599,7 @@ div#mm-megamenu {
 		display: inherit;
 	}
 }
-//Preload Vtex
-.load , .loading{
-	display:none;
-	p{
-		display: none;
-	}
-}
+
 
 // Buscador Vtex
 fieldset.busca {
@@ -1140,15 +1134,20 @@ span.line-red {
 			width:19%;
 			display: inline-block;
 			margin-bottom:30px;
+			float: left;
 			li{
 				max-width: 226px;
 				width:100%;
 				margin:0;
+				&:nth-child(odd){
+					display:none!important;
+				}
 			}
 		}
 		.bx-viewport {
 		    height: auto!important;
 		    padding-top: 5px;
+		    padding-bottom: 24px;
 		}
 		.flag{
 			background-size: contain!important;
@@ -2224,10 +2223,62 @@ div#TB_ajaxWindowTitle {
 }
 div#TB_closeAjaxWindow a {
     color: $white;
+    font-size:0;
+    &::after{
+    	font-size: 1rem;
+	    color: $yellow;
+	    content: 'Cerrar';
+	    }
 }
 div#TB_closeAjaxWindow a {
-    color: white;
+    color: $white;
 }
+div#TB_window {
+    border: 5px solid #ffcb1f;
+    background:$bg;
+}
+//Quickview
+.product-quick-view{
+	#produto{
+		>span{
+			font-size:3rem;
+		}
+	}
+ #productName {
+	    font-family:$family-headers;
+	    text-align:text-center;
+	    font-size:1.5rem;
+	}
+		#productRating {
+		    font-size: 0;
+		    text-align:center;
+		    padding:15px 0;
+		}
+		.descricao-preco {
+		    text-align: center;
+		    font-size: 1.25rem;
+		}
+		a.buy-button.buy-button-ref{
+					color: $white;
+			    text-align: center;
+			    width: 100%;
+			    display: inline-block;
+			    background: $blue;
+			    border-radius:$btn-radus;
+			    padding: 7px;
+			    font-weight: 700;
+			    font-size: 1.2rem;
+		}
+		#productViewDetails {
+		    text-align: center;
+		    padding: 15px 0;
+		    width: 100%;
+		    display: block;
+		    font-size: 1.2rem;
+		    font-weight: bold;
+		}
+}
+
 ul.paginacao {
     margin: 0 auto;
     float: none;
@@ -2443,6 +2494,7 @@ p.welcome {
 .category-vertical-finter {
 	.catagory-shelf ul li {
 	    width: initial!important;
+	    max-width: 239px!important;
 	}
 	// multiple navigator
 	.search-multiple-navigator {
