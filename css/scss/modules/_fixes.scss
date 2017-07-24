@@ -1,31 +1,31 @@
 //Preload Vtex
 .load , .loading{
-  // display:none;
+  display:none;
   p{
-    // display: none;
+    display: none;
   }
 }
 // ajax-busy
-div#ajaxBusy{
-  position: fixed;
-      height: 100vh;
-      width: 100vw;
-      background:rgba( $black,.7);
-      z-index: 9999999;
-      p{
-        color: white;
-            position: fixed;
-            font-size: 3rem;
-            display: block;
-            top: 31vw;
-            text-align: center;
-            width: 100vw;
-            &::before{
-              content: url(/arquivos/monkey-market-juguetes-logo.png);
-              display: block;
-            }
-      }
-}
+// div#ajaxBusy{
+//   position: fixed;
+//       height: 100vh;
+//       width: 100vw;
+//       background:rgba( $black,.7);
+//       z-index: 9999999;
+//       p{
+//         color: white;
+//             position: fixed;
+//             font-size: 3rem;
+//             display: block;
+//             top: 31vw;
+//             text-align: center;
+//             width: 100vw;
+//             &::before{
+//               content: url(/arquivos/monkey-market-juguetes-logo.png);
+//               display: block;
+//             }
+//       }
+// }
 
 .item-menu-dropdpwn{
   &:hover{
