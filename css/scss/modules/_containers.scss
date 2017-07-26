@@ -309,6 +309,8 @@ span.medium-line {
 	display:block!important;
 }
 //Account
+
+	
 .account {
 	.page{
 		.container{
@@ -517,6 +519,15 @@ span.medium-line {
 		    				}
 		    			}
 		    		}
+		    	}
+		    }
+		    #form-address{
+		    	h3.address-label{
+		    		font-size:0!important;
+		    		  &::after{
+		    				content:'Nueva Dirección';
+		    				font-size:$size-4;
+		    		  }
 		    	}
 		    }
 		    #form-address,#exclude{
