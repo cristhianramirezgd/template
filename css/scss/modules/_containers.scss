@@ -542,6 +542,26 @@ span.medium-line {
 		    				margin: 0 auto;
 		    		  }
 		    }
+
+		    .row.profile-detail-form-contact-data{
+		    	>h5 {
+							font-size: 0;
+								&::after {
+		    				font-size: initial;
+		    				content: 'Datos de Contacto';
+		    				display: block;
+							}
+						}
+		    	}
+		    	.form-personal-data-surname{
+		    		>label {
+							font-size: 0!important;
+								&::before {
+			    	    content: 'Segundo Nombre';
+			    	    font-size: .7rem;
+			    			}
+						}
+		    	}
 		    #form-address,#exclude{
 		    		    	background:$white;
 		    		    	width:60%;
