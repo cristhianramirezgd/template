@@ -336,12 +336,14 @@ span.medium-line {
 					margin:15px 0;
 					text-align: center;
 					a{
-						background:$blue;
-						border-radius:290486px;
-						padding: 5px 10px;
-						transition:$fast-time-ease-out;
-						&:hover{
-							box-shadow:$shadow-global;
+						font-size:0;
+						&::after{
+							content:'Cambiar Datos';
+							background:$blue;
+							border-radius:$btn-radus;
+							padding: 5px 10px;
+							transition:$fast-time-ease-out;
+							font-size:1rem;
 						}
 					}
 				}
@@ -651,14 +653,20 @@ span.medium-line {
 		    	p.new.new-address-link {
 		    		text-align:center;
 		    		a {
-		    				    	    background: $blue;
-		    				    	    border-radius: 290486px;
-		    				    	    padding: 5px 10px;
-		    				    	    transition:$transition-hover-link;
-		    				    	    &:hover{
-		    				    	    	box-shadow:$shadow-global;
-		    				    	    }
-		    				    	}
+		    		    font-size:0;
+		    		    &:hover{
+		    		    	box-shadow:$shadow-global;
+		    		    }
+		    		    &::after{
+		    		    	content: 'Registrar Nueva Dirección';
+		    		    	    font-size: 1rem;
+		    		    	    background: #15dbf9;
+		    		    	    border-radius: 290486px;
+		    		    	    padding: 5px 10px;
+		    		    	    -webkit-transition: none 86ms ease-out;
+		    		    	    transition: none 86ms ease-out;
+		    		    }
+		    		}
 		    	}
 		    	p.edit.edit-address-link {
 		    	    position: relative;
@@ -666,6 +674,14 @@ span.medium-line {
 		    	    a.delete{
 		    	    	color:rgba($white,0);
 		    	    }
+		    	    .address-update{
+		    	    	font-size:0;
+			    	    	 &::after {
+			    	    	content: 'Cambiar Datos';
+			    	    	font-size: 1rem;
+			    	    }
+		    	    }
+		    	   
 		    	}
 		    	p.address-display-unit-info {
 		    	    padding: 15px;
