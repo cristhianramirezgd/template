@@ -557,11 +557,22 @@ span.medium-line {
 		    		>label {
 							font-size: 0!important;
 								&::before {
-			    	    content: 'Segundo Nombre';
+			    	    content: 'Segundo Nombre:';
 			    	    font-size: .7rem;
 			    			}
 						}
 		    	}
+		    	.profile-detail-form-personal-data{
+		    		>h5 {
+		    		    font-size: 0;
+		    		    &::before {
+					  	    font-size: 1.2rem;
+					  	    content: 'Datos Personales';
+					  	}
+		    		}
+
+		    	}
+		    	.profile-detail-form-personal-data>h5
 		    #form-address,#exclude{
 		    		    	background:$white;
 		    		    	width:60%;
