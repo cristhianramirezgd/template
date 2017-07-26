@@ -530,6 +530,18 @@ span.medium-line {
 		    		  }
 		    	}
 		    }
+		    a#business-toggle{
+		    		font-size:0!important;
+		    		background:none!important;
+		    		  &::after{
+		    				content:'Incluir Datos de Persona Jurídica';
+		    				font-size:$size-6;
+		    				background:$blue;
+		    				border-radius: $btn-radus;
+		    				padding: 5px 10px;
+		    				margin: 0 auto;
+		    		  }
+		    }
 		    #form-address,#exclude{
 		    		    	background:$white;
 		    		    	width:60%;
