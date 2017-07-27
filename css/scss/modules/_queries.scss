@@ -843,6 +843,23 @@ fieldset.busca {
 					}
 				}
 			}
+				.formUserComment .gohome::before{
+					content:url('/arquivos/monkey-market-juguetes-logo.png');
+				}
+				.adicionar-resenha{
+				padding:0!important;
+				}
+			#formUserReview {
+				.header{
+						width:90%;
+						.close{
+							a{
+								top:0;
+								right:0;
+							}
+							}
+						}
+			}
 			//precio de producto
 			.price-product{
 				.valor-por.price-best-price {

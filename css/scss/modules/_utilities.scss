@@ -1986,13 +1986,174 @@ em.valor-dividido.price-installments,.preco-a-vista,.installment{
 			}
 		}
 }
+// div#publishUserReview {
+//     background:rgba($black,.7);
+//     position:fixed;
+//     height: 100vh;
+//     width:100vw;
+// 		top: 0;
+// 		left: 0;
+// 		right: 0;
+//     z-index:9999999;
+// 		overflow-y: scroll;
+// }
+.formUserComment{
+	// background:rgba($black,.7);
+	  //   position:fixed;
+	  //   height: 100vh;
+	  //   width:100vw;
+			// top: 0;
+			// left: 0;
+			// right: 0;
+	  //   z-index:9999999;
+			// overflow-y: scroll;
+			
+	    .gohome {
+	       font-size:0;
+	       &::before{
+	       	content: url('/arquivos/monkey-market-juguetes-logo-footer.png');
+	       	font-size: $size-6;
+	       	text-align:center;
+	       	display:block;
+					margin-top: -30px;
+	       	@include shadow-alpha-image;
+	       }
+	    }
+}
+#formUserReview{
+
+	background:rgba($black,.7);
+	    position:fixed;
+	    height: 100vh;
+	    width:100vw;
+			top: 0;
+			left: 0;
+			right: 0;
+	    z-index:9999999;
+			overflow-y: scroll;
+	.header{
+		background:$white;
+		width:50%;
+		margin:0 auto;
+		top:10%;
+		padding: 15px;
+		position:relative;
+		.close{
+				a{
+					font-size:0;
+					position:absolute;
+					right:-10px;
+					top:-15px;
+					&::before{
+						content: 'x';
+						    font-size: 1.5rem;
+						    background: $red;
+						    width: 25px;
+						    height: 25px;
+						    display: block;
+						    text-align: center;
+						    border-radius: 50%;
+						    font-weight: bold;
+						    color: $white;
+						    line-height: 1.1;
+						    padding: 0;
+					}
+				}
+		}
+	}
+.footer{
+	display:none;
+}
+	.adicionar-resenha{
+		padding:15px;
+		fieldset.opiniao{
+			border:0;
+			.fTitulo,.fComentario{
+				label{
+					text-align:center;
+					font-family:$family-headers;
+					font-size:$size-5;
+				}
+				input{
+					text-align:center;
+					margin:0 auto;		
+					display:block;
+					float:right;
+				}
+			}
+			#txtTextoResenha {
+			    background: $bg;
+			    padding:15px;
+			    display:block;
+			    float:right;
+			  }
+			.fDivulgaEmail{
+				display: inline-block;
+				padding: 15px 0;
+				text-align: center;
+				width: 100%;
+				label{
+					text-align:center;
+					font-size: $size-7;
+				}
+				input{
+					text-align:center;
+					margin:0 auto;						
+				}
+
+			}
+		}
+		.ranking {
+		    padding: 15px;
+		    border: 1px solid $grey;
+		}
+		p.opiniaoInfo {
+		    text-align: center;
+		}
+		#rtAvaliacao_Star_Publish_05,
+		#rtAvaliacao_Star_Publish_04,
+		#rtAvaliacao_Star_Publish_03,
+		#rtAvaliacao_Star_Publish_02,
+		#rtAvaliacao_Star_Publish_01{
+			font-size:0;
+			&:hover{
+				&::before {
+						 background-position-y: 38px;
+				}
+			}
+		}
+		.opiniaoRating{
+			list-style:none;
+			text-align:center;
+			.ratingTitulo{
+				font-family:$family-headers;
+				font-size:$size-5;
+			}
+		}
+	}
+	p.aviso-resenha{
+		font-size:$size-7;
+	}
+	.avaliar{
+		 a{
+			    padding: 6px 30px;
+			    border-radius: $btn-radus;
+			    background: $blue;
+			    color: $white;
+			    font-weight: bold;
+			    font-size: 1.2rem;
+			    text-align:center;
+			    display:block;
+			}
+	}
+}
 .productDescription {
    	max-height: 146px;
     overflow: hidden;
     position: relative;
     transition:$short-time-ease-out;
 }
-.rating-avalie .ratingStar.emptyRatingStar:before, .rating-avalie .ratingStar.filledRatingStar:before {
+.rating-avalie .ratingStar.emptyRatingStar:before, .rating-avalie .ratingStar.filledRatingStar:before,#rtAvaliacao_A0 span,#rtAvaliacao_A0 span::before {
     content: '';
     width: 15px;
     height: 23px;
@@ -2036,23 +2197,23 @@ em.valor-dividido.price-installments,.preco-a-vista,.installment{
 	  }
 	}
 }
-.rating-produto.avaliacao50:before, .rating-produto.a50:before, .rating-demonstrativo.avaliacao50:before, .rating-demonstrativo.a50:before, .rating-wrapper .rating.avaliacao50:before, .rating-wrapper .rating.a50:before {
+.rating-produto.avaliacao50:before, .rating-produto.a50:before, .rating-demonstrativo.avaliacao50:before, .rating-demonstrativo.a50:before, .rating-wrapper .rating.avaliacao50:before, .rating-wrapper .rating.a50:before{
         background-position: 0 135px;
 }
-.rating-demonstrativo.a40:before, .rating-demonstrativo.avaliacao40:before, .rating-produto.a40:before, .rating-produto.avaliacao40:before, .rating-wrapper .rating.a40:before, .rating-wrapper .rating.avaliacao40:before {
+.rating-demonstrativo.a40:before, .rating-demonstrativo.avaliacao40:before, .rating-produto.a40:before, .rating-produto.avaliacao40:before, .rating-wrapper .rating.a40:before, .rating-wrapper .rating.avaliacao40:before{
     background-position: 0 35px;
     vertical-align: middle;
 }
-.rating-produto.avaliacao30:before, .rating-produto.a30:before, .rating-demonstrativo.avaliacao30:before, .rating-demonstrativo.a30:before, .rating-wrapper .rating.avaliacao30:before, .rating-wrapper .rating.a30:before {
+.rating-produto.avaliacao30:before, .rating-produto.a30:before, .rating-demonstrativo.avaliacao30:before, .rating-demonstrativo.a30:before, .rating-wrapper .rating.avaliacao30:before, .rating-wrapper .rating.a30:before{
     background-position: 0 -52px;
 }
-.rating-demonstrativo.a30:before, .rating-demonstrativo.avaliacao30:before, .rating-produto.a30:before, .rating-produto.avaliacao30:before, .rating-wrapper .rating.a30:before, .rating-wrapper .rating.avaliacao30:before {
+.rating-demonstrativo.a30:before, .rating-demonstrativo.avaliacao30:before, .rating-produto.a30:before, .rating-produto.avaliacao30:before, .rating-wrapper .rating.a30:before, .rating-wrapper .rating.avaliacao30:before{
     background-position: 0 -62px;
 }
-.rating-produto.avaliacao20:before, .rating-produto.a20:before, .rating-demonstrativo.avaliacao20:before, .rating-demonstrativo.a20:before, .rating-wrapper .rating.avaliacao20:before, .rating-wrapper .rating.a20:before {
+.rating-produto.avaliacao20:before, .rating-produto.a20:before, .rating-demonstrativo.avaliacao20:before, .rating-demonstrativo.a20:before, .rating-wrapper .rating.avaliacao20:before, .rating-wrapper .rating.a20:before{
     background-position: 0 -42px;
 }
-.rating-produto.avaliacao10:before, .rating-produto.a10:before, .rating-demonstrativo.avaliacao10:before, .rating-demonstrativo.a10:before, .rating-wrapper .rating.avaliacao10:before, .rating-wrapper .rating.a10:before {
+.rating-produto.avaliacao10:before, .rating-produto.a10:before, .rating-demonstrativo.avaliacao10:before, .rating-demonstrativo.a10:before, .rating-wrapper .rating.avaliacao10:before, .rating-wrapper .rating.a10:before{
     background-position: 0 213px;
 }
 .produto{
