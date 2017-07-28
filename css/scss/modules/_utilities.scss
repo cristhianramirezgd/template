@@ -1344,6 +1344,9 @@ span.line-red {
 		    &::before {
 		        content: 'Ahora:';
 		    }
+		    &::after {
+		        @include iva-incluido;
+		    }
 		}
 	}
 	span.buy-async {
@@ -1489,6 +1492,9 @@ span.line-red {
 		text-align:center;
 		a{
 			text-align:center;
+			&::after {
+			    @include iva-incluido;
+			}
 		}
 		span.old-price {
 		    text-decoration: line-through;
@@ -1645,6 +1651,9 @@ span.line-red {
 			   					  	    &::before {
 			   					  	        content: 'Ahora:';
 			   					  	    }
+			   					  	    &::after{
+			   					  	    	@include iva-incluido;
+			   					  	    }
 			   					  	}  
 			   				}
 			   			}
@@ -1702,10 +1711,8 @@ span.line-red {
 	    font-size: $size-4;
 	    font-style: initial;
 	    &::after {
-	        content: 'Iva incluido';
-	        font-size: .8rem;
+	        @include iva-incluido;
 	        margin-left: 5px;
-	        font-style: italic;
 	    }
 	}
 	.descricao-preco {

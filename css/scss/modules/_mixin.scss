@@ -167,3 +167,10 @@
 	font-family:$family-headers;
 	font-size:2.5rem;
 }
+@mixin iva-incluido{
+	    content: 'Iva incluido';
+	    font-size: .8rem;
+	    font-weight: normal;
+	    display: block;
+	    font-style:italic;
+}
