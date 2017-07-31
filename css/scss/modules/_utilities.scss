@@ -506,6 +506,53 @@ div#mm-megamenu {
 .shadow-alpha-image{
 	@include shadow-alpha-image;
 }
+// newsletter mastredata
+.form-newsletter-md {
+	.form-field {
+		display: inline-block;
+		width: 33.3%;
+		input {
+			    border: 3px solid $yellow;
+			    border-radius:$btn-radus;
+			    background: $white;
+			    padding: 10px;
+			    color: #b5b5b5;
+			    font-style: italic;
+			    width: 100%;
+			}
+			label {
+			    display: none!important;
+			}			
+	}
+	.submit {
+		display:block;
+		margin:0 auto;
+		input {
+			    background: $red;
+			    color: $white;
+			    font-size: 1.4rem;
+			    border: 3px solid $white;
+			    width: 17vw;
+			    margin: 15px auto;
+			    padding: 5px 35px;
+			    border-radius: $btn-radus;
+			    -webkit-transition: all 1s ease-out;
+			    transition: all 1s ease-out;
+			    display: block;
+			}
+	}
+	// mensajes de error y suceso
+	div#co_message_validate,div#co_message_success {
+	    text-align: center;
+	    font-size: 1.2rem;
+	    color: $red;
+	    background: $white;
+	    border-radius: $btn-radus;
+	}
+}
+
+
+
 // Vtex class for tags
 .newsletter {
 	&-section{

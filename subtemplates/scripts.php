@@ -6,3 +6,4 @@
 <script src="speed/build/arquivos/logoScroll.js"></script>
 <script src="speed/build/arquivos/jquery.bxslider.min.js"></script>
 <script src="speed/build/arquivos/init.js"></script>
+<script src="speed/build/arquivos/newsletter-global-md.js"></script>
