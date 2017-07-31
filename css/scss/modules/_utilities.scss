@@ -1761,6 +1761,7 @@ span.line-red {
 	    &::after {
 	        @include iva-incluido;
 	        margin-left: 5px;
+	        display:initial;
 	    }
 	}
 	.descricao-preco {
