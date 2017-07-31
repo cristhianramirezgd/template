@@ -476,7 +476,18 @@ fieldset.busca {
 				transform:none;
 			}
 		} 
-
+		//newsletter mastredata
+		.form-newsletter-md{
+			 .form-field {
+					    display: inline-block;
+					    width: 100%;
+					}
+					.submit{
+						input{
+							 width:100%;
+						}
+					}
+		}
 		// newsletter-footer
 		.newsletter{
 			&-footer{
