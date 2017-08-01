@@ -974,6 +974,11 @@ fieldset.busca {
 								display: inline-block;
 								width: 20%;
 								margin: 0 6%;	
+								&:hover{
+									.card-info-seal {
+										    display: none;
+										}
+								}
 					}
 				}
 			}
