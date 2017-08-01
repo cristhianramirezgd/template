@@ -986,6 +986,10 @@ i {
     	}
     }
 }
+.vtexsc-wrap {
+    max-height: 451px;
+    overflow-y: scroll;
+}
 // seal home
 .seal-home{
 	background:$white;
