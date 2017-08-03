@@ -836,8 +836,12 @@ i {
 	    }
 	}
 }
+.portal-minicart-ref{
+	opacity:0;
+}
 .v2-vtexsc-cart.vtexsc-cart.mouseActivated.preLoaded {
     position: absolute;
+    display:none;
     z-index:999999;
     top: 35px;
     right: 0;
