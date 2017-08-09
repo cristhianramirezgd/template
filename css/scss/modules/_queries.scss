@@ -1043,7 +1043,7 @@ fieldset.busca {
   	 	ul {
   	 		li{
   	 			&:nth-child(odd) {
-  	 			 max-width: 48%;
+  	 			 max-width: 48%!important;
 				}
   	 		}
   	 	}
