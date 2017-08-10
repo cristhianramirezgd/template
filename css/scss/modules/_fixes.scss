@@ -591,3 +591,111 @@ ul.bxslider {
            }
      }
   } 
+// registro de cumpleaños
+.form-birthday-section {
+    max-height:initial;
+    width: 100%;
+    background: url(/arquivos/monkeymarket-pop-up-cumpleanos-background.jpg);
+    > p {
+        width: 40%;
+        padding: 15px;
+        min-height: 323px;
+        margin: 0 auto;
+        background: url(/arquivos/monkeymarket-pop-up-cumpleanos-header-form.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        padding: 147px 143px 15px;
+        font-family:$family-headers;
+        color:$brown;
+        line-height:1;
+        text-align:center;
+    }
+    #birthdayform {
+        width: 40%;
+        padding:15px;
+        margin: 0 auto;
+        position:relative;
+        #rc_form{
+          .form-field{
+              width:50%;
+              display:inline-block;
+              padding:2px 1px;
+              &:nth-of-type(5){
+                display: block;
+              }
+              &:last-child{
+                display:block;
+                margin:0 auto;
+                input{
+                  font-family:$family-headers;
+                  background: $red;
+                  color: $white;
+                  font-size: 1.4rem;
+                  border: 3px solid $white;
+                  padding: 5px 35px;
+                  border-radius: $btn-radus;
+                  display: block;
+                  font-style:initial;
+                  cursor:pointer;
+                  &:hover{
+                    box-shadow:$shadow-global;
+                  }
+                }
+              }
+            label{
+              display:none;
+            }
+            input{
+              border: 3px solid $yellow;
+              border-radius: $btn-radus;
+              background: $white;
+              padding: 10px;
+              transition:$fast-time-ease-out;
+              color: $grey;
+              font-style: italic;
+              width: 100%;
+              &:focus{
+                outline: none!important;
+                box-shadow:$shadow-global;
+              }
+            }
+          }
+        }
+        >.alert{
+          color:$white;
+          border:2px solid $white;
+          border-radius:$btn-radus;
+          padding:15px;
+          font-weight:bold;
+          text-align: center;
+          box-shadow:$shadow-global;
+          &.alert-success{
+             background:$blue;
+            padding: 20px;
+            width:170px;
+            height:170px;
+            right: 0;
+            left: 0;
+            position:relative;
+            margin: auto auto;
+            &::before{
+              content:url('/arquivos/monkey-market-tienda-link-de-interes-icon.png');
+              position: absolute;
+              right: -89px;
+              top: 27px;
+              @include shadow-alpha-image;
+            }
+          }
+          &.alert-info{
+            background:$blue;
+          }
+          &.alert-warning{
+            background:$yellow;
+          }
+          &.alert-danger{
+            background:$red;
+          }
+        }
+    }
+}
