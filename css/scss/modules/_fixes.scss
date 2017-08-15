@@ -773,7 +773,16 @@ ul.bxslider {
               width:100%;
             }
           }
-            &:last-child {
+          &.submit{
+            width:46%;
+            display:inline-block;
+            margin: 5px 1%;
+            input{
+              width: 100%;
+            }
+          }
+            &:nth-of-type(6),
+            &:nth-of-type(7){
 
               input{
                 font-family: "Bowlby One SC",cursive;
