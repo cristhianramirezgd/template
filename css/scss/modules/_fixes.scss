@@ -598,6 +598,7 @@ ul.bxslider {
     background: url(/arquivos/monkeymarket-pop-up-cumpleanos-background.jpg);
     > p {
         width: 40%;
+        max-width: 569px;
         padding: 15px;
         min-height: 323px;
         margin: 0 auto;
@@ -710,6 +711,9 @@ ul.bxslider {
   background:rgba($black,.7);
   width:100%;
   height: 100vh;
+  form#rc_form {
+      max-width: 340px;
+  }
   .content-popup-birthday{
       background: url(/arquivos/monkeymarket-pop-up-cumpleanos.png) center center no-repeat;
       width:40%;
@@ -720,6 +724,57 @@ ul.bxslider {
       right: 0;
       top: 10vh;
       margin: 0 auto;
+      #co_message_success {
+          position: absolute;
+          left:0;
+          right:0;
+          bottom: 0;
+          background: $blue;
+          padding: 50px 15px;
+          color: $black;
+          text-align: center;
+          border-radius:$btn-radus;
+          b{
+            border: 1px solid;
+            padding: 5px 5px;
+            margin-top: 15px;
+            display: block;
+            border-radius:$btn-radus;
+          }
+      }
+      #co_message_loading {
+          position: absolute;
+          background: $blue;
+          color: $white;
+          padding: 10px;
+          top:-63px;
+          left:0;
+          right:0;
+          text-align:center;
+          box-shadow:$shadow-global;
+      }
+      #co_message_validate{
+          position: absolute;
+          background: $blue;
+          color: $white;
+          padding: 10px;
+          top:-63px;
+          left:0;
+          right:0;
+          text-align:center;
+          box-shadow:$shadow-global;
+      }
+      #co_message_error {
+          position: absolute;
+          background: $red;
+          color: $white;
+          padding: 10px;
+          top:-63px;
+          left:0;
+          right:0;
+          text-align:center;
+          box-shadow:$shadow-global;
+      }
       .close-birthday-popup {
         p {
           color:$white;
