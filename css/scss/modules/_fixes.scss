@@ -784,7 +784,7 @@ ul.bxslider {
             &:nth-of-type(6),
             &:nth-of-type(7){
 
-              input{
+              input,a{
                 font-family: "Bowlby One SC",cursive;
                 background: $red;
                 color: $white;
@@ -795,6 +795,7 @@ ul.bxslider {
                 display: block;
                 font-style: initial;
                 cursor: pointer;
+                line-height: 1;
                 &:focus{
                   outline:none!important;
                   }
