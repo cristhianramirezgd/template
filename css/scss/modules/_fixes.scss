@@ -672,20 +672,13 @@ ul.bxslider {
           text-align: center;
           box-shadow:$shadow-global;
           &.alert-success{
-             background:$blue;
-            padding: 20px;
-            width:170px;
-            height:170px;
-            right: 0;
-            left: 0;
-            position:relative;
-            margin: auto auto;
-            &::before{
-              content:url('/arquivos/monkey-market-tienda-link-de-interes-icon.png');
-              position: absolute;
-              right: -89px;
-              top: 27px;
-              @include shadow-alpha-image;
+            background:$blue;
+            b{
+              display:block;
+              padding:10px 0;
+              color:$black;
+              border:1px solid;
+              border-radius:$btn-radus;
             }
           }
           &.alert-info{
