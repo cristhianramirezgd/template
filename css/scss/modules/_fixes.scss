@@ -802,7 +802,7 @@ ul.bxslider {
                 }
                
               }
-            input {
+            input,input[type=date] {
                 border: 3px solid $yellow;
                 border-radius: 290486px;
                 background: $white;
@@ -811,6 +811,7 @@ ul.bxslider {
                 transition: all .1s ease-out;
                 color: #7a7a7a;
                 font-style: italic;
+                width: 100%;
                 }
                 label{
                   display:none;
