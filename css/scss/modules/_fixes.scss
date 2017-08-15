@@ -699,3 +699,115 @@ ul.bxslider {
         }
     }
 }
+// Popup Cumpleaños
+.popup-birthday{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9999999;
+  background:rgba($black,.7);
+  width:100%;
+  height: 100vh;
+  .content-popup-birthday{
+      background: url(/arquivos/monkeymarket-pop-up-cumpleanos.png) center center no-repeat;
+      width:40%;
+      min-height: 420px;
+      padding:20px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 10vh;
+      margin: 0 auto;
+      .close-birthday-popup {
+        p {
+          color:$white;
+          text-align: right;
+          font-size: 2rem;
+          font-weight: 700;
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+          float: right;
+        }
+      }
+    .text-popup-birthday {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100px;
+        max-width: 80%;
+        padding: 10px 0 0 0;
+        margin: 0 auto;
+        text-align: center;
+        font-family: $family-headers;
+        color: $brown;
+        line-height: 1;
+    }
+    #birthdayformpopup{
+      width: 70%;
+      max-width:480px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: block;
+      bottom: 140px;
+      #rc_form {
+        .form-field{
+          &:nth-of-type(1),
+          &:nth-of-type(2),
+          &:nth-of-type(3){
+            max-width:33%;
+            display:inline-block;
+            input{
+              width:100%;
+            }
+          }
+          &:nth-of-type(4),
+          &:nth-of-type(5){
+            width:50%;
+            display:inline-block;
+            input{
+              width:100%;
+            }
+          }
+            &:last-child {
+
+              input{
+                font-family: "Bowlby One SC",cursive;
+                background: $red;
+                color: $white;
+                font-size: 1.4rem;
+                border: 3px solid $white;
+                padding: 5px 35px;
+                border-radius: 290486px;
+                display: block;
+                font-style: initial;
+                cursor: pointer;
+                &:focus{
+                  outline:none!important;
+                  }
+                }
+               
+              }
+            input {
+                border: 3px solid $yellow;
+                border-radius: 290486px;
+                background: $white;
+                padding: 10px;
+                -webkit-transition: all .1s ease-out;
+                transition: all .1s ease-out;
+                color: #7a7a7a;
+                font-style: italic;
+                }
+                label{
+                  display:none;
+                }
+          }
+          
+      }
+    }
+  }
+}

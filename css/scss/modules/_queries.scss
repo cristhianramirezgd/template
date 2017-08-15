@@ -1064,6 +1064,7 @@ fieldset.busca {
   			}
   		}
   	}
+  	// Registro cumpleaños
   	.form-birthday-section{
   		height:auto;
   		max-height:initial!important;
@@ -1082,7 +1083,33 @@ fieldset.busca {
         }
   		 }
   	}
-
+  	// popup cumpleaños
+		.popup-birthday{
+			.content-popup-birthday{
+				width: 100vw;
+				padding: 0;
+				.close-birthday-popup{
+					p{
+						margin-right:10%;
+					}
+				}
+				.text-popup-birthday{}
+				#birthdayformpopup{
+					width:90%;
+				}
+				#rc_form{
+					.form-field{
+						width:90%;
+						&:last-child{
+							width:100%;
+						}
+						input{
+							width:100%;
+						}
+					}
+				}
+			}
+		}
 }//.mediaquery max tablet 679
 
 //mediaquery min tablet 679
