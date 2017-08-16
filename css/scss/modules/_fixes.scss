@@ -617,6 +617,12 @@ ul.bxslider {
         padding:15px;
         margin: 0 auto;
         position:relative;
+       &::after {
+            content: 'Campos Obligatorios*';
+            font-size: .9rem;
+            text-align: right;
+            display: block;
+        }
         #rc_form{
           .form-field{
               width:50%;
@@ -625,9 +631,23 @@ ul.bxslider {
               &:nth-of-type(5){
                 display: block;
               }
+
+              &:nth-of-type(1),
+              &:nth-of-type(2),
+              &:nth-of-type(3),
+              &:nth-of-type(4),
+              &:nth-of-type(5),
+              &:nth-of-type(6),
+              &:nth-of-type(7){
+                 &::after {
+                    content: '*';
+                    position: absolute;
+                    color: $red;
+                }
+              }
               &:last-child{
                 display:block;
-                margin:0 auto;
+                margin: 30px auto 0 auto;
                 input{
                   font-family:$family-headers;
                   background: $red;
@@ -639,6 +659,7 @@ ul.bxslider {
                   display: block;
                   font-style:initial;
                   cursor:pointer;
+                  width: 100%;
                   &:hover{
                     box-shadow:$shadow-global;
                   }
@@ -655,7 +676,8 @@ ul.bxslider {
               transition:$fast-time-ease-out;
               color: $grey;
               font-style: italic;
-              width: 100%;
+              width: 95%;
+              margin: 0 auto;
               &:focus{
                 outline: none!important;
                 box-shadow:$shadow-global;
