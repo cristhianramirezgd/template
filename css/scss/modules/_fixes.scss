@@ -706,6 +706,7 @@ ul.bxslider {
   height: 100vh;
   form#rc_form {
       max-width: 340px;
+      margin: 0 auto;
   }
   .content-popup-birthday{
       background: url(/arquivos/monkeymarket-pop-up-cumpleanos.png) center center no-repeat;
@@ -717,6 +718,12 @@ ul.bxslider {
       right: 0;
       top: 10vh;
       margin: 0 auto;
+      &::before {
+          content: 'No aplica en consolas ni video Juegos y no es acumulable con otras ofertas*';
+          color: $white;
+          position: absolute;
+          bottom: -40px;
+      }
       #co_message_success {
           position: absolute;
           left:0;
@@ -769,6 +776,7 @@ ul.bxslider {
           box-shadow:$shadow-global;
       }
       .close-birthday-popup {
+            max-width: 540px;
         p {
           color:$white;
           text-align: right;
@@ -785,7 +793,7 @@ ul.bxslider {
         left: 0;
         right: 0;
         top: 90px;
-        max-width: 70%;
+        max-width: 340px;
         padding: 10px 0 0 0;
         margin: 0 auto;
         text-align: center;
