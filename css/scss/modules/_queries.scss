@@ -1051,15 +1051,16 @@ fieldset.busca {
   }
  
   	.vertical-filter{
+  		max-width:100%!important;
   		.orderBy{
   			width: 95%;
     		margin: 7px 2.5%!important;
   		}
   		.search-multiple-navigator {
   			.refino{
+  				margin: 7px 2.5%!important;
   				&:last-child{
   			width: 95%!important;
-    		margin: 7px 2.5%!important;
   				}
   			}
   		}
