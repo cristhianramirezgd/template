@@ -1458,12 +1458,15 @@ span.line-red {
             display: inline-block;
             padding: 10px 15px;
             margin: 15px 5px;
-            background:white;
+            background:$white;
             border-radius:29px;
             font-weight:bold;
             &:hover{
             	box-shadow:$shadow-global;
             }
+        }
+        .pgCurrent{
+        	background:$blue;
         }
     }
 }
