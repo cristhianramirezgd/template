@@ -1,16 +1,15 @@
 @charset 'utf-8';
-@import '../../bower_components/normalize-css/normalize';
 @import '_settings';
 //Modulos
-@import "modules/_variables";
-@import "modules/_mixin";
-@import "modules/_utilities";
-@import "modules/_text";
-@import "modules/_nav";
-@import "modules/_forms";
-@import "modules/_containers";
-@import "modules/_flexbox";
+@import "modules/variables";
+@import "modules/mixin";
+@import "modules/utilities";
+@import "modules/text";
+@import "modules/nav";
+@import "modules/forms";
+@import "modules/grid";
+@import "modules/containers";
+@import "modules/flexbox";
 @import "modules/fixes";
-@import "modules/_queries";
-@import "../../bower_components/bulma/bulma";
+@import "modules/queries";
 //fixes
