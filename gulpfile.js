@@ -14,7 +14,7 @@ gulp.task('compile-sass', function () {
     .pipe(sass())
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
     .pipe(minifyCSS())
-    .pipe(gp_concat('app.min.css'))
+    .pipe(gp_concat('app-mundo-interior.min.css'))
     .pipe(gp_sourcemaps.write('./'))
     .pipe(gulp.dest('speed/src/arquivos/'));
 });
