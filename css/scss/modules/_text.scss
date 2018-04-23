@@ -8,9 +8,7 @@
 .text-rigth{text-align: right;}
 .text-left{text-align: left;}
 h1{@include title-size(inherit);}
-h2{@include title-size(2rem);
-line-height: 40px;
-}
+h2{@include title-size(2rem);}
 h3{@include title-size(1.3rem);}
 h4{@include title-size(1.1rem);}
 h5{@include title-size(1rem);}
