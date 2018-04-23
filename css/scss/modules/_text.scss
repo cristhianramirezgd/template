@@ -1,0 +1,20 @@
+.tu-mundo-interior main{
+	    font-family: $font-family;
+}
+.text-white{color:$white;}
+.text-black{color:$black;}
+.text-dark{color:$dark;}
+.text-center{text-align: center;}
+.text-rigth{text-align: right;}
+.text-left{text-align: left;}
+h1{@include title-size(inherit);}
+h2{@include title-size(2rem);
+line-height: 40px;
+}
+h3{@include title-size(1.3rem);}
+h4{@include title-size(1.1rem);}
+h5{@include title-size(1rem);}
+h6{@include title-size(.8rem);}
+.font-light{font-weight:100}
+.font-regular{font-weight:400}
+.font-bold{font-weight: 700}

@@ -1,0 +1,39 @@
+.main-mundo-saludable{
+	img{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.bg{
+	&-jumbomagenta{background: $jumbomagenta}
+	&-jumbored{background: $jumbored}
+	&-jumboorange{background: $jumboorange}
+	&-jumbogreenyellow{background: $jumbogreenyellow}
+	&-jumbogreenlight{background: $jumbogreenlight}
+	&-jumbogreen{background: $jumbogreen}
+	&-jumbogreendark{background: $jumbogreendark}
+	&-jumboblue{background: $jumboblue}
+	&-jumboviolet{background: $jumboviolet}
+	&-white{background: $white}
+	&-black{background: $black}
+	&-dark{background: $dark}
+	&-gray{background: $gray}
+	&-graylight{background: $graylight}
+}
+.color{
+	&-jumbomagenta{color: $jumbomagenta}
+	&-jumbored{color: $jumbored}
+	&-jumboorange{color: $jumboorange}
+	&-jumbogreenyellow{color: $jumbogreenyellow}
+	&-jumbogreenlight{color: $jumbogreenlight}
+	&-jumbogreen{color: $jumbogreen}
+	&-jumbogreendark{color: $jumbogreendark}
+	&-jumboblue{color: $jumboblue}
+	&-jumboviolet{color: $jumboviolet}
+	&-white{color: $white}
+	&-black{color: $black}
+	&-dark{color: $dark}
+	&-gray{color: $gray}
+	&-graylight{color: $graylight}
+}

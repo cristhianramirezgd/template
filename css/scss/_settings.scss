@@ -1,0 +1,22 @@
+// palette colors
+$jumbored:			#E30613;
+$jumboorange:		#FF9700;
+$jumbogreenyellow:	#7AB929;
+$jumbogreenlight:	#00C035;
+$jumbogreen:		#00B125;
+$jumbogreendark:	#1FA02E;
+$white:				#FFFFFF;
+$black:				#1A1A1A;
+$dark:				#2F2F2F;
+$gray:				#6B6B6B;
+$graylight:			#E5E5E5;
+//text
+$font-family:		'Source Sans Pro',sans-serif;
+// Margins
+$gutter:			15px;
+$global-margin:		$gutter;
+$global-padding:	$gutter;
+$global-time:		320ms;
+$global-transition:	$global-time ease-in-out;
+$global-subtransition:$global-time / 2 ease-in-out;
+$global-shadow:		0 0 $gutter rgba($dark ,.3) ;
