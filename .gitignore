@@ -6,3 +6,6 @@ bower_components/
 *.jpg
 *.png
 *.gif
+*.min.css
+*.min.js
+speed/build/
