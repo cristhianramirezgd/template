@@ -53,3 +53,29 @@
     <meta itemprop="name" content="">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,300,600,700" rel="stylesheet" type="text/css" />
+    <!-- jquery vtex cdn -->
+    <script src="https://io.vtex.com.br/front-libs/jquery/1.8.3/jquery-1.8.3.min.js"></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="https://www.tiendasjumbo.co/files/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.tiendasjumbo.co/files/mprogress.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.tiendasjumbo.co/files/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.tiendasjumbo.co/files/font-face.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.tiendasjumbo.co/files/global.css" />
+    <link rel="stylesheet" type="text/css" href="https://jumbocolombiafood.vteximg.com.br/arquivos/newLook.css" />
+    <!-- main css -->
+    <link rel="stylesheet" type="text/css" href="/arquivos/app-mundo-saludable.min.css" />
+
+    <!-- LIBRARIES -->
+    <script src="https://www.tiendasjumbo.co/files/lodash.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.tiendasjumbo.co/files/handlebars.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.tiendasjumbo.co/files/select2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.tiendasjumbo.co/files/store.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="https://www.tiendasjumbo.co/files/manifest.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.tiendasjumbo.co/files/vendor.js" type="text/javascript" charset="utf-8"></script>
+    <!-- GA Enhanced Ecommerce -->
+    <script src="https://jumbocolombiafood.vteximg.com.br/arquivos/enhanced_270218.js" type="text/javascript"></script>
+    <!-- .jumbo metas landing -->
