@@ -1,20 +1,12 @@
     <?php require_once("subtemplates/head.php"); ?>
-
     <?php require_once("subtemplates/styles.php"); ?>
-
-
-    <div>
-      <?php require_once("subtemplates/header.php"); ?>
-    </div>
-    <main>
- 
+    <?php require_once("subtemplates/header.php"); ?>
+    <main class="mundo-saludable-v2">
+      <section class="wrapper">
+      </section>
 
     </main>
-        <div>
-          <?php require_once("subtemplates/footer.php"); ?>
-        </div>
-
-        <?php require_once("subtemplates/scripts.php"); ?>
-
-      </body>
-    </html>
+    <?php require_once("subtemplates/footer.php"); ?>
+    <?php require_once("subtemplates/scripts.php"); ?>
+  </body>
+</html>
