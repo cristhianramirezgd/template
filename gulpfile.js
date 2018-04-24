@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     gp_concat = require('gulp-concat'),
     gp_rename = require('gulp-rename'),
-    gp_uglify = require('gulp-uglify'),
+    gp_uglify = require('gulp-uglifycss'),
     minifyCSS = require('gulp-minify-css'), 
     autoprefixer = require('gulp-autoprefixer'),
     gp_sourcemaps = require('gulp-sourcemaps'),
@@ -15,6 +15,7 @@ gulp.task('compile-sass', function () {
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
     .pipe(minifyCSS())
     .pipe(gp_concat('app-mundo-saludable.min.css'))
+    .pipe(gp_uglify())
     .pipe(gp_sourcemaps.write('./'))
     .pipe(gulp.dest('speed/src/arquivos/'));
 });
