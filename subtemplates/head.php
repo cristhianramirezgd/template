@@ -65,9 +65,6 @@
     <link rel="stylesheet" type="text/css" href="https://www.tiendasjumbo.co/files/font-face.css" />
     <link rel="stylesheet" type="text/css" href="https://www.tiendasjumbo.co/files/global.css" />
     <link rel="stylesheet" type="text/css" href="https://jumbocolombiafood.vteximg.com.br/arquivos/newLook.css" />
-    <!-- main css -->
-    <link rel="stylesheet" type="text/css" href="/arquivos/app-mundo-saludable.min.css" />
-
     <!-- LIBRARIES -->
     <script src="https://www.tiendasjumbo.co/files/lodash.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://www.tiendasjumbo.co/files/handlebars.min.js" type="text/javascript" charset="utf-8"></script>
