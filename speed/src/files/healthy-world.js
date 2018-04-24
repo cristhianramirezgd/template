@@ -634,7 +634,7 @@ webpackJsonp([2], {
             o = n(50),
             s = function(e) {
                 return a.a.createElement(o.a, {
-                    title: "Compra por categorÃ­a",
+                    title: "Compra por categoría",
                     modifiers: e.modifiers
                 }, a.a.createElement(i.a, {
                     collectionId: e.collectionId
@@ -1755,7 +1755,7 @@ webpackJsonp([2], {
                             path: "/alimentacion-sana",
                             render: function() {
                                 return s.a.createElement(f.a, {
-                                    title: "AlimentaciÃ³n Sana",
+                                    title: "Alimentación Sana",
                                     name: "alimentacion",
                                     pageData: i,
                                     collections: y
