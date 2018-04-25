@@ -1,4 +1,10 @@
 .container-main{
 	max-width: $global-anchor;
+	@media #{$medium-up}{
+		width: $total-anchor * .94;
+	}
 	@include center-auto;
+	&-full{
+		max-width: $total-anchor;
+	}
 }
