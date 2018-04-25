@@ -10,7 +10,6 @@
 }
 .main-grid{
 	display: grid;
-	grid-template-columns:1fr 1fr 1fr;
 	grid-column-gap:$global-margin;
 	padding:{
 		left:$global-padding;
@@ -23,4 +22,10 @@
 	&-middle{
 		align-items:center;
 	}
+	&-1{grid-template-columns:1fr;}
+	&-2{grid-template-columns:1fr 1fr;}
+	&-3{grid-template-columns:1fr 1fr 1fr;}
+	&-4{grid-template-columns:1fr 1fr 1fr 1fr;}
+	&-5{grid-template-columns:1fr 1fr 1fr 1fr 1fr;}
+	&-6{grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;}
 }
