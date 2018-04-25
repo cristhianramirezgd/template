@@ -1,33 +1,11 @@
-.main-mundo-saludable{
+main{
 	img{
 		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
+		height: auto;
+		@include center-auto;
 	}
 }
-.bg{
-	&-jumbored{background: $jumbored}
-	&-jumboorange{background: $jumboorange}
-	&-jumbogreenyellow{background: $jumbogreenyellow}
-	&-jumbogreenlight{background: $jumbogreenlight}
-	&-jumbogreen{background: $jumbogreen}
-	&-jumbogreendark{background: $jumbogreendark}
-	&-white{background: $white}
-	&-black{background: $black}
-	&-dark{background: $dark}
-	&-gray{background: $gray}
-	&-graylight{background: $graylight}
-}
-.color{
-	&-jumbored{color: $jumbored}
-	&-jumboorange{color: $jumboorange}
-	&-jumbogreenyellow{color: $jumbogreenyellow}
-	&-jumbogreenlight{color: $jumbogreenlight}
-	&-jumbogreen{color: $jumbogreen}
-	&-jumbogreendark{color: $jumbogreendark}
-	&-white{color: $white}
-	&-black{color: $black}
-	&-dark{color: $dark}
-	&-gray{color: $gray}
-	&-graylight{color: $graylight}
-}
+.bg{@include background;}
+.color{@include color;}
+.button{padding:$global-padding;
+	@include background;}
