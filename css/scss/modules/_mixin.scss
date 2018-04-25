@@ -1,3 +1,42 @@
-@mixin title-size($title-size){
-	font-size: $title-size;
+// Text
+@mixin font-size($font){
+	font-size: $font;
+}
+@mixin font-weight($weight){
+	font-weight: $weight;
+}
+// Fixed
+@mixin center-auto{
+	margin:{
+		right:auto;
+		left:auto;
+	};
+}
+// Backgrounds
+@mixin background{
+	&-jumbored{background: $jumbored}
+	&-jumboorange{background: $jumboorange}
+	&-jumbogreenyellow{background: $jumbogreenyellow}
+	&-jumbogreenlight{background: $jumbogreenlight}
+	&-jumbogreen{background: $jumbogreen}
+	&-jumbogreendark{background: $jumbogreendark}
+	&-white{background: $white}
+	&-black{background: $black}
+	&-dark{background: $dark}
+	&-gray{background: $gray}
+	&-graylight{background: $graylight}
+}
+// Text Color
+@mixin color{
+	&-jumbored{color: $jumbored}
+	&-jumboorange{color: $jumboorange}
+	&-jumbogreenyellow{color: $jumbogreenyellow}
+	&-jumbogreenlight{color: $jumbogreenlight}
+	&-jumbogreen{color: $jumbogreen}
+	&-jumbogreendark{color: $jumbogreendark}
+	&-white{color: $white}
+	&-black{color: $black}
+	&-dark{color: $dark}
+	&-gray{color: $gray}
+	&-graylight{color: $graylight}
 }
