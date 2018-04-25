@@ -41,10 +41,13 @@ $global-subtransition:$global-time / 2 ease-in-out;
 $global-shadow:		0 0 $gutter rgba($dark ,.3) ;
 $global-anchor:		rem-calc(1366);
 $total-anchor:		100%;
-$vw-anchor:			100vh;
+$vw-anchor:			100vw;
 $vh-anchor:			100vh;
 // Media Queries
 $medium-up:			'only screen and (min-width: 47.5rem)';
 // Buttons
 $font-btn:			$global-font;
 $padding-btn:		$global-padding;
+// Fixes
+$header-desktop-height:	155px;
+$header-mobile-height:	44px;
