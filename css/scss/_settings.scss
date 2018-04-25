@@ -1,22 +1,50 @@
-// palette colors
-$jumbored:			#E30613;
-$jumboorange:		#FF9700;
-$jumbogreenyellow:	#7AB929;
-$jumbogreenlight:	#00C035;
-$jumbogreen:		#00B125;
-$jumbogreendark:	#1FA02E;
-$white:				#FFFFFF;
-$black:				#1A1A1A;
-$dark:				#2F2F2F;
-$gray:				#6B6B6B;
-$graylight:			#E5E5E5;
-//text
+// Jumbo eCommerce Color Palette
+$jumbored:			#e30613;
+$jumboorange:		#ff9700;
+$jumbogreenyellow:	#7ab929;
+$jumbogreenlight:	#00c035;
+$jumbogreen:		#00b125;
+$jumbogreendark:	#1fa02e;
+$white:				#ffffff;
+$black:				#1a1a1a;
+$dark:				#2f2f2f;
+$gray:				#6b6b6b;
+$graylight:			#e5e5e5;
+// Icon Healthy World Color Palette
+$icon-green:		$jumbogreendark;
+$icon-yellow:		#ffb600;
+$icon-bluelight:	#54bcc1;
+$icon-wood:			#ac6e3b;
+// rem calc function
+@function rem-calc($size) { $remSize: $size / 16; @return #{$remSize}rem; }
+// Text
 $font-family:		'Source Sans Pro',sans-serif;
+$global-font:		1rem;
+$font-size-h1:		$global-font * 1.5;
+$font-size-h2:		$global-font * 1.25;
+$font-size-h3:		$global-font * 1.1875;
+$font-size-h4:		$global-font * 1.125;
+$font-size-h5:		$global-font * 1.0625;
+$font-size-h6:		$global-font;
+// Font Styles
+$font-weigth-base:	100;
+$font-light:		$font-weigth-base;
+$font-regular:		$font-light * 4;
+$font-bold:			$font-regular * 1.5;
 // Margins
-$gutter:			15px;
+$gutter:			rem-calc(15);
 $global-margin:		$gutter;
 $global-padding:	$gutter;
 $global-time:		320ms;
 $global-transition:	$global-time ease-in-out;
 $global-subtransition:$global-time / 2 ease-in-out;
 $global-shadow:		0 0 $gutter rgba($dark ,.3) ;
+$global-anchor:		rem-calc(1366);
+$total-anchor:		100%;
+$vw-anchor:			100vh;
+$vh-anchor:			100vh;
+// Media Queries
+$medium-up:			'only screen and (min-width: 47.5rem)';
+// Buttons
+$font-btn:			$global-font;
+$padding-btn:		$global-padding;
