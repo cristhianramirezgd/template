@@ -9,3 +9,4 @@ main{
 .color{@include color;}
 .button{padding:$global-padding;
 	@include background;}
+.vertical-center{align-self: center;}
