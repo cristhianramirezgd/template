@@ -8,3 +8,19 @@
 		max-width: $total-anchor;
 	}
 }
+.main-grid{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-column-gap:$global-margin;
+	padding:{
+		left:$global-padding;
+		right:$global-padding;
+		top:$global-padding;
+	};
+	&-center{
+		justify-items:center;
+	}
+	&-middle{
+		align-items:center;
+	}
+}
