@@ -1,10 +1,6 @@
 main{
-    @media only screen and (min-width: 40.063em) {
-        max-width: $total-anchor * .94;
+    img{
+        width: $global-anchor;
         @include center-auto;
     }
-        img{
-            width: $global-anchor;
-            @include center-auto;
-        }
-    }
+}
