@@ -1,3 +1,24 @@
-.section-viewport{
+.section-viewport-h{
 	height: $vh-anchor;
+}
+// Buttons
+.button-ms{
+	padding: $global-padding;
+	font-size: $font-btn; 
+	&-primary{
+		background:$jumbogreenlight;
+		color:$white;
+		&-line{
+			border:1px solid $jumbogreenlight;
+			color:$jumbogreenlight;
+		}
+	}
+	&-warning{
+		background:$jumboorange;
+		color:$white;
+		&-line{
+			border:1px solid $jumboorange;
+			color:$jumboorange;
+		}
+	}
 }
