@@ -1,6 +1,15 @@
 main{
+    max-width: 1920px;
+    *::selection { 
+        color: $white; 
+        background:$jumbogreendark;
+    }
+    @include center-auto;
     img{
-        width: $global-anchor;
+        width: $total-anchor;
         @include center-auto;
+    }
+    .title-site-ms{
+        font-size: 0;
     }
 }
