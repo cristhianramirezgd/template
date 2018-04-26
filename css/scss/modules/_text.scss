@@ -67,3 +67,28 @@ h6{@include font-size($font-size-h6);
 	}
 
 }
+.title-section-ms{
+	margin-top:$global-margin;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	span{
+
+		display: flex;
+		justify-content: center;
+		background: $white;
+		padding: 0 $global-padding;
+		position: relative;
+		line-height: $global-padding * 2;
+	}
+	&::before{
+		content: "";
+		width: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		height: 1px;
+		margin: auto;
+		background: #d4d4d4;
+	}
+}
