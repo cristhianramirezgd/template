@@ -14,12 +14,20 @@
               <div class="form-newsletter card-ms">
                 <h5 class="text-label font-bold">Déjanos tu mail y mantente conectado con Mundo Saludable.</h5>
                 <form class="main-form newsletter-ms">
-                  <button class="button-ms button-ms-green-line" type="submit">Enviar</button>
                   <input class="jumbogreenyellow" id="newsletter-mundo-saludable" type="email" placeholder="Example@mail.com"/>
+                  <div class="filter-diet">
+                    <label class="font-bold">Selecciona</label>
+                    <select>
+                      <option value="yopuedo">Yo Puedo</option>
+                      <option value="yodecicdi">Yo Decidí</option>
+                      <option value="yoquiero">Yo Quiero</option>
+                    </select>
+                  </div>
+                  <button class="button-ms button-full button-ms-green-line" type="submit">Enviar</button>
                   <span class="text-jumbored" style="display:none;">Formato de email incorrecto</span>
                   <span class="bg-jumbored text-white" style="display:none;">Error al enviar, intente de nueco más tarde</span>
                   <div class="legal-check">
-                    <input type="checkbox" name="terms-ms" value="terms"> <small><a data-src="#terms-conditions-ms" href="javascript:;" class="terms-ms">Acepto Términos y Condiciones</a></small>
+                    <input type="checkbox" name="terms-ms" value="terms" required> <small><a data-src="#terms-conditions-ms" href="javascript:;" class="terms-ms">Acepto Términos y Condiciones</a></small>
                   </div>
                 </form>
               </div>
@@ -46,6 +54,14 @@
                 </a>
               </div>
           </div>
+          <div>
+            <a href="" class="row-down-ms">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60.81 37.262"><defs><style>.a{fill:none;stroke:#1a1a1a;stroke-width:4px;}.b{filter:url(#a);}</style><filter id="a" x="0" y="0" width="60.81" height="37.262" filterUnits="userSpaceOnUse"><feOffset dy="3" input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="b"/><feFlood flood-opacity="0.161"/><feComposite operator="in" in2="b"/><feComposite in="SourceGraphic"/></filter></defs><g transform="translate(-17.793 -715.746)"><g class="b" transform="matrix(1, 0, 0, 1, 17.79, 715.75)"><path class="a" d="M1039.709,1172.5l13.781,20.614-15.216,19.869" transform="translate(1223.2 -1030.69) rotate(90)"/></g><path class="a" d="M0,98" transform="translate(48.5 640.5)"/></g></svg>
+            </a>
+          </div>
+      </section>
+      <section class="wrapper container-main bg-jumbogreenyellow">
+        <h1 class="color-white">Container Global Anchor</h1>
       </section>
     </main>
     <!-- terms&conditions -->
