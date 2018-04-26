@@ -22,10 +22,23 @@
 	&-middle{
 		align-items:center;
 	}
+	&-equal{
+		align-items: stretch;
+	}
 	&-1{grid-template-columns:1fr;}
-	&-2{grid-template-columns:1fr 1fr;}
-	&-3{grid-template-columns:1fr 1fr 1fr;}
-	&-4{grid-template-columns:1fr 1fr 1fr 1fr;}
-	&-5{grid-template-columns:1fr 1fr 1fr 1fr 1fr;}
-	&-6{grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;}
+	&-2{grid-template-columns:1fr;
+		@media #{$medium-up}{grid-template-columns:1fr 1fr;}
+	}
+	&-3{grid-template-columns:1fr;
+		@media #{$medium-up}{grid-template-columns:1fr 1fr 1fr;}
+	}
+	&-4{grid-template-columns:1fr 1fr;
+		@media #{$medium-up}{grid-template-columns:1fr 1fr 1fr 1fr;}
+	}
+	&-5{grid-template-columns:1fr 1fr;
+		@media #{$medium-up}{grid-template-columns:1fr 1fr 1fr 1fr 1fr;}
+	}
+	&-6{grid-template-columns:1fr 1fr;
+		@media #{$medium-up}{grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;}
+	}
 }
