@@ -1,11 +1,30 @@
+
 main{font-family: $font-family;}
 .text{
 	&-white{color:$white;}
 	&-black{color:$black;}
 	&-dark{color:$dark;}
-	&-center{text-align: center;}
-	&-rigth{text-align: right;}
-	&-left{text-align: left;}
+	&-center{text-align: center;
+		&-m{
+			@media #{$medium-up}{
+				text-align: center;	
+			}
+		}
+	}
+	&-rigth{text-align: right;
+		&-m{
+			@media #{$medium-up}{
+				text-align: right;	
+			}
+		}
+	}
+	&-left{text-align: left;
+		&-m{
+			@media #{$medium-up}{
+				text-align: left;	
+			}
+		}
+	}
 }
 h1{@include font-size($font-size-h1);
 	font-weight: $font-bold;
@@ -28,7 +47,7 @@ h3{@include font-size($font-size-h3);
 h4{@include font-size($font-size-h4);
 	font-weight: $font-bold;
 	@media #{$medium-up}{
-	@include font-size($font-size-h4 + 1.4);
+	@include font-size($font-size-h4 * 1.4);
 	}
 }
 h5{@include font-size($font-size-h5);
@@ -43,4 +62,8 @@ h6{@include font-size($font-size-h6);
 	&-light{@include font-weight($font-light);}
 	&-regular{@include font-weight($font-regular);}
 	&-bold{@include font-weight($font-bold);}
+	&-reclame{
+		font-family:'reclame';
+	}
+
 }
