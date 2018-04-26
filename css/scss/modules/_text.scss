@@ -68,11 +68,14 @@ h6{@include font-size($font-size-h6);
 
 }
 .title-section-ms{
+	transition:$global-transition;
 	padding-top: $global-padding;
 	padding-bottom: $global-padding;
 	margin-top:$global-margin;
 	display: flex;
-	justify-content: center;
+	@media #{$medium-up}{
+		justify-content: center;
+	}
 	position: relative;
 	span{
 		display: flex;
@@ -86,16 +89,17 @@ h6{@include font-size($font-size-h6);
 		font-size: $global-font * .8;
 		line-height: $global-padding * 2;
 		justify-content: right;
-		color:$graylight;
+		color:$gray;
 		@include font-weight ($font-regular);
 		position: absolute;
 		z-index: 1;
 		right: 0;
-		background: white;
+		background: $white;
 		padding-left:$global-padding;
+		padding-right:$global-padding;
 		transition:$global-subtransition;
 		&:hover{
-			color:$gray;
+			color:$dark;
 		}
 	}
 	&::before{

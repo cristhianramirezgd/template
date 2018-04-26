@@ -60,8 +60,8 @@
             </a>
           </div>
       </section>
-      <section class="wrapper container-main bg-jumbogreenyellow">
-        <h1 class="color-white">Container Global Anchor</h1>
+      <section class="wrapper container-main">
+        <h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span><a href="">VER MÁS</a></h2>
       </section>
     </main>
     <!-- terms&conditions -->
