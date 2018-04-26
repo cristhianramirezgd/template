@@ -50,3 +50,10 @@ i.icon{
 		background-position: -40px;
 	}
 }
+i.icon-heart{
+	background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOS40NCAzOC45ODUiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiNlMzA2MTM7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJhIiBkPSJNMS41NDYsMjguMzI4Qy4xMzksMjIuNDYxLTMuNCwzLjExNiw5LjA2MS4xNThjNi4zLTEuNSw3LjQ2NywxMC4xODIsNy40NjcsMTAuMTgyczEwLjg2MS0yLjc2NCwxMi41NTgsMy42ODVjMS43NDUsNi42OTEtMi45NTgsMjAuOTQ2LTE4LjY2NywyNC43NzYtMy45NzYuOTIxLTYuNTQ2LS45Ny04Ljg3My0xMC40NzMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDExIC0wLjAyNSkiLz48L3N2Zz4=)
+ no-repeat;
+ width: $global-padding;
+ height: $global-padding;
+ display:inline-flex;
+}

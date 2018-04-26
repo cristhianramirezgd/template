@@ -4,6 +4,7 @@ main{font-family: $font-family;}
 	&-white{color:$white;}
 	&-black{color:$black;}
 	&-dark{color:$dark;}
+	&-jumbogreen{color:$jumbogreen;}
 	&-center{text-align: center;
 		&-m{
 			@media #{$medium-up}{
