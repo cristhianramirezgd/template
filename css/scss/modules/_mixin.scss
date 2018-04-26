@@ -1,6 +1,7 @@
 // Text
 @mixin font-size($font){
 	font-size: $font;
+	line-height: initial;
 }
 @mixin font-weight($weight){
 	font-weight: $weight;
@@ -39,4 +40,76 @@
 	&-dark{color: $dark}
 	&-gray{color: $gray}
 	&-graylight{color: $graylight}
+}
+// Cards
+@mixin cards-bg($padding){
+	background:rgba($white, 0.8);
+	padding: $padding;
+	box-shadow: $global-shadow;
+}
+// Form
+@mixin form-flowers{
+	content:'';
+	background:transparent url('/arquivos/hojas-naranja-mundo-saludable-jumbo.png') center no-repeat;
+	align-items: stretch;
+	display: block;
+	width: 40px;
+	min-height: 170px;
+	position: absolute;
+}
+// Input
+@mixin forms-input($color){
+	border-bottom:$border-form solid $color;
+	transition:$global-subtransition;
+	background:transparent;
+	color:$gray;
+	font-size:$small-font;
+	&:focus,&:hover{
+				border-bottom:$border-form*2 solid $color;
+				min-width:$total-anchor * .5;
+				color:$dark;
+				font-size: initial;
+				&~button{
+						background: $color;
+						color:$white;
+				}
+	    	}
+}
+// Buttons
+@mixin buttons-bg($color){
+	background:$color;
+	color:$white;
+	&-line{
+		border:1px solid $color;
+		color:$color;
+		&:hover{
+			background:$color;
+			color:$white;
+		}
+	}
+}
+// fix height filters
+@mixin fix-height-filter{
+	min-height: 100px;
+}
+// border-gradients
+@mixin border-gradient-top($width,$color1,$color2){
+	border-top: $width solid transparent;
+	border-image: linear-gradient(to right, $color1 0%, $color2 100%);
+		border-image-slice: 1;
+}
+@mixin border-gradient-right($width,$color1,$color2){
+	border-right: $width solid transparent;
+	border-image: linear-gradient(to top, $color1 0%, $color2 100%);
+		border-image-slice: 1;
+}
+@mixin border-gradient-bottom($width,$color1,$color2){
+	border-bottom: $width solid transparent;
+	border-image: linear-gradient(to right, $color1 0%, $color2 100%);
+		border-image-slice: 1;
+}
+@mixin border-gradient-left($width,$color1,$color2){
+	border-left: $width solid transparent;
+	border-image: linear-gradient(to bottom, $color1 0%, $color2 100%);
+		border-image-slice: 1;
 }
