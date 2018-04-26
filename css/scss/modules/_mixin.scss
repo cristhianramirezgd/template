@@ -27,6 +27,11 @@
 	&-gray{background: $gray}
 	&-graylight{background: $graylight}
 }
+// Background Gradients
+@mixin gradient-1{background: linear-gradient(to right, $jumbogreenyellow, $jumbogreen);}
+@mixin gradient-2{background: linear-gradient(to right, $white, $icon-yellow);}
+@mixin gradient-3{background: linear-gradient(to right, $jumbogreenyellow, $icon-bluelight);}
+
 // Text Color
 @mixin color{
 	&-jumbored{color: $jumbored}
