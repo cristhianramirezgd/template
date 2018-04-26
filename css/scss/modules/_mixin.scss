@@ -59,7 +59,7 @@
 	align-items: stretch;
 	display: block;
 	width: 40px;
-	min-height: 170px;
+	min-height: 301px;
 	position: absolute;
 }
 // Input
@@ -69,16 +69,11 @@
 	background:transparent;
 	color:$gray;
 	font-size:$small-font;
-	&:focus,&:hover{
-				border-bottom:$border-form*2 solid $color;
-				min-width:$total-anchor * .5;
-				color:$dark;
-				font-size: initial;
-				&~button{
-						background: $color;
-						color:$white;
-				}
-	    	}
+	&:hover,&:focus{
+		font-size:$global-font;
+		padding-bottom:$global-padding - 4;
+		color:$jumbogreendark;
+	}
 }
 // Buttons
 @mixin buttons-bg($color){

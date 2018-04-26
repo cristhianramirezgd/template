@@ -57,16 +57,29 @@
 	}
 }
 .newsletter-ms{
-	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	margin-top:$global-margin;
 	@media #{$medium-up}{
 		margin: $global-margin;
 	}
 	>input{
-		min-width:$total-anchor * .4;
-		padding-left: $global-padding;
+		min-width:$total-anchor;
+		padding-top:$global-padding;
+		padding-bottom:$global-padding;
+	}
+	>button{
+		margin-top:$global-margin;
+	}
+	.filter-diet{
+		margin-top: $global-margin;
+		select{
+			background:transparent;
+			border:1px solid $jumbogreenyellow;
+			padding: $global-padding /3 $global-padding;
+			margin-top: $global-margin;
+			color:$jumbogreenyellow;
+			text-align: center;
+		}
 	}
 }
 .legal-check{

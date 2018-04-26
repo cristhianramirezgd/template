@@ -7,6 +7,32 @@ main{
 }
 .bg{@include background;}
 .color{@include color;}
-.button{padding:$global-padding;
-	@include background;}
+.button{
+	padding:$global-padding;
+	&-full{
+		width:$total-anchor;
+	}
+	@include background;
+}
 .vertical-center{align-self: center;}
+.row-down-ms{
+	width:$header-mobile-height*2;
+	padding: $global-padding;
+	animation: scroll-down 1.5s infinite;
+	&:hover{
+		svg{
+			stroke:red;
+		}
+	}
+}
+@keyframes scroll-down {
+    0%,100% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px)
+    }
+
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
