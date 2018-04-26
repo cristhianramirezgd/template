@@ -75,3 +75,35 @@
 		}
 	}
 }
+.container-card-article{
+	display:grid;
+}
+.card-article-ms{
+	position:relative;
+	margin-top:$global-margin;
+	max-width: 300px;
+	padding:0;
+	align-self: stretch;
+}
+.card-text-ms{
+	padding: $global-padding;
+	h6{
+		overflow-wrap: break-word;
+	}
+	p{
+		margin-top: $global-margin;
+		padding-bottom:$global-padding*3;
+	}
+}
+.card-interaction-ms{
+	position: absolute;
+	display: flex;
+	width: $total-anchor;
+	bottom: $global-padding;
+	color:$jumbogreen;
+	justify-content: space-between;
+	margin-left: -($global-margin);
+    padding-left: $global-padding;
+    padding-right: $global-padding;
+	font-style: initial;
+}

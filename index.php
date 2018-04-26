@@ -62,6 +62,71 @@
       </section>
       <section class="wrapper container-main">
         <h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span><a href="">VER MÁS</a></h2>
+        <div class="container-card-article main-grid-4">
+          <div class="card-ms card-article-ms">
+            <div class="card-img-ms">
+              <img src="https://fakeimg.pl/500x500/" alt=""/>
+            </div>
+            <div class="card-text-ms">
+              <a href="">
+                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+
+              </a>
+            <div class="card-interaction-ms">
+              <span><i class="icon-2"> <3 </i><small class="text-dark">1.987</small></span><span>Ver<i class="icon-2 text-jumbogreen"> +</i></span>
+            </div>
+            </div>
+          </div>
+          <div class="card-ms card-article-ms">
+            <div class="card-img-ms">
+              <img src="https://fakeimg.pl/500x500/" alt=""/>
+            </div>
+            <div class="card-text-ms">
+              <a href="">
+                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+
+              </a>
+            <div class="card-interaction-ms">
+              <span><i class="icon-2"> <3 </i><small class="text-dark">1.987</small></span><span>Ver<i class="icon-2 text-jumbogreen"> +</i></span>
+            </div>
+            </div>
+          </div>
+          <div class="card-ms card-article-ms">
+            <div class="card-img-ms">
+              <img src="https://fakeimg.pl/500x500/" alt=""/>
+            </div>
+            <div class="card-text-ms">
+              <a href="">
+                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+
+              </a>
+            <div class="card-interaction-ms">
+              <span><i class="icon-2"> <3 </i><small class="text-dark">1.987</small></span><span>Ver<i class="icon-2 text-jumbogreen"> +</i></span>
+            </div>
+            </div>
+          </div>
+          <div class="card-ms card-article-ms">
+            <div class="card-img-ms">
+              <img src="https://fakeimg.pl/500x500/" alt=""/>
+            </div>
+            <div class="card-text-ms">
+              <a href="">
+                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+
+              </a>
+            <div class="card-interaction-ms">
+              <span><i class="icon-2"> <3 </i><small class="text-dark">1.987</small></span><span>Ver<i class="icon-2 text-jumbogreen"> +</i></span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <br />
       </section>
     </main>
     <!-- terms&conditions -->

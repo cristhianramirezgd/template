@@ -32,7 +32,7 @@
 	&-3{grid-template-columns:1fr;
 		@media #{$medium-up}{grid-template-columns:1fr 1fr 1fr;}
 	}
-	&-4{grid-template-columns:1fr 1fr;
+	&-4{grid-template-columns:1fr;
 		@media #{$medium-up}{grid-template-columns:1fr 1fr 1fr 1fr;}
 	}
 	&-5{grid-template-columns:1fr 1fr;
