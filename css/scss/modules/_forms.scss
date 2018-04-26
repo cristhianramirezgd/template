@@ -1,0 +1,87 @@
+.main-form{
+	position:relative;
+	input{
+		&.jumbored{
+			@include forms-input($jumbored);}
+		&.jumboorange{
+			@include forms-input($jumboorange);}
+		&.jumbogreenyellow{
+			@include forms-input($jumbogreenyellow);}
+		&.jumbogreenlight{
+			@include forms-input($jumbogreenlight);}
+		&.jumbogreen{
+			@include forms-input($jumbogreen);}
+		&.jumbogreendark{
+			@include forms-input($jumbogreendark);}
+		&.white{
+			@include forms-input($white);}
+		&.black{
+			@include forms-input($black);}
+		&.dark{
+			@include forms-input($dark);}
+		&.gray{
+			@include forms-input($gray);}
+		&.graylight{
+			@include forms-input($graylight);}
+	}
+	span{
+		position: absolute;
+		top:$global-margin*2;
+		padding: $global-padding/3;
+	}
+}
+.form-newsletter{
+	margin-top:$global-margin;
+	@media #{$medium-up}{
+	margin-top:$global-margin*4;
+	display: grid;
+	position: relative;
+	transition:$global-transition;
+	}
+	&::after{
+		@include form-flowers;
+		right: -30px;
+		transform:rotate(180deg);
+	}
+	&::before{
+		@include form-flowers;
+		left: -30px;
+	}
+	&:hover{
+		&::after,&::before{
+				opacity:.8;
+		}
+	}
+	.text-label{
+		text-align: center;
+	}
+}
+.newsletter-ms{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top:$global-margin;
+	@media #{$medium-up}{
+		margin: $global-margin;
+	}
+	>input{
+		min-width:$total-anchor * .4;
+		padding-left: $global-padding;
+	}
+}
+.legal-check{
+	display:flex;
+	margin-top: $global-margin;
+	a{
+		margin-left:$global-margin / 2;
+		color:$gray;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+#terms-conditions-ms{
+		max-width: $total-anchor * .94;
+	.container{
+	}
+}
