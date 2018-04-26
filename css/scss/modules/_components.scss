@@ -1,38 +1,72 @@
 .section-viewport-h{
-	height: $vh-anchor;
+	@media #{$medium-up}{
+		height: $vh-anchor;
+	}
 }
 // Buttons
 .button-ms{
-	padding: $global-padding;
-	font-size: $font-btn; 
-	&-primary{
-		background:$jumbogreenlight;
-		color:$white;
-		&-line{
-			border:1px solid $jumbogreenlight;
-			color:$jumbogreenlight;
-		}
-	}
-	&-warning{
-		background:$jumboorange;
-		color:$white;
-		&-line{
-			border:1px solid $jumboorange;
-			color:$jumboorange;
-		}
-	}
+	padding: $global-padding/3 $global-padding;
+	font-size: $font-btn;
+	border-radius: $global-radius;
+	transition:$global-subtransition;
+	&-primary{@include buttons-bg($jumbogreenlight);}
+	&-warning{@include buttons-bg($jumboorange);}
+	&-green{@include buttons-bg($jumbogreenyellow);}
 }
 .bg-banner{
 	position:relative;
+	overflow: hidden;
 	img.bg-img {
+		transition:$global-transition;
+		transform:rotate(90deg)scale(4);
 		object-fit:cover;
+		@media #{$medium-up}{
+			transform:rotate(0)scale(1);
+			height: 100vh;
+			object-fit:cover;
+			}
+		object-position: right;
 		position: absolute;
 		right:0;
 		left:0;
 		top:0;
+		bottom:0;
 		z-index: -1;
 	}
 	img.logo-mundo-saludable{
 		max-width: 320px;
+	}
+}
+.card-ms{
+	@include cards-bg($global-padding);
+	&-button{
+		margin-top:$global-margin;
+		@media #{$medium-up}{
+		margin-top:inherit;
+		}
+		&-1{
+			@include border-gradient-left($gutter/3, $jumbogreenyellow, $jumbogreen);
+			@include fix-height-filter;
+			@media #{$medium-up}{
+				@include border-gradient-left(0, $jumbogreenyellow, $jumbogreen);
+				@include border-gradient-bottom($gutter/3, $jumbogreenyellow, $jumbogreen);
+				}
+			}
+		&-2{
+			@include border-gradient-left($gutter/3, $white, $icon-yellow);
+			@include fix-height-filter;
+			@media #{$medium-up}{
+				@include border-gradient-left(0, $white, $icon-yellow);
+				@include border-gradient-bottom($gutter/3, $white, $icon-yellow);
+				}
+		}
+		&-3{
+			@include border-gradient-left($gutter/3, $jumbogreenyellow, $icon-bluelight);
+			@include fix-height-filter;
+			@media #{$medium-up}{
+				@include border-gradient-left(0, $jumbogreenyellow, $icon-bluelight);
+				@include border-gradient-bottom($gutter/3, $jumbogreenyellow, $icon-bluelight);
+				}
+		}
 	}
 }
