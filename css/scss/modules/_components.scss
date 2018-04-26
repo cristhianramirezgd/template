@@ -1,6 +1,6 @@
 .section-viewport-h{
 	@media #{$medium-up}{
-		height: $vh-anchor;
+		min-height: $vh-anchor - 10vh;
 	}
 }
 // Buttons
@@ -16,9 +16,10 @@
 .bg-banner{
 	position:relative;
 	overflow: hidden;
+	padding-top:0; 
 	img.bg-img {
 		transition:$global-transition;
-		transform:rotate(90deg)scale(4);
+		transform:rotate(90deg)scale(6);
 		object-fit:cover;
 		@media #{$medium-up}{
 			transform:rotate(0)scale(1);

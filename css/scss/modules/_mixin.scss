@@ -69,10 +69,11 @@
 	background:transparent;
 	color:$gray;
 	font-size:$small-font;
-	&:hover,&:focus{
+	&:focus{
 		font-size:$global-font;
 		padding-bottom:$global-padding - 4;
 		color:$jumbogreendark;
+		border-bottom:$border-form*3 solid $color;
 	}
 }
 // Buttons
