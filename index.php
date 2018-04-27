@@ -3,7 +3,7 @@
     <?php require_once("subtemplates/header.php"); ?>
     <main class="mundo-saludable-v2">
       <section class="wrapper container-main-full bg-banner section-viewport-h main-grid main-grid-1 main-grid-center main-grid-middle">
-        <img class="bg-img" src="/arquivos/banner-home-mundo-saludable.jpg" alt="banner-home-mundo-saludable"/>
+        <img class="bg-img" src="/arquivos/banner-home-mundo-saludable.jpg" alt="banner-home-mundo-saludable" data-mobile="https://fakeimg.pl/900x300/"/>
           <div class="container-main container-banner main-grid main-grid-3 main-grid-center main-grid-middle">
             <div class="container font-reclame">
               <h1 class="title-site-ms">Mundo-saludable – Tiendas Jumbo</h1>
@@ -184,11 +184,11 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="section-margin">
        <div class="wrapper container-main container-banner-middle">
-         <img src="arquivos/media-maraton-mundo-saludable.png">
-         <img src="arquivos/media-maraton-mundo-saludable.png">
-         <img src="arquivos/media-maraton-mundo-saludable.png">
+         <img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/">
+         <img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/">
+         <img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/">
        </div>
       </section>
     </main>
@@ -226,26 +226,25 @@
               breakpoint: 640,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
+                arrows: true
               }
             },
             {
               breakpoint: 480,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
+                arrows: true
               }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
           ]
       });
       $('.container-banner-middle').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        adaptiveHeight: true,
+        // adaptiveHeight: true,
         arrows: true,
       });
     </script>
