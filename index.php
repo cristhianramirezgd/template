@@ -62,10 +62,10 @@
       </section>
       <section class="wrapper container-main">
         <h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span><a href="">VER MÁS</a></h2>
-        <div class="container-card-article main-grid-4">
+        <div class="container-card-article">
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <img src="https://fakeimg.pl/500x500/" alt=""/>
+              <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
               <a href="">
@@ -82,7 +82,7 @@
           </div>
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <img src="https://fakeimg.pl/500x500/" alt=""/>
+              <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
               <a href="">
@@ -99,7 +99,7 @@
           </div>
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <img src="https://fakeimg.pl/500x500/" alt=""/>
+              <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
               <a href="">
@@ -116,7 +116,58 @@
           </div>
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <img src="https://fakeimg.pl/500x500/" alt=""/>
+              <img src="https://fakeimg.pl/300x300/" alt=""/>
+            </div>
+            <div class="card-text-ms">
+              <a href="">
+                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+
+              </a>
+            <div class="card-interaction-ms">
+              <span><i class="icon-heart"></i>
+                <small class="text-dark">1.987</small></span>
+                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
+            </div>
+            </div>
+          </div>
+          <div class="card-ms card-article-ms">
+            <div class="card-img-ms">
+              <img src="https://fakeimg.pl/300x300/" alt=""/>
+            </div>
+            <div class="card-text-ms">
+              <a href="">
+                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+
+              </a>
+            <div class="card-interaction-ms">
+              <span><i class="icon-heart"></i>
+                <small class="text-dark">1.987</small></span>
+                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
+            </div>
+            </div>
+          </div>
+          <div class="card-ms card-article-ms">
+            <div class="card-img-ms">
+              <img src="https://fakeimg.pl/300x300/" alt=""/>
+            </div>
+            <div class="card-text-ms">
+              <a href="">
+                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+
+              </a>
+            <div class="card-interaction-ms">
+              <span><i class="icon-heart"></i>
+                <small class="text-dark">1.987</small></span>
+                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
+            </div>
+            </div>
+          </div>
+          <div class="card-ms card-article-ms">
+            <div class="card-img-ms">
+              <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
               <a href="">
@@ -134,7 +185,11 @@
         </div>
       </section>
       <section>
-        <br />
+       <div class="wrapper container-main container-banner-middle">
+         <img src="arquivos/media-maraton-mundo-saludable.png">
+         <img src="arquivos/media-maraton-mundo-saludable.png">
+         <img src="arquivos/media-maraton-mundo-saludable.png">
+       </div>
       </section>
     </main>
     <!-- terms&conditions -->
@@ -147,13 +202,52 @@
     <!-- .terms&conditions -->
     <?php require_once("subtemplates/footer.php"); ?>
     <?php require_once("subtemplates/scripts.php"); ?>
+    <!-- librearies -->
     <script type="text/javascript" src="https://jumbocolombiafood.vtexcommercestable.com.br/arquivos/jquery.fancybox.min.js" charset="utf8"></script>
+    <script type="text/javascript" src="https://jumbocolombiafood.vteximg.com.br/arquivos/slick.min.js" charset="utf8"></script>
+    <script type="text/javascript" src="/speed/build/arquivos/app-mundosaludable.js" charset="utf8"></script>
+    <!-- init -->
     <script type="text/javascript">
+      
       // fancy box
-            $('.terms-ms').fancybox({
-             protect: true,
-             touch: false
-              });
+      $('.terms-ms').fancybox({
+       protect: true,
+       touch: false
+        });
+      // slick slider
+      $('.container-card-article').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        adaptiveHeight: true,
+        arrows: true,
+        responsive: [
+            {
+              breakpoint: 640,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+      });
+      $('.container-banner-middle').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        arrows: true,
+      });
     </script>
   </body>
 </html>

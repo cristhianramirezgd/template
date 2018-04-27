@@ -77,18 +77,19 @@
 }
 .container-card-article{
 	display:grid;
+	grid-column-gap:$gutter;
 }
 .card-article-ms{
+	display: grid;
 	position:relative;
-	margin-top:$global-margin;
-	max-width: 300px;
+	margin:$global-margin $global-margin/2;
 	padding:0;
 	align-self: stretch;
 }
 .card-text-ms{
 	padding: $global-padding;
 	h6{
-		overflow-wrap: break-word;
+		word-wrap: break-word;
 	}
 	p{
 		margin-top: $global-margin;
