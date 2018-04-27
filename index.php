@@ -185,10 +185,20 @@
         </div>
       </section>
       <section class="section-margin">
-       <div class="wrapper container-main container-banner-middle">
-         <img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/">
-         <img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/">
-         <img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/">
+       <div class="wrapper container-main-full container-banner-middle">
+         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/"></a>
+         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/"></a>
+         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/"></a>
+       </div>
+      </section>
+      <section class="wrapper container-main">
+        <h2 class="title-section-ms"><span><i class="icon icon-recipes"></i>Recetas</span><a href="">VER MÁS</a></h2>
+      </section>
+      <section class="section-margin">
+       <div class="wrapper container-main-full container-banner-bottom">
+         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/"></a>
+         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/"></a>
+         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/"></a>
        </div>
       </section>
     </main>
@@ -242,9 +252,22 @@
       });
       $('.container-banner-middle').slick({
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // adaptiveHeight: true,
+        adaptiveHeight: true,
+        arrows: true,
+      });
+      $('.container-banner-bottom').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
         arrows: true,
       });
     </script>
