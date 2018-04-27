@@ -98,3 +98,46 @@
 	.container{
 	}
 }
+.container-card-form-bottom{
+	&::before{
+		@media #{$medium-up}{
+			position: relative;
+			content: '';
+			display: block;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			max-height: 128px;
+			margin: auto;
+			background:linear-gradient(to right, $jumbogreenyellow 0%,$icon-bluelight 100%);
+
+		}
+	}
+}
+.card-form-bottom{
+	@media #{$medium-up}{
+		max-width: 436px;
+		min-height: 228px;
+		display:flex;
+		flex-direction: column;
+		position: relative;
+		justify-content: center;
+		@include center-auto;
+	}
+	h3{
+		@media #{$medium-up}{
+		align-self:center;
+		display: block;
+		width:$total-anchor;
+		}
+	}
+	a{
+		@media #{$medium-up}{
+		align-self:center;
+		display: block;
+		width:$total-anchor;
+	}
+		margin-top:$global-margin;
+	}
+}
