@@ -1,10 +1,18 @@
 
 main{font-family: $font-family;}
 .text{
-	&-white{color:$white;}
-	&-black{color:$black;}
-	&-dark{color:$dark;}
-	&-jumbogreen{color:$jumbogreen;}
+	&-white{color:$white;
+		@include color-text($white);
+	}
+	&-black{color:$black;
+		@include color-text($black);
+	}
+	&-dark{color:$dark;
+		@include color-text(dark);
+	}
+	&-jumbogreen{color:$jumbogreen;
+		@include color-text(olor);
+	}
 	&-center{text-align: center;
 		&-m{
 			@media #{$medium-up}{

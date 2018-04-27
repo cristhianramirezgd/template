@@ -62,7 +62,7 @@
       </section>
       <section class="wrapper container-main">
         <h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span><a href="">VER MÁS</a></h2>
-        <div class="container-card-article">
+        <div class="container-main container-card-article">
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -200,6 +200,28 @@
          <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/"></a>
          <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/"></a>
        </div>
+      </section>
+      <section class="wrapper container-main">
+          <div class="container-main main-grid main-grid-3 main-grid-equal container-promo">
+            <div class="card-ms card-promo text-center bg-gradient-1">
+              <a href="">
+              <h2>Recibe el 30% de descuento</h2>
+              <p>registrandote en Mundo Saludable y recibe más beneficios como este.</p>
+            </a>
+            </div>
+            <div class="card-ms card-promo text-center text-white bg-gradient-2">
+              <a href="">
+              <h2>Recibe el 30% de descuento</h2>
+              <p>registrandote en Mundo Saludable y recibe más beneficios como este.</p>
+            </a>
+            </div>
+            <div class="card-ms card-promo text-center text-white bg-gradient-3">
+              <a href="">
+              <h2>Recibe el 30% de descuento</h2>
+              <p>registrandote en Mundo Saludable y recibe más beneficios como este.</p>
+            </a>
+            </div>
+          </div>
       </section>
     </main>
     <!-- terms&conditions -->

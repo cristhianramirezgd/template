@@ -6,6 +6,11 @@
 @mixin font-weight($weight){
 	font-weight: $weight;
 }
+@mixin color-text($color){
+	h1,h2,h3,h4,h5,h6,a,span,i,em{
+		color:$color;
+	}
+}
 // Fixed
 @mixin center-auto{
 	margin:{

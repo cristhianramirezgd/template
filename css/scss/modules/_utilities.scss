@@ -5,7 +5,18 @@ main{
 		@include center-auto;
 	}
 }
-.bg{@include background;}
+.bg{
+	@include background;
+	&-gradient-1{
+		background:linear-gradient(to right, $white 0%,$icon-yellow 100%)!important;
+	}
+	&-gradient-2{
+		background:linear-gradient(to right, $jumbogreenyellow 0%, $jumbogreen 100%)!important;
+	}
+	&-gradient-3{
+		background:linear-gradient(to right, $jumbogreenyellow 0%,$icon-bluelight 100%)!important;
+	}
+}
 .color{@include color;}
 .button{
 	padding:$global-padding;

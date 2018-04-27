@@ -42,3 +42,61 @@
 		@media #{$medium-up}{grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;}
 	}
 }
+.container-promo{
+	display: block;
+	@media #{$medium-up}{
+		display: grid;
+	}
+}
+.card-promo{
+	width: 100%;
+	position: relative;
+	margin-top:$global-margin;
+	border-radius: $global-radius;
+	transition:$global-subtransition;
+	@media #{$medium-up}{
+		opacity:.9;
+		margin:$global-padding;
+		max-width: 315px;
+		justify-self: center;
+		&::after{
+			opacity: 0;
+			content:url('/arquivos/rama-ms-l-tiendas-jumbo.png');
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+
+		}
+		&::before{
+			opacity: 0;
+			content:url('/arquivos/rama-ms-r-tiendas-jumbo.png');
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: -1;
+
+		}
+		&:hover{
+			transform:scale(1.1) translateY(-($gutter))rotate(.2deg);
+			opacity:1;
+			&:after{
+				transition:$global-transition;
+				opacity:1;
+				transform:translate(-53px, $gutter*4)scale(.5);
+			}
+			&:before{
+				transition:$global-transition;
+				opacity:1;
+				transform:translate(59px, 70px)scale(.5);
+			}
+		}
+	}
+	h2{
+		line-height: 1;
+	}
+	p{
+		word-wrap:break-word;
+		margin-top:$global-margin;
+	}
+}
