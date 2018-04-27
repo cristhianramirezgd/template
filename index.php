@@ -76,7 +76,7 @@
             <div class="card-interaction-ms">
               <span><i class="icon-heart"></i>
                 <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-2"> +</i></span></a>
+                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
           </div>
@@ -93,7 +93,7 @@
             <div class="card-interaction-ms">
               <span><i class="icon-heart"></i>
                 <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-2"> +</i></span></a>
+                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
           </div>
@@ -110,7 +110,7 @@
             <div class="card-interaction-ms">
               <span><i class="icon-heart"></i>
                 <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-2"> +</i></span></a>
+                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
           </div>
@@ -127,7 +127,7 @@
             <div class="card-interaction-ms">
               <span><i class="icon-heart"></i>
                 <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-2"> +</i></span></a>
+                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
           </div>
