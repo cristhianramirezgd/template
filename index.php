@@ -16,7 +16,7 @@
                 <form class="main-form newsletter-ms">
                   <input class="jumbogreenyellow" id="newsletter-mundo-saludable" type="email" placeholder="Example@mail.com"/>
                   <div class="filter-diet">
-                    <label class="font-bold">Selecciona</label>
+                    <label class="font-bold">Escoge tu mejor opción</label>
                     <select>
                       <option value="yopuedo">Yo Puedo</option>
                       <option value="yodecicdi">Yo Decidí</option>
@@ -50,7 +50,7 @@
               <div class="card-ms card-ms-button card-ms-button-3 text-center-m">
                 <a href="">
                   <h3>Yo Quiero</h3>
-                  <p>Quiero cumplir algún objetivo puntual  <small>como una dieta para bajar de peso.</small> </p>
+                  <p>cumplir algún objetivo puntual  <small>como una dieta para bajar de peso.</small> </p>
                 </a>
               </div>
           </div>
@@ -186,9 +186,9 @@
       </section>
       <section class="section-margin">
        <div class="wrapper container-main-full container-banner-middle">
-         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/"></a>
-         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/"></a>
-         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/"></a>
+         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
+         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
+         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
        </div>
       </section>
       <section class="wrapper container-main">
@@ -196,9 +196,9 @@
       </section>
       <section class="section-margin">
        <div class="wrapper container-main-full container-banner-bottom">
-         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/"></a>
-         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/"></a>
-         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/"></a>
+         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
+         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
+         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
        </div>
       </section>
       <section class="wrapper container-main section-margin">
