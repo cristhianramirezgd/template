@@ -7,7 +7,7 @@
           <div class="container-main container-banner main-grid main-grid-3 main-grid-center main-grid-middle">
             <div class="container font-reclame">
               <h1 class="title-site-ms">Mundo-saludable – Tiendas Jumbo</h1>
-              <h2 class="text-center text-left-m">Encuentra productos que te ayudarán a tener una adecuada alimentación y una vida más sana.</h2>
+              <h2 class="text-center text-left-m text-banner-top">Encuentra productos que te ayudarán a tener una adecuada alimentación y una vida más sana.</h2>
             </div>
             <div class="container">
               <img  class="logo-mundo-saludable" src="arquivos/logo-mundosaludable.png" alt="logo-mundosaludable tiendas jumbo" />
