@@ -204,22 +204,16 @@
       <section class="wrapper container-main section-margin">
           <div class="container-main main-grid main-grid-3 main-grid-equal container-promo">
             <div class="card-ms card-promo text-center bg-gradient-1">
-              <a href="">
               <h2>Recibe el 30% de descuento</h2>
               <p>registrandote en Mundo Saludable y recibe más beneficios como este.</p>
-            </a>
             </div>
             <div class="card-ms card-promo text-center text-white bg-gradient-2">
-              <a href="">
               <h2>Recibe el 30% de descuento</h2>
               <p>registrandote en Mundo Saludable y recibe más beneficios como este.</p>
-            </a>
             </div>
             <div class="card-ms card-promo text-center text-white bg-gradient-3">
-              <a href="">
               <h2>Recibe el 30% de descuento</h2>
               <p>registrandote en Mundo Saludable y recibe más beneficios como este.</p>
-            </a>
             </div>
           </div>
       </section>
