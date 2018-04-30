@@ -18,9 +18,22 @@
                   <div class="filter-diet">
                     <label class="font-bold">Escoge tu mejor opción</label>
                     <select>
-                      <option value="yopuedo">Yo Puedo</option>
-                      <option value="yodecicdi">Yo Decidí</option>
-                      <option value="yoquiero">Yo Quiero</option>
+                      <option disabled="true"><b>Yo Puedo:</b></option>
+                      <option value="">Mi diabetes</option>
+                      <option value="">Mi embarazo</option>
+                      <option value="">Mi corazón</option>
+                      <option value="">Mi digestión</option>
+                      <option disabled="true"><b>Yo Decidí:</b></option>
+                      <option value="">Ser vegetariana</option>
+                      <option value="">Ser vegana</option>
+                      <option value="">Comer Kosher</option>
+                      <option value="">Comer Halal</option>
+                      <option disabled="true"><b>Yo Quiero:</b></option>
+                      <option value="">Adelgazar</option>
+                      <option value="">Desintoxicarme</option>
+                      <option value="">Alimentarme mejor</option>
+                      <option value="">Practicar un deporte</option>
+                      <option value="">Cuidar a mi familia</option>
                     </select>
                   </div>
                   <button class="button-ms button-full button-ms-green-line" type="submit">Enviar</button>
