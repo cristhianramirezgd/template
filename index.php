@@ -231,6 +231,16 @@
             </div>
         </div>
       </section>
+      <section class="social-container container-main">
+        <div class="section-margin font-reclame container-main main-grid main-grid-2 main-grid-center main-grid-middle ">
+          <div class="section-margin text-center">
+            <h3><a href=""><i class="icon-facebook"></i>/MundoSaludableJumbo</a></h3>
+          </div>
+          <div class="section-margin text-center">
+            <h3><a href=""><i class="icon-instagram"></i>/MundoSaludableJumbo</a></h3>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- terms&conditions -->
     <div style="display: none;" id="terms-conditions-ms">

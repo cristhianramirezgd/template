@@ -100,3 +100,20 @@
 		margin-top:$global-margin;
 	}
 }
+.social-container{
+	margin:$global-margin auto;
+	min-height: 200px;
+	@media #{$medium-up}{
+	max-width:$total-anchor * .60; 
+	min-height: auto;
+	}
+	h3{
+		transition:$global-subtransition;
+		font-weight: 100;
+		opacity: .8;
+		&:hover{
+			opacity: 1;
+			transform:translateY(-($global-padding/3));
+		}
+	}
+}
