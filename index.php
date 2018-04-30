@@ -199,9 +199,9 @@
       </section>
       <section class="section-margin">
        <div class="wrapper container-main-full container-banner-middle">
-         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
-         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
-         <a href=""><img src="arquivos/media-maraton-mundo-saludable.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
+         <a href=""><img src="/arquivos/media-maraton-mundo-saludable.png" data-mobile="/arquivos/media-maraton-mobile-mundo-saludable.png" alt="media-maraton-mobile-mundo-saludable" /></a>
+         <a href=""><img src="/arquivos/media-maraton-mundo-saludable.png" data-mobile="/arquivos/media-maraton-mobile-mundo-saludable.png" alt="media-maraton-mobile-mundo-saludable" /></a>
+         <a href=""><img src="/arquivos/media-maraton-mundo-saludable.png" data-mobile="/arquivos/media-maraton-mobile-mundo-saludable.png" alt="media-maraton-mobile-mundo-saludable" /></a>
        </div>
       </section>
       <section class="wrapper container-main">
@@ -209,9 +209,9 @@
       </section>
       <section class="section-margin">
        <div class="wrapper container-main-full container-banner-bottom">
-         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
-         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
-         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo.png" data-mobile="https://fakeimg.pl/300x300/" /></a>
+         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo-02.png" data-mobile="/arquivos/e-de-espinaca-mobile-mundo-saludable-jumbo.png" alt="de la A a la Z mundo Saludable Jumbo" /></a>
+         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo-02.png" data-mobile="/arquivos/e-de-espinaca-mobile-mundo-saludable-jumbo.png" alt="de la A a la Z mundo Saludable Jumbo" /></a>
+         <a href=""><img src="arquivos/e-de-espinaca-mundo-saludable-jumbo-02.png" data-mobile="/arquivos/e-de-espinaca-mobile-mundo-saludable-jumbo.png" alt="de la A a la Z mundo Saludable Jumbo" /></a>
        </div>
       </section>
       <section class="wrapper container-main section-margin">
