@@ -50,7 +50,7 @@
               <div class="card-ms card-ms-button card-ms-button-3 text-center-m">
                 <a href="">
                   <h3>Yo Quiero</h3>
-                  <p>cumplir algún objetivo puntual  <small>como una dieta para bajar de peso.</small> </p>
+                  <p>cumplir algún objetivo puntual como una dieta para bajar de peso.</p>
                 </a>
               </div>
           </div>
@@ -204,16 +204,16 @@
       <section class="wrapper container-main section-margin">
           <div class="container-main main-grid main-grid-3 main-grid-equal container-promo">
             <div class="card-ms card-promo text-center bg-gradient-1">
-              <h2>Recibe el 30% de descuento</h2>
-              <p>registrandote en Mundo Saludable y recibe más beneficios como este.</p>
+              <h2>Recibe el 30% dto.</h2>
+              <p>registrándote en Mundo Saludable.</p>
             </div>
             <div class="card-ms card-promo text-center text-white bg-gradient-2">
-              <h2>Recibe el 30% de descuento</h2>
-              <p>registrandote en Mundo Saludable y recibe más beneficios como este.</p>
+              <h2>Asesoría Nutricional</h2>
+              <p>especializada en nuestra tiendas.</p>
             </div>
             <div class="card-ms card-promo text-center text-white bg-gradient-3">
-              <h2>Recibe el 30% de descuento</h2>
-              <p>registrandote en Mundo Saludable y recibe más beneficios como este.</p>
+              <h2>Disfruta 10% de dto</h2>
+              <p>en las batidos naturales Nativos a nivel nacional.</p>
             </div>
           </div>
       </section>
