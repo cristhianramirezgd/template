@@ -39,7 +39,7 @@ $global-padding:	$gutter;
 $global-time:		320ms;
 $global-transition:	$global-time ease-in-out;
 $global-subtransition:$global-time / 2 ease-in-out;
-$global-shadow:		0 0 $gutter rgba($dark ,.3) ;
+$global-shadow:		0 0 $gutter/3 rgba($dark ,.3) ;
 $global-anchor:		rem-calc(1366);
 $total-anchor:		100%;
 $vw-anchor:			100vw;
