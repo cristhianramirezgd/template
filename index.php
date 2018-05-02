@@ -78,7 +78,7 @@
         <div class="container-main container-card-article">
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <span class="card-label-filter-ms">VERGANO, DIABÉTICO</span>
+              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
@@ -96,7 +96,7 @@
           </div>
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <span class="card-label-filter-ms">VERGANO, DIABÉTICO</span>
+              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
@@ -114,7 +114,7 @@
           </div>
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <span class="card-label-filter-ms">VERGANO, DIABÉTICO</span>
+              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
@@ -132,7 +132,7 @@
           </div>
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <span class="card-label-filter-ms">VERGANO, DIABÉTICO</span>
+              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
@@ -150,7 +150,7 @@
           </div>
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <span class="card-label-filter-ms">VERGANO, DIABÉTICO</span>
+              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
@@ -168,7 +168,7 @@
           </div>
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <span class="card-label-filter-ms">VERGANO, DIABÉTICO</span>
+              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
@@ -186,7 +186,7 @@
           </div>
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
-              <span class="card-label-filter-ms">VERGANO, DIABÉTICO</span>
+              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
             </div>
             <div class="card-text-ms">
