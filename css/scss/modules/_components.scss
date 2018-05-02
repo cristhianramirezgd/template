@@ -90,7 +90,6 @@
 	overflow: hidden;
 	&:hover{
 		@media #{$medium-up}{
-		border:1px solid $graylight;
 		border-radius:$global-radius*3;
 		transform:translateY(-($global-margin));
 		}
