@@ -89,21 +89,28 @@
 	transition:$global-transition;
 	overflow: hidden;
 	&:hover{
+		@media #{$medium-up}{
 		border:1px solid $graylight;
 		border-radius:$global-radius*3;
 		transform:translateY(-($global-margin));
+		}
 		.card-img-ms{
-			transition:$global-subtransition;
-			img{
-				opacity: 1;
-			}
 		}
 	}
 }
 .card-img-ms{
+	position: relative;
 	@include gradient-3;
-	img{
-		opacity: .95;
+	.card-label-filter-ms{
+		position:absolute;
+		writing-mode: vertical-lr;
+		background: $white;
+		padding: $global-padding $global-padding/5;
+		color: $gray;
+		font-weight: $font-bold;
+		transform: rotate(180deg);
+		font-size:80%;
+		height: 100%
 	}
 }
 .card-text-ms{
