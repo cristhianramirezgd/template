@@ -11,4 +11,16 @@ $(document).ready(function(a) {
             var b = a(this).attr("data-mobile");
             a(this).attr("src", b)
         });
+        $(window).load(function() {
+          $( ".mundo-saludable-v2").addClass( "intro-transition" );
+        });
     });
+    $( function() {
+        $( ".filter-title-ms" ).on( "click", function(e) {
+            e.preventDefault();
+            var $this = $(this);
+          $this.parents('.container-filter-ms').toggleClass( "active-ms");
+        });
+      } );
+
+       
