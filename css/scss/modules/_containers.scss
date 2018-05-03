@@ -176,6 +176,7 @@ main.catagory-ms{
 		@media #{$medium-up}{
 			position: sticky;
 			top:$global-margin;
+			margin-top:$global-margin;
 		}
 	}
 	.container-filter-ms{
@@ -204,11 +205,10 @@ main.catagory-ms{
 			}
 		}
 		.filters-ms{
-			transition:$global-subtransition;
+			transition:$global-transition;
 			transform:translateX(-100%);
 			height: 0;
 			overflow: hidden;
-			@include gradient-3;
 			opacity: 0;
 			label{
 				margin:$global-margin - 5;
@@ -216,11 +216,32 @@ main.catagory-ms{
 			input{
 				margin:$global-margin - 5;
 			}
+			&:nth-of-type(1){
+			animation-name: filters-ms-out;
+			animation-duration: 400ms;
+			}
+			&:nth-of-type(2){
+			animation-name: filters-ms-out;
+			animation-duration: 600ms;
+			}
+			&:nth-of-type(3){
+			animation-name: filters-ms-out;
+			animation-duration: 800ms;
+			}
+			&:nth-of-type(4){
+			animation-name: filters-ms-out;
+			animation-duration: 1s;
+			}
+			&:nth-of-type(5){
+			animation-name: filters-ms-out;
+			animation-duration: 1.2s;
+			}
+			&:nth-of-type(6){
+			animation-name: filters-ms-out;
+			animation-duration: 1.4s;
+			}
 		}
 		&.active-ms{
-			&.container-filter-ms{
-				@include gradient-1;
-			}
 			.filters-ms{
 				flex-direction:row;
 				color:$gray;
@@ -232,39 +253,43 @@ main.catagory-ms{
 				height: auto;
 				background: $white;
 				opacity: 1;
+				margin-top:$global-margin/3;
+				overflow: auto;
+				box-shadow: $global-shadow;
+				align-items:center;
 				@include border-gradient-left($gutter/3, $jumbogreenyellow, $icon-bluelight);
 				&:nth-of-type(1){
-				animation-name: filters-ms;
+				animation-name: filters-ms-in;
 				animation-duration: 400ms;
 				}
 				&:nth-of-type(2){
-				animation-name: filters-ms;
+				animation-name: filters-ms-in;
 				animation-duration: 600ms;
 				}
 				&:nth-of-type(3){
-				animation-name: filters-ms;
+				animation-name: filters-ms-in;
 				animation-duration: 800ms;
 				}
 				&:nth-of-type(4){
-				animation-name: filters-ms;
+				animation-name: filters-ms-in;
 				animation-duration: 1s;
 				}
 				&:nth-of-type(5){
-				animation-name: filters-ms;
+				animation-name: filters-ms-in;
 				animation-duration: 1.2s;
 				}
 				&:nth-of-type(6){
-				animation-name: filters-ms;
+				animation-name: filters-ms-in;
 				animation-duration: 1.4s;
 				}
 				&:last-child{
-					border-bottom:1px solid $graylight;
-					overflow: auto;
+				margin-bottom:$global-margin/3;
 				}
 			}
 			.filter-title-ms{
 				color:$gray;
 				border-bottom:1px solid $graylight;
+				box-shadow: $global-shadow;
 				&::after{
 				content:'';
 				transform:rotate(90deg);
@@ -273,7 +298,11 @@ main.catagory-ms{
 		}
 	}
 }
-@keyframes filters-ms {
+@keyframes filters-ms-in {
     from {opacity:0;transform:translateX(100%);}
     to {opacity:1;transform:translateX(0);}
+}
+@keyframes filters-ms-out {
+    from {opacity:0;transform:translateX(0);}
+    to {opacity:1;transform:translateX(100%);}
 }
