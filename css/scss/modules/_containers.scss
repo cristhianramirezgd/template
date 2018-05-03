@@ -117,3 +117,16 @@
 		}
 	}
 }
+main.catagory-ms{
+	width: 1366px;
+	max-width: 94%;
+	display: grid;
+	grid-template-columns:2fr 6fr;
+	.container-category-ms{
+		.container-card-article{
+			@media #{$medium-up}{
+			grid-template-columns: 1fr 1fr 1fr;
+			}
+		}
+	}
+}
