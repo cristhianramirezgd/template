@@ -53,8 +53,8 @@
         </div>
       </aside>
       <section class="container-category-ms">
-        <div class="container-card-article">
-          <div class="card-ms card-article-ms">
+        <ul class="container-card-article">
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -71,8 +71,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -89,8 +89,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -107,8 +107,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -125,8 +125,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -143,8 +143,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -161,8 +161,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -179,8 +179,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -197,8 +197,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
     </main>
     <?php require_once("subtemplates/footer.php"); ?>
@@ -206,6 +206,14 @@
     <!-- librearies -->
     <script type="text/javascript" src="https://jumbocolombiafood.vtexcommercestable.com.br/arquivos/jquery.fancybox.min.js" charset="utf8"></script>
     <script type="text/javascript" src="https://jumbocolombiafood.vteximg.com.br/arquivos/slick.min.js" charset="utf8"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script type="text/javascript" src="/speed/build/arquivos/app-mundosaludable.js" charset="utf8"></script>  
+    <script type="text/javascript">
+      var articlelist = new List('container-pagination', {
+        valueNames: ['card-article-ms'],
+        page: 3,
+        pagination: true
+      });
+    </script>
   </body>
 </html>
