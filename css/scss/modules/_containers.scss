@@ -121,6 +121,7 @@ main.catagory-ms{
 	width: 1366px;
 	max-width: 94%;
 	display: grid;
+	grid-gap: $gutter;
 	@media #{$medium-up}{
 		grid-template-columns:2fr 6fr;
 	}
@@ -128,14 +129,17 @@ main.catagory-ms{
 		.container-card-article{
 			grid-template-columns: 1fr;
 			@media #{$medium-up}{
-			grid-template-columns: 1fr 1fr 1fr 1fr;
+			// grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 			}
 			.card-article-ms{
 		    	display: flex;
     			flex-direction: row;
     			margin-top: $global-margin;
     			margin-right:0;
+    			margin-bottom:0;
     			margin-left:0;
+    			max-width: initial;
     			@media #{$medium-up}{
 					display: block;
     			}

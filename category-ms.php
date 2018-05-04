@@ -52,7 +52,7 @@
           </div>
         </div>
       </aside>
-      <section class="wrapper container-main container-category-ms">
+      <section class="container-category-ms">
         <div class="container-card-article">
           <div class="card-ms card-article-ms">
             <div class="card-img-ms">
