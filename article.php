@@ -33,8 +33,8 @@
       </section>
       <section class="wrapper container-main">
         <h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Artículos Relacionados</span></h2>
-        <div class="container-main container-card-article">
-          <div class="card-ms card-article-ms">
+        <ul class="container-main container-card-article">
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -51,8 +51,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -69,8 +69,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -87,8 +87,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -105,8 +105,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -123,8 +123,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
+          </li>
+          <li class="card-ms card-article-ms">
             <div class="card-img-ms">
               <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
               <img src="https://fakeimg.pl/300x300/" alt=""/>
@@ -141,26 +141,8 @@
                 <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
             </div>
             </div>
-          </div>
-          <div class="card-ms card-article-ms">
-            <div class="card-img-ms">
-              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
-              <img src="https://fakeimg.pl/300x300/" alt=""/>
-            </div>
-            <div class="card-text-ms">
-              <a href="">
-                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-
-              </a>
-            <div class="card-interaction-ms">
-              <span><i class="icon-heart"></i>
-                <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
-            </div>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="social-container container-main">
         <div class="section-margin font-reclame container-main main-grid main-grid-2 main-grid-center main-grid-middle ">
