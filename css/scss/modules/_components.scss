@@ -208,7 +208,7 @@
 	margin-bottom: $global-margin;
 	img{
 		width: $total-anchor;
-		margin-top: $global-margin;
+		margin: $global-margin/2;
 		display: inline-block;
 		@media #{$medium-up}{
 		width: auto;
