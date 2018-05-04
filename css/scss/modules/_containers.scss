@@ -128,11 +128,14 @@ main.catagory-ms{
 		.container-card-article{
 			grid-template-columns: 1fr;
 			@media #{$medium-up}{
-			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
 			}
 			.card-article-ms{
 		    	display: flex;
     			flex-direction: row;
+    			margin-top: $global-margin;
+    			margin-right:0;
+    			margin-left:0;
     			@media #{$medium-up}{
 					display: block;
     			}
