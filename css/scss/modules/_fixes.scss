@@ -37,3 +37,23 @@ main{
 body.mundo-saludable-v2#my-recipes #featured-recipes {
     margin-top: 0;
 }
+// vtex fix product
+.product-shelf{
+    ul {
+        margin:$global-margin;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr;
+        @media #{$medium-up}{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        li{
+            border:1px solid $graylight;
+            padding:$global-padding;
+        }
+    }
+    h2 {
+        display: none!important;
+    }
+}
+
