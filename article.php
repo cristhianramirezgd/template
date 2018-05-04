@@ -162,7 +162,16 @@
           </div>
         </div>
       </section>
-
+      <section class="social-container container-main">
+        <div class="section-margin font-reclame container-main main-grid main-grid-2 main-grid-center main-grid-middle ">
+          <div class="section-margin text-center">
+            <h3><a href="https://www.facebook.com/pages/Mundo-Saludable-Jumbo/1489409884642135"><i class="icon-facebook"></i>/MundoSaludableJumbo</a></h3>
+          </div>
+          <div class="section-margin text-center">
+            <h3><a href="https://www.instagram.com/mundosaludablejumbo/"><i class="icon-instagram"></i>/MundoSaludableJumbo</a></h3>
+          </div>
+        </div>
+      </section>
     </main>
     <?php require_once("subtemplates/footer.php"); ?>
     <?php require_once("subtemplates/scripts.php"); ?>
