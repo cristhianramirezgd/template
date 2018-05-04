@@ -12,9 +12,11 @@ main{
 	}
 	&-gradient-2{
 		background:linear-gradient(to right, $jumbogreenyellow 0%, $jumbogreen 100%)!important;
+		color: $white;
 	}
 	&-gradient-3{
 		background:linear-gradient(to right, $jumbogreenyellow 0%,$icon-bluelight 100%)!important;
+		color: $white;
 	}
 }
 .color{@include color;}
