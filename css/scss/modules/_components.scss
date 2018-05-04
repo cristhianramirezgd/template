@@ -143,7 +143,12 @@
 			position: absolute;
 			background: rgba($white,.5);
 			bottom: 0;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
 			@media #{$medium-up}{
+				max-width: $global-anchor;
 				display: flex;
 				padding: $global-padding/2 $global-padding;
 			}
@@ -179,6 +184,7 @@
 						display: flex;
 					}
 					i{
+						margin: 0;
 						@media #{$medium-up}{
 							width:$gutter;
 							height: $gutter;
@@ -195,4 +201,25 @@
 	border-radius: $global-radius;
 	box-shadow:$global-shadow;
 	font-size: 80%;
+}
+.article-content{
+	padding: $global-padding;
+	margin-top: $global-margin;
+	margin-bottom: $global-margin;
+	img{
+		width: $total-anchor;
+		margin-top: $global-margin;
+		display: inline-block;
+		@media #{$medium-up}{
+		width: auto;
+		}
+	}
+	p {
+		margin-top: $global-margin;
+		a{
+			    display: inline-block;
+			    color:$jumbogreenlight;
+			    font-weight: $font-regular;
+		}
+	}
 }
