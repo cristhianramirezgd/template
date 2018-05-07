@@ -38,6 +38,23 @@
 		max-width: 320px;
 	}
 }
+// Video
+.video-ms {
+	margin-top:$global-margin;
+	margin-right:auto;
+	margin-left:auto;
+	max-width: $total-anchor * .5;
+	position: relative;
+	padding-bottom: 56.25% * .5; /* 16:9 */
+	height: 0;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
 .card-ms{
 	@include cards-bg($global-padding);
 	&-button{
