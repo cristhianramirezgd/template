@@ -223,6 +223,11 @@
 	padding: $global-padding;
 	margin-top: $global-margin;
 	margin-bottom: $global-margin;
+	@media #{$medium-up}{
+		max-width: $total-anchor * .7;
+		border-right:1px solid $graylight;
+		border-left:1px solid $graylight;
+	}
 	img{
 		width: $total-anchor;
 		margin: $global-margin auto;
