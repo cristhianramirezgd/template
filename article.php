@@ -200,14 +200,15 @@
            tooltipClass: '',    // cool, if you want to customize the tooltip
            sanitize: true,      // will sanitize the user selection to respect the Twitter Max length (recommended) 
            buttons: [           // services that you want to enable you can add : 
-               'twitter',       // - twitter, tumblr, buffer, stumbleupon, digg, reddit, linkedin, facebook
-               'facebook',       // - twitter, tumblr, buffer, stumbleupon, digg, reddit, linkedin, facebook
-               'buffer'
+               'facebook', // - twitter, tumblr, buffer, stumbleupon, digg, reddit, linkedin, facebook
+               'twitter',
+               'linkedin'
+               // 'buffer'
            ],
            anchorsClass: '',    // class given to each tooltip's links
            twitterUsername: '', // for twitter widget, will add 'via @twitterUsername' at the end of the tweet.
-           facebookAppID: '', // Can also be an HTML element inside the <head> tag of your page : <meta property="fb:APP_ID" content="YOUR_APP_ID"/>
-           facebookDisplayMode: 'popup', //can be 'popup' || 'page'
+           facebookAppID: '459647324467614', // Can also be an HTML element inside the <head> tag of your page : <meta property="fb:APP_ID" content="YOUR_APP_ID"/>
+           facebookDisplayMode: 'page', //can be 'popup' || 'page'
            tooltipTimeout: 250  //Timeout before that the tooltip appear in ms
        });
 
