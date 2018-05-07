@@ -2,8 +2,9 @@
     <?php require_once("subtemplates/styles.php"); ?>
     <?php require_once("subtemplates/header.php"); ?>
     <h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span></h2>
-    <main class="mundo-saludable-v2 catagory-ms">
-      <aside class="wrapper-filter">
+    <main class="mundo-saludable-v2">
+      <section class="catagory-ms">
+        <aside class="wrapper-filter">
         <div class="sticky-filter-ms">
           <div class="container-filter-ms">
             <h6 class="filter-title-ms">Nombre de la categoría</h6>
@@ -52,7 +53,7 @@
           </div>
         </div>
       </aside>
-      <section class="container-category-ms">
+      <div class="container-category-ms">
         <ul class="container-card-article">
           <li class="card-ms card-article-ms">
             <div class="card-img-ms">
@@ -199,6 +200,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <?php require_once("subtemplates/footer.php"); ?>
