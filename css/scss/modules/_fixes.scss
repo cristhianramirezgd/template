@@ -34,6 +34,15 @@ main{
         display: block;
     }
 }
+.slick-dots {
+    li {
+        button{
+            &:before{
+                font-size:$font-size-h1; 
+            }
+        }
+    }
+}
 body.mundo-saludable-v2#my-recipes #featured-recipes {
     margin-top: 0;
 }
