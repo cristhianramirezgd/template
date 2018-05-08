@@ -273,15 +273,8 @@
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                arrows: true
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                arrows: true
+                dots:true,
+                arrows: false
               }
             }
           ]
@@ -290,21 +283,43 @@
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
         arrows: true,
+        responsive: [
+           {
+             breakpoint: 640,
+             settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               infinite: true,
+               dots: true,
+               arrows:false
+             }
+           }
+        ]
       });
       $('.container-banner-bottom').slick({
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         adaptiveHeight: true,
         arrows: true,
+        responsive: [
+           {
+             breakpoint: 640,
+             settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               infinite: true,
+               dots: true,
+               arrows:false
+             }
+           }
+        ]
       });
     </script>
   </body>
