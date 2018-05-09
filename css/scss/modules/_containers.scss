@@ -122,11 +122,14 @@
 	max-width: 94%;
 	display: grid;
 	grid-gap: $gutter;
+	margin-right:auto;
+	margin-left:auto;
 	@media #{$medium-up}{
 		grid-template-columns:2fr 6fr;
 	}
 	.container-category-ms{
 		.container-card-article{
+			transition:$global-transition;
 			grid-template-columns: 1fr;
 			@media #{$medium-up}{
 			// grid-template-columns: 1fr 1fr 1fr 1fr;
