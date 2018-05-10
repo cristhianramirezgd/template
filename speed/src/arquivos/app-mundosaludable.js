@@ -31,6 +31,7 @@ $(document).ready(function(a) {
     filterToggle();
     filterInput();
 }());
+
 var subFilters = [
     MiDiabetesFilter = {'contenedores':'.MiDiabetesFilter', 'filtros':'#MiDiabetesFilter'},
     MiEmbarazoFilter = {'contenedores':'.MiEmbarazoFilter', 'filtros':'#MiEmbarazoFilter'},
@@ -48,4 +49,4 @@ var subFilters = [
 ]
 subFilters.forEach(function(subFilters, index) {
   console.log("Filtros " + index + " | Contenedores: " + subFilters.contenedores + " | Filtros: " + subFilters.filtros)
-}); 
+});     

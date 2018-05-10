@@ -6,51 +6,7 @@
       <section class="catagory-ms">
         <aside class="wrapper-filter">
         <div class="sticky-filter-ms">
-          <div class="container-filter-ms">
-            <h6 class="filter-title-ms">Nombre de la categoría</h6>
-            <div class="filters-ms">
-              <label>Yo Puedo</label>
-              <input id="yopuedo-filter" type="checkbox" />
-            </div>
-            <div class="filters-ms">
-              <label>Yo Decidí</label>
-              <input id="yodecidi-filter" type="checkbox" />
-            </div>
-            <div class="filters-ms">
-              <label>Yo Quiero</label>
-              <input id="yoquiero-filter" type="checkbox" />
-            </div>
-          </div>
-          <div class="container-filter-ms">
-            <h6 class="filter-title-ms">Nombre de la categoría</h6>
-            <div class="filters-ms">
-              <label>Yo Puedo</label>
-              <input type="checkbox" />
-            </div>
-            <div class="filters-ms">
-              <label>Yo Decidí</label>
-              <input type="checkbox" />
-            </div>
-            <div class="filters-ms">
-              <label>Yo Quiero</label>
-              <input type="checkbox" />
-            </div>
-          </div>
-          <div class="container-filter-ms">
-            <h6 class="filter-title-ms">Nombre de la categoría</h6>
-            <div class="filters-ms">
-              <label>Yo Puedo</label>
-              <input type="checkbox" />
-            </div>
-            <div class="filters-ms">
-              <label>Yo Decidí</label>
-              <input type="checkbox" />
-            </div>
-            <div class="filters-ms">
-              <label>Yo Quiero</label>
-              <input type="checkbox" />
-            </div>
-          </div>
+          <div class="container-filter-ms" id="filterTitleCategorie"></div>
         </div>
       </aside>
       <div class="container-category-ms" id="container-pagination">
@@ -71,9 +27,13 @@
               JsonpCallback(msg);
         });
       }
-      function JsonpCallback(json) {
+     function JsonpCallback(json) {
+        $('#filterTitleCategorie').append('<h6 class="filter-title-ms">' 
+          + json[0].e_categories[0].name
+          + '</h6>'
+          );
       for (var i = 0; i < json.length; i++) {
-          $('#cardsMs').append('<li class="card-ms card-article-ms">'
+          $('#cardsMs').append('<li class="card-ms card-article-ms' + ' ' + json[i].e_tags[i].slug +'">'
               +'<div class="card-img-ms">'
               +'<span class="card-label-filter-ms">' + json[i].e_tags[0].name + ', ' + '</span>'
               +'<img src="' + json[i].better_featured_image.source_url + '" />'
@@ -91,7 +51,22 @@
               +'</div>'
               +'</li>');
           
+          
+        $('#filterTitleCategorie').append(
+          '<div class="filters-ms">'
+          +'<label>'
+          + json[i].e_tags[i].name 
+          +'</label>'
+          +' <input type="checkbox" value="' + json[i].e_tags[i].slug + '"/>'
+          +'</div>'
+          );
+        
         };
+          $( ".filter-title-ms" ).on( "click", function(e) {
+              e.preventDefault();
+              var $this = $(this);
+            $this.parents('.container-filter-ms').toggleClass( "active-ms");
+          });
         $('#titleCategorie').append('<h2 class="title-section-ms">' 
           + '<span>' 
           + '<i class="icon icon-blog">' 
@@ -100,7 +75,6 @@
           + '</span>' 
           + '</h2>');
       };
-
       msBlog();
     </script>
   </body>
