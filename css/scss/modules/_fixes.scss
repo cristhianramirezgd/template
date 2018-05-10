@@ -72,6 +72,12 @@ body.mundo-saludable-v2#my-recipes #featured-recipes {
     font-weight: 500;
     font-style: normal;
 }
+//Wordpress links
+.card-article-ms{
+    p.link-more {
+    display: none;
+    }
+}
 // font share socal meda tooltip
 [data-icon]:before { content: attr(data-icon); }
 

@@ -119,6 +119,11 @@
 	.card-label-filter-ms{
 		position:absolute;
 		writing-mode: vertical-lr;
+		white-space: nowrap;
+		width: $gutter+5;
+		text-transform: uppercase;
+		text-overflow: ellipsis;
+		overflow: hidden;
 		background: $white;
 		padding: $global-padding $global-padding/5;
 		color: $gray;

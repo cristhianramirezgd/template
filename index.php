@@ -75,116 +75,7 @@
       </section>
       <section class="wrapper container-main">
         <h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span><a href="">VER MÁS</a></h2>
-        <ul class="container-main container-card-article">
-          <li class="card-ms card-article-ms">
-            <div class="card-img-ms">
-              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
-              <img src="https://fakeimg.pl/300x300/" alt=""/>
-            </div>
-            <div class="card-text-ms">
-              <a href="">
-                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-
-              </a>
-            <div class="card-interaction-ms">
-              <span><i class="icon-heart"></i>
-                <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
-            </div>
-            </div>
-          </li>
-          <li class="card-ms card-article-ms">
-            <div class="card-img-ms">
-              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
-              <img src="https://fakeimg.pl/300x300/" alt=""/>
-            </div>
-            <div class="card-text-ms">
-              <a href="">
-                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-
-              </a>
-            <div class="card-interaction-ms">
-              <span><i class="icon-heart"></i>
-                <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
-            </div>
-            </div>
-          </li>
-          <li class="card-ms card-article-ms">
-            <div class="card-img-ms">
-              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
-              <img src="https://fakeimg.pl/300x300/" alt=""/>
-            </div>
-            <div class="card-text-ms">
-              <a href="">
-                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-
-              </a>
-            <div class="card-interaction-ms">
-              <span><i class="icon-heart"></i>
-                <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
-            </div>
-            </div>
-          </li>
-          <li class="card-ms card-article-ms">
-            <div class="card-img-ms">
-              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
-              <img src="https://fakeimg.pl/300x300/" alt=""/>
-            </div>
-            <div class="card-text-ms">
-              <a href="">
-                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-
-              </a>
-            <div class="card-interaction-ms">
-              <span><i class="icon-heart"></i>
-                <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
-            </div>
-            </div>
-          </li>
-          <li class="card-ms card-article-ms">
-            <div class="card-img-ms">
-              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
-              <img src="https://fakeimg.pl/300x300/" alt=""/>
-            </div>
-            <div class="card-text-ms">
-              <a href="">
-                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-
-              </a>
-            <div class="card-interaction-ms">
-              <span><i class="icon-heart"></i>
-                <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
-            </div>
-            </div>
-          </li>
-          <li class="card-ms card-article-ms">
-            <div class="card-img-ms">
-              <span class="card-label-filter-ms">VEGANO, DIABÉTICO</span>
-              <img src="https://fakeimg.pl/300x300/" alt=""/>
-            </div>
-            <div class="card-text-ms">
-              <a href="">
-                <h6 class="text-bold">Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-
-              </a>
-            <div class="card-interaction-ms">
-              <span><i class="icon-heart"></i>
-                <small class="text-dark">1.987</small></span>
-                <a class="text-jumbogreen" href=""><span>Ver<i class="icon-plus"></i></span></a>
-            </div>
-            </div>
-          </li>
-        </ul>
+        <ul class="container-main" id="cardsMs"></ul>
       </section>
       <section class="section-margin">
        <div class="wrapper container-main-full container-banner-middle">
@@ -254,7 +145,54 @@
     <script type="text/javascript" src="/speed/build/arquivos/app-mundosaludable.js" charset="utf8"></script>
     <!-- init -->
     <script type="text/javascript">
-      
+      var apiPosts = 'https://catalogostiendasjumbo.co/tiendasjumboblog/wp-json/wp/v2/posts'
+      function msBlog() {
+          $.getJSON( apiPosts, function(msg) {
+              JsonpCallback(msg);
+        });
+      }
+      function JsonpCallback(json) {
+      for (var i = 0; i < json.length; i++) {
+          $('#cardsMs').append('<li class="card-ms card-article-ms">'
+              +'<div class="card-img-ms">'
+              +'<span class="card-label-filter-ms">' + json[i].e_tags[0].name + ', ' + '</span>'
+              +'<img src="' + json[i].better_featured_image.source_url + '" />'
+              +'</div>'
+              +'<div class="card-text-ms">'
+              +'<a href="'+ json[i].link +'">'
+              +'<h6 class="text-bold">' + json[i].title.rendered + '</h6>'
+              + json[i].excerpt.rendered 
+              +'</a>'
+              +'<div class="card-interaction-ms">'
+              +'<span><i class="icon-heart"></i>'
+              +'<small class="text-dark">1.987</small></span>'
+              +'<a class="text-jumbogreen" href="'+ json[i].link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+              +'</div>'
+              +'</div>'
+              +'</li>');
+          
+        };
+          $('#cardsMs').slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          // adaptiveHeight: true,
+          arrows: true,
+          responsive: [
+              {
+                breakpoint: 640,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  dots:true,
+                  arrows: false
+                }
+              }
+            ]
+        });
+      };
+
+      msBlog();
       // fancy box
       $('.terms-ms').fancybox({
        protect: true,

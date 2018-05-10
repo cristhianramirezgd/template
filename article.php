@@ -168,6 +168,52 @@
     <script type="text/javascript" src="/speed/build/arquivos/shareSelectedText.min.js" charset="utf8"></script>
     <script type="text/javascript" src="/speed/build/arquivos/app-mundosaludable.js" charset="utf8"></script>
     <script type="text/javascript">
+      function msBlog() {
+        var urlWp = 'https://catalogostiendasjumbo.co/tiendasjumboblog/wp-json/wp/v2/posts/4';
+          $.getJSON( urlWp, function(msg) {
+              JsonpCallback(msg);
+        });
+      }
+      function JsonpCallback(json) {
+      for (var i = 0; i < json.length; i++) {
+          $('#cardsMs').append('<li class="card-ms card-article-ms">'
+              +'<div class="card-img-ms">'
+              +'<span class="card-label-filter-ms">' + json[i].e_tags[0].name + ', ' + '</span>'
+              +'<img src="' + json[i].better_featured_image.source_url + '" />'
+              +'</div>'
+              +'<div class="card-text-ms">'
+              +'<a href="'+ json[i].link +'">'
+              +'<h6 class="text-bold">' + json[i].title.rendered + '</h6>'
+              + json[i].excerpt.rendered 
+              +'</a>'
+              +'<div class="card-interaction-ms">'
+              +'<span><i class="icon-heart"></i>'
+              +'<small class="text-dark">1.987</small></span>'
+              +'<a class="text-jumbogreen" href="'+ json[i].link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+              +'</div>'
+              +'</div>'
+              +'</li>');
+          
+        };
+          // plugin initialization with default options
+         shareSelectedText('.article-content', {
+             tooltipClass: '',    // cool, if you want to customize the tooltip
+             sanitize: true,      // will sanitize the user selection to respect the Twitter Max length (recommended) 
+             buttons: [           // services that you want to enable you can add : 
+                 'facebook', // - twitter, tumblr, buffer, stumbleupon, digg, reddit, linkedin, facebook
+                 'twitter',
+                 'linkedin'
+                 // 'buffer'
+             ],
+             anchorsClass: '',    // class given to each tooltip's links
+             twitterUsername: '', // for twitter widget, will add 'via @twitterUsername' at the end of the tweet.
+             facebookAppID: '459647324467614', // Can also be an HTML element inside the <head> tag of your page : <meta property="fb:APP_ID" content="YOUR_APP_ID"/>
+             facebookDisplayMode: 'page', //can be 'popup' || 'page'
+             tooltipTimeout: 250  //Timeout before that the tooltip appear in ms
+         });
+      };
+
+      msBlog();
     	 // slick slider
       $('.container-card-article').slick({
         infinite: true,
@@ -194,24 +240,6 @@
             }
           ]
       });
-
-       // plugin initialization with default options
-       shareSelectedText('.article-content', {
-           tooltipClass: '',    // cool, if you want to customize the tooltip
-           sanitize: true,      // will sanitize the user selection to respect the Twitter Max length (recommended) 
-           buttons: [           // services that you want to enable you can add : 
-               'facebook', // - twitter, tumblr, buffer, stumbleupon, digg, reddit, linkedin, facebook
-               'twitter',
-               'linkedin'
-               // 'buffer'
-           ],
-           anchorsClass: '',    // class given to each tooltip's links
-           twitterUsername: '', // for twitter widget, will add 'via @twitterUsername' at the end of the tweet.
-           facebookAppID: '459647324467614', // Can also be an HTML element inside the <head> tag of your page : <meta property="fb:APP_ID" content="YOUR_APP_ID"/>
-           facebookDisplayMode: 'page', //can be 'popup' || 'page'
-           tooltipTimeout: 250  //Timeout before that the tooltip appear in ms
-       });
-
     </script>
   </body>
 </html>
