@@ -50,8 +50,6 @@
               +'</div>'
               +'</div>'
               +'</li>');
-          
-          
         $('#filterTitleCategorie').append(
           '<div class="filters-ms">'
           +'<label>'
