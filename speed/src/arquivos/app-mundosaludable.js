@@ -50,14 +50,7 @@ $(document).ready(function () {
        console.log("Yo Decidi Category [2]");
         function msBlog() {
             $.getJSON( c3, function(msg) {
-                $('#titleCategorie').append('<h2 class="title-section-ms">' 
-                     + '<span>' 
-                     + '<i class="icon icon-blog">' 
-                     + '</i>' 
-                     + 'Yo Decidí'
-                     + '</span>' 
-                     + '</h2>');
-            catgoriesCallback(msg);
+                catgoriesCallback(msg);
                 JsonpCallback(msg);
           });
         }
@@ -67,31 +60,17 @@ $(document).ready(function () {
         console.log("Yo Puedo Category [1]");
         function msBlog() {
             $.getJSON( c2, function(msg) {
-                $('#titleCategorie').append('<h2 class="title-section-ms">' 
-                     + '<span>' 
-                     + '<i class="icon icon-blog">' 
-                     + '</i>' 
-                     + 'Yo Puedo'
-                     + '</span>' 
-                     + '</h2>');
-            catgoriesCallback(msg);
+                catgoriesCallback(msg);
                 JsonpCallback(msg);
           });
         }
         msBlog();
     }
-    else if(window.location.href.indexOf("category-quiero") > -1) {
+    else if(window.location.href.indexOf("category-yo-quiero") > -1) {
         console.log("Yo Quiero Category [0]");
         function msBlog() {
-            $.getJSON( c1, function(msg) {
-                $('#titleCategorie').append('<h2 class="title-section-ms">' 
-                     + '<span>' 
-                     + '<i class="icon icon-blog">' 
-                     + '</i>' 
-                     + 'Yo Quiero'
-                     + '</span>' 
-                     + '</h2>');
-            catgoriesCallback(msg);
+            $.getJSON( c4, function(msg) {
+                catgoriesCallback(msg);
                 JsonpCallback(msg);
           });
         }
@@ -102,7 +81,7 @@ $(document).ready(function () {
             $.getJSON( home, function(msg) {
                 homeShelf(msg);
                 JsonpCallback(msg);
-                sliderHome(msg);
+                sliderHome(msg)
           });
         }
         msBlog();
@@ -121,7 +100,7 @@ function homeShelf(json){
       + '</h2>');
 }
 function sliderHome(){
-    $('#cardsMs').slick({
+    $('.morecards').slick({
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 3,
@@ -141,10 +120,30 @@ function sliderHome(){
     });
 };
 function catgoriesCallback(json){
+    var ct =''
+    for (var i = 0; i < 1; i++) {
+        if (json[i].e_categories.length == 2) {
+            ct += json[i].e_categories[1].name
+        
+        }
+        else if(json[i].e_categories.length == 1) {
+             ct += json[i].e_categories[0].name
+            }
+        else{
+             ct += 'Sin Categoria'
+            }
+    }
     $('#filterTitleCategorie').append('<h6 class="filter-title-ms">' 
-      + json[0].e_categories[0].name
+      + ct
       + '</h6>'
       );
+    $('#titleCategorie').append('<h2 class="title-section-ms">' 
+         + '<span>' 
+         + '<i class="icon icon-blog">' 
+         + '</i>' 
+         + ct
+         + '</span>' 
+         + '</h2>');
 }
 function JsonpCallback(json) {
   
@@ -152,13 +151,11 @@ function JsonpCallback(json) {
 for (var i = 0; i < json.length; i++) {
 var texto = '';
     $.each(json[i].e_tags, function(k, item) {
-       /* iterate through array or object */
        texto += item.name;
        texto += ', ';
     });
 var slugTag = '';
     $.each(json[i].e_tags, function(s, item) {
-       /* iterate through array or object */
        slugTag += ' ';
        slugTag += item.slug;
     });
@@ -205,25 +202,6 @@ $('.terms-ms').fancybox({
  protect: true,
  touch: false
   });
-// slick slider
-$('.container-card-article').slick({
-  infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 3,
-  adaptiveHeight: true,
-  arrows: true,
-  responsive: [
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          dots:true,
-          arrows: false
-        }
-      }
-    ]
-});
 $('.container-banner-middle').slick({
   infinite: true,
   autoplay: true,
@@ -249,7 +227,7 @@ $('.container-banner-bottom').slick({
   infinite: true,
   autoplay: true,
   autoplaySpeed: 3000,
-  slidesToShow: 1,
+  slidesToShow: 1,  
   slidesToScroll: 1,
   adaptiveHeight: true,
   arrows: true,
