@@ -74,8 +74,8 @@
           </div>
       </section>
       <section class="wrapper container-main">
-        <h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span><a href="">VER MÁS</a></h2>
-        <ul class="container-main" id="cardsMs"></ul>
+        <div id="titleCategorie"></div>
+        <ul class="container-main morecards" id="cardsMs"></ul>
       </section>
       <section class="section-margin">
        <div class="wrapper container-main-full container-banner-middle">
@@ -143,122 +143,5 @@
     <script type="text/javascript" src="https://jumbocolombiafood.vtexcommercestable.com.br/arquivos/jquery.fancybox.min.js" charset="utf8"></script>
     <script type="text/javascript" src="https://jumbocolombiafood.vteximg.com.br/arquivos/slick.min.js" charset="utf8"></script>
     <script type="text/javascript" src="/speed/build/arquivos/app-mundosaludable.js" charset="utf8"></script>
-    <!-- init -->
-    <script type="text/javascript">
-      var apiPosts = 'https://catalogostiendasjumbo.co/tiendasjumboblog/wp-json/wp/v2/posts'
-      function msBlog() {
-          $.getJSON( apiPosts, function(msg) {
-              JsonpCallback(msg);
-        });
-      }
-      function JsonpCallback(json) {
-      for (var i = 0; i < json.length; i++) {
-          $('#cardsMs').append('<li class="card-ms card-article-ms">'
-              +'<div class="card-img-ms">'
-              +'<span class="card-label-filter-ms">' + json[i].e_tags[0].name + ', ' + '</span>'
-              +'<img src="' + json[i].better_featured_image.source_url + '" />'
-              +'</div>'
-              +'<div class="card-text-ms">'
-              +'<a href="'+ json[i].link +'">'
-              +'<h6 class="text-bold">' + json[i].title.rendered + '</h6>'
-              + json[i].excerpt.rendered 
-              +'</a>'
-              +'<div class="card-interaction-ms">'
-              +'<span><i class="icon-heart"></i>'
-              +'<small class="text-dark">1.987</small></span>'
-              +'<a class="text-jumbogreen" href="'+ json[i].link +'"><span>Ver<i class="icon-plus"></i></span></a>'
-              +'</div>'
-              +'</div>'
-              +'</li>');
-          
-        };
-          $('#cardsMs').slick({
-          infinite: true,
-          slidesToShow: 4,
-          slidesToScroll: 3,
-          // adaptiveHeight: true,
-          arrows: true,
-          responsive: [
-              {
-                breakpoint: 640,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  dots:true,
-                  arrows: false
-                }
-              }
-            ]
-        });
-      };
-
-      msBlog();
-      // fancy box
-      $('.terms-ms').fancybox({
-       protect: true,
-       touch: false
-        });
-      // slick slider
-      $('.container-card-article').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 3,
-        adaptiveHeight: true,
-        arrows: true,
-        responsive: [
-            {
-              breakpoint: 640,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                dots:true,
-                arrows: false
-              }
-            }
-          ]
-      });
-      $('.container-banner-middle').slick({
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        adaptiveHeight: true,
-        arrows: true,
-        responsive: [
-           {
-             breakpoint: 640,
-             settings: {
-               slidesToShow: 1,
-               slidesToScroll: 1,
-               infinite: true,
-               dots: true,
-               arrows:false
-             }
-           }
-        ]
-      });
-      $('.container-banner-bottom').slick({
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        adaptiveHeight: true,
-        arrows: true,
-        responsive: [
-           {
-             breakpoint: 640,
-             settings: {
-               slidesToShow: 1,
-               slidesToScroll: 1,
-               infinite: true,
-               dots: true,
-               arrows:false
-             }
-           }
-        ]
-      });
-    </script>
   </body>
 </html>

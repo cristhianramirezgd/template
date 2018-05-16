@@ -43,11 +43,20 @@ var wC = urlApi + postC + 0;
 var c1 = urlApi + postC + 1;
 var c2 = urlApi + postC + 2;
 var c3 = urlApi + postC + 3;
+var c4 = urlApi + postC + 4;
+var home = urlApi + postC + 18;
 $(document).ready(function () {
     if(window.location.href.indexOf("category-yo-decidi") > -1) {
        console.log("Yo Decidi Category [2]");
         function msBlog() {
             $.getJSON( c3, function(msg) {
+                $('#titleCategorie').append('<h2 class="title-section-ms">' 
+                     + '<span>' 
+                     + '<i class="icon icon-blog">' 
+                     + '</i>' 
+                     + 'Yo Decidí'
+                     + '</span>' 
+                     + '</h2>');
             catgoriesCallback(msg);
                 JsonpCallback(msg);
           });
@@ -58,6 +67,13 @@ $(document).ready(function () {
         console.log("Yo Puedo Category [1]");
         function msBlog() {
             $.getJSON( c2, function(msg) {
+                $('#titleCategorie').append('<h2 class="title-section-ms">' 
+                     + '<span>' 
+                     + '<i class="icon icon-blog">' 
+                     + '</i>' 
+                     + 'Yo Puedo'
+                     + '</span>' 
+                     + '</h2>');
             catgoriesCallback(msg);
                 JsonpCallback(msg);
           });
@@ -68,34 +84,67 @@ $(document).ready(function () {
         console.log("Yo Quiero Category [0]");
         function msBlog() {
             $.getJSON( c1, function(msg) {
+                $('#titleCategorie').append('<h2 class="title-section-ms">' 
+                     + '<span>' 
+                     + '<i class="icon icon-blog">' 
+                     + '</i>' 
+                     + 'Yo Quiero'
+                     + '</span>' 
+                     + '</h2>');
             catgoriesCallback(msg);
                 JsonpCallback(msg);
           });
         }
         msBlog();
     }
-
     else {
         function msBlog() {
-            $.getJSON( wC, function(msg) {
+            $.getJSON( home, function(msg) {
+                homeShelf(msg);
                 JsonpCallback(msg);
+                sliderHome(msg);
           });
         }
         msBlog();
     }
 });
-function catgoriesCallback(json){
-    $('#filterTitleCategorie').append('<h6 class="filter-title-ms">' 
-      + json[0].e_categories[0].name
-      + '</h6>'
-      );
+function homeShelf(json){
     $('#titleCategorie').append('<h2 class="title-section-ms">' 
       + '<span>' 
       + '<i class="icon icon-blog">' 
       + '</i>' 
       + json[0].e_categories[0].name
       + '</span>' 
+      + '<a href="">' 
+      + 'VER MÁS' 
+      + '</a>' 
       + '</h2>');
+}
+function sliderHome(){
+    $('#cardsMs').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 3,
+      // adaptiveHeight: true,
+      arrows: true,
+      responsive: [
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              dots:true,
+              arrows: false
+            }
+          }
+        ]
+    });
+};
+function catgoriesCallback(json){
+    $('#filterTitleCategorie').append('<h6 class="filter-title-ms">' 
+      + json[0].e_categories[0].name
+      + '</h6>'
+      );
 }
 function JsonpCallback(json) {
   
@@ -143,6 +192,7 @@ var slugTag = '';
           + '</div>'
           + '</div>'
           + '</li>');
+
         };
     $( ".filter-title-ms" ).on( "click", function(e) {
         e.preventDefault();
@@ -150,3 +200,69 @@ var slugTag = '';
       $this.parents('.container-filter-ms').toggleClass( "active-ms");
     });
 };
+// fancy box
+$('.terms-ms').fancybox({
+ protect: true,
+ touch: false
+  });
+// slick slider
+$('.container-card-article').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 3,
+  adaptiveHeight: true,
+  arrows: true,
+  responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots:true,
+          arrows: false
+        }
+      }
+    ]
+});
+$('.container-banner-middle').slick({
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  arrows: true,
+  responsive: [
+     {
+       breakpoint: 640,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         infinite: true,
+         dots: true,
+         arrows:false
+       }
+     }
+  ]
+});
+$('.container-banner-bottom').slick({
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  arrows: true,
+  responsive: [
+     {
+       breakpoint: 640,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         infinite: true,
+         dots: true,
+         arrows:false
+       }
+     }
+  ]
+});
