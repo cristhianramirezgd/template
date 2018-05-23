@@ -129,6 +129,12 @@
 	}
 	.container-category-ms{
 		.container-card-article{
+			li{
+				position: relative;
+				max-width:284px;
+				min-height: 474px;
+			}
+
 			transition:$global-transition;
 			grid-template-columns: 1fr;
 			@media #{$medium-up}{

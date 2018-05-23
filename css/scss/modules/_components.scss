@@ -97,13 +97,16 @@
 	grid-column-gap:$gutter;
 }
 .card-article-ms{
-	max-width:284px;
 	position:relative;
 	margin:$global-margin $global-margin/2;
 	padding:0;
 	align-self: stretch;
 	transition:$global-transition;
 	overflow: hidden;
+		@media #{$medium-up}{
+			max-width:23%;
+			min-height: 474px;
+		}
 	&:hover{
 		@media #{$medium-up}{
 		border-radius:$global-radius*3;
@@ -124,7 +127,7 @@
 		text-transform: uppercase;
 		text-overflow: ellipsis;
 		overflow: hidden;
-		background: $white;
+		background: rgba($white,.7);
 		padding: $global-padding $global-padding/5;
 		color: $gray;
 		font-weight: $font-bold;
