@@ -404,6 +404,7 @@ $(document).ready(function(a) {
                 if (window.location.pathname.indexOf("blog") != -1){
                     // cards(homepost);
                     filterCards(homepost);
+                    $( "#titleCategorie").replaceWith( '<h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span></h2>' );
 
                 };
             });
