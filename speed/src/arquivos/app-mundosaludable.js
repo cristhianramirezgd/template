@@ -401,7 +401,7 @@ $(document).ready(function(a) {
             //     };
             // });
             $.get(urlPosts, function (homepost) {
-                if (window.location.pathname.indexOf("category-ms") != -1){
+                if (window.location.pathname.indexOf("blog") != -1){
                     // cards(homepost);
                     filterCards(homepost);
 
