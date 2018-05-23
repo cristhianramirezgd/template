@@ -6,6 +6,12 @@
       <section class="catagory-ms">
         <aside class="wrapper-filter">
         <div class="sticky-filter-ms">
+          <div class="container-filter-ms-category active-ms"">
+            <h6 class="filter-title-ms-category">Escoge tu mejor opción</h6>
+            <div class="filters-ms"><a href="/yo-puedo">Yo Puedo</a></div>
+            <div class="filters-ms"><a href="/yo-quiero">Yo Quiero</a></div>
+            <div class="filters-ms"><a href="/yo-decidi">Yo Decidí</a></div>
+          </div>
           <div class="container-filter-ms" id="filterTitleCategorie"></div>
         </div>
       </aside>

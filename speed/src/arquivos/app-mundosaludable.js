@@ -430,7 +430,11 @@ $(document).ready(function(a) {
             });
     })(jQuery);
 }());
-
+$( ".filter-title-ms-category" ).on( "click", function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        $this.parents('.container-filter-ms-category').toggleClass( "active-ms");
+        });
 // fancy box
 $('.terms-ms').fancybox({
  protect: true,
