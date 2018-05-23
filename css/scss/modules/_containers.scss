@@ -374,8 +374,8 @@
     to {opacity:0;transform:scale(0);display:none;}
 }
 @keyframes filters-ms-in {
-    from {opacity:0;transform:translateY(-100%);}
-    to {opacity:1;transform:translateY(0);}
+    from {opacity:0;transform:translateY(-100%)scale(0);}
+    to {opacity:1;transform:translateY(0)scale(1);}
 }
 @keyframes filters-ms-out {
     from {opacity:0;transform:translateX(0);}
