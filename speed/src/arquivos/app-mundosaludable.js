@@ -415,7 +415,7 @@ $(document).ready(function(a) {
                 };
             });
             $.get(c4, function (yoQuiero) {
-                if (window.location.pathname.indexOf("yo-quie") != -1){
+                if (window.location.pathname.indexOf("yo-quiero") != -1){
                     // cards(yoQuiero);
                     // createItems(yoQuiero);
                     filterCards(yoQuiero);
