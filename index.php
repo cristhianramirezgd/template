@@ -40,7 +40,7 @@
                   <span class="text-jumbored" style="display:none;">Formato de email incorrecto</span>
                   <span class="bg-jumbored text-white" style="display:none;">Error al enviar, intente de nueco más tarde</span>
                   <div class="legal-check">
-                    <input type="checkbox" name="terms-ms" value="terms" required> <small><a data-src="#terms-conditions-ms" href="javascript:;" class="terms-ms">Acepto Términos y Condiciones</a></small>
+                    <input type="checkbox" name="terms-ms" value="terms" required> <small><a data-src="#terms-conditions-ms" href="javascript:;" class="terms-ms">aceptas las políticas de manejo de información personal</a></small>
                   </div>
                 </form>
               </div>
@@ -132,8 +132,26 @@
     <!-- terms&conditions -->
     <div style="display: none;" id="terms-conditions-ms">
       <div class="container">
-        <h4>Términos y Condiciones</h4>
-        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat consequuntur voluptatibus atque illo, tenetur? Sequi maxime accusantium natus, ex eligendi consequatur neque voluptates itaque quod odit ipsa quam vitae asperiores dolor in, aut hic adipisci quidem a perferendis? Dicta, repellat dolores repellendus at itaque sequi libero consectetur ab quibusdam porro iure quae cupiditate cum voluptates, consequuntur totam laboriosam optio est omnis inventore culpa, sit velit. Quam aut hic aliquam molestiae et doloribus, sunt, minus ipsum fuga dignissimos repellat odit quae nesciunt neque aliquid repudiandae eligendi saepe laboriosam optio sequi minima, explicabo id voluptatem rem nemo! Rem ab et sunt earum, ad maiores quasi eligendi vel facere, illum voluptatum dignissimos cumque reprehenderit adipisci obcaecati nisi cupiditate. Voluptate id temporibus consequatur, autem nihil illum non modi a, sint odit, natus cumque iure! Nulla inventore reprehenderit dolores eligendi, repellat, ex eius, praesentium dignissimos omnis odio, deleniti aliquam quisquam soluta minus veniam obcaecati enim officia. Molestias alias veritatis corporis nam maxime qui adipisci. Enim, porro, voluptas itaque eos nemo laborum. Adipisci fugit omnis saepe maiores consequatur non voluptates iure vero, earum nam placeat temporibus impedit dolor nulla corporis excepturi alias, sint repudiandae praesentium voluptatem vitae commodi! Aliquid autem optio veritatis exercitationem eaque eos alias.</small>
+        <h4>Política de privacidad y uso de información personal.</h4>
+        <br />
+        <p><small>Al suscribirse al boletín Mundo Saludable, autoriza expresamente e irrevocablemente a CENCOSUD COLOMBIA S.A. para recolectar, registrar, procesar, difundir, actualizar, disponer, intercambiar y compilar los datos suministrados por el cliente participante, a través de este formato o de cualquier otro documento dispuesto por CENCOSUD COLOMBIA S.A. para estos efectos. </small></p>
+        <br />
+        <p><small>CENCOSUD COLOMBIA S.A. queda facultado para transferir los datos de Afiliado, de forma total o parcial, a las bases de datos a todas las unidades de negocio de propiedad del Grupo Cencosud Colombia, así como a sus aliados comerciales estratégicos con fines administrativos, comerciales o de mercadeo. </small></p>
+        <br />
+        <p><small>CENCOSUD COLOMBIA S.A. reconoce su obligación de proteger los datos suministrados cada uno de los Afiliados, dando aplicación de la Ley, así como el derecho de cada cliente al Habeas Data como titular de la información, a saber: </small></p>
+        <br />
+        <ul>
+          <li><small>(i) Conocer, actualizar y rectificar los datos personales de cada Afiliado; </small></li>
+          <li><small>(ii) Solicitar prueba de la autorización otorgada por cada Afiliado; </small></li>
+          <li><small>(iii) Ser informado respecto del uso que le ha dado a los datos personales de cada Afiliado; </small></li>
+          <li><small>(iv) Presentar ante la Superintendencia de Industria y Comercio quejas por el uso de los datos personales de los Afiliados; </small></li>
+          <li><small>(v) Revocar la autorización o solicitar la supresión de los datos cuando alguno de los Afiliados considere que no se han respetado sus derechos; </small></li>
+          <li><small>(vi) Acceder en forma gratuita sobre los datos personales que el Afiliado participante autorizó compartir con CENCOSUD COLOMBIA S.A. </small></li>
+        </ul>
+        <p><small>El Reglamento de Uso, Manejo y Protección de Datos Personales se encuentra en el ANEXO 4 del presente documento, o podrá encontrarse en <a class="text-jumbogreen" target="_blank" href="www.puntoscencosud.co">www.puntoscencosud.co.</a> </small></p>
+        <br />
+        <p><small>Autorizo a los aliados comerciales de CENCOSUD (Entidades Financieras, Aseguradoras, etc) para que estos realicen actividades de para consultar, verificar, procesar, reportar, suministrar, actualizar y divulgar a los bancos de datos el nacimiento, ejecución y extinción de obligaciones, con el fin de establecer el comportamiento de pago, efectuar el estudio de crédito o viabilidad de las solicitudes de productos y servicios realizadas por nuestra parte, conforme a las políticas de El Acreedor, y reportar el estado de las obligaciones contraídas a favor del Acreedor, o su causahabiente a cualquier título; con el fin de poder ofrecer servicios y beneficios adicionales a los Afiliados. </small></p>
+        <br />
       </div>
     </div>
     <!-- .terms&conditions -->
