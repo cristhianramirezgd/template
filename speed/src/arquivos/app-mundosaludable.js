@@ -224,7 +224,7 @@ $(document).ready(function(a) {
                     console.log(categoriesTag)
                     switch (i) {
                         case 1:
-                            $('#cardsMs').append('<li class="card-ms card-article-ms'+ slugTag +'">'
+                            $('#cardsMsCategory').append('<li class="card-ms card-article-ms'+ slugTag +'">'
                                  + '<div>'
                                  + '<div class="card-img-ms">'
                                  + '<span class="card-label-filter-ms">'+ nameTag +'</span>'
@@ -246,7 +246,7 @@ $(document).ready(function(a) {
                                  );
                             break;
                         case 2:
-                            $('#cardsMs').append('<li>'
+                            $('#cardsMsCategory').append('<li>'
                                  + '<div class="card-ms card-article-ms">'
                                  + '<div class="card-img-ms">'
                                  + '<span class="card-label-filter-ms"></span>'
@@ -268,7 +268,7 @@ $(document).ready(function(a) {
                                  );
                             break;
                         case 3:
-                            $('#cardsMs').append('<li>'
+                            $('#cardsMsCategory').append('<li>'
                                  + '<div class="'+ slugTag +'  card-ms card-article-ms ">'
                                  + '<div class="card-img-ms">'
                                  + '<span class="card-label-filter-ms">'+ nameTag +'</span>'
@@ -290,7 +290,7 @@ $(document).ready(function(a) {
                                  );
                             break;
                         case 4:
-                            $('#cardsMs').append('<li>'
+                            $('#cardsMsCategory').append('<li>'
                                  + '<div class="card-ms card-article-ms ">'
                                  + '<div class="card-img-ms">'
                                  + '<span class="card-label-filter-ms"></span>'
@@ -366,7 +366,7 @@ $(document).ready(function(a) {
             // create one item for each
 
            // init Isotope
-           var $container = $('#cardsMs').isotope({
+           var $container = $('#cardsMsCategory').isotope({
              itemSelector: '.card-article-ms'
            });
             // filter with selects and checkboxes
@@ -393,12 +393,11 @@ $(document).ready(function(a) {
         }
     }
     // callbacks pages
-            // $.get(urlPosts, function (homepost) {
-            //     if (window.location.pathname.indexOf("mundo-saludable") != -1){
-            //         cards(homepost);
-
-            //     };
-            // });
+            $.get(urlPosts, function (homepost) {
+                // if (window.location.pathname.indexOf("mundo-saludable") != -1){
+                    cards(homepost);
+                // };
+            });
             $.get(urlPosts, function (homepost) {
                 if (window.location.pathname.indexOf("blog") != -1){
                     filterCards(homepost);

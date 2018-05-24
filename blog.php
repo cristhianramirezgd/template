@@ -17,7 +17,7 @@
       </aside>
       <div class="container-category-ms" id="container-pagination">
         <small id="output"></small>
-        <ul id="cardsMs"></ul>
+        <ul id="cardsMsCategory"></ul>
       </div>
       </section>
     </main>
