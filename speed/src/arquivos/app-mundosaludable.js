@@ -45,8 +45,8 @@ $(document).ready(function(a) {
             var i = 0;
             if (jQuery.inArray( i, post.categories ) != 1) {
                 i++
-                console.log(i)
-                console.log(this.title['rendered']);
+                // console.log(i)
+                // console.log(this.title['rendered']);
                 var imgCover = this.better_featured_image.media_details.sizes.thumbnail['source_url'];
                 var link = this.link.replace("https://catalogostiendasjumbo.co/tiendasjumboblog/","");
                 var title = this.title['rendered'];
@@ -71,7 +71,7 @@ $(document).ready(function(a) {
                 var resume = this.excerpt['rendered'];
                 // console.log(slugTag)
                 // console.log(nameTag)
-                console.log(categoriesTag)
+                // console.log(categoriesTag)
                 switch (i) {
                     case 1:
                         $('#cardsMs').append('<li>'
@@ -195,8 +195,8 @@ $(document).ready(function(a) {
                 var i = 0;
                 if (jQuery.inArray( i, post.categories ) != 1) {
                     i++
-                    console.log(i)
-                    console.log(this.title['rendered']);
+                    // console.log(i)
+                    // console.log(this.title['rendered']);
                     var imgCover = this.better_featured_image.media_details.sizes.thumbnail['source_url'];
                     var link = this.link.replace("https://catalogostiendasjumbo.co/tiendasjumboblog/","");
                     var title = this.title['rendered'];
@@ -221,7 +221,7 @@ $(document).ready(function(a) {
                     var resume = this.excerpt['rendered'];
                     // console.log(slugTag)
                     // console.log(nameTag)
-                    console.log(categoriesTag)
+                    // console.log(categoriesTag)
                     switch (i) {
                         case 1:
                             $('#cardsMsCategory').append('<li class="card-ms card-article-ms'+ slugTag +'">'
