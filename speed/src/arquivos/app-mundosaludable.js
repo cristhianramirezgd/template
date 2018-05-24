@@ -81,7 +81,7 @@ $(document).ready(function(a) {
                              + '<img src="' + imgCover + '" />'
                              + '</div>'
                              + '<div class="card-text-ms">'
-                             + '<a href="/articulos/?/'+ link +'">'
+                             + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
                              + '<h6 class="text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
@@ -103,7 +103,7 @@ $(document).ready(function(a) {
                              + '<img src="' + imgCover + '" />'
                              + '</div>'
                              + '<div class="card-text-ms">'
-                             + '<a href="/articulos/?/'+ link +'">'
+                             + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
                              + '<h6 class="text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
@@ -125,7 +125,7 @@ $(document).ready(function(a) {
                              + '404 Image not found"'
                              + '</div>'
                              + '<div class="card-text-ms">'
-                             + '<a href="/articulos/?/'+ link +'">'
+                             + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
                              + '<h6 class="text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
@@ -147,7 +147,7 @@ $(document).ready(function(a) {
                              + '<img src="" alt="404 Image not found"/>'
                              + '</div>'
                              + '<div class="card-text-ms">'
-                             + '<a href="/articulos/?/'+ link +'">'
+                             + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
                              + '<h6 class="text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
@@ -231,7 +231,7 @@ $(document).ready(function(a) {
                                  + '<img src="' + imgCover + '" />'
                                  + '</div>'
                                  + '<div class="card-text-ms">'
-                                 + '<a href="/articulos/?/'+ link +'">'
+                                 + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
                                  + '<h6 class="text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
@@ -253,7 +253,7 @@ $(document).ready(function(a) {
                                  + '<img src="' + imgCover + '" />'
                                  + '</div>'
                                  + '<div class="card-text-ms">'
-                                 + '<a href="/articulos/?/'+ link +'">'
+                                 + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
                                  + '<h6 class="text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
@@ -275,7 +275,7 @@ $(document).ready(function(a) {
                                  + '404 Image not found"'
                                  + '</div>'
                                  + '<div class="card-text-ms">'
-                                 + '<a href="/articulos/?/'+ link +'">'
+                                 + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
                                  + '<h6 class="text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
@@ -297,7 +297,7 @@ $(document).ready(function(a) {
                                  + '<img src="" alt="404 Image not found"/>'
                                  + '</div>'
                                  + '<div class="card-text-ms">'
-                                 + '<a href="/articulos/?/'+ link +'">'
+                                 + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
                                  + '<h6 class="text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
