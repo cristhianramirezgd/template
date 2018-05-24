@@ -394,15 +394,13 @@ $(document).ready(function(a) {
     }
     // callbacks pages
             // $.get(urlPosts, function (homepost) {
-            //     if (window.location.pathname.indexOf("index.php") != -1){
+            //     if (window.location.pathname.indexOf("mundo-saludable") != -1){
             //         cards(homepost);
-            //         // filterCards(homepost);
 
             //     };
             // });
             $.get(urlPosts, function (homepost) {
                 if (window.location.pathname.indexOf("blog") != -1){
-                    // cards(homepost);
                     filterCards(homepost);
                     $( "#titleCategorie").replaceWith( '<h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span></h2>' );
 
@@ -410,22 +408,16 @@ $(document).ready(function(a) {
             });
             $.get(c3, function (yoDecidi) {
                 if (window.location.pathname.indexOf("yo-decidi") != -1){
-                    // cards(yoDecidi);
-                    // createItems(yoDecidi);
                     filterCards(yoDecidi);
                 };
             });
             $.get(c4, function (yoQuiero) {
                 if (window.location.pathname.indexOf("yo-quiero") != -1){
-                    // cards(yoQuiero);
-                    // createItems(yoQuiero);
                     filterCards(yoQuiero);
                 };
             });
             $.get(c2, function (yoPuedo) {
                 if (window.location.pathname.indexOf("yo-puedo") != -1){
-                    // cards(yoPuedo);
-                    // createItems(yoPuedo);
                     filterCards(yoPuedo);
                 };
             });
