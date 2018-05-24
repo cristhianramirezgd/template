@@ -15,8 +15,9 @@ $(document).ready(function(a) {
       });
     filterToggle();
     (function($) {
-            var vBlog = 'https://www.tiendasjumbo.co/mundo-saludable/';
-            var hostBlog = 'https://catalogostiendasjumbo.co/tiendasjumboblog/';
+            var vBlog = '"http://localhost:3000/mundo-saludable/blog/articulos/?/"," "';
+            var urlAdmin = 'https://catalogostiendasjumbo.co/tiendasjumboblog/'
+            var hostBlog = urlAdmin;
             var urlApiDev = hostBlog + 'wp-json/?=routes';
             var urlApi = hostBlog + 'wp-json/wp/v2/';
             var urlPosts = urlApi + 'posts/';
@@ -29,6 +30,7 @@ $(document).ready(function(a) {
             var c4 = urlApi + postC + 4;
             var home = urlApi + postC + 18;
             var url;
+            var posts;
             var cardItem;
             var imgCover;
             var link;
@@ -40,7 +42,7 @@ $(document).ready(function(a) {
             var resume;
             var $items;
 
-        function cards(url){
+    function cards(url){
         $.each(url, function(index, post) {
             var i = 0;
             if (jQuery.inArray( i, post.categories ) != 1) {
@@ -48,7 +50,7 @@ $(document).ready(function(a) {
                 // console.log(i)
                 // console.log(this.title['rendered']);
                 var imgCover = this.better_featured_image.media_details.sizes.thumbnail['source_url'];
-                var link = this.link.replace("https://catalogostiendasjumbo.co/tiendasjumboblog/","");
+                var link = this.link.replace(urlAdmin,"");
                 var title = this.title['rendered'];
                 var slug = this.slug;
                 var nameSlugTagFilter = this.e_tags[0].name;
@@ -81,14 +83,14 @@ $(document).ready(function(a) {
                              + '<img src="' + imgCover + '" />'
                              + '</div>'
                              + '<div class="card-text-ms">'
-                             + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
+                             + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
                              + '<h6 class="text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
                              + '<div class="card-interaction-ms">'
                              + '<span><i class="icon-heart"></i>'
                              + '<small class="text-dark">1.987</small></span>'
-                             + '<a class="text-jumbogreen" href="'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                             + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                              + '</div>'
                              + '</div>'
                              + '</div>'
@@ -103,14 +105,14 @@ $(document).ready(function(a) {
                              + '<img src="' + imgCover + '" />'
                              + '</div>'
                              + '<div class="card-text-ms">'
-                             + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
+                             + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
                              + '<h6 class="text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
                              + '<div class="card-interaction-ms">'
                              + '<span><i class="icon-heart"></i>'
                              + '<small class="text-dark">1.987</small></span>'
-                             + '<a class="text-jumbogreen" href="'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                             + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                              + '</div>'
                              + '</div>'
                              + '</div>'
@@ -125,14 +127,14 @@ $(document).ready(function(a) {
                              + '404 Image not found"'
                              + '</div>'
                              + '<div class="card-text-ms">'
-                             + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
+                             + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
                              + '<h6 class="text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
                              + '<div class="card-interaction-ms">'
                              + '<span><i class="icon-heart"></i>'
                              + '<small class="text-dark">1.987</small></span>'
-                             + '<a class="text-jumbogreen" href="'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                             + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                              + '</div>'
                              + '</div>'
                              + '</div>'
@@ -147,14 +149,14 @@ $(document).ready(function(a) {
                              + '<img src="" alt="404 Image not found"/>'
                              + '</div>'
                              + '<div class="card-text-ms">'
-                             + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
+                             + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
                              + '<h6 class="text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
                              + '<div class="card-interaction-ms">'
                              + '<span><i class="icon-heart"></i>'
                              + '<small class="text-dark">1.987</small></span>'
-                             + '<a class="text-jumbogreen" href="'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                             + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                              + '</div>'
                              + '</div>'
                              + '</div>'
@@ -198,7 +200,7 @@ $(document).ready(function(a) {
                     // console.log(i)
                     // console.log(this.title['rendered']);
                     var imgCover = this.better_featured_image.media_details.sizes.thumbnail['source_url'];
-                    var link = this.link.replace("https://catalogostiendasjumbo.co/tiendasjumboblog/","");
+                    var link = this.link.replace(urlAdmin,"");
                     var title = this.title['rendered'];
                     var slug = this.slug;
                     var nameSlugTagFilter = this.e_tags[0].name;
@@ -231,14 +233,14 @@ $(document).ready(function(a) {
                                  + '<img src="' + imgCover + '" />'
                                  + '</div>'
                                  + '<div class="card-text-ms">'
-                                 + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
+                                 + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
                                  + '<h6 class="text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
                                  + '<span><i class="icon-heart"></i>'
                                  + '<small class="text-dark">1.987</small></span>'
-                                 + '<a class="text-jumbogreen" href="'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                                 + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                                  + '</div>'
                                  + '</div>'
                                  + '</div>'
@@ -253,14 +255,14 @@ $(document).ready(function(a) {
                                  + '<img src="' + imgCover + '" />'
                                  + '</div>'
                                  + '<div class="card-text-ms">'
-                                 + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
+                                 + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
                                  + '<h6 class="text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
                                  + '<span><i class="icon-heart"></i>'
                                  + '<small class="text-dark">1.987</small></span>'
-                                 + '<a class="text-jumbogreen" href="'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                                 + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                                  + '</div>'
                                  + '</div>'
                                  + '</div>'
@@ -275,14 +277,14 @@ $(document).ready(function(a) {
                                  + '404 Image not found"'
                                  + '</div>'
                                  + '<div class="card-text-ms">'
-                                 + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
+                                 + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
                                  + '<h6 class="text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
                                  + '<span><i class="icon-heart"></i>'
                                  + '<small class="text-dark">1.987</small></span>'
-                                 + '<a class="text-jumbogreen" href="'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                                 + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                                  + '</div>'
                                  + '</div>'
                                  + '</div>'
@@ -297,14 +299,14 @@ $(document).ready(function(a) {
                                  + '<img src="" alt="404 Image not found"/>'
                                  + '</div>'
                                  + '<div class="card-text-ms">'
-                                 + '<a href="/mundo-saludable/articulos/?/'+ link +'">'
+                                 + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
                                  + '<h6 class="text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
                                  + '<span><i class="icon-heart"></i>'
                                  + '<small class="text-dark">1.987</small></span>'
-                                 + '<a class="text-jumbogreen" href="'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                                 + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                                  + '</div>'
                                  + '</div>'
                                  + '</div>'
@@ -392,25 +394,84 @@ $(document).ready(function(a) {
             $items = $items ? $items.add( $item ) : $item;
         }
     }
-    function shareText() {
-        // plugin initialization with default options
-       shareSelectedText('.article-content', {
-           tooltipClass: '',    // cool, if you want to customize the tooltip
-           sanitize: true,      // will sanitize the user selection to respect the Twitter Max length (recommended) 
-           buttons: [           // services that you want to enable you can add : 
-               'facebook', // - twitter, tumblr, buffer, stumbleupon, digg, reddit, linkedin, facebook
-               'twitter',
-               'linkedin'
-               // 'buffer'
-           ],
-           anchorsClass: '',    // class given to each tooltip's links
-           twitterUsername: '', // for twitter widget, will add 'via @twitterUsername' at the end of the tweet.
-           facebookAppID: '459647324467614', // Can also be an HTML element inside the <head> tag of your page : <meta property="fb:APP_ID" content="YOUR_APP_ID"/>
-           facebookDisplayMode: 'page', //can be 'popup' || 'page'
-           tooltipTimeout: 250  //Timeout before that the tooltip appear in ms
-       });
+
+
+    function articleContent(url){
+        // if (window.location.pathname.indexOf("entradas") != -1) {
+
+                var trend = 0;
+
+                $.each(url, function(index, post) {
+
+
+                    var url = window.location.search.replace(vBlog," ");
+                    // console.log(url);
+                    var urlPost = this.link.replace(urlAdmin,"");
+                    var url2 = url .replace('?', "");
+                    // console.log(url2);
+                    if (this.link.indexOf(url2) != -1) {
+                        
+                        var title = this.title['rendered']; 
+                        var description = this.excerpt['rendered']; 
+                        var content = this.content['rendered'];
+                        var date = this.date;
+                        
+                        $('.article-title span').text(title);
+                        $('.article-content h2').html(description);
+                        $('.article-content .article-content').append(content);
+                        $('.article-content .content-article time').text(date);
+                    }
+
+                    if (jQuery.inArray( 12, post.tags ) != -1){
+                        trend++;
+                        console.log(trend)
+
+                        var imgCover = this.better_featured_image.media_details.sizes.thumbnail['source_url'];
+                        var link = this.link.replace(urlAdmin,"");
+                        var title = this.title['rendered']; 
+
+                        switch (trend) {
+                            case 1:
+                                $('.article .trending').append('<div class="box-trend box1"><a href=""><span class="link"></span></a><div class="box-image"><img src="" alt=""></div><h4 class="title-tred"></h4></div>')
+
+
+                                $('.article .trending .box'+trend+'').find('a').attr('href','/eliteplayers/noticias/entradas/?/'+link+'');
+                                $('.article .trending .box'+trend+'').find('.box-image img').attr('src', imgCover);
+                                $('.article .trending .box'+trend+'').find('.title-tred').text(title)
+                                break;
+                            case 2:
+                                $('.article .trending').append('<div class="box-trend box2"><a href=""><span class="link"></span></a><div class="box-image"><img src="" alt=""></div><h4 class="title-tred"></h4></div>')
+                                $('.article .trending .box'+trend+'').find('a').attr('href', '/eliteplayers/noticias/entradas/?/'+link+'');
+                                $('.article .trending .box'+trend+'').find('.box-image img').attr('src', imgCover);
+                                $('.article .trending .box'+trend+'').find('.title-tred').text(title)
+                                break;
+                            case 3:
+                                $('.article .trending').append('<div class="box-trend box3"><a href=""><span class="link"></span></a><div class="box-image"><img src="" alt=""></div><h4 class="title-tred"></h4></div>')
+                                $('.article .trending .box'+trend+'').find('a').attr('href', '/eliteplayers/noticias/entradas/?/'+link+'');
+                                $('.article .trending .box'+trend+'').find('.box-image img').attr('src', imgCover);
+                                $('.article .trending .box'+trend+'').find('.title-tred').text(title)
+                                break;
+                            case 4:
+                                $('.article .trending').append('<div class="box-trend box4"><a href=""><span class="link"></span></a><div class="box-image"><img src="" alt=""></div><h4 class="title-tred"></h4></div>')
+                                $('.article .trending .box'+trend+'').find('a').attr('href', '/eliteplayers/noticias/entradas/?/'+link+'');
+                                $('.article .trending .box'+trend+'').find('.box-image img').attr('src', imgCover);
+                                $('.article .trending .box'+trend+'').find('.title-tred').text(title)
+                                break;
+                            case 5:
+                                $('.article .trending').append('<div class="box-trend box5"><a href=""><span class="link"></span></a><div class="box-image"><img src="" alt=""></div><h4 class="title-tred"></h4></div>')
+                                $('.article .trending .box'+trend+'').find('a').attr('href', '/eliteplayers/noticias/entradas/?/'+link+'');
+                                $('.article .trending .box'+trend+'').find('.box-image img').attr('src', imgCover);
+                                $('.article .trending .box'+trend+'').find('.title-tred').text(title)
+                                break;
+                            default:
+                        }    
+
+                    }
+
+                });
+            // }
     };
-    // callbacks pages
+       // callbacks pages
             $.get(urlPosts, function (homepost) {
                 // if (window.location.pathname.indexOf("mundo-saludable") != -1){
                     cards(homepost);
@@ -440,7 +501,7 @@ $(document).ready(function(a) {
             });
             $.get(urlPosts, function (articulos) {
                 if (window.location.pathname.indexOf("articulos") != -1){
-                    shareText(articulos);
+                    articleContent(articulos);
                 };
             });
     })(jQuery);
