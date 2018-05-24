@@ -392,6 +392,24 @@ $(document).ready(function(a) {
             $items = $items ? $items.add( $item ) : $item;
         }
     }
+    function shareText() {
+        // plugin initialization with default options
+       shareSelectedText('.article-content', {
+           tooltipClass: '',    // cool, if you want to customize the tooltip
+           sanitize: true,      // will sanitize the user selection to respect the Twitter Max length (recommended) 
+           buttons: [           // services that you want to enable you can add : 
+               'facebook', // - twitter, tumblr, buffer, stumbleupon, digg, reddit, linkedin, facebook
+               'twitter',
+               'linkedin'
+               // 'buffer'
+           ],
+           anchorsClass: '',    // class given to each tooltip's links
+           twitterUsername: '', // for twitter widget, will add 'via @twitterUsername' at the end of the tweet.
+           facebookAppID: '459647324467614', // Can also be an HTML element inside the <head> tag of your page : <meta property="fb:APP_ID" content="YOUR_APP_ID"/>
+           facebookDisplayMode: 'page', //can be 'popup' || 'page'
+           tooltipTimeout: 250  //Timeout before that the tooltip appear in ms
+       });
+    };
     // callbacks pages
             $.get(urlPosts, function (homepost) {
                 // if (window.location.pathname.indexOf("mundo-saludable") != -1){
@@ -418,6 +436,11 @@ $(document).ready(function(a) {
             $.get(c2, function (yoPuedo) {
                 if (window.location.pathname.indexOf("yo-puedo") != -1){
                     filterCards(yoPuedo);
+                };
+            });
+            $.get(urlPosts, function (articulos) {
+                if (window.location.pathname.indexOf("articulos") != -1){
+                    shareText(articulos);
                 };
             });
     })(jQuery);
