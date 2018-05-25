@@ -15,7 +15,7 @@ $(document).ready(function(a) {
       });
     filterToggle();
     (function($) {
-            var vBlog = '"http://localhost:3000/mundo-saludable/blog/articulos/?/"," "';
+            var vBlog = '"https://www.tiendasjumbo.co/mundo-saludable/blog/articulos/?/yo-puedo-test-2//?/"," "';
             var urlAdmin = 'https://catalogostiendasjumbo.co/tiendasjumboblog/'
             var hostBlog = urlAdmin;
             var urlApiDev = hostBlog + 'wp-json/?=routes';
@@ -53,6 +53,7 @@ $(document).ready(function(a) {
                 var link = this.link.replace(urlAdmin,"");
                 var title = this.title['rendered'];
                 var slug = this.slug;
+                var views = this.views;
                 var nameSlugTagFilter = this.e_tags[0].name;
                 var slugSlugTagFilter = this.e_tags[0].slug;
                 var slugTag = '';
@@ -89,7 +90,7 @@ $(document).ready(function(a) {
                              + '</a>'
                              + '<div class="card-interaction-ms">'
                              + '<span><i class="icon-heart"></i>'
-                             + '<small class="text-dark">1.987</small></span>'
+                             + '<small class="text-dark">'+ views +'</small></span>'
                              + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                              + '</div>'
                              + '</div>'
@@ -111,7 +112,7 @@ $(document).ready(function(a) {
                              + '</a>'
                              + '<div class="card-interaction-ms">'
                              + '<span><i class="icon-heart"></i>'
-                             + '<small class="text-dark">1.987</small></span>'
+                             + '<small class="text-dark">'+ views +'</small></span>'
                              + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                              + '</div>'
                              + '</div>'
@@ -133,7 +134,7 @@ $(document).ready(function(a) {
                              + '</a>'
                              + '<div class="card-interaction-ms">'
                              + '<span><i class="icon-heart"></i>'
-                             + '<small class="text-dark">1.987</small></span>'
+                             + '<small class="text-dark">'+ views +'</small></span>'
                              + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                              + '</div>'
                              + '</div>'
@@ -155,7 +156,7 @@ $(document).ready(function(a) {
                              + '</a>'
                              + '<div class="card-interaction-ms">'
                              + '<span><i class="icon-heart"></i>'
-                             + '<small class="text-dark">1.987</small></span>'
+                             + '<small class="text-dark">'+ views +'</small></span>'
                              + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                              + '</div>'
                              + '</div>'
@@ -203,6 +204,7 @@ $(document).ready(function(a) {
                     var link = this.link.replace(urlAdmin,"");
                     var title = this.title['rendered'];
                     var slug = this.slug;
+                    var views = this.views;
                     var nameSlugTagFilter = this.e_tags[0].name;
                     var slugSlugTagFilter = this.e_tags[0].slug;
                     var slugTag = '';
@@ -239,7 +241,7 @@ $(document).ready(function(a) {
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
                                  + '<span><i class="icon-heart"></i>'
-                                 + '<small class="text-dark">1.987</small></span>'
+                                 + '<small class="text-dark">'+ views +'</small></span>'
                                  + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                                  + '</div>'
                                  + '</div>'
@@ -261,7 +263,7 @@ $(document).ready(function(a) {
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
                                  + '<span><i class="icon-heart"></i>'
-                                 + '<small class="text-dark">1.987</small></span>'
+                                 + '<small class="text-dark">'+ views +'</small></span>'
                                  + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                                  + '</div>'
                                  + '</div>'
@@ -283,7 +285,7 @@ $(document).ready(function(a) {
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
                                  + '<span><i class="icon-heart"></i>'
-                                 + '<small class="text-dark">1.987</small></span>'
+                                 + '<small class="text-dark">'+ views +'</small></span>'
                                  + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                                  + '</div>'
                                  + '</div>'
@@ -305,7 +307,7 @@ $(document).ready(function(a) {
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
                                  + '<span><i class="icon-heart"></i>'
-                                 + '<small class="text-dark">1.987</small></span>'
+                                 + '<small class="text-dark">'+ views +'</small></span>'
                                  + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
                                  + '</div>'
                                  + '</div>'
@@ -415,30 +417,22 @@ $(document).ready(function(a) {
                         var description = this.excerpt['rendered']; 
                         var content = this.content['rendered'];
                         var date = this.date;
+                        var views = this.views;
                         var imgCover = this.better_featured_image['source_url'];
                         var imgMobileCover = this.better_featured_image.media_details.sizes.thumbnail['source_url'];
                         var imgAlt = this.better_featured_image['alt_text'];
-                        var categoryName = this.e_categories['name'];
-
-                        var slugTag = '';
-                            $.each(this.e_tags, function(url2, item) {
-                               slugTag += ' ';
-                               slugTag += item.slug;
-                            });
-                        console.log(categoryName)
-                        var namePostTag = '';
-                            $.each(this.e_tags, function(url2, item) {
-                               namePostTag += item.name;
-                               namePostTag += ', ';
-                            });
-                        var categoriesPostTag = '';
-                            $.each(this.e_categories, function(url2, item) {
-                               categoriesPostTag += item.name;
-                               categoriesPostTag += ', ';
-                            });
                         $('.article-title span').text(title);
-                        $('.container-main.article-content h2').html(description);
+                        $('.container-main.article-content h4').html(description);
                         $('.container-main.article-content').append(content);
+                        $('.views-article').append(
+                            '<span>'
+                            +'<i class="icon-heart">'
+                            +'</i>'
+                            +'<small class="text-dark">'
+                            + views
+                            +'</small>'
+                            +'</span>'
+                            );
                         // $('.article-banner >img').attr('src', imgCover, 'alt',imgAlt);
                         $('.article-banner >img').attr({
                             src: imgCover,
@@ -447,14 +441,123 @@ $(document).ready(function(a) {
                             "data-mobile": imgMobileCover
                         });
                         $('.article-content .content-article time').text(date);
-                        for (var k=1; k<4; k++) {
-                            console.log('intento ' + k);
-                        $('.tags-article-info').append('<span class="slug-article bg-gradient-'+ k +'">'
-                            + categoriesPostTag 
-                            +'</span>'
-                            );
+
+                        for (  var i=0; i < url.length; i++ ) {
+                             for ( var j=0; j < url[i].e_tags.length; j++ ) {
+                                var namePostTag = url[i].e_tags[j].name;
+                                $('.tags-article-info').append('<span class="slug-article bg-gradient-'+ j +'">'
+                                    + namePostTag 
+                                    +'</span>'
+                                    );
+                                console.log(namePostTag)
+                             }
+                        }
+                        // for (var k=1; k<4; k++) {
+                        //     // console.log('intento ' + k);
+                        // $('.tags-article-info').append('<span class="slug-article bg-gradient-'+ k +'">'
+                        //     + namePostTag 
+                        //     +'</span>'
+                        //     );
+                        // }
+                        relatedpostarticle();
+                        function relatedpostarticle(url){
+                            // RELATED POST
+                            var relatedPostJp = 'jetpack-related-posts'
+                            switch (trend.relatedPostJp) {
+                                case 1:
+                                    $('#cardsMsRelated').append('<li>'
+                                         + '<div class="card-ms card-article-ms '+ slugTag +'">'
+                                         + '<div class="card-img-ms">'
+                                         + '<span class="card-label-filter-ms">'+ nameTag +'</span>'
+                                         + '<img src="' + imgCover + '" />'
+                                         + '</div>'
+                                         + '<div class="card-text-ms">'
+                                         + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
+                                         + '<h6 class="text-bold">' + title + '</h6>'
+                                         + resume
+                                         + '</a>'
+                                         + '<div class="card-interaction-ms">'
+                                         + '<span><i class="icon-heart"></i>'
+                                         + '<small class="text-dark">'+ views +'</small></span>'
+                                         + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                                         + '</div>'
+                                         + '</div>'
+                                         + '</div>'
+                                         + '</li>'
+                                         );
+                                    break;
+                                case 2:
+                                    $('#cardsMsRelated').append('<li>'
+                                         + '<div class="card-ms card-article-ms">'
+                                         + '<div class="card-img-ms">'
+                                         + '<span class="card-label-filter-ms"></span>'
+                                         + '<img src="' + imgCover + '" />'
+                                         + '</div>'
+                                         + '<div class="card-text-ms">'
+                                         + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
+                                         + '<h6 class="text-bold">' + title + '</h6>'
+                                         + resume
+                                         + '</a>'
+                                         + '<div class="card-interaction-ms">'
+                                         + '<span><i class="icon-heart"></i>'
+                                         + '<small class="text-dark">'+ views +'</small></span>'
+                                         + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                                         + '</div>'
+                                         + '</div>'
+                                         + '</div>'
+                                         + '</li>'
+                                         );
+                                    break;
+                                case 3:
+                                    $('#cardsMsRelated').append('<li>'
+                                         + '<div class="'+ slugTag +'  card-ms card-article-ms ">'
+                                         + '<div class="card-img-ms">'
+                                         + '<span class="card-label-filter-ms">'+ nameTag +'</span>'
+                                         + '404 Image not found"'
+                                         + '</div>'
+                                         + '<div class="card-text-ms">'
+                                         + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
+                                         + '<h6 class="text-bold">' + title + '</h6>'
+                                         + resume
+                                         + '</a>'
+                                         + '<div class="card-interaction-ms">'
+                                         + '<span><i class="icon-heart"></i>'
+                                         + '<small class="text-dark">'+ views +'</small></span>'
+                                         + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                                         + '</div>'
+                                         + '</div>'
+                                         + '</div>'
+                                         + '</li>'
+                                         );
+                                    break;
+                                case 4:
+                                    $('#cardsMsRelated').append('<li>'
+                                         + '<div class="card-ms card-article-ms ">'
+                                         + '<div class="card-img-ms">'
+                                         + '<span class="card-label-filter-ms"></span>'
+                                         + '<img src="" alt="404 Image not found"/>'
+                                         + '</div>'
+                                         + '<div class="card-text-ms">'
+                                         + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
+                                         + '<h6 class="text-bold">' + title + '</h6>'
+                                         + resume
+                                         + '</a>'
+                                         + '<div class="card-interaction-ms">'
+                                         + '<span><i class="icon-heart"></i>'
+                                         + '<small class="text-dark">'+ views +'</small></span>'
+                                         + '<a class="text-jumbogreen" href="/mundo-saludable/blog/articulos/?/'+ link +'"><span>Ver<i class="icon-plus"></i></span></a>'
+                                         + '</div>'
+                                         + '</div>'
+                                         + '</div>'
+                                         + '</li>'
+                                         );
+                                    break;
+                                default:
+                                console.log()
+                            }
                         }
                     }
+
                      // plugin initialization with default options
                     shareSelectedText('.container-main.article-content', {
                         tooltipClass: '',    // cool, if you want to customize the tooltip
@@ -472,7 +575,7 @@ $(document).ready(function(a) {
                         tooltipTimeout: 250  //Timeout before that the tooltip appear in ms
                     });
                 });
-            // }
+
     };
        // callbacks pages
             $.get(urlPosts, function (homepost) {
