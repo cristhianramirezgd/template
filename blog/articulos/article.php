@@ -1,16 +1,16 @@
     <?php require_once("../../subtemplates/head.php"); ?>
     <?php require_once("../../subtemplates/styles.php"); ?>
     <?php require_once("../../subtemplates/header.php"); ?>
-    <h1 class="article-title title-section-ms section-margin"><span>Título de Artículo</span></h1>
+    <h1 class="article-title title-section-ms section-margin"><span></span></h1>
     <main class="mundo-saludable-v2 article-ms">
       <section class="section-article">
       	<div class="article-banner section-margin">
-      		<img src="https://fakeimg.pl/1366x500/" data-mobile="https://fakeimg.pl/400x400/" />
+      		<img src="" alt="" title="" data-mobile=""/>
       		<div class="banner-article-info">
       			<div class="tags-article-info">
-      				<span class="slug-article bg-gradient-1">Yo Puedo</span>
-      				<span class="slug-article bg-gradient-2">Yo Decidí</span>
-      				<span class="slug-article bg-gradient-3">Yo Quiero</span>
+      				<!-- <span class="slug-article bg-gradient-1"></span> -->
+      				<!-- <span class="slug-article bg-gradient-2">Yo Decidí</span>
+      				<span class="slug-article bg-gradient-3">Yo Quiero</span> -->
       			</div>
       			<div class="media-article-info">
       				<div class="views-article">
@@ -23,7 +23,9 @@
       			</div>
       		</div>
       	</div>
-      	<article class="container-main article-content"></article>
+      	<article class="container-main article-content">
+         <h2></h2> 
+        </article>
       </section>
      <!--  <section class="wrapper container-main">
         <h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Artículos Relacionados</span></h2>

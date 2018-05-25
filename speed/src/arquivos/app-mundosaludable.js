@@ -415,59 +415,62 @@ $(document).ready(function(a) {
                         var description = this.excerpt['rendered']; 
                         var content = this.content['rendered'];
                         var date = this.date;
-                        
+                        var imgCover = this.better_featured_image['source_url'];
+                        var imgMobileCover = this.better_featured_image.media_details.sizes.thumbnail['source_url'];
+                        var imgAlt = this.better_featured_image['alt_text'];
+                        var categoryName = this.e_categories['name'];
+
+                        var slugTag = '';
+                            $.each(this.e_tags, function(url2, item) {
+                               slugTag += ' ';
+                               slugTag += item.slug;
+                            });
+                        console.log(categoryName)
+                        var namePostTag = '';
+                            $.each(this.e_tags, function(url2, item) {
+                               namePostTag += item.name;
+                               namePostTag += ', ';
+                            });
+                        var categoriesPostTag = '';
+                            $.each(this.e_categories, function(url2, item) {
+                               categoriesPostTag += item.name;
+                               categoriesPostTag += ', ';
+                            });
                         $('.article-title span').text(title);
-                        $('.article-content h2').html(description);
-                        $('.article-content .article-content').append(content);
+                        $('.container-main.article-content h2').html(description);
+                        $('.container-main.article-content').append(content);
+                        // $('.article-banner >img').attr('src', imgCover, 'alt',imgAlt);
+                        $('.article-banner >img').attr({
+                            src: imgCover,
+                            alt: imgAlt,
+                            title: imgAlt,
+                            "data-mobile": imgMobileCover
+                        });
                         $('.article-content .content-article time').text(date);
+                        for (var k=1; k<4; k++) {
+                            console.log('intento ' + k);
+                        $('.tags-article-info').append('<span class="slug-article bg-gradient-'+ k +'">'
+                            + categoriesPostTag 
+                            +'</span>'
+                            );
+                        }
                     }
-
-                    if (jQuery.inArray( 12, post.tags ) != -1){
-                        trend++;
-                        console.log(trend)
-
-                        var imgCover = this.better_featured_image.media_details.sizes.thumbnail['source_url'];
-                        var link = this.link.replace(urlAdmin,"");
-                        var title = this.title['rendered']; 
-
-                        switch (trend) {
-                            case 1:
-                                $('.article .trending').append('<div class="box-trend box1"><a href=""><span class="link"></span></a><div class="box-image"><img src="" alt=""></div><h4 class="title-tred"></h4></div>')
-
-
-                                $('.article .trending .box'+trend+'').find('a').attr('href','/eliteplayers/noticias/entradas/?/'+link+'');
-                                $('.article .trending .box'+trend+'').find('.box-image img').attr('src', imgCover);
-                                $('.article .trending .box'+trend+'').find('.title-tred').text(title)
-                                break;
-                            case 2:
-                                $('.article .trending').append('<div class="box-trend box2"><a href=""><span class="link"></span></a><div class="box-image"><img src="" alt=""></div><h4 class="title-tred"></h4></div>')
-                                $('.article .trending .box'+trend+'').find('a').attr('href', '/eliteplayers/noticias/entradas/?/'+link+'');
-                                $('.article .trending .box'+trend+'').find('.box-image img').attr('src', imgCover);
-                                $('.article .trending .box'+trend+'').find('.title-tred').text(title)
-                                break;
-                            case 3:
-                                $('.article .trending').append('<div class="box-trend box3"><a href=""><span class="link"></span></a><div class="box-image"><img src="" alt=""></div><h4 class="title-tred"></h4></div>')
-                                $('.article .trending .box'+trend+'').find('a').attr('href', '/eliteplayers/noticias/entradas/?/'+link+'');
-                                $('.article .trending .box'+trend+'').find('.box-image img').attr('src', imgCover);
-                                $('.article .trending .box'+trend+'').find('.title-tred').text(title)
-                                break;
-                            case 4:
-                                $('.article .trending').append('<div class="box-trend box4"><a href=""><span class="link"></span></a><div class="box-image"><img src="" alt=""></div><h4 class="title-tred"></h4></div>')
-                                $('.article .trending .box'+trend+'').find('a').attr('href', '/eliteplayers/noticias/entradas/?/'+link+'');
-                                $('.article .trending .box'+trend+'').find('.box-image img').attr('src', imgCover);
-                                $('.article .trending .box'+trend+'').find('.title-tred').text(title)
-                                break;
-                            case 5:
-                                $('.article .trending').append('<div class="box-trend box5"><a href=""><span class="link"></span></a><div class="box-image"><img src="" alt=""></div><h4 class="title-tred"></h4></div>')
-                                $('.article .trending .box'+trend+'').find('a').attr('href', '/eliteplayers/noticias/entradas/?/'+link+'');
-                                $('.article .trending .box'+trend+'').find('.box-image img').attr('src', imgCover);
-                                $('.article .trending .box'+trend+'').find('.title-tred').text(title)
-                                break;
-                            default:
-                        }    
-
-                    }
-
+                     // plugin initialization with default options
+                    shareSelectedText('.container-main.article-content', {
+                        tooltipClass: '',    // cool, if you want to customize the tooltip
+                        sanitize: true,      // will sanitize the user selection to respect the Twitter Max length (recommended) 
+                        buttons: [           // services that you want to enable you can add : 
+                            'facebook', // - twitter, tumblr, buffer, stumbleupon, digg, reddit, linkedin, facebook
+                            'twitter',
+                            'linkedin'
+                            // 'buffer'
+                        ],
+                        anchorsClass: '',    // class given to each tooltip's links
+                        twitterUsername: '', // for twitter widget, will add 'via @twitterUsername' at the end of the tweet.
+                        facebookAppID: '459647324467614', // Can also be an HTML element inside the <head> tag of your page : <meta property="fb:APP_ID" content="YOUR_APP_ID"/>
+                        facebookDisplayMode: 'page', //can be 'popup' || 'page'
+                        tooltipTimeout: 250  //Timeout before that the tooltip appear in ms
+                    });
                 });
             // }
     };
