@@ -13,36 +13,7 @@
               <img  class="logo-mundo-saludable" src="arquivos/logo-mundosaludable.png" alt="logo-mundosaludable tiendas jumbo" />
               <div class="form-newsletter card-ms">
                 <h5 class="text-label font-bold">Déjanos tu mail y mantente conectado con Mundo Saludable.</h5>
-                <form class="main-form newsletter-ms">
-                  <input class="jumbogreenyellow" id="newsletter-mundo-saludable" type="email" placeholder="Example@mail.com"/>
-                  <div class="filter-diet">
-                    <label class="font-bold">Escoge tu mejor opción</label>
-                    <select>
-                      <option disabled="true"><b>Yo Puedo:</b></option>
-                      <option value="">Mi diabetes</option>
-                      <option value="">Mi embarazo</option>
-                      <option value="">Mi corazón</option>
-                      <option value="">Mi digestión</option>
-                      <option disabled="true"><b>Yo Decidí:</b></option>
-                      <option value="">Ser vegetariana</option>
-                      <option value="">Ser vegana</option>
-                      <option value="">Comer Kosher</option>
-                      <option value="">Comer Halal</option>
-                      <option disabled="true"><b>Yo Quiero:</b></option>
-                      <option value="">Adelgazar</option>
-                      <option value="">Desintoxicarme</option>
-                      <option value="">Alimentarme mejor</option>
-                      <option value="">Practicar un deporte</option>
-                      <option value="">Cuidar a mi familia</option>
-                    </select>
-                  </div>
-                  <button class="button-ms button-full button-ms-green-line" type="submit">Enviar</button>
-                  <span class="text-jumbored" style="display:none;">Formato de email incorrecto</span>
-                  <span class="bg-jumbored text-white" style="display:none;">Error al enviar, intente de nueco más tarde</span>
-                  <div class="legal-check">
-                    <input type="checkbox" name="terms-ms" value="terms" required> <small><a data-src="#terms-conditions-ms" href="javascript:;" class="terms-ms">aceptas las políticas de manejo de información personal</a></small>
-                  </div>
-                </form>
+                <div id="formFilterNewsletter"></div>
               </div>
             </div>
             <div class="container"></div>
@@ -162,5 +133,6 @@
     <script type="text/javascript" src="https://jumbocolombiafood.vteximg.com.br/arquivos/slick.min.js" charset="utf8"></script>
     <script type="text/javascript" src="https://jumbocolombiafood.vteximg.com.br/arquivos/isotope-docs.min.js" charset="utf8"></script>
     <script type="text/javascript" src="/speed/build/arquivos/app-mundosaludable.js" charset="utf8"></script>
+    <script type="text/javascript" src="/speed/build/arquivos/app-ms-form.js" charset="utf8"></script>
   </body>
 </html>

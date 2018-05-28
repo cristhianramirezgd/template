@@ -584,7 +584,8 @@ $(document).ready(function(a) {
                 // };
             });
             $.get(urlPosts, function (homepost) {
-                if (window.location.pathname.indexOf("blog") != -1){
+                if (window.location.pathname.indexOf("/blog") != -1){
+                    alert();
                     filterCards(homepost);
                     $( "#titleCategorie").replaceWith( '<h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span></h2>' );
 
@@ -617,11 +618,6 @@ $( ".filter-title-ms-category" ).on( "click", function(e) {
         var $this = $(this);
         $this.parents('.container-filter-ms-category').toggleClass( "active-ms");
         });
-// fancy box
-$('.terms-ms').fancybox({
- protect: true,
- touch: false
-  });
 $('.container-banner-middle').slick({
   infinite: true,
   autoplay: true,
