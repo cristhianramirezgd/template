@@ -148,6 +148,8 @@
 	p{
 		margin-top: $global-margin;
 		padding-bottom:$global-padding*3;
+		max-height: 80px;
+		overflow: hidden;
 	}
 }
 .card-interaction-ms{
@@ -161,6 +163,8 @@
     padding-left: $global-padding;
     padding-right: $global-padding;
 	font-style: initial;
+	background: $white;
+	padding-top: $global-padding;
 }
 // Articles
 .article-ms{
@@ -230,6 +234,18 @@
 	border-radius: $global-radius;
 	box-shadow:$global-shadow;
 	font-size: 80%;
+}
+.article-title{
+	span{
+	@media #{$medium-up}{
+		line-height: 110%;
+		max-width: 70%;
+		text-align: center;
+		}
+	}
+}
+article.container-main.article-content>h4:first-child {
+    display: none;
 }
 .article-content{
 	padding: $global-padding;
