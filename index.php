@@ -19,19 +19,19 @@
             <div class="container"></div>
           </div>
           <div class="container-main main-grid main-grid-3 main-grid-equal">
-              <div class="card-ms card-ms-button card-ms-button-1 text-center-m">
+              <div class="card-ms card-ms-button card-ms-button-jumboyellow text-center-m">
                 <a href="">
                   <h3>Yo Puedo</h3>
                   <p>tener una dieta con algún tipo de restricción</p>
                 </a>
               </div>
-              <div class="card-ms card-ms-button card-ms-button-2 text-center-m">
+              <div class="card-ms card-ms-button card-ms-button-1 text-center-m">
                 <a href="">
                   <h3>Yo Decidí</h3>
                   <p>llevar  un estilo de vida con alimentos saludables.</p>
                 </a>
               </div>
-              <div class="card-ms card-ms-button card-ms-button-3 text-center-m">
+              <div class="card-ms card-ms-button card-ms-button-jumbogreenlight text-center-m">
                 <a href="">
                   <h3>Yo Quiero</h3>
                   <p>cumplir algún objetivo puntual como una dieta para bajar de peso.</p>
