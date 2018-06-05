@@ -461,6 +461,12 @@ $(document).ready(function(a) {
                         // }
                         relatedpostarticle();
                         function relatedpostarticle(url){
+                            $(document).ready(function(a) {
+                                    /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && a("img").each(function() {
+                                        var b = a(this).attr("data-mobile");
+                                        a(this).attr("src", b)
+                                    });
+                                });
                             // RELATED POST
                             var relatedPostJp = 'jetpack-related-posts'
                             switch (trend.relatedPostJp) {
@@ -585,7 +591,7 @@ $(document).ready(function(a) {
             });
             $.get(urlPosts, function (homepost) {
                 if (window.location.pathname.indexOf("/blog") != -1){
-                    alert();
+                    // alert();
                     filterCards(homepost);
                     $( "#titleCategorie").replaceWith( '<h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Blog</span></h2>' );
 
