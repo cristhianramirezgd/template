@@ -94,12 +94,12 @@ function formValidateMundoSaludable() {
 
  if ((isFormValidateMundoSaludable) && ($("#client_email").val() == "")) {
    isFormValidateMundoSaludable = false;
-   $("#client_email").focus();
+   $("#client_email").focus().css('border-bottom','1px solid red');
  }
  if ((isFormValidateMundoSaludable) && (!IsEmailMundoSaludable($("#client_email").val()))) {
    isFormValidateMundoSaludable = false;
    $("#client_email").val("");
-   $("#client_email").focus();
+   $("#client_email").focus().css('border-bottom','1px solid red');
  }
  if ($("#sub_filtro_Cli").val() == "") {
    isFormValidateMundoSaludable = false;
@@ -107,10 +107,10 @@ function formValidateMundoSaludable() {
  }
  if (!($('#iagree').is(':checked'))) {
    isFormValidateMundoSaludable = false;
-   $("#iagree").focus();
-   $("#iagree-message-error").html("aceptas las políticas de manejo de información personal");
+   $(".terms-ms").focus().css('color','#e30613');
  } else {
-   $("#iagree-message-error").hide();
+  $(".terms-ms").focus().css('color','#7ab929');
+
  }
  if (isFormValidateMundoSaludable) {
    resetFormundoSaludable();
@@ -118,7 +118,7 @@ function formValidateMundoSaludable() {
    IsNewEmail();
  } else {
    resetFormundoSaludable();
-   $("#co_message_validate_popup").show();
+   $("#co_message_validate_popup").show(1).delay(3000).hide(1);
  }
  return true;
 }
@@ -165,8 +165,8 @@ function FormCreateMundoSaludable(storeName, dataEntity, htmlElementId, messageL
  htmlContent += '<div class="legal-check form-field string iagree">';
  htmlContent += '<input id="iagree" maxlength="100" name="iagree" type="radio"/>';
  htmlContent += '<small for="iagree"><a data-src="#terms-conditions-ms" href="javascript:;" class="terms-ms">aceptas las políticas de manejo de información personal</a></small>';
- htmlContent += '<div id="iagree-message-error"></div>';
  htmlContent += '</div>';
+ htmlContent += '<div id="iagree-message-error"></div>';
  htmlContent += '</form>';
 
  $("#" + htmlElementId).html(htmlContent);
