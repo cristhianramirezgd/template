@@ -99,7 +99,7 @@ function formValidateMundoSaludable() {
  if ((isFormValidateMundoSaludable) && (!IsEmailMundoSaludable($("#client_email").val()))) {
    isFormValidateMundoSaludable = false;
    $("#client_email").val("");
-   $("#client_email").focus().css('border-bottom','1px solid red');
+   $("#client_email").focus();
  }
  if ($("#sub_filtro_Cli").val() == "") {
    isFormValidateMundoSaludable = false;
@@ -141,8 +141,8 @@ function FormCreateMundoSaludable(storeName, dataEntity, htmlElementId, messageL
  htmlContent +='<option value="mi-corazon">Mi corazón</option>'
  htmlContent +='<option value="mi-digestion">Mi digestión</option>'
  htmlContent +='<option disabled="true"><b>Yo Decidí:</b></option>'
- htmlContent +='<option value="ser-vegetariana">Ser vegetariana</option>'
- htmlContent +='<option value="ser-vegana">Ser vegana</option>'
+ htmlContent +='<option value="ser-vegetariano">Ser vegetariano</option>'
+ htmlContent +='<option value="ser-vegano">Ser vegano</option>'
  htmlContent +='<option value="comer-kosher">Comer Kosher</option>'
  htmlContent +='<option value="comer-halal">Comer Halal</option>'
  htmlContent +='<option disabled="true"><b>Yo Quiero:</b></option>'
