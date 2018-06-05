@@ -67,11 +67,11 @@
 			}
 		}
 		&-1{
-			@include border-gradient-left($gutter/3, $jumbogreenyellow, $jumbogreen);
+			@include border-gradient-left($gutter/3, $icon-yellow, $jumbogreen);
 			@include fix-height-filter;
 			@media #{$medium-up}{
-				@include border-gradient-left(0, $jumbogreenyellow, $jumbogreen);
-				@include border-gradient-bottom($gutter/3, $jumbogreenyellow, $jumbogreen);
+				@include border-gradient-left(0, $icon-yellow, $jumbogreen);
+				@include border-gradient-bottom($gutter/3, $icon-yellow, $jumbogreen);
 				}
 			}
 		&-2{
@@ -89,6 +89,20 @@
 				@include border-gradient-left(0, $jumbogreenyellow, $icon-bluelight);
 				@include border-gradient-bottom($gutter/3, $jumbogreenyellow, $icon-bluelight);
 				}
+		}
+		&-jumboyellow{
+			@media #{$medium-up}{
+			border-bottom:$gutter/3 solid $icon-yellow;
+			border-left:0;
+			}
+			border-left:$gutter/3 solid $icon-yellow;
+		}
+		&-jumbogreenlight{
+			@media #{$medium-up}{
+			border-bottom:$gutter/3 solid $jumbogreenlight;
+			border-left:0;
+			}
+			border-left:$gutter/3 solid $jumbogreenlight;
 		}
 	}
 }

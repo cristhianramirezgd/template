@@ -13,6 +13,9 @@ main{font-family: $font-family;}
 	&-jumbogreen{color:$jumbogreen;
 		@include color-text(olor);
 	}
+	&-jumbored{color:$jumbored;
+		@include color-text(olor);
+	}
 	&-center{text-align: center;
 		&-m{
 			@media #{$medium-up}{
