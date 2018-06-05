@@ -30,6 +30,19 @@
 		border-radius: $gutter/3;
 		padding: $global-padding/3;
 	}
+	#iagree-message-error{
+		font-size: 0;
+		position:relative;
+		&::after{
+			content: '<';
+			font-size: $global-font*2;
+			top: 0;
+			right: 0;
+			position: absolute;
+			color: $jumbored;
+			font-weight: 700;
+		}
+	}
 }
 .form-newsletter{
 	margin-top:$global-margin;
