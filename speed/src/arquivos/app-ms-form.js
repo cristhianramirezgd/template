@@ -154,11 +154,11 @@ function FormCreateMundoSaludable(storeName, dataEntity, htmlElementId, messageL
  htmlContent += '</select>';
  htmlContent += '</div>';
  // Message form
- htmlContent += '<span id="co_message_loading_popup" class="messagepoppup alert alert-info" style="display:none;">' + messageLoading + '</span>';
- htmlContent += '<span id="co_message_validate_popup" class="messagepoppup alert alert-warning" style="display:none;">' + messageValidation + '</span>';
- htmlContent += '<span id="co_message_success_popup" class="messagepoppup alert alert-success" style="display:none;">' + messageSuccess + '</span>';
- htmlContent += '<span id="co_message_error_popup" class="messagepoppup alert alert-danger" style="display:none;">' + messageError + '</span>';
- htmlContent += '<span id="co_message_email_error_popup" class="messagepoppup alert alert-danger" style="display:none;">' + mailError + '</span>';
+ htmlContent += '<span id="co_message_loading_popup" class="messagepoppup text-center text-white bg-jumbogreenyellow" style="display:none;">' + messageLoading + '</span>';
+ htmlContent += '<span id="co_message_validate_popup" class="messagepoppup text-center bg-jumbored text-white" style="display:none;">' + messageValidation + '</span>';
+ htmlContent += '<span id="co_message_success_popup" class="messagepoppup text-center bg-jumbogreenlight text-white" style="display:none;">' + messageSuccess + '</span>';
+ htmlContent += '<span id="co_message_error_popup" class="messagepoppup text-center bg-jumbored text-white" style="display:none;">' + messageError + '</span>';
+ htmlContent += '<span id="co_message_email_error_popup" class="messagepoppup text-center bg-jumbored text-white" style="display:none;">' + mailError + '</span>';
  // Send button
  htmlContent += '<button id="commit" name="commit" type="submit" value="Enviar" class="button-ms button-full button-ms-green-line">Enviar</button>';
  // Check

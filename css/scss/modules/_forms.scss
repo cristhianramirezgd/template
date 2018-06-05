@@ -24,9 +24,10 @@
 		&.graylight{
 			@include forms-input($graylight);}
 	}
-	span{
-		position: absolute;
-		top:$global-margin*2;
+	.messagepoppup{
+		width:$total-anchor;
+		margin-top:$global-margin;
+		border-radius: $gutter/3;
 		padding: $global-padding/3;
 	}
 }
