@@ -78,6 +78,7 @@
             <div class="card-ms card-promo text-center text-white bg-gradient-3">
               <h2>Disfruta 10% de dto</h2>
               <p>en las batidos naturales Nativos a nivel nacional.</p>
+              <img class="logo-image" src="arquivos/nativos-alianza-mundo-saludable-tiendas-jumbo-min.png">
             </div>
           </div>
       </section>
