@@ -120,7 +120,9 @@
 }
 .card-article-ms{
 	position:relative;
-	margin:auto $global-margin/2;
+	margin-left:$global-margin/2;
+	margin-right:$global-margin/2;
+	margin-top:$global-margin;
 	padding:0;
 	align-self: stretch;
 	transition:$global-transition;
