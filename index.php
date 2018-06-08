@@ -21,8 +21,8 @@
           <div class="container-main main-grid main-grid-3 main-grid-equal">
               <div class="card-ms card-ms-button card-ms-button-jumboyellow text-center-m">
                 <a href="">
-                  <h3>Yo Puedo</h3>
-                  <p>tener una dieta con algún tipo de restricción</p>
+                  <h3>Yo Quiero</h3>
+                  <p>cumplir algún objetivo puntual como una dieta para bajar de peso.</p>
                 </a>
               </div>
               <div class="card-ms card-ms-button card-ms-button-1 text-center-m">
@@ -33,8 +33,8 @@
               </div>
               <div class="card-ms card-ms-button card-ms-button-jumbogreenlight text-center-m">
                 <a href="">
-                  <h3>Yo Quiero</h3>
-                  <p>cumplir algún objetivo puntual como una dieta para bajar de peso.</p>
+                  <h3>Yo Puedo</h3>
+                  <p>tener una dieta con algún tipo de restricción</p>
                 </a>
               </div>
           </div>
@@ -78,7 +78,7 @@
             <div class="card-ms card-promo text-center text-white bg-gradient-3">
               <h2>Disfruta 10% de dto</h2>
               <p>en las batidos naturales Nativos a nivel nacional.</p>
-              <img class="logo-image" src="arquivos/nativos-alianza-mundo-saludable-tiendas-jumbo-min.png">
+              <img class="logo-image" src="/arquivos/nativos-alianza-mundo-saludable-tiendas-jumbo-min.png">
             </div>
           </div>
       </section>
