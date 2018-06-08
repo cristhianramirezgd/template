@@ -136,22 +136,21 @@
 }
 .card-img-ms{
 	position: relative;
-	@include gradient-3;
+	background: linear-gradient(to top, rgba($jumbogreenyellow, .1), rgba($jumbogreen,.1));
 	.card-label-filter-ms{
 		position:absolute;
 		writing-mode: vertical-lr;
 		white-space: nowrap;
 		width: $gutter+5;
-		text-transform: uppercase;
 		text-overflow: ellipsis;
 		overflow: hidden;
-		background: rgba($white,.7);
+		background: linear-gradient(to top, $jumbogreenyellow, rgba($jumbogreen,.8));
 		padding: $global-padding $global-padding/5;
-		color: $gray;
-		font-weight: $font-bold;
+		color: $white;
+		font-weight: $font-light;
 		transform: rotate(180deg);
 		font-size:80%;
-		height: 100%;
+		left: 0;
 	}
 }
 .card-text-ms{
