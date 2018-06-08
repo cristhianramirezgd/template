@@ -178,10 +178,23 @@
 	font-style: initial;
 	background: $white;
 	padding-top: $global-padding;
+	>a{
+		background:$jumbogreenyellow;
+		padding:$global-padding / 3;
+		border-radius: $global-radius;
+		color:$white;
+	}
+	.icon-cards {
+	    display: flex;
+	    align-items: center;
+	}
 }
 // Articles
 .article-ms{
 	.article-banner{
+		max-width: 94%;
+		margin-right: auto;
+		margin-left: auto;
 		position: relative;
 		.banner-article-info {
 			width: $total-anchor;

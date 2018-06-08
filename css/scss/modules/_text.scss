@@ -1,20 +1,20 @@
 
 main{font-family: $font-family;}
 .text{
-	&-white{color:$white;
+	&-white{
 		@include color-text($white);
 	}
-	&-black{color:$black;
+	&-black{
 		@include color-text($black);
 	}
-	&-dark{color:$dark;
-		@include color-text(dark);
+	&-dark{
+		@include color-text($dark);
 	}
-	&-jumbogreen{color:$jumbogreen;
-		@include color-text(olor);
+	&-jumbogreen{
+		@include color-text($jumbogreen);
 	}
-	&-jumbored{color:$jumbored;
-		@include color-text(olor);
+	&-jumbored{
+		@include color-text($jumbored);
 	}
 	&-center{text-align: center;
 		&-m{
@@ -44,7 +44,7 @@ main{font-family: $font-family;}
 h1{@include font-size($font-size-h1);
 	font-weight: $font-bold;
 	@media #{$medium-up}{
-	@include font-size($font-size-h1 * 2);
+	@include font-size($font-size-h1 + .5);
 	}
 }
 h2{@include font-size($font-size-h2);
