@@ -55,7 +55,8 @@
 @mixin cards-bg($padding){
 	background:rgba($white, 0.8);
 	padding: $padding;
-	box-shadow: $global-shadow;
+	border: 1px solid $graylight;
+
 }
 // Form
 @mixin form-flowers{
