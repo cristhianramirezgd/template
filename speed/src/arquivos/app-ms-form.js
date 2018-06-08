@@ -135,22 +135,22 @@ function FormCreateMundoSaludable(storeName, dataEntity, htmlElementId, messageL
  htmlContent +='<div class="filter-diet form-field string required sub_filtro_Cli">';
  htmlContent +='<label for="sub_filtro_Cli" class="font-bold" >Escoge tu mejor opción</label>';
  htmlContent +='<select id="sub_filtro_Cli" >'
- htmlContent +='<option disabled="true"><b>Yo Puedo:</b></option>'
- htmlContent +='<option value="mi-diabetes">Mi diabetes</option>'
- htmlContent +='<option value="mi-embarazo">Mi embarazo</option>'
- htmlContent +='<option value="mi-corazon">Mi corazón</option>'
- htmlContent +='<option value="mi-digestion">Mi digestión</option>'
- htmlContent +='<option disabled="true"><b>Yo Decidí:</b></option>'
- htmlContent +='<option value="ser-vegetariano">Ser vegetariano</option>'
- htmlContent +='<option value="ser-vegano">Ser vegano</option>'
- htmlContent +='<option value="comer-kosher">Comer Kosher</option>'
- htmlContent +='<option value="comer-halal">Comer Halal</option>'
  htmlContent +='<option disabled="true"><b>Yo Quiero:</b></option>'
  htmlContent +='<option value="adelgazar">Adelgazar</option>'
  htmlContent +='<option value="desintoxicarme">Desintoxicarme</option>'
  htmlContent +='<option value="alimentarme-mejor">Alimentarme mejor</option>'
  htmlContent +='<option value="practicar-un-deporte">Practicar un deporte</option>'
  htmlContent +='<option value="cuidar-a-mi-familia">Cuidar a mi familia</option>'
+ htmlContent +='<option disabled="true"><b>Yo Decidí:</b></option>'
+ htmlContent +='<option value="ser-vegetariano">Ser vegetariano</option>'
+ htmlContent +='<option value="ser-vegano">Ser vegano</option>'
+ htmlContent +='<option value="comer-kosher">Comer Kosher</option>'
+ htmlContent +='<option value="comer-halal">Comer Halal</option>'
+ htmlContent +='<option disabled="true"><b>Yo Puedo:</b></option>'
+ htmlContent +='<option value="mi-diabetes">Mi diabetes</option>'
+ htmlContent +='<option value="mi-embarazo">Mi embarazo</option>'
+ htmlContent +='<option value="mi-corazon">Mi corazón</option>'
+ htmlContent +='<option value="mi-digestion">Mi digestión</option>'
  htmlContent += '</select>';
  htmlContent += '</div>';
  // Message form
