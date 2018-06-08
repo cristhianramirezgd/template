@@ -87,7 +87,7 @@ $(document).ready(function(a) {
                              + '</div>'
                              + '<div class="card-text-ms">'
                              + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                             + '<h6 class="text-bold">' + title + '</h6>'
+                             + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
                              + '<div class="card-interaction-ms">'
@@ -111,7 +111,7 @@ $(document).ready(function(a) {
                              + '</div>'
                              + '<div class="card-text-ms">'
                              + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                             + '<h6 class="text-bold">' + title + '</h6>'
+                             + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
                              + '<div class="card-interaction-ms">'
@@ -133,7 +133,7 @@ $(document).ready(function(a) {
                              + '</div>'
                              + '<div class="card-text-ms">'
                              + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                             + '<h6 class="text-bold">' + title + '</h6>'
+                             + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
                              + '<div class="card-interaction-ms">'
@@ -157,7 +157,7 @@ $(document).ready(function(a) {
                              + '</div>'
                              + '<div class="card-text-ms">'
                              + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                             + '<h6 class="text-bold">' + title + '</h6>'
+                             + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                              + resume
                              + '</a>'
                              + '<div class="card-interaction-ms">'
@@ -244,7 +244,7 @@ $(document).ready(function(a) {
                                  + '</div>'
                                  + '<div class="card-text-ms">'
                                  + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                                 + '<h6 class="text-bold">' + title + '</h6>'
+                                 + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
@@ -268,7 +268,7 @@ $(document).ready(function(a) {
                                  + '</div>'
                                  + '<div class="card-text-ms">'
                                  + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                                 + '<h6 class="text-bold">' + title + '</h6>'
+                                 + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
@@ -290,7 +290,7 @@ $(document).ready(function(a) {
                                  + '</div>'
                                  + '<div class="card-text-ms">'
                                  + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                                 + '<h6 class="text-bold">' + title + '</h6>'
+                                 + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
@@ -314,7 +314,7 @@ $(document).ready(function(a) {
                                  + '</div>'
                                  + '<div class="card-text-ms">'
                                  + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                                 + '<h6 class="text-bold">' + title + '</h6>'
+                                 + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                                  + resume
                                  + '</a>'
                                  + '<div class="card-interaction-ms">'
@@ -493,7 +493,7 @@ $(document).ready(function(a) {
                                          + '</div>'
                                          + '<div class="card-text-ms">'
                                          + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                                         + '<h6 class="text-bold">' + title + '</h6>'
+                                         + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                                          + resume
                                          + '</a>'
                                          + '<div class="card-interaction-ms">'
@@ -517,7 +517,7 @@ $(document).ready(function(a) {
                                          + '</div>'
                                          + '<div class="card-text-ms">'
                                          + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                                         + '<h6 class="text-bold">' + title + '</h6>'
+                                         + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                                          + resume
                                          + '</a>'
                                          + '<div class="card-interaction-ms">'
@@ -539,7 +539,7 @@ $(document).ready(function(a) {
                                          + '</div>'
                                          + '<div class="card-text-ms">'
                                          + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                                         + '<h6 class="text-bold">' + title + '</h6>'
+                                         + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                                          + resume
                                          + '</a>'
                                          + '<div class="card-interaction-ms">'
@@ -563,7 +563,7 @@ $(document).ready(function(a) {
                                          + '</div>'
                                          + '<div class="card-text-ms">'
                                          + '<a href="/mundo-saludable/blog/articulos/?/'+ link +'">'
-                                         + '<h6 class="text-bold">' + title + '</h6>'
+                                         + '<h6 class="article-title-card text-bold">' + title + '</h6>'
                                          + resume
                                          + '</a>'
                                          + '<div class="card-interaction-ms">'

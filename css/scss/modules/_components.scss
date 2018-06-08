@@ -110,7 +110,7 @@
 	.card-article-ms{
 		@media #{$medium-up}{
 			max-width:23%;
-			min-height: 474px;
+			min-height: 394px;
 		}
 	}
 }
@@ -155,26 +155,29 @@
 }
 .card-text-ms{
 	padding: $global-padding;
-	h6{
+	.article-title-card{
 		word-wrap: break-word;
+		height: 60px;
+		overflow: hidden;
 	}
 	p{
 		margin-top: $global-margin;
-		padding-bottom:$global-padding*3;
-		max-height: 80px;
+		max-height: 88px;
 		overflow: hidden;
+		a{
+			max-height: 40px;
+			&:last-child{
+				display:none;
+			}
+		}
 	}
 }
 .card-interaction-ms{
-	position: absolute;
 	display: flex;
 	width: $total-anchor;
 	bottom: $global-padding;
 	color:$jumbogreen;
 	justify-content: space-between;
-	margin-left: -($global-margin);
-    padding-left: $global-padding;
-    padding-right: $global-padding;
 	font-style: initial;
 	background: $white;
 	padding-top: $global-padding;
