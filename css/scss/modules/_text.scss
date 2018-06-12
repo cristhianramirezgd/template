@@ -39,6 +39,7 @@ main{font-family: $font-family;}
 	}
 	&-banner-top{
 		font-weight: 100;
+		line-height: 1;
 	}
 }
 h1{@include font-size($font-size-h1);

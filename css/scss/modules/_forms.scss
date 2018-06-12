@@ -61,7 +61,9 @@
 	justify-content: center;
 	margin-top:$global-margin;
 	@media #{$medium-up}{
-		margin: $global-margin;
+		margin-top:0;
+		margin-left: $global-margin;
+		margin-right: $global-margin;
 	}
 	>input{
 		min-width:$total-anchor;
@@ -76,7 +78,7 @@
 		select{
 			background:transparent;
 			border:1px solid $jumbogreenyellow;
-			// padding: $global-padding /3 $global-padding;
+			padding: $global-padding /3 $global-padding;
 			margin-top: $global-margin;
 			color:$jumbogreenyellow;
 			text-align: center;
