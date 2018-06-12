@@ -41,6 +41,9 @@
 	&-6{grid-template-columns:1fr 1fr;
 		@media #{$medium-up}{grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;}
 	}
+	&-padding-none{
+		padding:0;
+	}
 }
 .container-promo{
 	display: block;

@@ -35,6 +35,7 @@
 	margin-top:$global-margin;
 	@media #{$medium-up}{
 	margin-top:$global-margin;
+	padding-bottom:0;
 	display: grid;
 	position: relative;
 	transition:$global-transition;
