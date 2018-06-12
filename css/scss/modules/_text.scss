@@ -3,6 +3,7 @@ main{font-family: $font-family;}
 .text{
 	&-white{
 		@include color-text($white);
+		color:$white;
 	}
 	&-black{
 		@include color-text($black);

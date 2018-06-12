@@ -103,8 +103,8 @@
       <section class="wrapper container-main-full section-margin">
         <div class="container-card-form-bottom">
             <div class="card-ms card-form-bottom text-center section-margin">
-              <h3>Descubre los beneficios</h3>
-              <a href="http://appcencosud.2xy.co/campaign/mundo_saludable/" target="_blank" class="button-ms button-full button-jumboorange text-white">INSCRÍBETE AQUÍ</a>
+              <h3 class="font-reclame">Descubre los beneficios</h3>
+              <a href="http://appcencosud.2xy.co/campaign/mundo_saludable/" target="_blank" class="button-ms button-full button-jumboorange text-white"><b class="text-white">INSCRÍBETE AQUÍ</b></a>
             </div>
         </div>
       </section>
