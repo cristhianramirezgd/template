@@ -8,7 +8,6 @@ $(document).ready(function(a) {
     $(window).load(function() {
       $("html, body").animate({ scrollTop: $("header").height() }, 1000);
     });
-    $(".article-content span").contents().unwrap();
     var filterToggle = (function() {
         $( ".filter-title-ms" ).on( "click", function(e) {
             e.preventDefault();
@@ -466,6 +465,7 @@ $(document).ready(function(a) {
                             "data-mobile": imgMobileCover
                         });
                         $('.article-content .content-article time').text(date);
+                        $(".article-content span").contents().unwrap();
 
                         for (  var i=0; i < url.length; i++ ) {
                              for ( var j=0; j < url[i].e_tags.length; j++ ) {
@@ -594,7 +594,6 @@ $(document).ready(function(a) {
                             }
                         }
                     }
-
                      // plugin initialization with default options
                     shareSelectedText('.container-main.article-content', {
                         tooltipClass: '',    // cool, if you want to customize the tooltip
