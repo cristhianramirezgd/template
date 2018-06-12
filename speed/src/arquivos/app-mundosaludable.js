@@ -186,7 +186,9 @@ $(document).ready(function(a) {
         });
         $('.morecards').slick({
               infinite: true,
-              slidesToShow: 4,
+              centerMode: true,
+              variableWidth: true,
+              slidesToShow: 5,
               slidesToScroll: 3,
               adaptiveHeight: true,
               arrows: true,

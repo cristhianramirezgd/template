@@ -1,6 +1,6 @@
 .section-viewport-h{
 	@media #{$medium-up}{
-		min-height: $vh-anchor - 10vh;
+		min-height: $vh-anchor;
 	}
 }
 // Buttons
@@ -23,7 +23,7 @@
 		object-fit:cover;
 		@media #{$medium-up}{
 			transform:rotate(0)scale(1);
-			height: 100vh;
+			height: 100vh!important;
 			object-fit:cover;
 			}
 		object-position: right;
@@ -129,6 +129,7 @@
 	transition:$global-transition;
 	border: 1px solid $graylight;
 	overflow: hidden;
+	max-width: 250px;
 	&:hover{
 		@media #{$medium-up}{
 		border-radius:$global-radius*3;
@@ -166,7 +167,7 @@
 	}
 	p{
 		margin-top: $global-margin;
-		max-height: 88px;
+		max-height: 40px;
 		overflow: hidden;
 		a{
 			max-height: 40px;
