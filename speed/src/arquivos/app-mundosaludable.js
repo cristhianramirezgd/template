@@ -8,6 +8,7 @@ $(document).ready(function(a) {
     $(window).load(function() {
       $("html, body").animate({ scrollTop: $("header").height() }, 1000);
     });
+    $(".article-content span").contents().unwrap();
     var filterToggle = (function() {
         $( ".filter-title-ms" ).on( "click", function(e) {
             e.preventDefault();
