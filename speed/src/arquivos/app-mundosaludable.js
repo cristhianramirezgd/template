@@ -13,6 +13,14 @@ $(document).ready(function(a) {
           $this.parents('.container-filter-ms').toggleClass( "active-ms");
         });
       });
+
+    var scrollBottom = (function() {
+        $( ".row-down-ms" ).on( "click", function(b) {
+            b.preventDefault();
+          $("html, body").animate({ scrollTop: $(".bg-banner + section").height() }, 1000);
+        });
+      });
+    scrollBottom(); 
     filterToggle();
     (function($) {
             var vBlog = '"https://www.tiendasjumbo.co/mundo-saludable/blog/articulos/?/yo-puedo-test-2//?/"," "';
