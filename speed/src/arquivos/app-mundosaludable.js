@@ -448,15 +448,15 @@ $(document).ready(function(a) {
                         $('.article-title span').text(title);
                         $('.container-main.article-content h4').html(description);
                         $('.container-main.article-content').append(content);
-                        $('.views-article').append(
-                            '<span>'
-                            +'<i class="icon-heart">'
-                            +'</i>'
-                            +'<small class="text-dark">'
-                            + views
-                            +'</small>'
-                            +'</span>'
-                            );
+                        // $('.views-article').append(
+                        //     '<span>'
+                        //     // +'<i class="icon-heart">'
+                        //     // +'</i>'
+                        //     +'<small class="text-dark">'
+                        //     + 'Compartir'
+                        //     +'</small>'
+                        //     +'</span>'
+                        //     );
                         // $('.article-banner >img').attr('src', imgCover, 'alt',imgAlt);
                         $('.article-banner >img').attr({
                             src: imgCover,

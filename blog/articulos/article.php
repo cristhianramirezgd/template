@@ -9,7 +9,9 @@
       		<div class="banner-article-info">
       			<div class="tags-article-info"></div>
       			<div class="media-article-info">
-      				<div class="views-article"></div>
+      				<div class="views-article">
+                <span><small class="text-dark">Compartir:</small></span>
+              </div>
       				<div class="social-media">
       					<a href="https://www.facebook.com/pages/Mundo-Saludable-Jumbo/1489409884642135"><i class="icon-facebook"></i></a>
       					<a href="https://www.instagram.com/mundosaludablejumbo/"><i class="icon-instagram"></i></a>
