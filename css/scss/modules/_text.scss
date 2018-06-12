@@ -7,15 +7,19 @@ main{font-family: $font-family;}
 	}
 	&-black{
 		@include color-text($black);
+		color:$black;
 	}
 	&-dark{
 		@include color-text($dark);
+		color:$dark;
 	}
 	&-jumbogreen{
 		@include color-text($jumbogreen);
+		color:$jumbogreen;
 	}
 	&-jumbored{
 		@include color-text($jumbored);
+		color:$jumbored;
 	}
 	&-center{text-align: center;
 		&-m{
