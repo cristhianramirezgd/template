@@ -85,14 +85,18 @@ i.icon-instagram{
  no-repeat;
  width: $gutter*2;
  height: $gutter*2;
- display:inline-flex;
+ background-position: 50% 50%;
+ background-position: center center;
  margin-left:$global-margin/3;
+ margin-right:$global-margin/3;
 }
 i.icon-facebook{
 	background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMC4wMjIgMzguMzQxIj4gIDxkZWZzPiAgICA8c3R5bGU+ICAgICAgLmNscy0xIHsgICAgICAgIGZpbGw6ICMwMGMwMzU7ICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7ICAgICAgfSAgICA8L3N0eWxlPiAgPC9kZWZzPiAgPHBhdGggaWQ9IlBhdGhfMzMwIiBkYXRhLW5hbWU9IlBhdGggMzMwIiBjbGFzcz0iY2xzLTEiIGQ9Ik05Mi45OTMsMzguMzRWMjAuODc0aDUuOTY0bC44NTItNi44MTZIOTIuOTkzVjkuOGMwLTEuOTE3LjYzOS0zLjQwOCwzLjQwOC0zLjQwOGgzLjYyMVYuMjEzQzk5LjE3LjIxMyw5Ny4wNCwwLDk0LjcsMGMtNS4xMTIsMC04LjczMywzLjItOC43MzMsOC45NDZ2NS4xMTJIODB2Ni44MTZoNS45NjRWMzguMzRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtODApIi8+PC9zdmc+)
  no-repeat;
  width: $gutter*2;
  height: $gutter*2;
- display:inline-flex;
+ background-position: 50% 50%;
+ background-position: center center;
  margin-left:$global-margin/3;
+ margin-right:$global-margin/3;
 }

@@ -149,3 +149,11 @@
 		margin-top:$global-margin;
 	}
 }
+.social-link-footer{
+	>div{
+		a{
+			display: flex;
+			align-items: center;
+		}
+	}
+}
