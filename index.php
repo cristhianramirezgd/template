@@ -66,7 +66,7 @@
        </div>
       </section>
       <section class="wrapper container-main section-margin">
-          <div class="container-main main-grid main-grid-3 main-grid-equal container-promo">
+          <!-- <div class="container-main main-grid main-grid-3 main-grid-equal container-promo">
             <div class="card-ms card-promo text-center bg-gradient-1">
               <h2>Recibe el 30% dto.</h2>
               <p>registrándote en Mundo Saludable.</p>
@@ -80,11 +80,29 @@
               <p>en las batidos naturales Nativos a nivel nacional.</p>
               <img class="logo-image" src="/arquivos/nativos-alianza-mundo-saludable-tiendas-jumbo-min.png">
             </div>
+          </div> -->
+          <!--  -->
+          <div class="container-main main-grid main-grid-3 main-grid-equal promotion-section-home">
+              <div class="card-ms card-ms-button card-ms-button-jumboyellow text-center-m">
+                  <img class="icon-image" src="/arquivos/percent-jumbo-icon.png">
+                  <h3>Recibe el 30% dto.</h3>
+                  <p>registrándote en Mundo Saludable.</p>
+              </div>
+              <div class="card-ms card-ms-button card-ms-button-1 text-center-m">
+                  <img class="icon-image" src="/arquivos/healt-icon-mundo-saludable-tiendas-jumbo.png">
+                  <h3>Asesoría Nutricional</h3>
+                  <p>especializada en nuestra tiendas.</p>
+              </div>
+              <div class="card-ms card-ms-button card-ms-button-jumbogreenlight text-center-m">
+                  <img class="logo-image" src="/arquivos/nativos-alianza-mundo-saludable-tiendas-jumbo-min.png">
+                  <h3>Disfruta 10% de dto</h3>
+                  <p>en las batidos naturales Nativos a nivel nacional.</p>
+              </div>
           </div>
       </section>
       <section class="wrapper container-main-full section-margin">
         <div class="container-card-form-bottom">
-            <div class="card-ms card-form-bottom text-center">
+            <div class="card-ms card-form-bottom text-center section-margin">
               <h3>Inscríbete aquí</h3>
               <a href="http://appcencosud.2xy.co/campaign/mundo_saludable/" target="_blank" class="button-ms button-full button-jumboorange text-white">Y DESCUBRE LOS BENEFICIOS</a>
             </div>

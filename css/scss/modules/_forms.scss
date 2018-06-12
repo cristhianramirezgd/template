@@ -103,6 +103,7 @@
 	}
 }
 .container-card-form-bottom{
+	margin-top: $global-margin * 2;
 	&::before{
 		@media #{$medium-up}{
 			position: relative;
@@ -114,8 +115,10 @@
 			bottom: 0;
 			max-height: 168px;
 			margin: auto;
-			background:linear-gradient(to right, $jumbogreenyellow 0%,$icon-bluelight 100%);
-
+			background:url(/arquivos/form-suscription-background-mundo-saludable-tiendas-jumbo-min.jpg)no-repeat;
+			background-size: contain;
+			background-position: 50% 50%;
+			background-position: center center;
 		}
 	}
 }
@@ -128,6 +131,7 @@
 		position: relative;
 		justify-content: center;
 		@include center-auto;
+		border:1px solid $graylight;
 	}
 	h3{
 		@media #{$medium-up}{

@@ -102,8 +102,16 @@
 		word-wrap:break-word;
 		margin-top:$global-margin;
 	}
-	.logo-image{
-			max-width: 60%;
+}
+.logo-image{
+		max-width: 50%;
+}
+.icon-image{
+		max-width: 20%;
+}
+.promotion-section-home{
+	.card-ms{
+		box-shadow: $global-shadow;
 	}
 }
 .social-container{
