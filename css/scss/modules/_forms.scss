@@ -65,8 +65,8 @@
 	}
 	>input{
 		min-width:$total-anchor;
-		padding-top:$global-padding;
-		padding-bottom:$global-padding;
+		padding-top:$global-padding/3;
+		padding-bottom:$global-padding/3;
 	}
 	>button{
 		margin-top:$global-margin;
@@ -76,7 +76,7 @@
 		select{
 			background:transparent;
 			border:1px solid $jumbogreenyellow;
-			padding: $global-padding /3 $global-padding;
+			// padding: $global-padding /3 $global-padding;
 			margin-top: $global-margin;
 			color:$jumbogreenyellow;
 			text-align: center;

@@ -108,6 +108,7 @@
 }
 .category-ms{
 	.card-article-ms{
+		border: 1px solid $graylight;
 		@media #{$medium-up}{
 			max-width:23%;
 			min-height: 394px;
@@ -126,6 +127,7 @@
 	padding:0;
 	align-self: stretch;
 	transition:$global-transition;
+	border: 1px solid $graylight;
 	overflow: hidden;
 	&:hover{
 		@media #{$medium-up}{
