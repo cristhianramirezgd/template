@@ -5,7 +5,9 @@ $(document).ready(function(a) {
             a(this).attr("src", b)
         });
     });
-
+    $(window).load(function() {
+      $("html, body").animate({ scrollTop: $("header").height() }, 1000);
+    });
     var filterToggle = (function() {
         $( ".filter-title-ms" ).on( "click", function(e) {
             e.preventDefault();
@@ -17,7 +19,7 @@ $(document).ready(function(a) {
     var scrollBottom = (function() {
         $( ".row-down-ms" ).on( "click", function(b) {
             b.preventDefault();
-          $("html, body").animate({ scrollTop: $(".bg-banner + section").height() }, 1000);
+          $("html, body").animate({ scrollTop: $(".bg-banner + ").height() }, 1000);
         });
       });
     scrollBottom(); 
