@@ -466,6 +466,8 @@ $(document).ready(function(a) {
                         });
                         $('.article-content .content-article time').text(date);
                         $(".article-content span").contents().unwrap();
+                        $('.article-content p').removeAttr( "style" );
+                        $('.article-content span').removeAttr( "style" );
 
                         for (  var i=0; i < url.length; i++ ) {
                              for ( var j=0; j < url[i].e_tags.length; j++ ) {
