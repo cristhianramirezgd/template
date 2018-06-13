@@ -200,7 +200,10 @@
 // Articles
 .article-ms{
 	.article-banner{
-		max-width: 94%;
+		max-width: $total-anchor;
+		@media #{$medium-up}{
+			max-width: $total-anchor*.7;
+		}
 		margin-right: auto;
 		margin-left: auto;
 		position: relative;
