@@ -8,6 +8,13 @@ $(document).ready(function(a) {
     $(window).load(function() {
       $("html, body").animate({ scrollTop: $("header").height() }, 1000);
     });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 900) {
+            $('#lateralMenu').fadeIn();
+        } else {
+            $('#lateralMenu').fadeOut();
+        }
+    });
     var filterToggle = (function() {
         $( ".filter-title-ms" ).on( "click", function(e) {
             e.preventDefault();

@@ -37,6 +37,14 @@
           </div>
         </div>
       </section>
+      <div id="lateralMenu" class="lateralmenu">
+        <a href="/mundo-saludable">Mundo Saludable</a>
+        <a href="/mundo-saludable">Blog</a>
+        <a href="/mundo-saludable">Yo Quiero</a>
+        <a href="/mundo-saludable">Yo Decidí</a>
+        <a href="/mundo-saludable">Yo Puedo</a>
+        <a href="/mundo-saludable">Volver a Arriba</a>
+      </div>
     </main>
     <?php require_once("../../subtemplates/footer.php"); ?>
     <?php require_once("../../subtemplates/scripts.php"); ?>

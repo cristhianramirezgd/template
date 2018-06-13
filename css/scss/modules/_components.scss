@@ -315,6 +315,9 @@ article.container-main.article-content>h4:first-child {
 		list-style-position: inside!important;
 		li{
 			margin:$global-margin;
+			span{
+				
+			}
 		}
 	}
 	a{
@@ -323,3 +326,66 @@ article.container-main.article-content>h4:first-child {
 		    font-weight: $font-regular;
 	}
 }
+	.lateralmenu{
+		position: fixed;
+		display: none;
+		left: initial;
+		bottom: 0;
+		width: $total-anchor;
+		transform:translatey($total-anchor);
+		@media #{$medium-up}{
+			bottom:initial;
+			width: initial;
+			top: 30vh;
+			left:0;
+			transform:translateX(-($total-anchor));
+		}
+		transition:$global-transition;
+		background: $dark;
+		a{
+			opacity: .7;
+			padding:$global-padding/3 $global-padding;
+			color: $white;
+			transition:$global-subtransition;
+			margin-right:$global-margin;
+			margin-left:$global-margin;
+			border-bottom:3px solid $dark;
+			&:hover{
+				border-bottom:3px solid $jumbogreen;
+			}
+		}
+		&:hover{
+			transform:translatey(0);
+			a{
+				opacity: 1;
+			}
+			&::after{
+				opacity: 1;
+				transform:rotate(90deg);
+				@media #{$medium-up}{
+				transform:rotate(180deg);
+				}
+			}
+		}
+		&::after{
+			content:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+ICA8ZGVmcz4gICAgPHN0eWxlPiAgICAgIC5jbHMtMSB7ICAgICAgICBmaWxsOiAjZmZmOyAgICAgICAgb3BhY2l0eTogMDsgICAgICB9ICAgICAgLmNscy0yIHsgICAgICAgIGZpbGw6IG5vbmU7ICAgICAgICBzdHJva2U6ICNmZmY7ICAgICAgICBzdHJva2Utd2lkdGg6IDRweDsgICAgICB9ICAgIDwvc3R5bGU+ICA8L2RlZnM+ICA8ZyBpZD0iU3ltYm9sXzNfMSIgZGF0YS1uYW1lPSJTeW1ib2wgMyDigJMgMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzIyIC03NTEpIj4gICAgPHJlY3QgaWQ9IlJlY3RhbmdsZV84MyIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgODMiIGNsYXNzPSJjbHMtMSIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIyIDc1MSkiLz4gICAgPGcgaWQ9Ikdyb3VwXzQ2NCIgZGF0YS1uYW1lPSJHcm91cCA0NjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMDI4LjU4IDgyMS40ODQpIHJvdGF0ZSgtOTApIj4gICAgICA8cGF0aCBpZD0iUGF0aF8zIiBkYXRhLW5hbWU9IlBhdGggMyIgY2xhc3M9ImNscy0yIiBkPSJNMS4yOTMsMCwxMy43MDYsMTguNTY5LDAsMzYuNDY3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NC40NzYgNzIzLjMzNCkgcm90YXRlKDkwKSIvPiAgICAgIDxwYXRoIGlkPSJQYXRoXzMyNCIgZGF0YS1uYW1lPSJQYXRoIDMyNCIgY2xhc3M9ImNscy0yIiBkPSJNMCw5OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDYuNDY3IDYzOC45OTYpIi8+ICAgIDwvZz4gIDwvZz48L3N2Zz4=);
+			background: $jumbogreenyellow;
+			display: block;
+			padding-top: $global-padding/5;
+			position: absolute;
+			color:$white;
+			right:$global-margin;
+			width: 43px;
+			opacity: .7;
+			transition:$global-subtransition;
+			transform:rotate(-90deg);
+			bottom:100%;
+			@media #{$medium-up}{
+				right:initial;
+				left:$total-anchor;
+				top: 0;
+				bottom:initial;
+				transform:rotate(0deg);
+			}
+		}
+	}
