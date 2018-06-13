@@ -1,7 +1,7 @@
     <?php require_once("subtemplates/head.php"); ?>
     <?php require_once("subtemplates/styles.php"); ?>
     <?php require_once("subtemplates/header.php"); ?>
-    <main class="mundo-saludable-v2">
+    <main class="mundo-saludable-v2 ms-home">
       <section class="wrapper container-main-full bg-banner section-viewport-h main-grid main-grid-1 main-grid-center main-grid-middle">
         <img class="bg-img" src="/arquivos/banner-home-mundo-saludable.jpg" alt="banner-home-mundo-saludable" data-mobile="https://fakeimg.pl/900x300/"/>
           <div class="container-main container-banner main-grid main-grid-3 main-grid-center main-grid-middle">

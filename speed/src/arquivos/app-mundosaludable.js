@@ -625,6 +625,7 @@ $(document).ready(function(a) {
        // callbacks pages
             $.get(urlPosts, function (homepost) {
                 // if (window.location.pathname.indexOf("mundo-saludable") != -1){
+                    $( ".ms-home #titleCategorie").replaceWith( '<h2 class="title-section-ms"><span><i class="icon icon-blog"></i>Más vistos</span><a href="mundo-saludable/blog">VER MÁS</a></h2>' );
                     cards(homepost);
                 // };
             });

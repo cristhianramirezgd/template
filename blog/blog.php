@@ -2,7 +2,7 @@
     <?php require_once("../subtemplates/styles.php"); ?>
     <?php require_once("../subtemplates/header.php"); ?>
     <section id="titleCategorie"></section>
-    <main class="mundo-saludable-v2 category-ms">
+    <main class="mundo-saludable-v2 category-ms blog">
       <section class="catagory-ms">
         <aside class="wrapper-filter">
         <div class="sticky-filter-ms">
