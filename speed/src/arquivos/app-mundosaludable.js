@@ -476,16 +476,16 @@ $(document).ready(function(a) {
                         $('.article-content p').removeAttr( "style" );
                         $('.article-content span').removeAttr( "style" );
 
-                        for (  var i=0; i < url.length; i++ ) {
-                             for ( var j=0; j < url[i].e_tags.length; j++ ) {
-                                var namePostTag = url[i].e_tags[j].name;
-                                $('.tags-article-info').append('<span class="slug-article bg-gradient-'+ j +'">'
-                                    + namePostTag 
-                                    +'</span>'
-                                    );
-                                console.log(namePostTag)
-                             }
-                        }
+                        // for (  var i=0; i < url.length; i++ ) {
+                        //      for ( var j=0; j < url[i].e_tags.length; j++ ) {
+                        //         var namePostTag = url[i].e_tags[j].name;
+                        //         $('.tags-article-info').append('<span class="slug-article bg-gradient-'+ j +'">'
+                        //             + namePostTag 
+                        //             +'</span>'
+                        //             );
+                        //         console.log(namePostTag)
+                        //      }
+                        // }
                         // for (var k=1; k<4; k++) {
                         //     // console.log('intento ' + k);
                         // $('.tags-article-info').append('<span class="slug-article bg-gradient-'+ k +'">'
@@ -499,8 +499,7 @@ $(document).ready(function(a) {
                                     /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && a("img").each(function() {
                                         var b = a(this).attr("data-mobile");
                                         a(this).attr("src", b)
-                                    });
-                                });
+                                    
                             // RELATED POST
                             var relatedPostJp = 'jetpack-related-posts'
                             switch (trend.relatedPostJp) {
@@ -601,6 +600,8 @@ $(document).ready(function(a) {
                                 default:
                                 console.log()
                             }
+                                });
+                            });
                         }
                     }
                      // plugin initialization with default options
