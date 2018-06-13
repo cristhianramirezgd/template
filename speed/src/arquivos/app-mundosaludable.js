@@ -32,7 +32,7 @@ $(document).ready(function(a) {
     scrollBottom(); 
     filterToggle();
     (function($) {
-            var vBlog = '"https://www.tiendasjumbo.co/mundo-saludable/blog/articulos/?/yo-puedo-test-2//?/"," "';
+            var vBlog = '"https://www.tiendasjumbo.co/mundo-saludable/blog/articulos/?/"," "';
             var urlAdmin = 'https://catalogostiendasjumbo.co/tiendasjumboblog/'
             var hostBlog = urlAdmin;
             var urlApiDev = hostBlog + 'wp-json/?=routes';
