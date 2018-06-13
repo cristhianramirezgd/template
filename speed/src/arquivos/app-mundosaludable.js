@@ -9,7 +9,7 @@ $(document).ready(function(a) {
       $("html, body").animate({ scrollTop: $("header").height() }, 1000);
     });
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 900) {
+        if ($(this).scrollTop() >= 300) {
             $('#lateralMenu').fadeIn();
         } else {
             $('#lateralMenu').fadeOut();
