@@ -328,6 +328,7 @@ article.container-main.article-content>h4:first-child {
 }
 	.lateralmenu{
 		position: fixed;
+		z-index: 999999;
 		display: none;
 		left: initial;
 		bottom: 0;
