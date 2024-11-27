@@ -24,3 +24,4 @@ install Vtex-speed on speed directory
 
 ## Happy Project Dude!
 
+# Deprecated
